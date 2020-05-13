@@ -1,0 +1,57 @@
+		.dropdown {
+			overflow: hidden;
+			float:left;
+		}
+        .accueil-lien{
+			background:#4CAF50; /* background:#3d3d5c; */
+			color:#ccc;  /* color:#ECECEA; */
+			box-shadow:
+			0px 46px 2px 0px rgba(0, 0, 0, 0.5) inset,
+			0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+	
+		}
+		.dropdown-btn{
+			padding: 14px 65px; /* IMPORTANT: IMPACT POUR LA STRUCTURE GENERALE*/
+			border:none;
+			outline:none;
+			margin:0;
+			background: inherit;
+			color:#666699; /*666699 ou 660066*/
+			font-size: 17px; 
+			
+		}
+
+		.dropdown-content {
+			position: absolute;
+			min-width:226px;
+			height:26.5em;  
+			line-height:0.5;
+
+			background:#ccf;
+			box-shadow: 0px 1px 2px 0px #ccf;
+			
+			 
+			border-top:2px solid #bbb;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			
+		}
+
+        /****
+         * Alignement verical du sous-menu: 
+         * Commencer la selection depuis #menu.: SINON K.O !
+         */
+		#menu .dropdown-content a{
+			display: block;
+			float:none;		
+		}
+		#menu .dropdown-content a:hover{
+	       background:whitesmoke;
+		}
+
+		 /****
+         * Ouverture/Fermeture du sous-menu: 
+         * Pas besoin de javascript avec cet astuce
+         */
+         .dropdown-content{ display:none; }
+         .dropdown:hover .dropdown-content{ display:block; }
