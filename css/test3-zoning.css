@@ -2,7 +2,7 @@
 		body{margin:0; background: #ECECEA;}
 
 		#entete{ height: 200px; background: #555; }
-		#footer{ min-height: 100px; background: #555; margin-top:2em; }
+		#footer{ min-height:100px; background: #555; margin-top:2em; }
 
 		#menu{ 
 		   height: 48px; 
@@ -25,6 +25,32 @@
 			height:auto; 
 			margin-top: 2em; 
 			/* border: 1px solid #8c8b8b; */
+		}
+		.basmala-green{	
+		  font-size: 48px !important;
+		  text-shadow: -1px -1px #0c0, 1px 1px #060, -3px 0 4px #000;
+		  font-family:Arial, Helvetica, sans-serif;
+		  color: #090;
+		  padding:16px ;
+		  font-weight:lighter;
+		  -moz-box-shadow: 2px 2px 6px #888;  
+		  -webkit-box-shadow: 2px 2px 6px #888;  
+		  box-shadow:none;  
+		  text-align:center;
+		  display:block;
+		  margin:16px; 
+		}
+		.basmala{ 
+		   text-align:center; 
+		   padding-left:2em; 
+		   font-weight:bold; 
+		   color:green; 
+		   font-size:0.79em; 
+		   font-family:Liberation Sans Narrow;
+		}
+		.basmala-contenu{
+			color:green; 
+			padding-right:30%;
 		}
 		/* les classes: .boiteGris et .plancheCadre vont ensemble pour encadrer une planche ( voir commit.html) */ 
 	   .paragraphe, .boiteGris{
@@ -109,4 +135,25 @@
 		/* footer */		
 		.footer-table { padding:1em;}
 		.footer-td { padding:0.4em; background:#8c8b81; height:auto;  margin:auto; width:30%; }
+		
+		@media screen and (max-width: 792px) {
+		   .basmala-green{font-size: 1.5em !important;}
+		   .grosTitre{padding:.6em 0em; }
+		   .box-shadow-titre{ margin:0; padding:.2em .4em; font-size:0.8em;}
+           .basmala{padding-left:0; }
+           .basmala-contenu{padding-right:0;}		   
+		}
+		/********************************************************************************* 
+		 *PROBLEME:
+		 * Les media query d?finis ci-haut, ne s'applique pas dans la plage 777px - 846px 
+		 * SOLUTION:
+		 *R?definition dans l'interval 777px - 846px 
+		 *********************************************************************************/
+		@media screen and (max-width: 846px) and (min-width: 777px) {
+		   .basmala-green{font-size: 1.5em !important;}
+		   .grosTitre{padding:.6em 0em; }
+		   .box-shadow-titre{ margin:0; padding:.2em .4em; font-size:0.8em;}
+           .basmala{padding-left:0; }
+           .basmala-contenu{padding-right:0;}
+		}
 		

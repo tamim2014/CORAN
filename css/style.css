@@ -146,5 +146,36 @@
 		 padding:0 6em;
 		 color:#ECECEA;
 	}
+	.onglet1-sujet{ padding:60px 20px 0 20px;}
+	
+	@media screen and (max-width: 792px) {
+	   .onglet1-sujet{padding-bottom:40px;}
+	   .titre-video{  
+	       padding:0 0 0 3em  !important;
+		   font-size:.5em;
+	   }
+
+	   .footer-td{margin:0;   }
+	   .footer-td video, .footer-td img{padding:0; margin:0; height:41%; width:100%;}
+       .footer-td video source{padding:0; margin:0; width:100% !important;}
+	   .img, .footer-image{ margin:0 ; padding:0 ; }			
+	}
+	/********************************************************************************* 
+	 *PROBLEME:
+	 * Les media query définis ci-haut, ne s'applique pas dans la plage 777px - 846px 
+	 * SOLUTION:
+	 *Rédefinition dans l'interval 777px - 846px 
+	 *********************************************************************************/
+	@media screen and (max-width: 846px) and (min-width: 777px) {
+	   .onglet1-sujet{padding-bottom:48px;}
+	   .titre-video{  
+	       padding:0 0 0 3em  !important;
+		   font-size:.5em;
+	   }
+	   .footer-td{margin:0;  }
+	   .footer-td video, .footer-td img{padding:0; margin:0; height:44%; width:100%;}
+	   .footer-td video source{padding:0; margin:0; width:100% !important;}
+       .img, .footer-image{ margin:0 ; padding:0 ; }	
+	}
 
 	

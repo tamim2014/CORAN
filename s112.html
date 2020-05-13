@@ -9,22 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bouton-bash.css">
 	<style>
-		.basmala{ text-align:center; padding-left:2em; font-weight:bold; color:green; font-size:0.79em; font-family:Liberation Sans Narrow;}
 		.logo{position:absolute; left:0.5em; top:0.5em;}
-		h1{	
-		  font-size: 32px;
-		  text-shadow: -1px -1px #0c0, 1px 1px #060, -3px 0 4px #000;
-		  font-family:Arial, Helvetica, sans-serif;
-		  color: #090;
-		  padding:16px ;
-		  font-weight:lighter;
-		  -moz-box-shadow: 2px 2px 6px #888;  
-		  -webkit-box-shadow: 2px 2px 6px #888;  
-		  box-shadow:none;  
-		  text-align:center;
-		  display:block;
-		  margin:16px; 
-		}
 		.colone-laterale{width:50%; padding-right:0 !important; background:#bbb; }
 		.colone-contenu{width: 50%; padding-left:0 !important; background:#bbb;}
 		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
@@ -34,7 +19,7 @@
 		.onglet1-sujet{
 		  width:100%;
 		  margin:0 ;
-		  padding:60px 20px 0 20px;
+		  /* padding:60px 20px 0 20px;  */
 
 		  background:white;
 		  line-height:1.5;
@@ -52,6 +37,7 @@
 			
 	</style>
 
+
 </head>
 <body style="background:#bbb;">
 	<div id="entete">	   
@@ -59,7 +45,7 @@
         <span class="logo" >الله ممّا نفعنا بما علّمتنا</span>			
 	   	<div class="hero-image">
 		  <div class="hero-text">
-			<h1 style="font-size:3em; ">بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</h1>
+			<h1 class="basmala-green" >بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</h1>
 			<h3 ><br><br></h3>			
 			<div class="container-btn">
 				<a href="index-comorien.html" > 
@@ -94,8 +80,9 @@
 	<div id="contenu">
 		<div class="colone-laterale" id="sidbarG">
 		    <h2 class="grosTitre" ><span class="box-shadow-titre" >Le monothéisme pur</span></h2>
-			<div class="planche" >       
-                <span class="onglet1-sujet" style="padding-bottom:0;">
+			<div class="planche" >
+		
+                <span class="onglet1-sujet" >
 				    <br><span class="basmala">Au nom d’Allah, le Tout Miséricordieux, le Très Miséricordieux</span><br><br>
                      Dis: «Il est Allah, Unique. (1) Allah, Le Seul à être imploré pour ce que nous désirons. (2) Il n’a jamais engendré, n’a pas été engendré non plus. (3) Et nul n’est égal à Lui». (4)
 				</span>				 
@@ -107,7 +94,7 @@
 			<!-- augmenter le line-height pour ajuster les verset  des 2 colonnes(français-arabe) -->
 			<!-- augmenter le padding-bottom(2.5em) pour ajuster la hauteur des 2 colonnes -->
 			<div class="planche " lang="ar" dir="rtl" style="padding:0 1em 2.5em 1em; font-family: Amiri  !important; font-weight:bold; font-size:1.2em; line-height:3.19; height:auto;" >               
-				<br><span style="color:green; padding-right:30%;">بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</span><br>
+				<br><span class="basmala-contenu" >بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</span><br>
 				   قُلۡ هُوَ ٱللَّهُ أَحَدٌ (﻿١﻿) ٱللَّهُ ٱلصَّمَدُ (﻿٢﻿) لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ (﻿٣﻿) وَلَمۡ يَكُن لَّهُ ۥ ڪُفُوًا أَحَدٌ (﻿٤﻿)               			 	
 			</div>				 									
 		</div><!-- #colone-contenu -->
@@ -116,9 +103,9 @@
 	
 	<div style="clear:both"></div>
 	<div id="footer" >
-		<table class="footer-table" >
+		<table class="footer-table">
 		  <tr>
-			 <td class="footer-td" style="width:20%;">
+			 <td class="footer-td" style="width:20%; height;auto;" >
 			    <b class="titre-video" >Cheih Nasser Al Qatami</b>
                 <video  class="img footer-image"    controls="controls" >
 				         <source src="videos/s112-nasser.mp4" type="video/mp4" />			       
@@ -141,6 +128,7 @@
 		</table>
 	</div><!-- #footer -->
     <script type="text/javascript" src="js/sticky.js"></script>
+
 
 		
 </body>
