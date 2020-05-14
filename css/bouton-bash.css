@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   max-width: 400px;
+
 }
 
 /* 2. Le bouton */
@@ -11,18 +12,23 @@
   position: absolute;
   top: 50%;
   left: 55%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+
   background-color: #f1f1f1;
   color: black;
-  font-size: 16px;
-  padding: 6px 30px;
+
   border: none;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
   
   outline:none;
+	
+   font-size: 12px !important;
+   padding: 4px 8px !important;
+   	transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+
+	
 }
 
 .container-btn .btn:hover {

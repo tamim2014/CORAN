@@ -27,35 +27,34 @@
 			/* border: 1px solid #8c8b8b; */
 		}
 		.basmala-green{	
-		  font-size: 48px !important;
+		  font-size: 3em;
 		  text-shadow: -1px -1px #0c0, 1px 1px #060, -3px 0 4px #000;
 		  font-family:Arial, Helvetica, sans-serif;
 		  color: #090;
 		  padding:16px ;
 		  font-weight:lighter;
-		  -moz-box-shadow: 2px 2px 6px #888;  
-		  -webkit-box-shadow: 2px 2px 6px #888;  
+  
 		  box-shadow:none;  
 		  text-align:center;
 		  display:block;
-		  margin:16px; 
+		  margin:16px ; 
+
 		}
 		.basmala-red{
-		  font-size: 32px;
+		  font-size: 3em;
 		  text-shadow: -1px -1px #f00, 1px 1px #a00, -3px 0 4px #000;
 		  font-family:"Segoe print", Arial, Helvetica, sans-serif;
 		  color: #dd0000;
 		  padding:10px;
 		  margin:16px 0 0 0;
-		  font-weight:lighter;
-		  -moz-box-shadow:none;  
-		  -webkit-box-shadow: none;  
+		  font-weight:lighter; 
 		  box-shadow:none;  
 		  text-align:center;
 		  display:block;
 
 		  max-width:800px;  
 		}
+		.basmala-white{font-size:3em;}
 		.basmala{ 
 		   text-align:center; 
 		   padding-left:2em; 
@@ -152,8 +151,14 @@
 		.footer-table { padding:1em;}
 		.footer-td { padding:0.4em; background:#8c8b81; height:auto;  margin:auto; width:30%; }
 		
-		@media screen and (max-width: 792px) {
-		   .basmala-green, .basmala-red {font-size: 1.5em !important;}
+		@media screen and (max-width: 792px) {				   
+			.basmala-green, .basmala-red {
+				font-size: 1.6em ;
+				padding:0 0 10px 0;
+				margin:75px 0 0 0; 
+				transform: scale(2, 1.2);
+			}
+           .container-btn .btn { transform: scale(2, 0.5); }
 		   .grosTitre{padding:.6em 0em; }
 		   .box-shadow-titre{ margin:0; padding:.2em .4em; font-size:0.8em;}
            .basmala{padding-left:0; }
@@ -166,7 +171,13 @@
 		 *R?definition dans l'interval 777px - 846px 
 		 *********************************************************************************/
 		@media screen and (max-width: 846px) and (min-width: 777px) {
-		   .basmala-green, .basmala-red{font-size: 1.5em !important;}
+		   	.basmala-green, .basmala-red {
+				font-size: 1.6em ;
+				padding:0 0 10px 0;
+				margin:60px 0 0 0; 
+				transform: scale(2, 1.2);
+			}
+		   .container-btn .btn { transform: scale(2, 0.5); }			
 		   .grosTitre{padding:.6em 0em; }
 		   .box-shadow-titre{ margin:0; padding:.2em .4em; font-size:0.8em;}
            .basmala{padding-left:0; }
