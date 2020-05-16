@@ -157,8 +157,8 @@
 	   }
 
 	   .footer-td{margin:0;   }
-	   .footer-td video, .footer-td img{padding:0; margin:0; height:41%; width:100%;}
-       .footer-td video source{padding:0; margin:0; width:100% !important;}
+	   .footer-td video, .footer-td audio, .footer-td img{padding:0; margin:0; height:41%; width:100%;}
+       .footer-td video source, .footer-td audio source{padding:0; margin:0; width:100% !important;}
 	   .img, .footer-image{ margin:0 ; padding:0 ; }			
 	}
 	/********************************************************************************* 
@@ -174,8 +174,8 @@
 		   font-size:.5em;
 	   }
 	   .footer-td{margin:0;  }
-	   .footer-td video, .footer-td img{padding:0; margin:0; height:44%; width:100%;}
-	   .footer-td video source{padding:0; margin:0; width:100% !important;}
+	   .footer-td video, .footer-td audio, .footer-td img{padding:0; margin:0; height:44%; width:100%;}
+	   .footer-td video source, .footer-td audio source{padding:0; margin:0; width:100% !important;}
        .img, .footer-image{ margin:0 ; padding:0 ; }	
 	}
 	
