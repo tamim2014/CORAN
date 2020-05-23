@@ -4,22 +4,19 @@
      * Date: Samedi 07 Mars 2020
      */	 
 
-
-
-	window.onscroll = function(){ scrollFunction(); myFunction(); }; /* Attention! i fo pas inverser l'ordre de ces fonction sinon sa marche pas */
-	   
-       
-	
+	window.onscroll = function(){ myFunction();  };
 	
 	var menu = document.getElementById("menu"); 
 			
 	var sidbarG = document.getElementById("sidbarG"); 
 	var sidbarD = document.getElementById("sidbarD");
-	var contenu_ = document.getElementById("contenu_"); 
+	var contenu_ = document.getElementById("contenu_"); 		
+	
+	//var positionInitialeSG = sidbarG.offsetTop;
 	var positionInitiale = menu.offsetTop;
 
 	function myFunction() {
-
+	  //if (window.pageYOffset > positionInitialeSG){
 	  if (window.pageYOffset > positionInitiale){
 		
 		menu.classList.add("stickyNavbar");
@@ -35,7 +32,6 @@
 		sidbarD.classList.remove("stickySidbarD");
 		contenu_.classList.remove("stickyContenu");			
 	  }
-
 	}
 	
 	     		
@@ -167,16 +163,23 @@
  *
  **********************************************************************/
 
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
-var mybutton = document.getElementById("myBtn"); //Get the button
-function scrollFunction() { //window.onscroll = function() {scrollFunction()};
+// When the user scrolls down 20px from the top of the document, show the button
+// Mais 20px il s'affiche trop tot. je mets 2000
+//window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
-function topFunction() { // When the user clicks on the button, scroll to the top of the document
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
