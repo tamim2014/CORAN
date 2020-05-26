@@ -13,22 +13,32 @@
 	<link rel="stylesheet" href="css/commentaires.css">
 	<style>
 	
-	/* Remonter le contenu de la traduction française */	
-		.onglet1-sujet{ padding-top:1.2em; }	  
+	/* Remonter le contenu de la traduction française */		  
 		.basmala{ margin-top:1em; }
 	/* background des colones contenu */
-      	.planche{
-			background:white;			   
-		}
-		.planche p{
-		   
-		   box-shadow: -3px 8px 6px -6px  ; 
-		   margin:0 0 0.5em 0; 
+      	.planche{	background:white; /*  background-image: url("img/s8/background8.png") ;  */		 }
+		.planche p{		   		  
+		   margin:0 ; 
 		   padding:.5em;
-		   font-size:1.2em;
+		   font-size:1.2em;		   
+		}
+		.pageGauche{  box-shadow: -3px 8px 6px -6px gray ; background:white;}
+		.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white;}
+		
+		.numPage{
+		  font:italic .8em calibri light !important;   text-align:center;
+		}
+		.numPageArabe{
+		  font:normal .5em calibri light !important;   text-align:center; padding-bottom:.5em !important;
 		}
 
-		.arabe p{ box-shadow: 3px 8px 6px -6px ; padding:.5em;}
+		
+		@media screen and (max-width: 560px) {
+			   .planche p{ font-size:.63em !important; height:auto !important;}
+               .arabe p{ font-size:.6em !important;	height:auto !important;}
+			   .basmala{font-size:.48em !important;}
+			   
+	    }
 	</style>
 </head>
 <body style="background:#bbb;">
@@ -72,62 +82,75 @@
 	<div id="contenu">
 		<div class="colone-laterale" id="sidbarG" style="padding-top:0; padding-bottom:0;">
 		    <h2 class="grosTitre"><span class="box-shadow-titre" > Surah JONAS </span></h2>
-			<div class="planche francaise"  >       
-                <span class="onglet1-sujet" style="padding-bottom:3em; ">
+			<div class="planche" style="padding:1.5em 1em 2.5em 1em; font-family: Amiri  !important;    height:auto;" >       
+                <!--  <div class="onglet1-sujet" style="padding-bottom:3em; "> -->
 				   <span class="basmala"  >Au nom d’Allah, le Tout Miséricordieux, le Très Miséricordieux</span>
-					<p><br>
-						Alif, Lām, 
-						Rā<sup class="popup" onclick="commentaire2()">
-				            2<span class="popuptext" id="myPopup2">[ Verset1/Page208 ]</span>    
-					    </sup>
-						 . Voici les versets du Livre plein de sagesse. (1) 
-					</p>
-					<p style="padding:3em .5em;">
-						Est-il étonnant pour les gens, que Nous ayons révélé à un homme d’entre eux: «Avertis les gens, et annonce la bonne nouvelle aux croyants qu’ils ont auprès de leur Seigneur une présence méritée [pour leur loyauté antérieure]? Les mécréants dirent alors: «Celui-ci est certainement un magicien évident»(2). 
-					</p>
-					<p style="padding:3.7em .5em;">
-						Votre Seigneur est, Allah qui créa les cieux et la terre en six jours, puis S’est établi 
-						«Istawā»Rā<sup class="popup" onclick="commentaire3()">
-				            3<span class="popuptext" id="myPopup3">[ Verset3/Page208 ]</span>    
-					    </sup> 
-						sur le Trône, administrant toute chose. Il n’y a d’intercesseur qu’avec Sa permission. Tel est Allah votre Seigneur.
-						Adorez-Le donc. Ne réfléchissez-vous pas? (3)
-					</p>
-                
-                    <p style="padding:1.5em .5em;">
-					   C’est vers Lui que vous retournerez tous, c’est là, la promesse d’Allah en toute vérité! C’est Lui qui fait la création une première fois puis la refait (en la ressuscitant) afin de rétribuer en toute équité ceux qui ont cru et fait de bonnes œuvres. Quant à ceux qui n’ont pas cru, ils auront un breuvage d’eau bouillante et un châtiment douloureux à cause de leur mécréance! (4)
-					</p>
-                    <p style="padding:1.8em .5em;"> 					
-					   C’est Lui qui a fait du soleil une clarté et de la lune une lumière, et Il en a déterminé les phases afin que vous sachiez le nombre des années et le calcul (du temps). Allah n’a créé cela qu’en toute vérité. Il expose les signes pour les gens doués de savoir. (5)
-					</p>
-					<p style="padding:0.8em .5em;">
-					   Dans l’alternance de la nuit et du jour, et aussi dans tout ce qu’Allah a créé dans les cieux et la terre, il y a des signes, certes, pour des gens qui craignent (Allah). (6)
-					</p> 					
-				</span>					
+					<div class="pageGauche">
+						<p><br>
+							Alif, Lām, 
+							Rā<sup class="popup" onclick="commentaire2()">
+								2<span class="popuptext" id="myPopup2">[ Verset1/Page208 ]</span>    
+							</sup>
+							 . Voici les versets du Livre plein de sagesse. (1) 
+						</p>
+						<p style="padding:.2em .5em; height:10em;">
+							Est-il étonnant pour les gens, que Nous ayons révélé à un homme d’entre eux: «Avertis les gens, et annonce la bonne nouvelle aux croyants qu’ils ont auprès de leur Seigneur une présence méritée [pour leur loyauté antérieure]? Les mécréants dirent alors: «Celui-ci est certainement un magicien évident»(2). 
+						</p>
+						<p style="padding:3.7em .5em;">
+							Votre Seigneur est, Allah qui créa les cieux et la terre en six jours, puis S’est établi 
+							«Istawā»Rā<sup class="popup" onclick="commentaire3()">
+								3<span class="popuptext" id="myPopup3">[ Verset3/Page208 ]</span>    
+							</sup> 
+							sur le Trône, administrant toute chose. Il n’y a d’intercesseur qu’avec Sa permission. Tel est Allah votre Seigneur.
+							Adorez-Le donc. Ne réfléchissez-vous pas? (3)
+						</p>
+					
+						<p style="padding:1.5em .5em;">
+						   C’est vers Lui que vous retournerez tous, c’est là, la promesse d’Allah en toute vérité! C’est Lui qui fait la création une première fois puis la refait (en la ressuscitant) afin de rétribuer en toute équité ceux qui ont cru et fait de bonnes œuvres. Quant à ceux qui n’ont pas cru, ils auront un breuvage d’eau bouillante et un châtiment douloureux à cause de leur mécréance! (4)
+						</p>
+						<p style=" height:12em;"> 					
+						   C’est Lui qui a fait du soleil une clarté et de la lune une lumière, et Il en a déterminé les phases afin que vous sachiez le nombre des années et le calcul (du temps). Allah n’a créé cela qu’en toute vérité. Il expose les signes pour les gens doués de savoir. (5)
+						</p>
+						<p style=" height:8.5em;">
+						   Dans l’alternance de la nuit et du jour, et aussi dans tout ce qu’Allah a créé dans les cieux et la terre, il y a des signes, certes, pour des gens qui craignent (Allah). (6)
+						</p>
+						<p class="numPage">
+						 208
+						</p>
+                    </div><!-- page1 -->						
+				<!-- </div> -->					
 			</div>
 		</div>
 		
 		<div class="colone-contenu" id="contenu_" style="padding-top:0; padding-bottom:0;">
 		    <h2 class="grosTitre"><span class="box-shadow-titre" > سسُوۡرَةُ یُونس </span></h2>
-			<div class="planche arabe" lang="ar" dir="rtl" style="padding:0 1em 2.5em 1em; font-family: Amiri  !important; font-weight:bold; font-size:1.2em; line-height:3.19; height:auto; " >               
-				<span class="basmala-contenu">بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</span>
-				<p >
-				    الٓر‌ۚ تِلۡكَ ءَايَـٰتُ ٱلۡكِتَـٰبِ ٱلۡحَكِيمِ (﻿١﻿) 
-				</p>
-				<p>
-					أَكَانَ لِلنَّاسِ عَجَبًا أَنۡ أَوۡحَيۡنَآ إِلَىٰ رَجُلٍ۬ مِّنۡہُمۡ أَنۡ أَنذِرِ ٱلنَّاسَ وَبَشِّرِ ٱلَّذِينَ ءَامَنُوٓاْ أَنَّ لَهُمۡ قَدَمَ صِدۡقٍ عِندَ رَبِّہِمۡ‌ۗ قَالَ ٱلۡڪَـٰفِرُونَ إِنَّ هَـٰذَا لَسَـٰحِرٌ۬ مُّبِينٌ (﻿٢﻿)
-				</p>
-				<p>			
-				   إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٲتِ وَٱلۡأَرۡضَ فِى سِتَّةِ أَيَّامٍ۬ ثُمَّ ٱسۡتَوَىٰ عَلَى ٱلۡعَرۡشِ‌ۖ يُدَبِّرُ ٱلۡأَمۡرَ‌ۖ مَا مِن شَفِيعٍ إِلَّا مِنۢ بَعۡدِ إِذۡنِهِۦ‌ۚ ذَٲلِڪُمُ ٱللَّهُ رَبُّڪُمۡ فَٱعۡبُدُوهُ‌ۚ أَفَلَا تَذَكَّرُونَ (﻿٣﻿)
-				</p>
+			<div class="planche" lang="ar" dir="rtl" style="padding:0 1em 2.5em 1em; font-family: Amiri  !important; font-weight:bold; font-size:1.2em; line-height:3.19; height:auto; " >               
 				
-                <p>
-				   إِلَيۡهِ مَرۡجِعُكُمۡ جَمِيعً۬ا‌ۖ وَعۡدَ ٱللَّهِ حَقًّا‌ۚ إِنَّهُ ۥ يَبۡدَؤُاْ ٱلۡخَلۡقَ ثُمَّ يُعِيدُهُ ۥ لِيَجۡزِىَ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَـٰتِ بِٱلۡقِسۡطِ‌ۚ وَٱلَّذِينَ ڪَفَرُواْ لَهُمۡ شَرَابٌ۬ مِّنۡ حَمِيمٍ۬ وَعَذَابٌ أَلِيمُۢ بِمَا كَانُواْ يَكۡفُرُونَ (﻿٤﻿)
-				<p> 
-				  هُوَ ٱلَّذِى جَعَلَ ٱلشَّمۡسَ ضِيَآءً۬ وَٱلۡقَمَرَ نُورً۬ا وَقَدَّرَهُ ۥ مَنَازِلَ لِتَعۡلَمُواْ عَدَدَ ٱلسِّنِينَ وَٱلۡحِسَابَ‌ۚ مَا خَلَقَ ٱللَّهُ ذَٲلِكَ إِلَّا بِٱلۡحَقِّ‌ۚ يُفَصِّلُ ٱلۡأَيَـٰتِ لِقَوۡمٍ۬ يَعۡلَمُونَ (﻿٥﻿) 
-				</p> 
-				  إِنَّ فِى ٱخۡتِلَـٰفِ ٱلَّيۡلِ وَٱلنَّہَارِ وَمَا خَلَقَ ٱللَّهُ فِى ٱلسَّمَـٰوَٲتِ وَٱلۡأَرۡضِ لَأَيَـٰتٍ۬ لِّقَوۡمٍ۬ يَتَّقُونَ (﻿٦﻿) 
-				</p>
+				<span class="basmala-contenu">بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</span>
+				<div class="pageDroite">
+					<p >
+						الٓر‌ۚ تِلۡكَ ءَايَـٰتُ ٱلۡكِتَـٰبِ ٱلۡحَكِيمِ (﻿١﻿) 
+					</p>
+					<p style="height:10.5em;">
+						أَكَانَ لِلنَّاسِ عَجَبًا أَنۡ أَوۡحَيۡنَآ إِلَىٰ رَجُلٍ۬ مِّنۡہُمۡ أَنۡ أَنذِرِ ٱلنَّاسَ وَبَشِّرِ ٱلَّذِينَ ءَامَنُوٓاْ أَنَّ لَهُمۡ قَدَمَ صِدۡقٍ عِندَ رَبِّہِمۡ‌ۗ قَالَ ٱلۡڪَـٰفِرُونَ إِنَّ هَـٰذَا لَسَـٰحِرٌ۬ مُّبِينٌ (﻿٢﻿)
+					</p>
+					<p>			
+					   إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٲتِ وَٱلۡأَرۡضَ فِى سِتَّةِ أَيَّامٍ۬ ثُمَّ ٱسۡتَوَىٰ عَلَى ٱلۡعَرۡشِ‌ۖ يُدَبِّرُ ٱلۡأَمۡرَ‌ۖ مَا مِن شَفِيعٍ إِلَّا مِنۢ بَعۡدِ إِذۡنِهِۦ‌ۚ ذَٲلِڪُمُ ٱللَّهُ رَبُّڪُمۡ فَٱعۡبُدُوهُ‌ۚ أَفَلَا تَذَكَّرُونَ (﻿٣﻿)
+					</p>
+					
+					<p>
+					   إِلَيۡهِ مَرۡجِعُكُمۡ جَمِيعً۬ا‌ۖ وَعۡدَ ٱللَّهِ حَقًّا‌ۚ إِنَّهُ ۥ يَبۡدَؤُاْ ٱلۡخَلۡقَ ثُمَّ يُعِيدُهُ ۥ لِيَجۡزِىَ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَـٰتِ بِٱلۡقِسۡطِ‌ۚ وَٱلَّذِينَ ڪَفَرُواْ لَهُمۡ شَرَابٌ۬ مِّنۡ حَمِيمٍ۬ وَعَذَابٌ أَلِيمُۢ بِمَا كَانُواْ يَكۡفُرُونَ (﻿٤﻿)
+					</p> 
+					<p style="height:10em;">
+					  هُوَ ٱلَّذِى جَعَلَ ٱلشَّمۡسَ ضِيَآءً۬ وَٱلۡقَمَرَ نُورً۬ا وَقَدَّرَهُ ۥ مَنَازِلَ لِتَعۡلَمُواْ عَدَدَ ٱلسِّنِينَ وَٱلۡحِسَابَ‌ۚ مَا خَلَقَ ٱللَّهُ ذَٲلِكَ إِلَّا بِٱلۡحَقِّ‌ۚ يُفَصِّلُ ٱلۡأَيَـٰتِ لِقَوۡمٍ۬ يَعۡلَمُونَ (﻿٥﻿) 
+					</p>
+					<p style="height:7.2em;">				
+					  إِنَّ فِى ٱخۡتِلَـٰفِ ٱلَّيۡلِ وَٱلنَّہَارِ وَمَا خَلَقَ ٱللَّهُ فِى ٱلسَّمَـٰوَٲتِ وَٱلۡأَرۡضِ لَأَيَـٰتٍ۬ لِّقَوۡمٍ۬ يَتَّقُونَ (﻿٦﻿) 
+					</p>
+					<p class="numPageArabe">
+						٢٠٨
+					</p>
+				</div> <!-- page1 -->
                			
 			</div>	
 								
