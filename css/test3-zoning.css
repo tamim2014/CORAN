@@ -67,10 +67,11 @@
 		   font-size:0.79em; 
 		   font-family:Liberation Sans Narrow;
 		}
-		.basmala-contenu{
+		span.basmala-contenu{
 			color:green; 
 			padding-right:30%;
 		}
+		p.basmala-contenu{ color:green; text-align:center; }
 		/* les classes: .boiteGris et .plancheCadre vont ensemble pour encadrer une planche ( voir commit.html) */ 
 	   .paragraphe, .boiteGris{
 			border:1px solid #8c8b8b; 
