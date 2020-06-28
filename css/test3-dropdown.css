@@ -11,7 +11,8 @@
 	
 		}
 		.dropdown-btn{
-			padding: 14px 65px; /* IMPORTANT: IMPACT POUR LA STRUCTURE GENERALE*/
+			/*  padding: 14px 65px;  IMPORTANT: IMPACT POUR LA STRUCTURE GENERALE*/
+			padding: 14px 95.75px; /* IMPORTANT: IMPACT POUR LA STRUCTURE GENERALE*/
 			border:none;
 			outline:none;
 			margin:0;
