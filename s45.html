@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="css/sticky.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bouton-bash.css">
+	<link rel="stylesheet" href="css/boutonSuivantPrecedent.css">
+	<link rel="stylesheet" href="css/numerotation.css">
 	<link rel="stylesheet" href="css/commentaires.css">
 	<link rel="stylesheet" href="css/top.css"  media="screen">
 	<style>
@@ -37,7 +39,7 @@
         .grosTitre{ margin-top:0;}
 		.planche {margin-bottom:0 ;}		
 
-    /* ############################### style S10 ##################################### */
+
 	/* Remonter le contenu de la traduction française */		  
 		.basmala{ margin-top:1em; }
 	/* background des colones contenu */
@@ -50,103 +52,12 @@
 		.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
 		.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
 	
-		.numPage{
-		  font:italic .8em calibri light !important;   
-		  text-align:center; 	  
-		}
 
-
-		.numPageArabe{
-		  font:normal .5em calibri light !important;  
-		  text-align:center ; 
-		}
-
-		.hizb{
-		  border: thick double gray;
-		  border-radius:50px; 
-	
-		  padding:.8em .4em .4em 1em;
-		  width:3.9em;
-		  height:4.4em;
-		  line-height:.8;
-		  font-size:.5em;
-          text-align:center;		  
-		  display:inline-block; 
-		  position:relative; 
-		  float:right; 
-		  margin-right:-5em;
-		  background:white;
-		  box-shadow:
-		  0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
-          0px 2px 2px 0px rgba(255, 255, 255, 0.5) ;
-		  
-		   border-top-image: url('img/test.png') !important;
-		}
-		.quart{
-		   padding-right:.7em !important; 
-		   padding-top:0 !important;
-		}
-		.nisf{
-		  padding-right:.7em !important; 
-		  padding-top:.3em !important;
-		}
-		.sajadat1, .sajadat2{
-		   padding:0; box-shadow:none; border-bottom:none; outline:none; margin-top:-3em; width:2em; float:left; margin-left:-.5em; border-radius:100% 50000% 0% 0%;   filter:opacity( 20%);
-		}
-		.sajadat2{
-		    border-top:none;  margin-top:1.2em;    border-radius:0% 0% 50000% 100% ;  
-		}
-		hr.juz9a:after, hr.juz9f:after, hr.juz26a:after, hr.juz26f:after {
-		   content:"الجزء  ٩"!important; 
-		   color: black; 
-		   font-size:.7em; 
-		   font-style:normal; 
-		   font-family:Amiri; 
-		   line-height:1.5;
-		   
-		   letter-spacing:-.1em;
-		   font-stretch:ultra-condensed; 
-		   vertical-align: top;
-		   
-		}
-		hr.juz9f:after{ 
-		   content:"\000020 \000020 Juz-09 "!important;
-		   font-stretch:expanded; 
-           letter-spacing:-.1em;       
-		   white-space: pre;            		   
-		}
-		hr.juz26a:after{ content:"الجزء ٢٦"!important; }
-		hr.juz26f:after{ content:" \000020 \000020 Juz-26"!important; }
 		
 		.A-retenir{color: #2bad5d; }
 		.grandCommentaire{line-height:1.4; font-size:.9em;}
 		.titleComment{font-size:.5em; font-weight:normal;}
 		
-		/*************** Bouton suivant précedent ****************/
-		a#precedent, a#suivant {
-		  text-decoration: none;
-		  display: inline-block;
-		  font-family:calibri light;
-		  padding: 2px 16px ;
-		}
-
-
-		a#precedent:hover, a#suivant:hover {
-		  background-color: #ddd;
-		  color: black;
-		}
-		
-		.previous {
-		  background-color: #f1f1f1;
-		  color: black;
-		}
-
-		.next {
-		  background-color: #4CAF50;
-		  color: white;
-		}
-	
-
 			
 		@media screen and (max-width: 560px) {
 			   .planche p{ font-size:.63em !important; height:auto !important;}
@@ -271,10 +182,12 @@
 						  8<span class="popuptext" id="myPopup8"><i>Hã Mïm:</i> voir la note à S2/V1</span>    
 						</sup>. (1) La révélation du Livre émane d’Allah, le Puissant, le Sage. (2) Nous n’avons créé les cieux et la terre et ce qui est entre eux qu’en toute vérité et [pour] un terme fixé. Ceux qui ont mécru se détournent de ce dont ils ont été avertis. (3) Dis: «Que pensez-vous de ceux que vous invoquez en dehors d’Allah? Montrez-moi donc ce qu’ils ont créé de la terre! Ou ont-ils dans les cieux une participation avec Dieu? Apportez-moi un Livre antérieur à celui-ci (le Coran) ou même un vestige d’une science, si vous êtes véridiques». (4) Et qui est plus égaré que celui qui invoque en dehors d’Allah, et que la vie ne saura lui répondre jusqu’au Jour de la Résurrection? Et elles [leurs divinités] sont indifférentes à leur invocation. (5) 
 					<p>
-					<p class="numPage"  >
+					<p class="numPage" >
 					  502
 				    </p>
-					<a href="#" id="precedent" class="previous" >&laquo; Previous</a>
+					
+					
+					
 				</div><!-- page4 -->
 				
 			</div>
@@ -327,10 +240,11 @@
 					<p style="padding-top:0;">
 					  حمٓ (﻿١﻿) تَنزِيلُ ٱلۡكِتَـٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡحَكِيمِ (﻿٢﻿) مَا خَلَقۡنَا ٱلسَّمَـٰوَٲتِ وَٱلۡأَرۡضَ وَمَا بَيۡنَهُمَآ إِلَّا بِٱلۡحَقِّ وَأَجَلٍ۬ مُّسَمًّ۬ى‌ۚ وَٱلَّذِينَ كَفَرُواْ عَمَّآ أُنذِرُواْ مُعۡرِضُونَ (﻿٣﻿) قُلۡ أَرَءَيۡتُم مَّا تَدۡعُونَ مِن دُونِ ٱللَّهِ أَرُونِى مَاذَا خَلَقُواْ مِنَ ٱلۡأَرۡضِ أَمۡ لَهُمۡ شِرۡكٌ۬ فِى ٱلسَّمَـٰوَٲتِ‌ۖ ٱئۡتُونِى بِكِتَـٰبٍ۬ مِّن قَبۡلِ هَـٰذَآ أَوۡ أَثَـٰرَةٍ۬ مِّنۡ عِلۡمٍ إِن ڪُنتُمۡ صَـٰدِقِينَ (﻿٤﻿) وَمَنۡ أَضَلُّ مِمَّن يَدۡعُواْ مِن دُونِ ٱللَّهِ مَن لَّا يَسۡتَجِيبُ لَهُ ۥۤ إِلَىٰ يَوۡمِ ٱلۡقِيَـٰمَةِ وَهُمۡ عَن دُعَآٮِٕهِمۡ غَـٰفِلُونَ (﻿٥﻿)
 					</p>
-					<p class="numPageArabe"  >				
+					<p class="numPageArabe" style="margin-bottom:0;"   >				
 						٥٠٢
-					</p>
-					<a href="s46.html" id="suivant" class="next" style=" line-height:1.9; height:1.9em; ">&laquo; Next </a>
+					</p>					
+					<a href="s46.html" id="suivant" class="next" style=" line-height:1.9; height:1.9em;" >&laquo; Next </a>
+					<a href="#" id="precedent" class="previous" style=" line-height:1.9; height:1.9em;"  >Previous &raquo; </a>
 				</div><!-- page4 -->
 								
 			</div>
