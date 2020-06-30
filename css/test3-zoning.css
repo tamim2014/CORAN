@@ -133,7 +133,7 @@
 		/* Ajuster la hauteur du s?parateur */
 		
 		.grosTitre, .grosTitreMediane, .grosTitreMedianeArabe{ margin-top:0;}
-		.planche {margin-bottom:0 ; } 
+		.planche { margin-bottom:0 ; } 
 	
 		
 		/* pour les titre de page dans la colonne centrale */
@@ -222,5 +222,25 @@
 		   .colone-laterale{width:100% !important;  }
 		   .colone-contenu{width: 100% !important; }
 		}
+		
+		
+	    .titre-video{ padding:0 3em; }
+        sup{padding:0 -1em;}
 
+	/********** background des colones contenu **********************/
+      	.planche{  	background:white; /*  background-image: url("img/s8/background8.png") ;  */		 }
+		.planche p{		   		  
+		   margin:0 ; 
+		   padding:.5em;
+		   font-size:1.2em;		   
+		}
+		
+	/************* S?parateur ( ligne verticale du milieu) **********/
+		.colone-laterale{border-right:1px solid #aaa; }
+		
+	/********** Ajuster la hauteur du s?parateur ********************/
+        .grosTitre{ margin-top:0;}
+		.planche {margin-bottom:0 ;}
+    /********* Remonter le contenu de la traduction fran?aise ********/		  
+		.basmala{ margin-top:1em; }		
 		

@@ -45,7 +45,10 @@
 		.sajadat2{
 		    border-top:none;  margin-top:1.2em;    border-radius:0% 0% 50000% 100% ;  
 		}
-		hr.juz9a:after, hr.juz9f:after, hr.juz26a:after, hr.juz26f:after {
+		hr.juz9a:after, hr.juz9f:after, hr.juz26a:after, hr.juz26f:after, 
+		hr.s112a:after, hr.s112f:after, hr.s113a:after, hr.s113f:after, hr.s114a:after, hr.s114f:after,
+		hr.v112a:after, hr.v112f:after, hr.v113a:after, hr.v113f:after, hr.v114a:after, hr.v114f:after
+		{
 		   content:"الجزء  ٩"!important; 
 		   color: black; 
 		   font-size:.7em; 
@@ -54,8 +57,15 @@
 		   line-height:1.5;
 		   
 		   letter-spacing:-.1em;
-		   font-stretch:ultra-condensed; 
+		   font-stretch:ultra-condensed ; 
 		   vertical-align: top;
+		   
+		   /* juste un test pour style les numero des juz horizontales */
+		   border:1px solid gray;
+		   border-radius:99px;
+		   box-shadow:0px 8px 6px -2px gray;
+		   margin-right:-0.5em;
+		   padding-bottom:-2em !important;
 		   
 		}
 		hr.juz9f:after{ 
@@ -66,3 +76,19 @@
 		}
 		hr.juz26a:after{ content:"الجزء ٢٦"!important; }
 		hr.juz26f:after{ content:" \000020 \000020 Juz-26"!important; }
+		
+		hr.s112a:after{ content:"ترتيبها١١٢"!important; font-weight:normal;   }
+		hr.s113a:after{ content:"ترتيبها١١٣"!important; font-weight:normal;   }
+		hr.s114a:after{ content:"ترتيبها١١٤"!important; font-weight:normal;   }
+		
+		hr.s112f:after{ content:" \000020 \000020 S-112."!important; }
+		hr.s113f:after{ content:" \000020 \000020 S-113."!important; }
+		hr.s114f:after{ content:" \000020 \000020 S-114."!important; }
+		
+		hr.v112a:after{ content:"آياتها ٤"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
+		hr.v113a:after{ content:"آياتها ٥"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
+		hr.v114a:after{ content:"آياتها ٦"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
+		
+		hr.v112f:after{ content:"4 Vrset"!important; }
+		hr.v113f:after{ content:"5 Vrset"!important; }
+		hr.v114f:after{ content:"6 Vrset"!important; }

@@ -18,20 +18,20 @@
 		ol{
 			line-height: 2em;
 		}
-		.onglet1-sujet { 
-		
-		  float: left; 
-		  width:100%;
-		  min-height:18em;	 
-		  padding:60px 20px 0 20px;
-		  margin:0;
-		  background:white;  
-		  box-shadow:
-			0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
-			0px 2px 2px 0px rgba(255, 255, 255, 0.5);
-		  border:1px solid #8c8b8b;
-		  border-radius: 0px; 
-          line-height:1.5;		  
+		.onglet1-sujet { 		
+			  float: left; 
+			  width:100%;
+			  min-height:18em;	 
+			  padding:60px 20px 0 20px;
+			  margin:0;
+			  background:white;  
+			  box-shadow:
+				0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+				0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+			  border:1px solid #8c8b8b;
+			  border-radius: 0px; 
+			  line-height:1.5;
+              min-height:18em;			  
 		}
 		.header-image{
 		   height:200px;
@@ -208,5 +208,11 @@
 	@media screen and (max-width: 963px) and (min-width: 830px) {
 			   .titre-video{ padding:0 0 0 2.5em  !important;}	       
 	}
+	
+	
+	.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
+	.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
+			
+	.A-retenir{color: #2bad5d; }
 
 	
