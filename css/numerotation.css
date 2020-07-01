@@ -59,8 +59,8 @@
 		}
 		hr.juz9a:after, hr.juz9f:after, hr.juz26a:after, hr.juz26f:after, hr.juz30a:after, hr.juz30f:after, 
 		hr.hizb60a:after, hr.hizb60f:after,
-		hr.s107a:after, hr.s107f:after, hr.s108a:after, hr.s108f:after, hr.s110a:after, hr.s110f:after, hr.s111a:after, hr.s111f:after, hr.s112a:after, hr.s112f:after, hr.s113a:after, hr.s113f:after, hr.s114a:after, hr.s114f:after,
-		hr.v107a:after, hr.v107f:after, hr.v108a:after, hr.v108f:after, hr.v110a:after, hr.v110f:after, hr.v111a:after, hr.v111f:after, hr.v112a:after, hr.v112f:after, hr.v113a:after, hr.v113f:after, hr.v114a:after, hr.v114f:after
+		hr.s104a:after, hr.s104f:after, hr.s105a:after, hr.s105f:after, hr.s107a:after, hr.s107f:after, hr.s108a:after, hr.s108f:after, hr.s110a:after, hr.s110f:after, hr.s111a:after, hr.s111f:after, hr.s112a:after, hr.s112f:after, hr.s113a:after, hr.s113f:after, hr.s114a:after, hr.s114f:after,
+		hr.v104a:after, hr.v104f:after, hr.v105a:after, hr.v105f:after, hr.v107a:after, hr.v107f:after, hr.v108a:after, hr.v108f:after, hr.v110a:after, hr.v110f:after, hr.v111a:after, hr.v111f:after, hr.v112a:after, hr.v112f:after, hr.v113a:after, hr.v113f:after, hr.v114a:after, hr.v114f:after
 		{
 		   content:"الجزء  ٩"!important; 
 		   color: black; 
@@ -95,6 +95,8 @@
 		hr.hizb60a:after{ content:"الحزب٦٠"!important; font-size:.6em; border:none; }
 		hr.hizb60f:after{ content:" \000020 \000020 Hizb-60"!important; font-size:.6em;  border:none; }
 		
+		hr.s104a:after{ content:"ترتيبها١٠٤"!important; font-weight:normal;   }
+		hr.s105a:after{ content:"ترتيبه١٠٥"!important; font-weight:normal;   }
 		hr.s107a:after{ content:"ترتيبها١٠٧"!important; font-weight:normal;   }
 		hr.s108a:after{ content:"ترتيبها١٠٨"!important; font-weight:normal;   }
 		hr.s110a:after{ content:"ترتيبها١١٠"!important; font-weight:normal;   }
@@ -103,6 +105,8 @@
 		hr.s113a:after{ content:"ترتيبها١١٣"!important; font-weight:normal;   }
 		hr.s114a:after{ content:"ترتيبها١١٤"!important; font-weight:normal;   }
 		
+		hr.s104f:after{ content:" \000020 \000020 S-104."!important; }
+		hr.s105f:after{ content:" \000020 \000020 S-105."!important; }
 		hr.s107f:after{ content:" \000020 \000020 S-107."!important; }
 		hr.s108f:after{ content:" \000020 \000020 S-108."!important; }
 		hr.s110f:after{ content:" \000020 \000020 S-110."!important; }
@@ -111,7 +115,8 @@
 		hr.s113f:after{ content:" \000020 \000020 S-113."!important; }
 		hr.s114f:after{ content:" \000020 \000020 S-114."!important; }
 		
-		
+		hr.v104a:after{ content:"آياتها ٩"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
+		hr.v105a:after{ content:"آياتها ٥"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
 		hr.v107a:after{ content:"آياتها ٧"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
 		hr.v108a:after{ content:"آياتها ٣"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
 		hr.v110a:after{ content:"آياتها ٣"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
@@ -120,6 +125,8 @@
 		hr.v113a:after{ content:"آياتها ٥"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
 		hr.v114a:after{ content:"آياتها ٦"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
 		
+		hr.v104f:after{ content:"9 Vrset"!important; }
+		hr.v105f:after{ content:"5 Vrset"!important; }
 		hr.v107f:after{ content:"7 Vrset"!important; }
 		hr.v108f:after{ content:"3 Vrset"!important; }
 		hr.v110f:after{ content:"3 Vrset"!important; }
