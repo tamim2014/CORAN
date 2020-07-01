@@ -247,5 +247,10 @@
 
 
 		.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
-		.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}		
+		.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
+
+		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
+		.planche{ font-weight:bold; font-family: Amiri  !important; height:auto; }
+		.plancheFrance{ padding:1.2em;    line-height:1.8;}
+		.plancheArabe{ padding:1em 1em .7em 1em;  font-size:1.2em; line-height:3.19;}		
 		
