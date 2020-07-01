@@ -243,5 +243,9 @@
         .grosTitre{ margin-top:0;}
 		.planche {margin-bottom:0 ;}
     /********* Remonter le contenu de la traduction fran?aise ********/		  
-		.basmala{ margin-top:1em; }		
+		.basmala{ margin-top:1em; }	
+
+
+		.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
+		.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}		
 		
