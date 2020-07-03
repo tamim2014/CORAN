@@ -25,7 +25,8 @@
 		.dropdown-content {
 			position: absolute;
 			min-width:226px;
-			height:26.5em;  
+			height:auto;  
+			max-height:26.5em;  
 			line-height:0.5;
 
 			background:#ccf;
