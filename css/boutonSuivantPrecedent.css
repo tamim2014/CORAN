@@ -2,7 +2,8 @@
 		a#precedent, a#suivant {
 		  text-decoration: none;
 		  display: inline-block;
-		  font-family:calibri light;
+		  font-family:calibri light !important;
+		  font-weight:normal;
 		  padding: 2px 16px ;
 		  
 		  margin-top:.7em;	
