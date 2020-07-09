@@ -179,9 +179,12 @@
 		hr.v113a:after{ content:"آياتها ٥"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
 		hr.v114a:after{ content:"آياتها ٦"!important; font-weight:normal; padding-left:.2em; padding-right:.7em;  }
 		
-		hr.v87f:after{ content:"46Vrset"!important; }
+		hr.v79f:after{ content:"46Vrset"!important; }
+		hr.v83f:after{ content:"36Vrset"!important; }
+		hr.v84f:after{ content:"25Vrset"!important; }
+		hr.v87f:after{ content:"19Vrset"!important; }
 		hr.v88f:after{ content:"26Vrset"!important; }
-		hr.v90f:after{ content:"25Vrset"!important; }
+		hr.v90f:after{ content:"20Vrset"!important; }
 		hr.v92f:after{ content:"21Vrset"!important; }
 		hr.v93f:after{ content:"11Vrset"!important; }
 		hr.v94f:after{ content:"8 Vrset"!important; }
