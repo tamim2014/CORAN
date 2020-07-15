@@ -149,6 +149,16 @@
 		letter-spacing:-.2em; /* 1em; centrer l'étoile */
 		color: #aaa; 
 	}
+	
+	/* HR spécifique à S8/Juz 10 */
+	
+     hr.hrS8 { background:#fff url(../img/hr_s8.png)  scroll left ; }
+	    
+		
+	 hr.hrS8:after {
+	   letter-spacing:0em !important; /* taille du cercle */
+	   margin-right:0em !important;
+	  }
 
 
     /* Les video du bas de page */
