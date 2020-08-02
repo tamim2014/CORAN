@@ -57,3 +57,16 @@
          */
          .dropdown-content{ display:none; }
          .dropdown:hover .dropdown-content{ display:block; }
+		 
+		/************ Reduire la police des items top menu*****************/
+        /* Item Sourate( 2ème item) */
+		#menu  div.dropdown:nth-child(2) .dropdown-content a { font-size:.95em;  }
+		#menu  div.dropdown:nth-child(2) .dropdown-btn { padding: 14px 85.4px;   }
+		/* Item Juzz( 3ème item) */
+		#menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 85.97px !important;  }
+		#menu  div.dropdown:nth-child(3) .dropdown-content a { font-size:.95em;  }
+		/* Item Sadjada( 4ème item) */
+		#menu  div.dropdown:nth-child(4) .dropdown-content a { font-size:.95em;  }
+		#menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 83.60px !important;  }
+		 
+	 
