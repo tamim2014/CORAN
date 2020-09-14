@@ -15,7 +15,58 @@
 	<link rel="stylesheet" href="css/commentaires.css">
 	<link rel="stylesheet" href="css/top.css"  media="screen">
 	<style>	
-     	
+
+		.dropdown-content{
+			position: absolute;
+			min-width:226px;
+			height:auto;  
+			max-height:26.5em;  
+			line-height:0.5;
+
+			background:#ccf;
+			box-shadow: 0px 1px 2px 0px #ccf;
+			
+			 
+			border-top:2px solid #bbb;
+			overflow-y: scroll;
+			overflow-x: hidden;			
+		}
+		
+		/* #########################################  */
+		.dropdown-content-big {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  width: 100%;
+		  left: 0;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		.dropdown-content .header {
+		  background: #ccf;
+		  padding: 16px;
+		  color: white;
+		}
+		/* Three equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 33.33%;
+		  padding: 10px;
+		  background-color: #ccc;
+		  height: auto;
+		}
+		.row{
+		   background-color: #ccc;
+		}
+		
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+				
 		@media screen and (max-width: 560px) {
 			.planche p{ font-size:.63em !important; height:auto !important;}
             .arabe p{ font-size:.6em !important;	height:auto !important;}
@@ -52,96 +103,98 @@
 		<a href="index.html" class="accueil-lien">Accueil</a>		
 		<div class="dropdown">
 			<button class="dropdown-btn">Les sourates</button>
-			<div class="dropdown-content" >
-			    <a href="index.html">01. Al-Fatiha -  الفَاتِحَة</a>
-				<a href="s7.html" >07. La Genèse -  الاٴعرَاف</a>
-			    <a href="s8.html" >08. Le Butin - الاٴنفَال</a>
-				<a href="s9.html"  style="color:#4d94ff" >09. Le Désaveu<sup>1/3</sup> -  التّوبَة </a>
-			    <a href="s10.html">10. Jonas -  یُونس</a>
-				<a href="s11.html">11. Hud - هُود</a>
-				<a href="s12.html">12. Joseph -  یُوسُف</a>
-				<a href="s13.html">13. Le Tonnerre -  الرّعد</a>
-				<a href="s14.html">14. Abraham - إبراهیم</a>
-				<a href="s15.html">15. Al-Hijr - الحِجر</a>
-				<a href="s17.html">17. Isrã - بنیٓ اسرآئیل</a>
-				<a href="s18.html#s18">18. La Caverne -  الکهف</a>
-				<a href="s20.html" >20. <i>TA-HA</i> -   طٰه</a>
-				<a href="s21.html" >21. Les Prophètes -  الاٴنبیَاء</a>	
-				<a href="s22.html" >22. Le Pélerinage -   الحَجّ</a>	
-                <a href="s23.html" >23. Les Croyants -   المؤمنون</a>					
-				<a href="s24.html" >24. La lumière -   النُّور</a>	
-                <a href="s25.html" >25. Le Discernement -  الفُرقان</a>					
-				<a href="s26.html" style="color:#4d94ff">26. Les poètes<sup>2/3</sup> -  الشُّعَرَاء</a>
-                <a href="s27.html">27. Les Fourmis - النَّمل</a>                                              
-				<a href="s27.html#s28page385">28. Le Récit -  القَصَص</a>
-				<a href="s30.html">30. Les romains -   الرُّوم</a><a href="s31.html">31. Luqman - لقمَان</a><a href="s32.html">32. La Prosternation -  السَّجدَة</a><a href="s36.html">36. Yã'Sin -  یسٓ</a><a href="s39.html#s39page458" style="color:#00b36b">39. Les groupes -   الزُّمَر</a>
-				<a href="s40.html">40. Le Pardonneur -  غَافر</a><a href="s41.html">41. Les versets détaillés - فُصّلَت</a><a href="s42.html">42. La consultation -  الشّوریٰ</a> <a href="s42.html#s42page489">43. L'ornement  -   الزّخرُف</a>  
-                <a href="s44.html" style="color:#00b36b">44. La Fumée - الدّخان</a>
-				<a href="s45.html">45. L'Agenouillé - الجَاثیَة</a>
-				<a href="s45.html#AHQAF">46. Les Dunes - الاٴحقاف</a>    
-                <a href="s50.html" style="color:#00b36b">50.  Qaf -   قٓ</a> 
-				<a href="s50.html#s51" >51. Qui éparpillent -    الذّاریَات</a><a href="s55.html">55. Ar'Rahmãn - الرَّحمٰن</a><a href="s56.html">56. L`Événement - الواقِعَة</a>
-				<a href="s60.html">60. L'eprouvée -  المُمتَحنَة</a><a href="s61.html">61. Le Rang -  الصَّف</a><a href="s62.html">62. Le Vendredi -   الجُمُعَة</a>  				
-				<a href="s67.html"  style="color:#00b36b">67. La Royauté-  المُلک</a>
-				<a href="s67.html#s68">68. La Plume - القَلَم</a>
-				<a href="s70.html">70. L'Ascension -  المعَارج</a><a href="s71.html">71. Noé -  نُوح</a><a href="s72.html">72. Les djinns -   الجنّ</a>
-							
-				<!--##########################################-->
-				
+			<div class="dropdown-content dropdown-content-big" style="max-height:30em;  border-top:none;" >
+			    <div class="header">
+                    <h2>114 Sourates</h2>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>Premier tiers<sup>1/3</sup></h3>					
+						<a href="index.html">01. Al-Fatiha -  الفَاتِحَة</a>
+						<a href="s7.html" >07. La Genèse -  الاٴعرَاف</a>
+						<a href="s8.html" >08. Le Butin - الاٴنفَال</a>
+						<a href="s9.html"  style="color:#4d94ff" >09. Le Désaveu<sup>1/3</sup> -  التّوبَة </a>
+					</div>
+					<div class="column">
+                        <h3>Deuxième tiers<sup>2/3</sup></h3>
+						<a href="s10.html">10. Jonas -  یُونس</a>
+						<a href="s11.html">11. Hud - هُود</a>
+						<a href="s12.html">12. Joseph -  یُوسُف</a>
+						<a href="s13.html">13. Le Tonnerre -  الرّعد</a>
+						<a href="s14.html">14. Abraham - إبراهیم</a>
+						<a href="s15.html">15. Al-Hijr - الحِجر</a>
+						<a href="s17.html">17. Isrã - بنیٓ اسرآئیل</a>
+						<a href="s18.html#s18">18. La Caverne -  الکهف</a>
+						<a href="s20.html" >20. <i>TA-HA</i> -   طٰه</a>
+						<a href="s21.html" >21. Les Prophètes -  الاٴنبیَاء</a>	
+						<a href="s22.html" >22. Le Pélerinage -   الحَجّ</a>	
+						<a href="s23.html" >23. Les Croyants -   المؤمنون</a>					
+						<a href="s24.html" >24. La lumière -   النُّور</a>	
+						<a href="s25.html" >25. Le Discernement -  الفُرقان</a>					
+						<a href="s26.html" style="color:#4d94ff">26. Les poètes<sup>2/3</sup> -  الشُّعَرَاء</a>
+					</div>
+					<div class="column">
+						<h3>Troisième tiers<sup>3/3</sup></h3>
+						<a href="s27.html">27. Les Fourmis - النَّمل</a>                                              
+						<a href="s27.html#s28page385">28. Le Récit -  القَصَص</a>
+						<a href="s30.html">30. Les romains -   الرُّوم</a><a href="s31.html">31. Luqman - لقمَان</a><a href="s32.html">32. La Prosternation -  السَّجدَة</a><a href="s36.html">36. Yã'Sin -  یسٓ</a><a href="s39.html#s39page458" style="color:#00b36b">39. Les groupes -   الزُّمَر</a>
+						<a href="s40.html">40. Le Pardonneur -  غَافر</a><a href="s41.html">41. Les versets détaillés - فُصّلَت</a><a href="s42.html">42. La consultation -  الشّوریٰ</a> <a href="s42.html#s42page489">43. L'ornement  -   الزّخرُف</a>  
+						<a href="s44.html" style="color:#00b36b">44. La Fumée - الدّخان</a>
+						<a href="s45.html">45. L'Agenouillé - الجَاثیَة</a>
+						<a href="s45.html#AHQAF">46. Les Dunes - الاٴحقاف</a>    
+						<a href="s50.html" style="color:#00b36b">50.  Qaf -   قٓ</a> 
+						<a href="s50.html#s51" >51. Qui éparpillent -    الذّاریَات</a><a href="s55.html">55. Ar'Rahmãn - الرَّحمٰن</a><a href="s56.html">56. L`Événement - الواقِعَة</a>
+						<a href="s60.html">60. L'eprouvée -  المُمتَحنَة</a><a href="s61.html">61. Le Rang -  الصَّف</a><a href="s62.html">62. Le Vendredi -   الجُمُعَة</a>  				
+						<a href="s67.html"  style="color:#00b36b">67. La Royauté-  المُلک</a>
+						<a href="s67.html#s68">68. La Plume - القَلَم</a>
+						<a href="s70.html">70. L'Ascension -  المعَارج</a><a href="s71.html">71. Noé -  نُوح</a><a href="s72.html">72. Les djinns -   الجنّ</a>
+									
+						<!--##########################################-->
+						
 
-               <a href="s78.html">78. La Nouvelle -  النّبَإِ</a>
-				<a href="s79.html#s79debut">79. Les Anges qui arrachent</a>
-				<a href="s79.html#s79debut" style="padding-top:0;"> &nbsp;&emsp; les âmes   -   النَّازعَات</a>
-								
-				<a href="s80.html">80. Il s'est renfrogné -  عَبَسَ</a>
-                <a href="s81.html">81. L'Obscurcissement -  التّکویر</a>                            
-                <a href="s82.html">82. La Rupture -  الانفِطار</a>         
-				<a href="s82.html#s83debut">83. Les fraudeurs -  المطفّفِین</a>                          
-				<a href="s84.html#s84">84. La Déchirure -   الانشقاق</a>
-				<a href="s85.html">85. Les Constellations -  البُرُوج</a> 
-				<a href="s86.html">86. L'Astre nocturne -    الطّارق</a>
-				<a href="s86.html#s87debut">87. Le Très-Haut - الاٴعلی</a>
-				<a href="s88.html#s88">88. L'Enveloppante -   الغَاشِیَة</a>
-				<a href="s89.html">89. L'Aube -  الفَجر</a>
-                <a href="s90.html#s90debut">90. La Cité -    البَلَد</a>
-				<a href="s91.html">91. Le Soleil -   الشّمس</a>
-			    <a href="s91.html#s92debut">92. La Nuit -   اللیْل</a>				                			                                              
-                <a href="s92.html#s93">93. Le Jour montant -    الِضُّحىٰ</a>
-                <a href="s92.html#s94">94. L'Ouverture -  الشَّرح</a> 
-                
-                <a href="s95.html">95. Le Figuier -  التِّین</a>                                          
-                <a href="s95.html#s96">96. L'Adhérence -   العَلق</a>
-                <a href="s97.html">97. La destinée -  القَدر  </a>
-                <a href="s97.html#s98debut">98. La preuve - البَیّنَة </a>
-                
-				<a href="s98.html#s99">99. La secousse -   الزّلزَلة</a>
-				<a href="s98.html#s100">100. Le coursiers -  العَادیَات</a>
-				<a href="s100.html#s101">101. Le fracas  -  القَارعَة </a>
-				<a href="s100.html#s102">102. La course aux richesses -  التّکاثُر </a>
-				<a href="s103.html">103. Le temps -  العَصر</a>
-				<a href="s103.html#s104">104. Les calomniateurs - الهُمَزة</a>
-				<a href="s103.html#s105">105. L'Éléphant - الفِیل</a>
-				<a href="s106.html">106. Les couraich -  قُرَیش</a>
-				<a href="s106.html#s107">107. L'ustensile - المَاعون</a>
-				<a href="s106.html#s108">108. L'abondance - الکَوثَر</a>
-				<a href="s109.html">109. Les infidèles - الکافِرون</a>
-				<a href="s109.html#s110">110. Le Secours -  النّصر</a>
-				<a href="s109.html#s111">111. Les fibres -  المَسَد</a>
-				<a href="s112.html">112. Le monothéisme pur - الإخلاص</a>
-				<a href="s112.html#s113">113. L'aube naissante - الفَلَق</a>
-				<a href="s112.html#s114">114. Les êtres humains - النَّاس</a>					
-				<a href="s103.html">103. Le temps -  العَصر</a>
-				<a href="s103.html#s104">104. Les calomniateurs - الهُمَزة</a>
-				<a href="s103.html#s105">105. L'Éléphant - الفِیل</a>
-				<a href="s106.html">106. Les couraich -  قُرَیش</a>
-				<a href="s106.html#s107">107. L'ustensile - المَاعون</a>
-				<a href="s106.html#s108">108. L'abondance - الکَوثَر</a>
-				<a href="s109.html">109. Les infidèles - الکافِرون</a>
-				<a href="s109.html#s110">110. Le Secours -  النّصر</a>
-				<a href="s109.html#s111">111. Les fibres -  المَسَد</a>
-				<a href="s112.html">112. Le monothéisme pur - الإخلاص</a>
-				<a href="s112.html#s113">113. L'aube naissante - الفَلَق</a>
-				<a href="s112.html#s114">114. Les êtres humains - النَّاس</a>							
+					   <a href="s78.html">78. La Nouvelle -  النّبَإِ</a>
+						<a href="s79.html#s79debut">79. Les Anges qui arrachent</a>
+						<a href="s79.html#s79debut" style="padding-top:0;"> &nbsp;&emsp; les âmes   -   النَّازعَات</a>
+										
+						<a href="s80.html">80. Il s'est renfrogné -  عَبَسَ</a>
+						<a href="s81.html">81. L'Obscurcissement -  التّکویر</a>                            
+						<a href="s82.html">82. La Rupture -  الانفِطار</a>         
+						<a href="s82.html#s83debut">83. Les fraudeurs -  المطفّفِین</a>                          
+						<a href="s84.html#s84">84. La Déchirure -   الانشقاق</a>
+						<a href="s85.html">85. Les Constellations -  البُرُوج</a> 
+						<a href="s86.html">86. L'Astre nocturne -    الطّارق</a>
+						<a href="s86.html#s87debut">87. Le Très-Haut - الاٴعلی</a>
+						<a href="s88.html#s88">88. L'Enveloppante -   الغَاشِیَة</a>
+						<a href="s89.html">89. L'Aube -  الفَجر</a>
+						<a href="s90.html#s90debut">90. La Cité -    البَلَد</a>
+						<a href="s91.html">91. Le Soleil -   الشّمس</a>
+						<a href="s91.html#s92debut">92. La Nuit -   اللیْل</a>				                			                                              
+						<a href="s92.html#s93">93. Le Jour montant -    الِضُّحىٰ</a>
+						<a href="s92.html#s94">94. L'Ouverture -  الشَّرح</a> 
+						
+						<a href="s95.html">95. Le Figuier -  التِّین</a>                                          
+						<a href="s95.html#s96">96. L'Adhérence -   العَلق</a>
+						<a href="s97.html">97. La destinée -  القَدر  </a>
+						<a href="s97.html#s98debut">98. La preuve - البَیّنَة </a>
+						
+						<a href="s98.html#s99">99. La secousse -   الزّلزَلة</a>
+						<a href="s98.html#s100">100. Le coursiers -  العَادیَات</a>
+						<a href="s100.html#s101">101. Le fracas  -  القَارعَة </a>
+						<a href="s100.html#s102">102. La course aux richesses -  التّکاثُر </a>
+						<a href="s103.html">103. Le temps -  العَصر</a>
+						<a href="s103.html#s104">104. Les calomniateurs - الهُمَزة</a>
+						<a href="s103.html#s105">105. L'Éléphant - الفِیل</a>
+						<a href="s106.html">106. Les couraich -  قُرَیش</a>
+						<a href="s106.html#s107">107. L'ustensile - المَاعون</a>
+						<a href="s106.html#s108">108. L'abondance - الکَوثَر</a>
+						<a href="s109.html">109. Les infidèles - الکافِرون</a>
+						<a href="s109.html#s110">110. Le Secours -  النّصر</a>
+						<a href="s109.html#s111">111. Les fibres -  المَسَد</a>
+						<a href="s112.html">112. Le monothéisme pur - الإخلاص</a>
+						<a href="s112.html#s113">113. L'aube naissante - الفَلَق</a>
+						<a href="s112.html#s114">114. Les êtres humains - النَّاس</a>					
+					</div><!-- Troisième tiers -->
+                </div><!-- div.row -->				
 			</div>
 
 		</div>
@@ -218,7 +271,7 @@
 					  458
 				    </p>
 				</div><!-- page1 -->
-				<div class="pageGauche" style="height:89.4em; line-height:2.09; padding-top:1em; ">
+				<div class="pageGauche" style="height:80.80em; line-height:2.09; padding-top:1em; ">
 					<p>
                       ...
 					</p>
@@ -339,7 +392,7 @@
 					</p>
 
 				</div><!-- page1 -->
-				<div class="pageDroite" style="height:74.2em; line-height:3;" >
+				<div class="pageDroite" style="height:67em; line-height:3;" >
                     <div class="hizb" style="margin-top:53em;">
 						<small style="text-align:center">ثلاثةآرباع الحزب ٤٦</small>
 					</div>				
