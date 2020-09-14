@@ -85,19 +85,19 @@
 		.dropdown-content .header {
 		  background: #ccf;
 		  padding: 16px;
-		  color: #ECECEA;;
+		  color: #ECECEA; 
 		}
 		/* Three equal columns that floats next to each other */
 		.column {
 		  float: left;
 		  width: 33.33%;
 		  padding: 10px;
-		  background-color: #ccc;
+		  background-color: #bbb;/* #bba; #bbc; #ccc;  #e5eecc; #8c8b81;*/
 		  height: auto;
 		}
 		
 		.row{
-		   background-color: #ccc;
+		   background-color: #bbb; /* #bba; #bbc; #ccc  #e5eecc; #8c8b81; */
 		}
 		
 		
