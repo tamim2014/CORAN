@@ -13,10 +13,13 @@
 	<link rel="stylesheet" href="css/bouton-bash.css">
 	<link rel="stylesheet" href="css/commentaires.css">
 	<style>	
-        /* Largeur du trait qui souligne les items du mega menu au passage de la souris */
+	    #menu .dropdown-content a:hover{
+	       background:#ccf; /* pas whitesmoke; */
+		   color: purple !important;
+		}       
         #menu a:hover:after{
 		  margin-left:5%;
-		  width:90%;
+		  width:90%; /* Largeur du trait qui souligne les items du mega menu au passage de la souris */
 		}		
 		@media screen and (max-width: 560px) {
 			.planche p{ font-size:.63em !important; height:auto !important;}
