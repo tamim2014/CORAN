@@ -58,7 +58,7 @@
 		    border-top:none;  margin-top:1.2em;    border-radius:0% 0% 50000% 100% ;  
 		}
 		hr.juz9a:after, hr.juz9f:after, hr.juz10a:after, hr.juz10f:after, hr.juz11a:after, hr.juz11f:after,  hr.juz15a:after, hr.juz15f:after,  hr.juz16a:after, hr.juz16f:after, hr.juz20a:after, hr.juz20f:after, hr.juz23a:after, hr.juz23f:after, hr.juz24a:after, hr.juz24f:after, hr.juz25a:after, hr.juz25f:after, hr.juz26a:after, hr.juz26f:after,  hr.juz27a:after, hr.juz27f:after, hr.juz29a:after, hr.juz29f:after, hr.juz30a:after, hr.juz30f:after, 
-		hr.hizb29a:after, hr.hizb29f:after, hr.hizb49a:after, hr.hizb49f:after,  hr.hizb52a:after, hr.hizb52f:after, hr.hizb57a:after, hr.hizb57f:after, hr.hizb59a:after, hr.hizb59f:after, hr.hizb60a:after, hr.hizb60f:after,
+		hr.hizb21a:after, hr.hizb21f:after, hr.hizb29a:after, hr.hizb29f:after, hr.hizb49a:after, hr.hizb49f:after,  hr.hizb52a:after, hr.hizb52f:after, hr.hizb57a:after, hr.hizb57f:after, hr.hizb59a:after, hr.hizb59f:after, hr.hizb60a:after, hr.hizb60f:after,
 		hr.s51a:after, hr.s51f:after, hr.s52a:after, hr.s52f:after, hr.s79a:after, hr.s79f:after, hr.s83a:after, hr.s83f:after, hr.s84a:after, hr.s84f:after, hr.s87a:after, hr.s87f:after, hr.s88a:after, hr.s88f:after, hr.s90a:after, hr.s90f:after, hr.s92a:after, hr.s92f:after, hr.s93a:after, hr.s93f:after, hr.s94a:after, hr.s94f:after, hr.s96a:after, hr.s96f:after, hr.s98a:after, hr.s98f:after, hr.s99a:after, hr.s99f:after, hr.s100a:after, hr.s100f:after, hr.s101a:after, hr.s101f:after, hr.s102a:after, hr.s102f:after, hr.s104a:after, hr.s104f:after, hr.s105a:after, hr.s105f:after, hr.s107a:after, hr.s107f:after, hr.s108a:after, hr.s108f:after, hr.s110a:after, hr.s110f:after, hr.s111a:after, hr.s111f:after, hr.s112a:after, hr.s112f:after, hr.s113a:after, hr.s113f:after, hr.s114a:after, hr.s114f:after,				
 		hr.v51a:after, hr.v51f:after, hr.v52a:after, hr.v52f:after, hr.v79a:after, hr.v79f:after, hr.v83a:after, hr.v83f:after, hr.v84a:after, hr.v84f:after, hr.v87a:after, hr.v87f:after, hr.v88a:after, hr.v88f:after, hr.v90a:after, hr.v90f:after, hr.v92a:after, hr.v92f:after, hr.v93a:after, hr.v93f:after, hr.v94a:after, hr.v94f:after, hr.v96a:after, hr.v96f:after, hr.v98a:after, hr.v98f:after, hr.v99a:after, hr.v99f:after, hr.v100a:after, hr.v100f:after, hr.v101a:after, hr.v101f:after, hr.v102a:after, hr.v102f:after, hr.v104a:after, hr.v104f:after, hr.v105a:after, hr.v105f:after, hr.v107a:after, hr.v107f:after, hr.v108a:after, hr.v108f:after, hr.v110a:after, hr.v110f:after, hr.v111a:after, hr.v111f:after, hr.v112a:after, hr.v112f:after, hr.v113a:after, hr.v113f:after, hr.v114a:after, hr.v114f:after
 		{
@@ -112,6 +112,7 @@
         hr.juz29f:after{ content:" \000020 \000020 Juz-29"!important;  border-bottom:none;  }		
 		hr.juz30f:after{ content:" \000020 \000020 Juz-30"!important;  border-bottom:none;  }
 		
+		hr.hizb21a:after{ content:"الحزب٢١"!important; font-size:.6em; border:none; }
 		hr.hizb29a:after{ content:"الحزب٢٩"!important; font-size:.6em; border:none; }
 		hr.hizb49a:after{ content:"الحزب٤٩"!important; font-size:.6em; border:none; }
 		hr.hizb52a:after{ content:"الحزب٥٢"!important; font-size:.6em; border:none; }
@@ -119,6 +120,7 @@
 		hr.hizb59a:after{ content:"الحزب٥٩"!important; font-size:.6em; border:none; }
 		hr.hizb60a:after{ content:"الحزب٦٠"!important; font-size:.6em; border:none; }
 		
+		hr.hizb21f:after{ content:" \000020 \000020 Hizb-21"!important; font-size:.6em;  border:none; }
 		hr.hizb29f:after{ content:" \000020 \000020 Hizb-29"!important; font-size:.6em;  border:none; }
 		hr.hizb49f:after{ content:" \000020 \000020 Hizb-49"!important; font-size:.6em;  border:none; }
 		hr.hizb52f:after{ content:" \000020 \000020 Hizb-52"!important; font-size:.6em;  border:none; }
