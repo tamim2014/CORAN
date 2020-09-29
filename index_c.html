@@ -43,11 +43,15 @@
 		
 				
 		@media screen and (max-width: 560px) {
-			.planche p{ font-size:.63em !important; height:auto !important;}
-            .arabe p{ font-size:.6em !important;	height:auto !important;}
+			.planche .pageGauche{ font-size:.63em !important; height:auto !important;}
+            .planche  .pageDroite{ font-size:.6em !important;	height:auto !important; }
 			.basmala{font-size:.48em !important;}
 	         /* Responsive top nav */
-            .dropdown-btn{ padding: 14px 20px !important; }
+            			#menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
+                       #menu a.accueil-lien{ float:left !important;}
+			#menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;  padding: 14px 2px !important;   }
+			 
+                     .dropdown-content{z-index:99;}
 		    .gauche{left:34% !important;}		
 	    } 
 								
