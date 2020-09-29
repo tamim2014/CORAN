@@ -181,5 +181,36 @@ function topFunction() { // When the user clicks on the button, scroll to the to
   document.documentElement.scrollTop = 0;
 }
 
+// button mobil menu
+function openNav() {
+	 var x = document.getElementById("dropdown-btn1");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	  
+	  var y = document.getElementById("dropdown-btn2");
+	  if (y.style.display === "block") {
+		y.style.display = "none";
+	  } else {
+		y.style.display = "block";
+	  }
+	  
+	  var z = document.getElementById("dropdown-btn3");
+	  if (z.style.display === "block") {
+		z.style.display = "none";
+	  } else {
+		z.style.display = "block";
+	  }
+	  
+	  var t = document.getElementById("dropdown-btn4");
+	  if (t.style.display === "block") {
+		t.style.display = "none";
+	  } else {
+		t.style.display = "block";
+	  }			
+}
+
 
 	

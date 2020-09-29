@@ -16,6 +16,7 @@
 			text-decoration: none;
 			font-size: 17px;
 		}
+
 		#menu a:hover, .dropdown:hover { background: #ccf; }
 
 		.colone-laterale{width:50%; padding-right:0 !important; background:#bbb;     }

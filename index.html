@@ -27,12 +27,12 @@
             .planche  .pageDroite{ font-size:.6em !important;	height:auto !important; }
 			.basmala{font-size:.48em !important;}
 	         /* Responsive top nav */
-            			#menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
-                       #menu a.accueil-lien{ float:left !important;}
+            #menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
+            #menu a.accueil-lien{ float:left !important;}
 			#menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;  padding: 14px 2px !important;   }
 			 
-                     .dropdown-content{z-index:99;}
-		    .gauche{left:34% !important;}		
+            .dropdown-content{z-index:99;}
+		    /*   ###  */		
 	    } 							
 	</style>
 </head>
@@ -57,7 +57,7 @@
 	<div id="menu">
 		<a href="index.html" class="accueil-lien">Accueil</a>		
 		<div class="dropdown">
-			<button class="dropdown-btn">Les sourates</button>
+			<button class="dropdown-btn" id="dropdown-btn1">Les sourates</button>
 			<div class="dropdown-content dropdown-content-big " style="max-height:30em;  border-top:none;" >
 			    <div class="header">
                     <h2>114 Sourates</h2>
@@ -152,14 +152,15 @@
 			</div><!-- div.dropdown-content-->
 		</div><!-- div.dropdown( 1er dropdown: mega menu ) -->
 		<div class="dropdown">
-			<button class="dropdown-btn" style="padding: 14px 87px;">Les juz</button>
+			<button class="dropdown-btn" 
+id="dropdown-btn2"  style="padding: 14px 87px;">Les juz</button>
 			<div class="dropdown-content">
 			    <a href="index.html#juz1">Juz 01 - [<i> S01 | Page001 </i>]</a><a href="s7.html#juz9">Juz 09 - [<i> S07 | Page162 </i>]</a><a href="s8.html#juz10">Juz 10 - [<i> S08 | Page182 </i>]</a><a href="s9.html#juz11">Juz 11 - [<i> S09 | Page201 </i>]</a><a href="s11.html">Juz 12 - [<i> S11 | Page222 </i>]</a><a href="s17.html">Juz 15 - [<i> S17 | Page282 </i>]</a><a href="s18suite.html#juz16">Juz 16 - [<i> S18 | Page302 </i>]</a><a href="s27.html#juz20">Juz 20 - [<i> S27 | Page382 </i>]</a><a href="s39.html#juz24">Juz 24 - [<i> S39 | Page462 </i>]</a><a href="s45.html#AHQAF">Juz 26 - [<i> S46 | Page502 </i>]</a><a href="s51.html#juz27">Juz 27 - [<i> S51 | Page522 </i>]</a><a href="s67.html">Juz 29 - [<i> S67 | Page562 </i>]</a><a href="s78.html">Juz 30 - [<i> S78 | Page582 </i>]</a>
 			</div>
 		</div><!-- div.dropdown( 2ème dropdown ) -->
 		<div class="dropdown">
-			<button class="dropdown-btn">Sadjadas</button>
-			<div class="dropdown-content gauche" >
+			<button class="dropdown-btn" id="dropdown-btn3">Sadjadas</button>
+			<div class="dropdown-content " >
 				<a href="s7.html#sadjada1" >Sadjada01 - [<small><i> S07 | Page176 : Juz09 </i></small>]</a><a href="s13.html#sadjada2" >Sadjada02 - [<small><i> S13 | Page251 : Juz13 </i></small>]</a><a href="s16.html#sadjada3" >Sadjada03 - [<small><i> S16 | Page272 : Juz14 </i></small>]</a>
 				<a href="s18.html#sadjada4" >Sadjada04 - [<small><i> S17 | Page293 : Juz15 </i></small>]</a>	          
                 <a href="s19.html#sadjada5" >Sadjada05 - [<small><i> S19 | Page309 : Juz16 </i></small>]</a> 		       
@@ -171,7 +172,7 @@
 			</div>
 		</div><!-- div.dropdown( 4ème dropdown ) -->
 		<div class="dropdown">
-			<button class="dropdown-btn" >Comment</button>
+			<button class="dropdown-btn"  id="dropdown-btn4" >Comment</button>
 			<div class="dropdown-content"  >
 			    <a href="douan.html">Du'&nbsp;ãn</a>
 				<a href="tajwid.html">Tajwid</a>
