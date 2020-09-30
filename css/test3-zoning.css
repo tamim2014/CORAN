@@ -188,6 +188,40 @@
 		.footer-table { padding:1em;}
 		.footer-td { padding:0.4em; background:#8c8b81; height:auto;  margin:auto; width:30%; }
 		
+
+		
+		
+	    .titre-video{ padding:0 3em; }
+        sup{padding:0 -1em;}
+
+	/********** background des colones contenu **********************/
+      	.planche{  	background:white; /*  background-image: url("img/s8/background8.png") ;  */		 }
+		.planche p{		   		  
+		   margin:0 ; 
+		   padding:.5em;
+		   font-size:1.2em;		   
+		}
+		
+	/************* S?parateur ( ligne verticale du milieu) **********/
+		.colone-laterale{border-right:1px solid #aaa; }
+		
+	/********** Ajuster la hauteur du s?parateur ********************/
+        .grosTitre{ margin-top:0;}
+		.planche {margin-bottom:0 ;}
+    /********* Remonter le contenu de la traduction fran?aise ********/		  
+		.basmala{ margin-top:1em; }	
+
+
+		.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
+		.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
+
+		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
+		.planche{ font-weight:bold; font-family: Amiri  !important; height:auto; }
+		.plancheFrance{ padding:1.2em;    line-height:1.8;}
+		.plancheArabe{ padding:1em 1em .7em 1em;  font-size:1.2em; line-height:3.19;}		
+	
+	/* ################## RESPONSIVE ########################## */
+	
 		@media screen and (max-width: 792px) {				   
 			.basmala-green, .basmala-red {
 				font-size: 1.6em ;
@@ -221,38 +255,18 @@
            .basmala-contenu{padding-right:0;}
 		}
 		
-		@media screen and (max-width: 470px) {	
+		/* @media screen and (max-width: 470px) {	 */
+		@media screen and (max-width: 846px) {
 		   .colone-laterale{width:100% !important;  }
-		   .colone-contenu{width: 100% !important; }
+		   .colone-contenu{width: 100% !important;  }
+           .pageGauche, .pageDroite {height:auto !important;}		   
 		}
 		
-		
-	    .titre-video{ padding:0 3em; }
-        sup{padding:0 -1em;}
-
-	/********** background des colones contenu **********************/
-      	.planche{  	background:white; /*  background-image: url("img/s8/background8.png") ;  */		 }
-		.planche p{		   		  
-		   margin:0 ; 
-		   padding:.5em;
-		   font-size:1.2em;		   
-		}
-		
-	/************* S?parateur ( ligne verticale du milieu) **********/
-		.colone-laterale{border-right:1px solid #aaa; }
-		
-	/********** Ajuster la hauteur du s?parateur ********************/
-        .grosTitre{ margin-top:0;}
-		.planche {margin-bottom:0 ;}
-    /********* Remonter le contenu de la traduction fran?aise ********/		  
-		.basmala{ margin-top:1em; }	
-
-
-		.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
-		.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
-
-		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
-		.planche{ font-weight:bold; font-family: Amiri  !important; height:auto; }
-		.plancheFrance{ padding:1.2em;    line-height:1.8;}
-		.plancheArabe{ padding:1em 1em .7em 1em;  font-size:1.2em; line-height:3.19;}		
-		
+	/* ############# Mettre le texte original avant les traduction : K.O(le texte traduit reste mordu en haut, il a besoin d'un margin-top pr?cis)####### */	
+	
+	/* @media screen and (max-width: 560px) { */
+		/* .colone-laterale { float:right ;   }		 */
+        /* .colone-contenu{ float:left; position:absolute;   }   */      	   
+	/* } */
+	
+	

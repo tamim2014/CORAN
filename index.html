@@ -33,7 +33,12 @@
 			 
             .dropdown-content{z-index:99;}
 		    /*   ###  */		
-	    } 							
+	    }
+
+		@media screen and (min-width: 830px) and (max-width: 980px) { 
+          #menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 34px !important;  } 
+		  #menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 28.28px !important;  }
+		}		
 	</style>
 </head>
 <body style="background:#bbb;">
@@ -60,7 +65,7 @@
 			<button class="dropdown-btn" id="dropdown-btn1">Les sourates</button>
 			<div class="dropdown-content dropdown-content-big " style="max-height:30em;  border-top:none;" >
 			    <div class="header">
-                    <h2>114 Sourates</h2>
+                    <h2 >114 Sourates</h2>
                 </div>
                 <div class="row">
                     <div class="column">
@@ -260,6 +265,17 @@
 		</table>
 	</div><!-- #footer -->
     <script type="text/javascript" src="js/sticky.js"></script>
+	<script>
+		// Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
+		if (document.body){ 	
+			 var larg = (document.body.clientWidth);
+			 var haut = (document.body.clientHeight);
+		}else{
+			 var larg = (window.innerWidth);
+			 var haut = (window.innerHeight);
+		}
+		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
+    </script>
 		
 </body>
 </html>

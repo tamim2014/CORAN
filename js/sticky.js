@@ -160,29 +160,8 @@
 	  var popup30 = document.getElementById("myPopup21");
 	  popup30.classList.toggle("show");
 	}
-
-/********************************************************************* 
- * 
- * Report de la page top.js
- *
- **********************************************************************/
-
-
-var mybutton = document.getElementById("myBtn"); //Get the button
-function scrollFunction() { //window.onscroll = function() {scrollFunction()};
-  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() { // When the user clicks on the button, scroll to the top of the document
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-// button mobil menu
-function openNav() {
+	// button mobil menu
+    function openNav() {
 	 var x = document.getElementById("dropdown-btn1");
 	  if (x.style.display === "block") {
 		x.style.display = "none";
@@ -210,7 +189,29 @@ function openNav() {
 	  } else {
 		t.style.display = "block";
 	  }			
+    }
+
+/********************************************************************* 
+ * 
+ * Report de la page top.js
+ *
+ **********************************************************************/
+
+
+var mybutton = document.getElementById("myBtn"); //Get the button
+function scrollFunction() { //window.onscroll = function() {scrollFunction()};
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
+function topFunction() { // When the user clicks on the button, scroll to the top of the document
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
 
 
 	

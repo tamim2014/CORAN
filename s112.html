@@ -25,11 +25,11 @@
             .planche  .pageDroite{ font-size:.6em !important;	height:auto !important; }
 			.basmala{font-size:.48em !important;}
             /* Responsive top nav */
-            			#menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
-                       #menu a.accueil-lien{ float:left !important;}
+            #menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
+            #menu a.accueil-lien{ float:left !important;}
 			#menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;  padding: 14px 2px !important;   }
 			 
-                     .dropdown-content{z-index:99;}
+            .dropdown-content{z-index:99;}
 		    /*   ###  */			
 	    } 
 
@@ -136,8 +136,7 @@
 			</div>					
 		</div>
 		<div class="dropdown">
-			<button class="dropdown-btn" 
-id="dropdown-btn2"  style="padding: 14px 87px;">Les juz</button>
+			<button class="dropdown-btn" id="dropdown-btn2"  style="padding: 14px 87px;">Les juz</button>
 			<div class="dropdown-content">
 			    <a href="index.html#juz1">Juz 01 - [<i> S01 | Page001 </i>]</a><a href="s7.html#juz9">Juz 09 - [<i> S07 | Page162 </i>]</a><a href="s8.html#juz10">Juz 10 - [<i> S08 | Page182 </i>]</a><a href="s9.html#juz11">Juz 11 - [<i> S09 | Page201 </i>]</a><a href="s11.html">Juz 12 - [<i> S11 | Page222 </i>]</a><a href="s17.html">Juz 15 - [<i> S17 | Page282 </i>]</a><a href="s18suite.html#juz16">Juz 16 - [<i> S18 | Page302 </i>]</a><a href="s27.html#juz20">Juz 20 - [<i> S27 | Page382 </i>]</a><a href="s39.html#juz24">Juz 24 - [<i> S39 | Page462 </i>]</a><a href="s45.html#AHQAF">Juz 26 - [<i> S46 | Page502 </i>]</a><a href="s51.html#juz27">Juz 27 - [<i> S51 | Page522 </i>]</a><a href="s67.html">Juz 29 - [<i> S67 | Page562 </i>]</a><a href="s78.html">Juz 30 - [<i> S78 | Page582 </i>]</a>
 			</div>
@@ -292,8 +291,28 @@ id="dropdown-btn2"  style="padding: 14px 87px;">Les juz</button>
 		</table>
 	</div><!-- #footer -->
     <script type="text/javascript" src="js/sticky.js"></script>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
 
+		// AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
 
-		
+		if (document.body){ 	
+			 var larg = (document.body.clientWidth);
+			 var haut = (document.body.clientHeight);
+		}else{
+			 var larg = (window.innerWidth);
+			 var haut = (window.innerHeight);
+		}
+
+		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
+
+    </script>	
 </body>
 </html>
