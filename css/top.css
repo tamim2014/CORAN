@@ -52,12 +52,49 @@
 
   }
 }
+/* ---------------------------- */
+@-webkit-keyframes interpage {
+  0% {
+    box-shadow: 0 0 15px blue;
+   
+  }
+  100% {
+    box-shadow: 0 0 15px #ccf;
+    border:2px solid yellow; padding:2px;
+  }
+}
+@-moz-keyframes interpage {
+  0% {
+    box-shadow: 0 0 15px gold;
+  
+  }
+  100% {
+    box-shadow: 0 0 15px #cc1;
+  }
+}
+@keyframes interpage {
+  0% {
+    box-shadow: 0 0 15px blue;  
+  }
+  100% {
+    box-shadow: 0 0 15px #ff1;/* tester  #ff1 et gold*/
 
-#imageToTop{
+  }
+}
+
+#imageToTop {
   border-radius: 4px;
 
   /* Animation (mise à feu) */
   -webkit-animation: ombre ease-in infinite alternate 500ms;
-  -moz-animation: ombre ease-in infinite alternate 500ms;
+  -moz-animation: ombre ease-in infinite alternate 100ms;
   animation: ombre ease-in infinite alternate 500ms;
+}
+
+.signal-Interpage {
+ border-radius: 0px;
+  /* Animation (mise à feu) */
+  -webkit-animation: interpage ease-in infinite alternate 500ms;
+  -moz-animation: interpage ease-in infinite alternate 500ms;
+  animation: interpage ease-in infinite alternate 500ms;
 }
