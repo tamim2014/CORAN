@@ -264,10 +264,9 @@
 		
 		/* ##### RESPONSIVE SUR LE CONTENU ###### */
 		
-		@media screen and (min-width: 800px) and (max-width: 990px) {
-		   .box-shadow-titre {font-size:.86em;}
-		   .pageGauche{ font-size:.86em ;  } 
-		   .pageDroite{ font-size:.86em ; }        			   
+		/* @media screen and (min-width: 800px) and (max-width: 990px) { */
+		@media screen and (min-width: 700px) and (max-width: 990px) {
+		   .box-shadow-titre, .pageGauche, .pageDroite {font-size:.86em;}      			   
 		}
 		
 	/* ############# Mettre le texte original avant les traduction : K.O(le texte traduit reste mordu en haut, il a besoin d'un margin-top pr?cis)####### */	
