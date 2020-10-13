@@ -34,7 +34,7 @@
 			
 			 
 			border-top:2px solid #bbb;
-			overflow-y: scroll;
+			overflow-y: scroll !important;
 			overflow-x: hidden;
 			
 		}
@@ -62,19 +62,19 @@
         /* Item Sourate( 2ème item) */
 		#menu  div.dropdown:nth-child(2) .dropdown-content a { font-size:.95em;  }
 		#menu  div.dropdown:nth-child(2) .dropdown-btn { padding: 14px 85.4px;   }
-		/* Item Juzz( 3ème item) */
-		#menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 85.97px !important;  }
+		/* Item Les sourate */
+		#menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 85.97px !important;   }
 		#menu  div.dropdown:nth-child(3) .dropdown-content a { font-size:.95em;  }
-		/* Item Sadjada( 4ème item) */
-		#menu  div.dropdown:nth-child(4) .dropdown-content a { font-size:.95em;  }
-		#menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 87.5px !important;   }
-		/* Item comment( 5ème item) bizarment ça s'applique au 4ème itème ??? */
-		#menu  div.dropdown:nth-child(5) .dropdown-content  { overflow-y: hidden; min-width:100px ;   }
+		/* Item Les Juz */
+		#menu  div.dropdown:nth-child(4) .dropdown-content a { font-size:.95em;}
+		#menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 86px !important;   }
+		/* Item Sadjada */
+		#menu  div.dropdown:nth-child(5) .dropdown-content  { overflow-y: hidden; min-width:100px ;  }
 		#menu  div.dropdown:nth-child(5) .dropdown-content a { font-size:.95em; min-width:60px !important; }
-		#menu  div.dropdown:nth-child(5) .dropdown-btn { padding: 14px 85px !important;  } 
-		/* Item comment( 5ème item) */
-		#menu  div.dropdown:nth-child(6) .dropdown-content  { overflow-y: hidden; min-width:172.5px ;   }
-		#menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 50px !important;   } 
+		#menu  div.dropdown:nth-child(5) .dropdown-btn { padding: 14px 92px !important;  } 
+		/* Item comment */
+		#menu  div.dropdown:nth-child(6) .dropdown-content  { overflow-y: hidden !important; min-width:153px ;   }
+		#menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 40px !important;   } 
 		
 		/* MEGA MENU ( juste pour la page index ) */
 		
