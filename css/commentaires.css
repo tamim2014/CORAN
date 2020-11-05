@@ -26,7 +26,7 @@
 	  margin-left: -80px;
 	}
 	.popup{ 
-		 color: red;/* #3d3d5c;  couleur numero des commentaires */ 
+		 color: #9d3d5f; /*  #9d3d5f; #ccf; ou red; ou  #3d3d5c;  couleur numero des commentaires */ 
 		 font-family:calibri light;
 		 z-index:0 !important;	 
 	 }
