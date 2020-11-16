@@ -47,7 +47,12 @@
 			background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("img/footer-image.png");	
 		}
 		.videoCommentaire{ width:269%; }
-		.sign-videoCommentaire{ background:#ff1;  border-radius:2px; padding:2px; /* habillage du &#9888; */ }
+		.sign-videoCommentaire{ /* habillage du &#9888; */
+		    /* background:#ff1; */ 
+			background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(5, 55, 0, 0.5)), url("img/footer-image.png");
+			border-radius:2px; 
+			padding:2px;           		
+		}
 		
 	/* MESSAGE HEADER */
 	.hero-image {
