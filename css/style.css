@@ -47,11 +47,12 @@
 			background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("img/footer-image.png");	
 		}
 		.videoCommentaire{ width:269%; }
-		.sign-videoCommentaire{ /* habillage du &#9888; */
-		    /* background:#ff1; */ 
+		.sign-videoCommentaire{ 
+		    /* background:#ff1; pour un simple jaune*/ 
 			background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(5, 55, 0, 0.5)), url("img/footer-image.png");
 			border-radius:2px; 
-			padding:2px;           		
+			/* padding:2px; si on met &#9888; à la place des numéro */
+            padding:.04em .4em;			
 		}
 		
 	/* MESSAGE HEADER */
