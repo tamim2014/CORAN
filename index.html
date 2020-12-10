@@ -21,6 +21,8 @@
 		  margin-left:5%;
 		  width:90%; /* Largeur du trait qui souligne les items du mega menu au passage de la souris */
 		}
+		
+
 				
 		@media screen and (max-width: 560px) {
 			.planche .pageGauche{ font-size:.86em !important; height:auto !important;}
@@ -178,10 +180,17 @@
 		<div class="dropdown">
 			<button class="dropdown-btn"  id="dropdown-btn4" >Comment</button>
 			<div class="dropdown-content"  >
-			    <a href="douan.html">Du'&nbsp;ãn</a>
-				<a href="tajwid.html">Tajwid</a>
-				<a href="grammaire.html">Grammaire</a>
-				<a href="vocabulaire.html">Vocabulaire</a>			    
+			    <a href="douan.html" target="_blank">Du'&nbsp;ãn</a>
+				<a href="#" class="accordion" >Rappel de cours</a>
+				<div class="panel">	
+				    <a href="tajwid.html"      target="_blank" class="panel" >&#9755; Tajwid</a>
+				    <a href="grammaire.html"   target="_blank" class="panel" >&#9755; Grammaire</a>
+				    <a href="vocabulaire.html" target="_blank" class="panel" >&#9755; Vocabulaire</a>
+				</div>
+				<a href="#" class="accordion" >Liens Externes</a>
+                <div class="panel">						
+                   <a href="https://coran-seul.com/index.php/component/jumi/verset?sourate=37&verset=79" class="panel" target="_blank">&#9755; CoranSeul</a> 				   
+			    </div>
 			</div>
 		</div>
 		        
@@ -276,6 +285,23 @@
 		<!-- } -->
 		<!-- document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut"); -->
     <!-- </script> -->
+	<!-- menu accordeons sur l'item "Comment" -->
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var j;
+
+		for (j = 0; j < acc.length; j++) {
+		  acc[j].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			  panel.style.display = "none";
+			} else {
+			  panel.style.display = "block";
+			}
+		  });
+		}
+	</script>
 		
 </body>
 </html>

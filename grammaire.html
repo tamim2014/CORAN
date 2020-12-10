@@ -161,10 +161,17 @@
 		<div class="dropdown">
 			<button class="dropdown-btn" id="dropdown-btn4"  >Comment</button>
 			<div class="dropdown-content"  >
-			    <a href="douan.html">Du'&nbsp;ãn</a>
-				<a href="tajwid.html">Tajwid</a>
-				<a href="grammaire.html">Grammaire</a>
-				<a href="vocabulaire.html">Vocabulaire</a>			    
+			    <a href="douan.html" >Du'&nbsp;ãn</a>
+				<a href="#" class="accordion" >Rappel de cours</a>
+				<div class="panel">	
+				    <a href="tajwid.html"      class="panel" >&#9755; Tajwid</a>
+				    <a href="grammaire.html"   class="panel" >&#9755; Grammaire</a>
+				    <a href="vocabulaire.html" class="panel" >&#9755; Vocabulaire</a>
+				</div>
+				<a href="#" class="accordion" >Liens Externes</a>
+                <div class="panel">						
+                   <a href="https://coran-seul.com/index.php/component/jumi/verset?sourate=37&verset=79" class="panel" target="_blank">&#9755; CoranSeul</a> 				   
+			    </div>
 			</div>
 		</div>
 	</div>
@@ -172,7 +179,7 @@
 		<div class="colone-laterale" id="sidbarG">
 		    <h2 class="grosTitre" style="padding:1.2em 0em !important;" >
 			     <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" >S. 112</small></span>
-			     <span class="box-shadow-titre" >Le monothéisme pur</span>
+			     <span class="box-shadow-titre" style="color:#8c8c8c;" >Grammaire</span>
 				 <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" >4 Versets</small></span>
 			</h2>
 			<div class="planche plancheFrance" >			
@@ -231,7 +238,7 @@
 		<div class="colone-contenu" id="contenu_" >
 		    <h2 class="grosTitre" style="padding:1.2em 0em !important; ">
 			   <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" >ترتيبها ١٠٩</small></span>
-			   <span class="box-shadow-titre" > سُوۡرَةُ الإخلاص </span>
+			   <span class="box-shadow-titre" style="color:#8c8c8c;" > نحوي </span>
 			   <span class="box-shadow-titre" style="padding:0.3em; margin:0.3em;"><small class="numSourate" >آياتها ٦</small></span>
 			</h2>	
 			<div class="planche plancheArabe" lang="ar" dir="rtl">              			
@@ -314,6 +321,22 @@
 		</table>
 	</div><!-- #footer -->
     <script type="text/javascript" src="js/sticky.js"></script>
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var j;
+
+		for (j = 0; j < acc.length; j++) {
+		  acc[j].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			  panel.style.display = "none";
+			} else {
+			  panel.style.display = "block";
+			}
+		  });
+		}
+	</script>
 
 
 		

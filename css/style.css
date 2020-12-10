@@ -108,7 +108,35 @@
 		  -o-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
 		  box-shadow:0px 0px 10px #3d3d5c; /* #22A9E8; */
 		  z-index:99;
-	}	
+	}
+	
+    /* menu accordeon sur l'itemm "Comment" */
+		.accordion {		  		  		  
+		  transition: 0.4s;
+		}
+		.active, .accordion:hover {
+		  background-color: #ccc; 
+		}
+		.panel {
+		  padding: 0 18px;
+		  display: none;
+		  background-color: #ddd;
+		  overflow: hidden;
+		  color: #444;
+		}
+	
+	/* Animation  menu accordeon de l'item "Comment" ( avec :hover:after) */		
+	#menu a.panel:hover:after{		
+		  background-color: #f2f2f2;/* #15F3CF; */
+		  width:78%;
+		  height:11%;
+		  margin-left:15%;
+		  -moz-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  -webkit-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  -o-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  box-shadow:0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  z-index:99;
+	}
 	
 	/*################################################################# */	
     /*
@@ -119,8 +147,7 @@
 	   width:87%;
 	   box-shadow:
 	     0px 2px 20px 0px #660066 inset,
-		 0px 2px 10px 0px ;
-	   
+		 0px 2px 10px 0px ;	   
 	 }
 	 */
 
