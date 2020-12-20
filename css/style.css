@@ -215,12 +215,40 @@
 	}
 
 	
+
+	
+	.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
+	.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
+
+	
+	
+	.A-retenir{color: #2bad5d; }
+	.alignerTexte{
+		padding-left:.8em; 
+		padding-top:0; 
+		margin-top:-1.2em; 
+		line-height:1.7 !important; 
+		font-size:1.17em; 	
+	}
+	.hikma { font-weight:bold; color:#660099;}
+	.douan { font-weight:bold; color:#00b36b;}
+	.hikma-normal { color:#660099;}	
+	.douan-nomal { color:#00b36b;}
+	.paragraph { color:#9d3d5f; }
+	
+
+	
+	
+  /* ########################################################################## */
+ /* ############# Application RESPONSIVE au FOOTER ######## ################## */
+/* ########################################################################## */
+	
 	@media screen and (max-width: 792px) {
 	   .onglet1-sujet{padding-bottom:40px;}
 	   .titre-video{  
 	       padding:0 0 0 6em  !important;
 		   font-size:.5em;
-	   }
+	    }
 
 	   .footer-td{margin:0;   }
 	   .footer-td video, .footer-td audio, .footer-td img{padding:0; margin:0; height:41%; width:100%;}
@@ -252,6 +280,12 @@
 	@media screen and (max-width: 963px) and (min-width: 830px) {
 			   .titre-video{ padding:0 0 0 2.5em  !important;}	       
 	}
+	
+		
+  /* ########################################################################## */
+ /* ############# SMARTPHON(Samedi  19 dec 2020: tunda ye dati yiyo wutsirihwa mdzo wutso wahaho tsena ######## ################## */
+/* ########################################################################## */
+	
 	/* Pour les smarthphone:Titres des sourates , titre des videos, footer et  largeur de la page */
 	@media screen and (max-width: 400px) and (min-width: 100px) {
 		       .grosTitre{height: auto !important; padding:.5em !important;  }
@@ -261,7 +295,7 @@
 			   .titre-video{ padding:0 0 0 .3em !important; font-size:.3em !important;}
           	   
 			   /* bouton go to top */
-			   #myBtn{ right: 6.5% !important; bottom:27% !important; }     
+			   #myBtn{ right: .6% !important; bottom:27% !important; } /* right: 6.5%    */     
 			   
 			   /* Ajuster la largeur du footer */
 			   
@@ -272,30 +306,16 @@
 			   #footer{ margin-top:1em !important; }
 
 			   
-			   /* Ajuster la largeur de la page */
+			   /* Ajuster la largeur de la page avec  body, #menu : 
+			    * PROBLEME: le selecteur #menu désactive le bouton ☰, pourtant <body> ne suffit pas à centrer pour les smarthphone 
+				* SOLUTION: ajouter un height ..... task fait
+				* Effet SECONDAIRE INDESIRABLE: le bouton ☰ disparaît au déploiemt du menu 
+				* SOLUTION: repositionner le bouton en utilisant javascript ... task à faire( mais on peut laisser en l'etat car une fois arrivé sur la page cible le bouton ☰ se remet en place ) 
+				*/
 
-			   body, #entete, #menu, #contenu { overflow-x:hidden !important;}		  		   
+			   body, #menu  { overflow-x:hidden !important; height:auto !important;  }		  		   
 
 	}
 	
-	
-	.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
-	.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
-
-	
-	
-	.A-retenir{color: #2bad5d; }
-	.alignerTexte{
-		padding-left:.8em; 
-		padding-top:0; 
-		margin-top:-1.2em; 
-		line-height:1.7 !important; 
-		font-size:1.17em; 	
-	}
-	.hikma { font-weight:bold; color:#660099;}
-	.douan { font-weight:bold; color:#00b36b;}
-	.hikma-normal { color:#660099;}	
-	.douan-nomal { color:#00b36b;}
-	.paragraph { color:#9d3d5f; }
 
 	

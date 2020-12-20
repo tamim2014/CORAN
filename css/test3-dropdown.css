@@ -115,10 +115,10 @@
 		  clear: both;
 		}
 		
-		
-		 /* ############################################################################ */
-		/* ############# Application RESPONSIVE au top menu ######## ################## */
-	   /* ############################################################################ */
+			
+  /* ############################################################################ */
+ /* ######## Application RESPONSIVE au top menu( voir test3-dropdown.css) ###### */
+/* ############################################################################ */
 	   
 		
 		#hambuger{
@@ -152,7 +152,7 @@
             /* dropdown-content */	
               .dropdown-content{z-index:99;}
 			/* decaler à droite le menu de l'item : Les sourate */
-			#menu  div.dropdown:nth-child(3) .dropdown-content{ margin-left:5em !important; width:auto !important; }
+			#menu  div.dropdown:nth-child(3) .dropdown-content{ margin-left:5em !important; margin-right:.5em !important; width:auto !important; }
 			/* decaler à droite le menu de l'item : Les juz */
 			#menu  div.dropdown:nth-child(4) .dropdown-content{ margin-left:5em !important; }
 			/* decaler à droite le menu de l'item : Sadjada */
@@ -162,8 +162,15 @@
 			
 			  
             /* Ajuster la largeur de la page: ????? */
-             body { overflow-x:hidden !important;}			
+             #menu { overflow-x:hidden !important; height:auto !important; }			
 		}
+	
+		
+		
+		
+
+		
+
 		
 
 			
