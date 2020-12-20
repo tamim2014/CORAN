@@ -115,7 +115,11 @@
 		  clear: both;
 		}
 		
-		/* ############# Application RESPONSIVE au top menu ######## */
+		
+		 /* ############################################################################ */
+		/* ############# Application RESPONSIVE au top menu ######## ################## */
+	   /* ############################################################################ */
+	   
 		
 		#hambuger{
 		    display: none !important; 		 
@@ -128,6 +132,9 @@
 			 #hambuger{position:absolute; right:4%; top:25%;}
 			/* Aligner le bouton à droite */	
 			 #hambuger{display: block !important; float:right; }
+			 /* remonter le commentaire de la sourate au dessus du top menu */
+			  .popuptext { z-index:1 !important;}
+			   #menu { z-index:0 !important;}
 			/* Megamenu de la page index */
 			.column{ padding: 2px; line-height:1.5; font-size:.7em;}
 			/* ### */
@@ -143,8 +150,24 @@
               /* #menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 18px !important;  } */
               #menu  div.dropdown:nth-child(n) .dropdown-btn { padding: 14px 18px !important;  } 	 			  
             /* dropdown-content */	
-              .dropdown-content{z-index:99;}			
+              .dropdown-content{z-index:99;}
+			/* decaler à droite le menu de l'item : Les sourate */
+			#menu  div.dropdown:nth-child(3) .dropdown-content{ margin-left:5em !important; width:auto !important; }
+			/* decaler à droite le menu de l'item : Les juz */
+			#menu  div.dropdown:nth-child(4) .dropdown-content{ margin-left:5em !important; }
+			/* decaler à droite le menu de l'item : Sadjada */
+			#menu  div.dropdown:nth-child(5) .dropdown-content{ margin-left:5em !important; }
+			/* decaler à droite le menu de dernier item : Comment */
+			#menu  div.dropdown:nth-child(6) .dropdown-content{ margin-left:5em !important; }
+			
+			  
+            /* Ajuster la largeur de la page: ????? */
+             body { overflow-x:hidden !important;}			
 		}
+		
+
+			
+		
 				
 
 		 
