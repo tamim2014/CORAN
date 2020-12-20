@@ -1,5 +1,5 @@
 		*{box-sizing: border-box;}
-		body{margin:0; background: #ECECEA;}
+		body{margin:auto !important; background: #ECECEA;}
 
 		#entete{ height: 200px; background: #555; }
 		#footer{ min-height:100px; background: #555; margin-top:2em; }
