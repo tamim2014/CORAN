@@ -125,7 +125,7 @@
 			.header{display:none;}
 			/* Centrer le bouton horizontalement  */
 			 #menu { position:relative;}
-			 #hambuger{position: absolute; right: 4%; top: 25%;}
+			 #hambuger{position:absolute; right:4%; top:25%;}
 			/* Aligner le bouton à droite */	
 			 #hambuger{display: block !important; float:right; }
 			/* Megamenu de la page index */
@@ -134,7 +134,8 @@
 			 #dropdown-btn1, #dropdown-btn2, #dropdown-btn3, #dropdown-btn4 { display:none;}
 			 
 			/* dropdown-btn */
-			  #menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{   width:60em !important; text-align:left !important;  }
+
+			  #menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{   width:60em !important; text-align:left !important;}
               #menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;   }	
 			  /* #menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 18px !important;  } */
 			  /* #menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 18px !important;  } */
