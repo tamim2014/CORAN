@@ -252,18 +252,30 @@
 	@media screen and (max-width: 963px) and (min-width: 830px) {
 			   .titre-video{ padding:0 0 0 2.5em  !important;}	       
 	}
-	/* Titres des sourates et titre des videos pour les smarthphone */
+	/* Pour les smarthphone:Titres des sourates , titre des videos, footer et  largeur de la page */
 	@media screen and (max-width: 400px) and (min-width: 100px) {
 		       .grosTitre{height: auto !important; padding:.5em !important;  }
 		       .box-shadow-titre {padding:0.3em !important; font-size:.6em !important; }			   
 			   .numSourate{padding:0 .1em !important;}
 			   
 			   .titre-video{ padding:0 0 0 .3em !important; font-size:.3em !important;}
-               /* comment ajuster la largeur du #menu ??? */
-                 /* #entete, #menu, #contenu { width:auto !important; padding-right:0 !important; margin-right:0 !important;} */
-			   /* centrer les item "Accueil" et  ☰  */
+          	   
+			   /* bouton go to top */
+			   #myBtn{ right: 6.5% !important; bottom:27% !important; }     
+			   
+			   /* Ajuster la largeur du footer */
+			   
+			   .footer-table { padding:.5em !important;}
+			   #footer  table.footer-table tr td.footer-td{ width:10% !important; min-height:50px !important;  }
+			   
+			   /* Ajuster la hauteur du footer */
+			   #footer{ margin-top:1em !important; }
 
-		  		   
+			   
+			   /* Ajuster la largeur de la page */
+
+			   body, #entete, #menu, #contenu { overflow-x:hidden !important;}		  		   
+
 	}
 	
 	

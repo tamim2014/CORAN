@@ -1,5 +1,5 @@
 		*{box-sizing: border-box;}
-		body{margin:auto !important; background: #ECECEA;}
+		body{margin:0 !important; background: #ECECEA;}
 
 		#entete{ height: 200px; background: #555; }
 		#footer{ min-height:100px; background: #555; margin-top:2em; }
@@ -186,7 +186,7 @@
 		}
 		/* footer */		
 		.footer-table { padding:1em;}
-		.footer-td { padding:0.4em; background:#8c8b81; height:auto;  margin:auto; width:30%; }
+		.footer-td { padding:.4em; background:#8c8b81; height:auto;  margin:auto; width:30%; }
 		
 
 		
