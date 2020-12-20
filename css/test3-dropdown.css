@@ -45,7 +45,7 @@
          */
 		#menu .dropdown-content a{
 			display: block;
-			float:none;		
+			float:none;          			
 		}
 		#menu .dropdown-content a:hover{
 	       background:whitesmoke;
