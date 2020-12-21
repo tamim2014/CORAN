@@ -117,9 +117,9 @@
 		
 			
   /* ############################################################################ */
- /* ######## Application RESPONSIVE au top menu( voir test3-dropdown.css) ###### */
+ /* ######## Application RESPONSIVE au top menu(le garder ici; sinon K.O) ######*/
 /* ############################################################################ */
-	   
+
 		
 		#hambuger{
 		    display: none !important; 		 
@@ -152,18 +152,35 @@
             /* dropdown-content */	
               .dropdown-content{z-index:99;}
 			/* decaler à droite le menu de l'item : Les sourate */
-			#menu  div.dropdown:nth-child(3) .dropdown-content{ margin-left:5em !important; margin-right:.5em !important; width:auto !important; }
+			#menu  div.dropdown:nth-child(3) .dropdown-content{ left:17% !important; top:19.5% !important; right:.5% !important; width:auto !important; }
 			/* decaler à droite le menu de l'item : Les juz */
-			#menu  div.dropdown:nth-child(4) .dropdown-content{ margin-left:5em !important; }
+			#menu  div.dropdown:nth-child(4) .dropdown-content{ left:25% !important; top:39.5% !important; }
 			/* decaler à droite le menu de l'item : Sadjada */
-			#menu  div.dropdown:nth-child(5) .dropdown-content{ margin-left:5em !important; }
+			#menu  div.dropdown:nth-child(5) .dropdown-content{ left:25% !important; top:59.5% !important;}
 			/* decaler à droite le menu de dernier item : Comment */
-			#menu  div.dropdown:nth-child(6) .dropdown-content{ margin-left:5em !important; }
+			#menu  div.dropdown:nth-child(6) .dropdown-content{ left:25% !important; top:79.5% !important; }
+			
+			/* Animation du top nav avec :hover:after*/
+			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:30% !important; }
+			
+			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:30% !important; }
+			
+			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:30% !important; }
 			
 			  
             /* Ajuster la largeur de la page: ????? */
              #menu { overflow-x:hidden !important; height:auto !important; }			
 		}
+					
+	    /* RAPPEL:
+		 * Dans la page d'accueil(5 items topmenu) les responsive dropdown-content sont en place
+		 * Dans les autres pages(4 items topmenu) ces dropdown-content décale vers le haut pour l'instant
+		 * ils reviendront en place dès que le 5ème item sera ajoués.
+		 * Donc garder le code CSS tel qu'il est .
+         */		 
 	
 		
 		
