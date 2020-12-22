@@ -128,13 +128,13 @@
 		@media screen and (max-width: 846px) {
 			.header{display:none;}
 			/* Centrer le bouton horizontalement  */
-			 #menu { position:relative;}
-			 #hambuger{position:absolute; right:4%; top:25%;}
+		    #menu { position:relative;}
+			#hambuger{position:absolute; right:4%; top:25%;}
 			/* Aligner le bouton à droite */	
-			 #hambuger{display: block !important; float:right; }
-			 /* remonter le commentaire de la sourate au dessus du top menu */
-			  .popuptext { z-index:1 !important;}
-			   #menu { z-index:0 !important;}
+			#hambuger{display: block !important; float:right; }
+			/* remonter le commentaire de la sourate au dessus du top menu */
+			.popuptext { z-index:1 !important;}
+			#menu { z-index:0 !important;}
 			/* Megamenu de la page index */
 			.column{ padding: 2px; line-height:1.5; font-size:.7em;}
 			/* ### */
@@ -142,15 +142,16 @@
 			 
 			/* dropdown-btn */
 
-			  #menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{   width:60em !important; text-align:left !important;}
-              #menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;   }	
+			#menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{ width:60em !important; text-align:left !important;}
+			
+            #menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;   }	
 			  /* #menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 18px !important;  } */
 			  /* #menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 18px !important;  } */
 			  /* #menu  div.dropdown:nth-child(5) .dropdown-btn { padding: 14px 18px !important;  }  */
               /* #menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 18px !important;  } */
-              #menu  div.dropdown:nth-child(n) .dropdown-btn { padding: 14px 18px !important;  } 	 			  
+            #menu  div.dropdown:nth-child(n) .dropdown-btn { padding: 14px 18px !important;  } 	 			  
             /* dropdown-content */	
-              .dropdown-content{z-index:99;}
+            .dropdown-content{z-index:99;}
 			  
 			/* decaler à droite le menu de l'item : Les sourate */
 			#menu  div.dropdown:nth-child(3) .dropdown-content{ left:17% !important; top:19.5% !important; right:.5% !important; width:auto !important; }
@@ -161,7 +162,7 @@
             /* Ajuster la largeur de la page:  */
              #menu { overflow-x:hidden !important; height:auto !important; }			
 		}
-		
+				
 		/* Pour les petit écran */
 	
 		@media screen and (max-width: 846px) and (min-width: 618px) {
@@ -203,6 +204,26 @@
 			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
 			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:16% !important; margin-left:10% !important; }
 		 }
+		/* ###### ATTENTION: Désintingration du topMenu dans la plage[498pxx-560px]  ########
+         *   entre 498px et 560px le bouton ☰ décroche du topMenu 
+         *   Dans le code i fo ajouter	l'ecart(17px) sur chaque borne
+		 *   PROBLEME NON ENCORE RESOLU
+		 */
+		@media screen and (max-width: 560px) and (min-width: 515px) {
+			#menu a.accueil-lien{ background:red !important;  }
+			#menu { width:auto !important; padding-left:0 !important;}			
+			#hambuger{position:absolute; right:4%; top:25%;  }
+			
+			/* Ajouter un pointeur( sous forme de jeton) entre l'item vertical et son dropdown-content pour les smarthphone */
+			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:40% !important; margin-left:20% !important; }
+			
+			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:40% !important; margin-left:20% !important;}
+			
+			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:31% !important; margin-left:20% !important; }
+		}
 		 /* largeur de fenêtre minimum: 
 		  * Ecran HYUNDAI: 500 px !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		  * Mais mon script de mesure indique 483 ( soit un écart de 17 px)
@@ -257,15 +278,11 @@
 		 * Dans les autres pages(4 items topmenu) ces dropdown-content décale vers le haut pour l'instant
 		 * ils reviendront en place dès que le 5ème item sera ajoués.
 		 * Donc garder le code CSS tel qu'il est .
+		 *
+		 * background:#3d3d5c; : une couleur noir très chic
          */	
 		 
-		/* ###### ATTENTION:  ########
-         *   entre 500px et 560px le bouton ☰ décroche du topMenu 
-         *   Dans le code i fo ajouter	l'ecart(17px) sur chaque borne
-		 */
-		@media screen and (max-width: 517px) and (min-width: 576px) {
-			
-		}
+
         		 
 	
 		
