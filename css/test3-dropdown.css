@@ -204,7 +204,7 @@
 			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
 			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:16% !important; margin-left:10% !important; }
 		 }
-		/* ###### ATTENTION: Désintingration du topMenu dans la plage[498pxx-560px]  ########
+		/* ###### ATTENTION: Désintingration du topMenu dans la plage[498px-560px]  ########
          *   entre 498px et 560px le bouton ☰ décroche du topMenu 
          *   Dans le code i fo ajouter	l'ecart(17px) sur chaque borne
 		 *   PROBLEME NON ENCORE RESOLU
