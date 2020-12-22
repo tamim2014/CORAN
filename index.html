@@ -64,7 +64,7 @@
 		</div>
 	</div>		
 	<div id="menu">
-		<a href="index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰ </span>		
+		<a href="index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰</span>		
 		<div class="dropdown">
 			<button class="dropdown-btn" id="dropdown-btn1">Les sourates</button>
 			<div class="dropdown-content dropdown-content-big " style="max-height:30em;  border-top:none;" >
@@ -180,24 +180,28 @@
 			</div>
 		</div><!-- div.dropdown( 4ème dropdown ) -->
 		<div class="dropdown">
-			<button class="dropdown-btn"  id="dropdown-btn4" >Comment</button>
-			<div class="dropdown-content"  >
-			    <a href="douan.html" target="_blank">Du'&nbsp;ãn</a>
+			<button class="dropdown-btn"  id="dropdown-btn4" >Rappels</button>
+			<div class="dropdown-content"  >				
+				<a href="#" class="accordion" >Invocations</a>
+				<div class="panel">
+                    <a href="douan.html" target="_blank" class="panel"> &#9755; Du'&nbsp;ãn</a>
+                    <a href="dhikr.html" target="_blank" class="panel"> &#9755; Dhikr</a>
+                    <a href="roukia.htm" target="_blank" class="panel"> &#9755; Roukia</a>					
+				</div>				
 				<a href="#" class="accordion" >Rappel de cours</a>
-				<div class="panel">	
-				    <a href="tajwid.html"      target="_blank" class="panel" >&#9755; Tajwid</a>
+				<div class="panel">					    
 				    <a href="grammaire.html"   target="_blank" class="panel" >&#9755; Grammaire</a>
 				    <a href="vocabulaire.html" target="_blank" class="panel" >&#9755; Vocabulaire</a>
+					<a href="tajwid.html"      target="_blank" class="panel" >&#9755; Tajwid</a>
 				</div>
 				<a href="#" class="accordion" >Liens Externes</a>
                 <div class="panel">						
-                   <a href="https://coran-seul.com/index.php/component/jumi/verset?sourate=37&verset=79" class="panel" target="_blank">&#9755; CoranSeul</a>
-                   <a href="http://www.bostani.com/livre/le-Coran-une-guerison-et-une-misericorde-pour-les-croyants.htm#_1_7" class="panel" target="_blank">&#9755; Ésoterique</a>  				   
+                   <a href="https://coran-seul.com/index.php/component/jumi/verset?sourate=37&verset=79" target="_blank" class="panel" >&#9755; CoranSeul</a>
+                   <a href="http://www.bostani.com/livre/le-Coran-une-guerison-et-une-misericorde-pour-les-croyants.htm#_1_7"  target="_blank"  class="panel">&#9755; Ésoterique</a>  				   
 			    </div>
-			</div>
-		</div>
-		        
-	</div>
+			</div><!-- .dropdown-content -->
+		</div><!-- .dropdown -->		        
+	</div><!-- #menu -->
 	<div id="contenu">
 		<div class="colone-laterale" id="sidbarG" style="padding-top:0; padding-bottom:0;">
 		    <h2 class="grosTitre" style="padding:1.2em 0em !important;" >
@@ -277,17 +281,18 @@
 		</table>
 	</div><!-- #footer -->
     <script type="text/javascript" src="js/sticky.js"></script>
-	<!-- <script> -->
-		<!-- // Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com" -->
-		<!-- if (document.body){ 	 -->
-			 <!-- var larg = (document.body.clientWidth); -->
-			 <!-- var haut = (document.body.clientHeight); -->
-		<!-- }else{ -->
-			 <!-- var larg = (window.innerWidth); -->
-			 <!-- var haut = (window.innerHeight); -->
-		<!-- } -->
-		<!-- document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut"); -->
-    <!-- </script> -->
+	
+	<script>
+		// Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
+		if (document.body){ 	
+			 var larg = (document.body.clientWidth);
+			 var haut = (document.body.clientHeight);
+		}else{
+			 var larg = (window.innerWidth);
+			 var haut = (window.innerHeight);
+		}
+		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
+    </script>
 	
 	<!-- menu accordeons sur l'item "Comment" -->
 	<script>
