@@ -176,13 +176,13 @@
 			/* Ajouter un pointeur(jeton pointeur) entre l'item verical et son dropdown-content */
 			
 			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
-			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:23% !important; margin-left:10% !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:22% !important; margin-left:9% !important; }
 			
 			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
-			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:24% !important; margin-left:10% !important;}
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:24% !important; margin-left:9% !important;}
 			
 			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
-			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:16% !important; margin-left:10% !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:15% !important; margin-left:9% !important; }
 			
 		} 
 		@media screen and (max-width: 617px) and (min-width: 501px) { 
