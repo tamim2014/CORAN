@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box; /* inclu la taille des bordure dans la taille des boite */
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    background: #ECECEA;
+
+}
+/************************ ZONING CONTENU ***********************************/
+
+.colonne_laterale {
+    width: 33%;	 /* 25%; */
+    float: left;
+    padding: 0 20px 25px 20px;
+    list-style-type: none;
+
+}
+
+.colonne_contenu {
+    width: 34%;  /* 50%; */
+    float: left;
+    padding: 25px 20px;
+    background: #ECECEA; /* white; */
+}
+
+/* Clear floats after the columns ( à retenir par coeur )*/
+.contenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*********************** FIN ZONING CONTENU *******************************/
+
+
+/* Style en-tête */
+.en-tete{
+    background-color: #558C89;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+	
+	margin-bottom:0;
+}
+
+.menu{
+	padding:1% 2%;
+	text-align: left;
+    background-color: #74AFAD; /*#111;*/
+}
+/*
+.menu li {
+    display:inline-block;
+    padding:20px;
+    list-style:none;
+}
+*/
+
+.item-menu{
+	padding-right:2em;
+}
+
+.menu a {
+    color:#000;
+    text-decoration: none;
+}
+.menu a:hover {
+    color:#fff;
+}
+.current-menu-item a {
+    color:#ECECEA;
+}
+
+
+
+.colonne_laterale li {
+    list-style:none;
+}
+
+.colonne_laterale aside {
+    background:#FFF;
+    margin:0 0 15px;
+    padding:15px;
+}
+.colonne_laterale aside h1 {
+    border-bottom: 1px dashed #CCC;
+    margin-bottom:10px;
+}
+
+.footer {
+    background-color: #74AFAD;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.zoom:hover {
+ position:absolute; 
+ left:2px;   
+ width:auto; 
+ padding:20px;
+ background-color:#555;    
+ box-shadow:
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+border:1px solid #8c8b8b;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+	<link rel="shortcut icon" href="../favicon.ico"  />
+	<link rel="stylesheet" type="text/css" href="../css/template-laeticia.css">
+    <link rel="stylesheet" href="../css/top.css"  media="screen">	
+    <title>Fiche de rappels HTML</title>
+	<style>	
+		.height_{
+		   height:2200px; /* taille de la page */
+		}	
+	</style>
+</head>
+<body >
+
+<div class="en-tete">
+        <h1> Fiche de Rappels HTML </h1>
+        <h2> "Eléments blocs" et "éléments en ligne"  </h2>
+
+        <div id="menu_navigation" class="menu">
+           <span class="item-menu" ><a href="../rappels1/index-rappels1.html">Alignement Horizontal</a></span>		   
+		   <span class="item-menu" ><a href="#"  style="color:#ECECEA; ">Exo1</a></span>
+		   <span class="item-menu" ><a href="../rappels1/solution-exo1.html">Solution-Exo1</a></span>		   
+        </div>	   
+ </div>
+
+
+
+
+<div class="contenu">
+        <div class="colonne_laterale">
+            <b style="color:#ECECEA;"> Alignement Horizontal ( avec float:left) </b>
+			<p class="height_" >
+			  SANS UTILISER L'ATTRIBUT <b>POSITION</b> (absolote, relative) <br><br>
+			  Ecrire <b style="color:red">en 10mn</b> une page HTML composée des elts suivant:<br>
+			  1- Une en-tête(height:200px; background:#555;)<br>
+			  2- Un menu(height:50px; background:#c4c4c4;)<br>
+			  3- Un contenu(trois div horizontal)<br>
+			  4- un footer(height:50px; background:#555;)
+			   
+			   
+			</p>           
+        </div>
+        <div class="colonne_contenu">
+			<p>
+			   La page doit ressembler à ça:<br>
+			   <img src="img/page.png" style="width:100%; height: 62%;" />
+			</p>            
+        </div>
+
+        <div class="colonne_laterale">
+		    <b style="color:#ECECEA;"> Les 3 derniers </b>
+			<p class="Question">
+			   Quels sont les attributs CSS de la classe .divH ?
+			</p>
+			<p class="reponse">
+			  <img src="img/head.png" style="width:100%; height: 62%;" />
+			</p>
+			<p class="Question">
+			   Quelle est la structure HTML de la bage( les fils de &lt;body&gt;)?
+			</p>
+			<p class="reponse">
+			  <img src="img/body.png" style="width:100%; height: 62%;" />
+			</p>
+			<p>
+			 Ajouter un menu  avec dropdown et l'apprendre par coeur(voir examen HTML)
+			</p>
+			
+			<p class="question">
+			  Pourquoi le menu n'a pas de width ?
+			</p>
+			<p class="reponse">
+			  car si on fixe une largeur au menu, <br>
+			  il faudrait tenir compte  de la somme des padding des items menus  <br>
+			  perte de temps inutile
+			  
+			</p>
+			
+			<p class="question">
+			  J'ai viré les width de l'en-tete et du footer<br>
+ 			  et ça marche tjrs pourquoi?
+			</p>
+			<p class="reponse">
+              ICI la largeur de la div#contenu est fixé(30%*3 + 0.5%*6 + 10px *6)<br>
+			  Le flux de la page suit cette largeur
+			  
+			</p>
+        </div>
+        </div>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top" >
+	<img  src="img/top.png" id="imageToTop">
+</button>
+	
+<div class="footer">
+    <small style="color:#ECECEA;"><span style="color:gray;">2019 &copy; -</span> Master Handi</small>
+</div>
+<script type="text/javascript" src="../js/top.js"></script>
+
+</body>
+</html>
