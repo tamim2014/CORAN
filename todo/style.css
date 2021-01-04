@@ -1,0 +1,119 @@
+/*
+ * J'ai change un peu les couleur pour faire comme Anis  ( Page1/8)
+ * Ce TP m'a appris  pas mal de trucs
+ * prends le temps de le lire doucement
+ * Il est vraiment fondamental
+ *
+ */
+
+
+#en-tete{
+    position:relative;
+    width:auto;
+    background-color:yellow;
+    height:100px;
+    /* Ce-ce c'est juste pour adapter le  tp a l'application "REVISION" */
+   
+    padding-top: 0px;
+}
+
+
+#links{
+    position:absolute;
+    width:100px;
+    height:48%;/* height:300px; ---Pourquoi 48%? Parce 625px = 100% => 300x100/626 = 48 */
+    top:35.2%;/*top:220px; ---  220x100/625 = 35.2 */
+    left:0.5%;/*left:0px fait un decalage. ici pas de calcul : i fo juste tatonner et regarder le resultat */
+    background-color:#996600;
+}
+
+
+#navBeta{
+    position:absolute;
+    width:100px;
+    height:48%; /* height:300px; */
+    top:35.2%; /* top:220px; */
+    right:0.5%; /* right:0px; */
+    background-color:gold; 
+}
+
+
+div.content{
+    position:relative;
+    width:auto;
+    height:50%; /* moi j'ai pas reussi a trouver sa. g mis 300px */
+    min-width:20%; /* g pas reussi a trouver sa */
+    margin:6% 20% 100%; /* ici aussi g pas reussi. je sais pas comment t'as fait */
+    background-color:white;
+	border:1px solid black;
+    line-height: 0.9em;
+}
+
+/* J'ajoute 1 truc pour l'image */
+img {
+	height:100px; /* car c'est la hauteur de div#entete */
+	width:100%; /* car c'est la largeur de div#entet */
+}
+
+
+
+/* J'ajoute 1 truc pour le contenu */
+
+h4 , p {
+	text-align:center;
+	color:#996600;
+	font-size:1.9em;
+    line-height: 1.2em;
+}
+
+
+/*  1 truc pour le  menu */
+
+ul, li {
+    list-style:none;	
+	text-align:center;
+	padding:4% 0% ;
+	width:100%;
+	background:#ff1;
+	margin-top:0;
+	border-bottom:1px solid gray;
+}
+
+    @media all and (max-width: 900px) {
+      
+          body div#police h4 { font-size:1.6em;  }
+		      body div#police p { font-size:1.2em;  }
+		      div.content{ 
+            margin-top:8.6%;
+            height:47%; 
+            border-bottom: 0; 
+            line-height: 2.2em; 
+          }
+          div#navBeta{ top:45%; }
+          div#links{ top:45%; }		           		  
+		}
+
+		@media all and (max-width: 600px) {
+		  main  { width:100%; } 
+		  aside { width:100%; } 
+          footer {padding-top:2px;}	
+          body div#police h4 { font-size:1.2em; }				  
+		}
+		@media all and (max-width: 801px) and (min-width: 601px) {
+		  main {  width:80%;  }
+		 .saut {  width:100%; }
+          footer {padding-top:2px;}		 
+		}
+
+
+
+
+
+
+
+
+
+ 
+     
+
+

@@ -1,0 +1,107 @@
+body {
+	overflow:hidden; /* virer les scroll horizontal qui apparaisse avec Internet Explorer */
+}
+#content{text-align:left; width: auto;}
+.calcul {
+   /*
+	border:1px solid #f0f2f2; 
+	background-color: #c4c4c4;
+   */
+	border:2px solid gray;
+	border-bottom: 0; 
+	border-right: 0;
+    background-color: white; 
+	border-radius: 6px; 			
+	padding:4px 2px;
+}
+.siZ{font-size: 0.8em; text-align: center;}
+.G{color:#555;}
+.R{color:#990033; font-weight:bold; }
+.B{color:blue;}/* #4d94ff; #558C89; purple */
+.B2{ color:red; font-family:Calibry;  font-weight:100; }
+
+code {
+	font-weight: bold;
+	font-style: italic;
+	background-color: #f0f2f2;
+	color:#555;
+	border-radius: 10px 0 0 0;
+}
+
+.infosDuMasque{
+   background-color: #8c8b81;/*  #115  */
+   padding:4px;
+}
+
+/* sépare les exercices */
+.breakExo{
+     background:#ECECEA;
+	 margin:5% -5%;
+	 width:108%;
+	 height:20px;
+   }
+/* identifiant réseau */
+.idR{
+	color:#115; 
+	border:1px solid #8c8b8b; 
+	padding:1px 4px; 
+	border-radius:3px;
+	box-shadow:2px 2px 0.5px 0.5px #8c8b8b; 
+}
+/* identifiant sous-réseau */
+.idS{
+	border:1px solid #8c8b8b; 
+	padding:1px 4px; 
+	border-radius:3px;
+	box-shadow:2px 2px 0.5px 0.5px #8c8b8b; 
+}
+/* réponse */
+.idReponse, .idReponseRouge{
+	color:#115; 
+	border:1px solid #8c8b8b; 
+	padding:1.55em 0.4em 0.1em 0.4em; 
+	box-shadow:2px 2px 0.5px 0.5px #8c8b8b;	
+	border-radius:0px 3px 3px 3px;
+}
+.idReponseRouge{
+    color:#990033; 
+	font-weight:bold;	
+	border:1px solid #8c8b8b; 
+	padding:1.55em 0.4em 0.1em 0.4em; 
+	box-shadow:2px 2px 0.5px 0.5px #8c8b8b;	
+	border-radius:0px 3px 3px 3px;
+}
+
+
+
+/**************************** DropDown: Cacher/Afficher la réponse ************************************/
+
+/* Rendre toutes les reponses visibles avant l'envoi sur moodle  et activer les question*/
+.reponse { display: block; }
+.question {background-color: #74AFAD; color: white;} 
+
+/* pour revenir en mode "EXERCICE": virer les 2 lignes précédent et décommenter la ligne suivante */
+
+
+/* Cacher la reponse 
+
+.reponse { display: none; }
+
+*/
+
+			
+/* Optional: Style the caret down icon */
+.fa-caret-down { float: right; padding-right: 8px; }
+ 
+/* Add an active class to the active dropdown button */
+.active { background-color: #74AFAD; color: white; }
+
+
+
+
+@media all and (max-width: 210px) {
+  body{font-size:0.7em;}
+  ul{padding-left:0.9em;}	   	  
+}
+
+	

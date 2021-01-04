@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TD1 question1 à 10</title>
+	<link rel="stylesheet" href="../css/calcul.css" />	
+	<!-- le p'tit bouton du drop down -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.capture-reponse{ 
+  float: left; 
+  width:60%;
+  height: 90% ;  
+  padding:1em;
+  margin:2.5% 6.5%;
+  background-color:#555;   
+  box-shadow:
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+  border:1px solid #8c8b8b;
+}
+.question7:hover{width:96%; height:200px; margin-left:-2em;}
+.question8:hover{width:96%; height:100px; margin-left:-2em;}
+</style>
+</head>
+<body style="background-color:#c4c4c4">
+	<div id="content">
+		<h4>
+          <ul type="square">
+		    <li id="question" onclick="question();">display</li>
+		  </ul>
+        </h4>         
+
+		
+		<div class="breakExo" style="height:2px;"></div>
+		
+		<div class="calcul siZ" style="border-radius:0;">
+	      <b><span class="R">block &emsp; <span style="color:black">vs</span> &emsp;  inline</span></b>
+	    </div>
+
+		<ol>
+		    <li>
+		      <p class="B question">
+			    <b>Les types d'éléments ? <i class="fa fa-caret-down"></i></b><br>
+					  
+			  </p>			  
+			  <p class="reponse"><code >							
+				<span class="idR"><span class="B">&bull;</span></span>
+				<span class="idR"><span class="R">Block( boite ) </span></span><br>
+				<span class="idR"><span class="B">&bull;</span></span>
+				<span class="idR"><span class="R">inline</span></span><br>
+				<span class="idR"><span class="B">&bull;</span></span>
+				<span class="idR"><span class="R">invisible</span></span><br>
+			  </code></p>
+		    </li>
+		    <li>
+		      <p class="B question">
+			    <b>Block ?<i class="fa fa-caret-down"></i></b><br>					  
+			  </p>			  
+			  <p class="reponse"><code >			
+				<span class="idR"><span class="R">&bull; Retour à la ligne</span></span><br>
+				<span class="idR"><span class="R">&bull; Sert à la mise en page</span></span><br><br>
+				<span class="idR"><span class="R">
+				Exemples:<br>
+				&emsp;<span class="idR"><span class="G">&#x2023;</span></span>
+				&emsp;<span class="idR"><span class="G" > DIV , P , Hi,</span></span><br>	
+				&emsp;<span class="idR"><span class="G">&#8227;</span></span>
+				&emsp;<span class="idR"><span class="G" > TABLE, liste( ul, ol)</span></span>
+
+			  </code></p>
+		    </li>
+			<li>
+		      <p class="B question">
+			    <b>inline ?<i class="fa fa-caret-down"></i></b><br>					  
+			  </p>			  
+			  <p class="reponse"><code >			
+				<span class="idR"><span class="R">&bull; PAS de retour à la ligne</span></span><br>
+				<span class="idR"><span class="R">&bull; Sert à styler du texte</span></span><br><br>
+				<span class="idR"><span class="R">
+				Exemples:<br>
+				  &emsp;<span class="idR"><span class="G">&#x2023;</span></span>
+				  &emsp;<span class="idR"><span class="G" > img  , a , ...</span></span><br>	
+				  &emsp;<span class="idR"><span class="G">&#8227;</span></span>
+				 &emsp;<span class="idR"><span class="G" > span, br , ...</span></span>
+			  </code></p>
+		    </li>
+		</ol>
+		<div class="breakExo" style="height:0.1em;"></div>	
+		<ol start="4">
+		    <li>
+		      <p class="B question">
+			    <b>Affichage Block ?<i class="fa fa-caret-down"></i></b><br>					  
+			  </p>			  
+			  <p class="reponse" style="">			
+                  <img src="img/block.png"/>		
+			  </p>
+		    </li>
+		    <li>
+		      <p class="B question">
+			    <b>Affichage inline ?<i class="fa fa-caret-down"></i></b><br>					  
+			  </p>			  
+			  <p class="reponse" style="">			
+                  <img src="img/inline.png"/>		
+			  </p>
+		    </li>
+		</ol>
+		<div class="breakExo" style="height:0.1em;"></div>	
+		<ol start="6">
+			<li>
+		      <p class="B question">
+			    <b>Emboitement ?<i class="fa fa-caret-down"></i></b><br>					  
+			  </p>			  
+			  <p class="reponse"><code>
+                 Interdit:<br>			  
+				<span class="idR"><span class="B">&bull;</span></span>
+				<span class="idR"><span class="R">&lt;inline&gt; <span class="B">&lt;block&gt;</span> &lt;&sol;inline&gt;</span></span><br>
+			  </code></p>
+		    </li>
+						<li>
+		      <p class="B question">
+			    <b>Proprieté "position" ?<i class="fa fa-caret-down"></i></b><br>					  
+			  </p>			  
+			  <p class="reponse"><code>
+                 Interdit:<br>			  
+				<span class="idR"><span class="B">&bull;</span></span>
+				<span class="idR"><span class="R" style="font-size:0.9em"> &nexist; pour les balises &lt;inline&gt;</span></span><br>
+			  </code></p>
+		    </li>
+			
+		</ol>		 
+
+		<div class="breakExo" style="height:0.1em;"></div>	
+	
+	</div><!-- div#content -->
+	<script type="text/javascript" src="../js/dropdown.js"></script><!-- Afficher/Cacher les réponses -->
+
+</body>
+</html>

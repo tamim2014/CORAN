@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alignement horizontal </title>
+	<link rel="stylesheet" href="../css/calcul.css" />
+    <!-- le p'tit bouton du drop down -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+		.capture-reponse{ 
+		  float: left; 
+		  width:60%;
+		  height: 90% ;  
+		  padding:0.8em;
+		  margin:2.5% 6.5%;
+		  background-color:#555;   
+		  box-shadow:
+			0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+			0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+		  border:1px solid #8c8b8b;
+		}
+    </style>	
+</head>
+<body style="background:whitesmoke">
+	<div id="content">
+		<h4>
+          <ul type="square">
+		    <li>Alignement Horizontal des block</li>
+		  </ul>
+        </h4>         
+      
+		
+		<div class="breakExo" style="height:2px;"></div>
+		
+		<div class="calcul siZ" style="border-radius:0; border:2px solid #ECECEA;">
+	      <b><span class="R">Deux méthodes</span></b>
+	    </div>
+
+		<ol>
+		    <li>
+		      <p class="B question">
+			    <b>Agir sur 1 élément  <i class="fa fa-caret-down"></i></b><br>
+			  <p class="reponse"><code>			
+				<span class="idR"><span class="R">&bull;</span></span>
+				<span class="idR"><span class="R">with:"<span class="B">préciser</span>" ;   </span></span><br>
+				<span class="idR"><span class="R">&bull;</span></span>
+				<span class="idR"><span class="R">margin-left:"<span class="B">auto</span>" ;</span></span><br>
+				<span class="idR"><span class="R">&bull;</span></span>
+				<span class="idR"><span class="R">margin-right:"<span class="B">auo</span>" ;</span></span><br>
+			  </code></p>
+		    </li>
+		</ol>
+		<div class="breakExo" style="height:0.1em;"></div>
+        <ol start="2">
+		    <li>
+		      <p class="B question">
+			    <b>Agit sur +sieurs elts   <i class="fa fa-caret-down"></i></b><br>
+			    &nbsp;&lt;div class="contenu"> <br>
+				<small>
+					&emsp; &lt;div class="colonne_lateral">&lt;&sol;div><br>
+					&emsp; &lt;div class="colonne_contenu">&lt;&sol;div><br>
+					&emsp; &lt;div class="colonne_laterale">&lt;&sol;div>			
+				</small>
+
+                &nbsp;&lt;/div> 					  
+			  </p>			  
+			  <p class="reponse"><code >			
+				<span class="idR"><span class="R">.colonne_lateral{<span class="B">float: left;</span>}</span></span><br>
+				<span class="idR"><span class="R">.colonne_contenu{<span class="B">float: left;</span>}</span></span><br>
+				<span class="idR"><span class="R">.contenu:after{
+                </code>
+		        <p style="padding:0 1.4em;">
+				      <span class="idR"><span class="G">&#x2023;</span></span>
+				      <span class="idR"><span class="G" > content: " " ;</span></span><br>	
+				      <span class="idR"><span class="G">&#8227;</span></span>
+				      <span class="idR"><span class="G" >display: table ;</span></span><br>
+				      <span class="idR"><span class="G">&#x2023;</span></span>
+				      <span class="idR"><span class="G" >clear:both ;</span></span><br>
+                </p>
+				<code ><span class="idR"><span class="R">
+					 }
+				</span></span>
+			  </code></p>
+		    </li>
+		    
+		</ol>
+		<div class="breakExo" style="height:0.1em;"></div>
+		
+		
+
+	</div><!-- div#content -->
+	<script type="text/javascript" src="../js/dropdown.js"></script><!-- Afficher/Cacher les réponses -->
+</body>
+</html>
