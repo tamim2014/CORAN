@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/numerotation.css">
 	<link rel="stylesheet" href="css/commentaires.css">
 	<link rel="stylesheet" href="css/top.css"  media="screen">
+	<link rel="stylesheet" href="css/Hoverable_Sidenav_Buttons.css">
 	<style>
 		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
 		.planche{ font-weight:bold; font-family: Amiri  !important; height:auto; }
@@ -33,15 +34,13 @@
 			 
                      .dropdown-content{z-index:99;}
 		    /*   ###  */			
-	    } 
-		
-
-			
+	    }			
 	</style>
-
 </head>
-<body style="background:#bbb;">
-	<div id="entete">	   
+<body style="background:#bbb; ">
+
+	<div id="entete">
+	
 	    <img src="img/test.png" class="header-image" >
         <span class="logo" >الله ممّا نفعنا بما علّمتنا</span>			
 	   	<div class="hero-image">
@@ -57,7 +56,14 @@
 			</div>			
 		  </div>
 		</div>
-	</div>	
+	</div>
+    <!-- Hoverable Sidenav Buttons -->
+    <div id="mySidenav" class="sidenav">
+	  <a href="#" id="bouton1">Fundi Moussa1</a>
+	  <a href="#" id="bouton2">Fundi Moussa2</a>
+	  <a href="#" id="bouton3">Fundi Moussa3</a>
+	  <a href="#" id="bouton4" style="z-index:99;">Fundi Moussan4</a>
+	</div>		
 	<div id="menu">
 		<a href="index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰ </span>		
 		<div class="dropdown">
@@ -180,8 +186,8 @@
 			</div><!-- .dropdown-content -->
 		</div><!-- .dropdown -->		        
 	</div><!-- #menu -->
-	<div id="contenu">
 		<div class="colone-laterale" id="sidbarG">
+		
 		    <h2 class="grosTitre" style="padding:1.2em 0em !important;" >
 			     <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" >S. 112</small></span>
 			     <span class="box-shadow-titre" style="color:#8c8c8c;" >Roukia</span>
@@ -279,6 +285,8 @@
 		  </tr>
 		</table>
 	</div><!-- #footer -->
+		<div id="contenu">
+
     <script type="text/javascript" src="js/sticky.js"></script>
 	<script>
 		var acc = document.getElementsByClassName("accordion");
