@@ -5,35 +5,34 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="shortcut icon" href="../../favicon.ico"  />  
    <link rel="stylesheet" href="css/fullPageTabs.css" media="screen" /> 
-   <script type="text/javascript" src="js/fullPageTabs.js"></script>	
+   <script type="text/javascript" src="js/fullPageTabs.js"></script>
+   <script type="text/javascript" src="js/fullPageTabs.js"></script>	   
 
        
 </head>
 <body onload="openPage('Sujet', this, '#bbb')" >
   <!-- MENU FULL PAGE TABS -->
 	<button class="tablink" onclick="openPage('Sujet', this, '#bbb')" id="defaultOpen">Prières</button>
-	<button class="tablink" onclick="openPage('Solution', this, '#bbb')"  >Jeuns</button>	
-	<button class="tablink" onclick="openPage('Fiche', this, '#bbb')">Coran</button>
-	<button class="tablink" onclick="openPage('Cours', this, '#bbb')">Divers</button>
+	<button class="tablink" onclick="openPage('Solution', this, '#bbb')">Cahier bleu</button>	
+	<button class="tablink" onclick="openPage('Fiche', this, '#bbb')">Douans</button>
+	<button class="tablink" onclick="openPage('Cours', this, 'black')">Divers</button>
 	
 	<!-- ONGLET 1 -->
 	<div id="Sujet" class="tabcontent" style="background:#bbb;">
-	  <object class="onglet1-1-resume" style="width:90%;"  data="todoList.html" ></object>
+	  <object class="onglet1-1-resume" style="width:90%; padding:0 !important;"  data="todoList_prières.html" ></object>
 	</div>
 	
 	<!-- ONGLET 2 -->
 	<div id="Solution" class="tabcontent" style="background:#bbb;">	 
-       <object class="onglet1-1-resume" style="width:90%;"  data="todoList.html" ></object>
-	</div>
-
-    <!-- ONGLET 3 -->	
-	<div id="Cours" class="tabcontent" style="background:#bbb">
-	  <object data="rappels1/index-rappels1.html"  class="chargerObjet"  ></object>
-	</div>
-	
-	<!-- ONGLET 4 -->
+       <object class="onglet1-1-resume" style="width:90%;"  data="cahierBleu.html" ></object>
+	</div>	
+	<!-- ONGLET 3 -->
 	<div id="Fiche" class="tabcontent" style="background:#bbb">
-	  <object class="onglet1-1-resume" style="width:90%;"  data="todoList.html" ></object>
+	  <object class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>
+	</div>
+	<!-- ONGLET 4 -->	
+	<div id="Cours" class="tabcontent" style="background:black">
+	  <object class="onglet1-1-resume" style="width:90%;"  data="todoList_divers.html" ></object>
 	</div>
 	<div class="conteneur-reponses"> </div> <!-- c'est juste un separateur sujet/solution -->
 

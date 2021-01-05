@@ -77,8 +77,8 @@
 	  box-shadow:
 	    0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
 		0px 2px 2px 0px rgba(255, 255, 255, 0.5);
-		border:1px solid #8c8b8b;
-		border-radius: 4px; 
+	    border:1px solid #8c8b8b;
+		/*	  border-radius: 4px; */
 	}
 	/* Clear floats after the header */
 	.header:after {
@@ -120,14 +120,38 @@
 </head>
 <body>
     <div id="myDIV" class="header">
-	    <h2 style="margin:5px; "> Prières du jour (<small><i>Aide mémoire</i></small>)</h2>
+	    <h2 style="margin:5px; "> <i>Prières du jour</i> (<small><i>		    
+		    <script>
+			    // Source: http://b.kostrzewa.free.fr/javascript/td-depart/affiche_date.html
+			    /***** Nous sommes le 5/1/2021. ****************************
+			     var maintenant=new Date();
+				 var jour=maintenant.getDate();
+				 var mois=maintenant.getMonth()+1;
+				 var an=maintenant.getFullYear();
+				 document.write("Nous sommes le ",jour,"/",mois,"/",an,".");
+				**************************************************************/
+		    </script>
+			<span id="oDateQc"></span>
+			<script>
+			    // source: http://www.trucsweb.com/tutoriels/javascript/tw333/
+				function twDateLocale(_id,_date,_lang,_long) {
+				  if(_long) {
+					var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+				  } else {
+					var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+				  }
+				  document.getElementById(_id).innerHTML = _date.toLocaleDateString( _lang,options).replace(/\b\w/, function(l){ return l.toUpperCase() });
+				}
+			    twDateLocale("oDateQc",new Date(),"fr-CA",1);
+			</script>
+		</i></small>)</h2>
 		<input type="text" id="task" placeholder="Écrire ici...">
 		<span id="add" class="addBtn">Add</span>
 	</div>
 	
 	<div id="todos"></div>
 		 
-	<script src="js/todo.js"></script>
+	<script src="js/todo_prieres.js"></script>
 	<script>
       // Add a "checked" symbol when clicking on a list item
 		var list = document.querySelector('ul');

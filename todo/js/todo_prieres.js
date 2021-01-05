@@ -1,6 +1,6 @@
 function get_todos() {
     var todos = new Array;
-    var todos_str = localStorage.getItem('todo');
+    var todos_str = localStorage.getItem('todo'); /* todo est la  variable à modifier pour distinguer le script todo_divers.js et le script todo_prieres.js  */
     if (todos_str !== null) {
         todos = JSON.parse(todos_str); 
     }
