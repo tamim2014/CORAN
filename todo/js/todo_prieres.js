@@ -29,7 +29,7 @@ function remove() {
  
     show();
  
-    return false;
+   // return false;
 }
  
 function show() {
@@ -37,7 +37,7 @@ function show() {
  
     var html = '<ul>';
     for(var i=0; i<todos.length; i++) {
-        html += '<li class="fait">' + todos[i] + '<button class="remove" id="' + i  + '">x</button></li>';
+        html += '<li class="fait">' + todos[i] + '<button class="remove tester" id="' + i  + '">x</button></li>';
     };
     html += '</ul>';
  
