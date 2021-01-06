@@ -59,7 +59,6 @@
 		border:none;
 		outline:none;
 		background:inherit;
-		color:#ccc;
 	}
 	.remove:hover{
 	  background-color:#555; /* #f44336; */
@@ -122,29 +121,13 @@
 	.tester{ 
 	    width: inherit;
 	    height: inherit;
-		border-top:0.0001px solid #f9f9f9;	
 		/*
         background:#4CAF50;  vert 
         background:#f44336;	 rouge
 		 background:inherit;
-		*/ 
-         background:#4CAF50;
-         	 
+		*/        		
 	}
   </style>
-  
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-<script>
-/*
-	$(document).ready(function(){
-	  $("#kadhoi").click(function(){
-		$("#3").css("background-color", "yellow");
-	  });
-	});
-*/
-</script>
-  
-
 
 </head>
 <body>
@@ -179,9 +162,9 @@
 	</div>
 	
 	<div id="todos"></div>
-	<!-- Gerer les prières: Marque s' elles sont faites  fait à temps(أداء) ou nom(قضاء) -->
-	<div onclick="ada();" id="ada" class="ada" style="position:absolute; bottom:2em; left:2em; width: 20px; height:15px; background-color: #4CAF50;"></div><span style="position:absolute; bottom:2em;  left:3.5em; color:gray;"><small><i style="font-size:.9em;" >Fait à temps</i>( أداء )</small></span>
-    <div onclick="kadhoi();" id="kadhoi" class="kadhoi" style="position:absolute; bottom:.7em; left:2em; width: 20px; height:15px; background:#f44336;"></div><span style="position:absolute; bottom:.7em; left:3.5em; color:gray;"><small><i style="font-size:.9em;">Fait hors temps</i>( قضاء )</small></span>
+		<!-- Gerer les prières: Marque s' elles sont faites  fait à temps(أداء) ou nom(قضاء) -->
+	    <div onclick="ada();" id="ada" class="ada" style="position:absolute; bottom:2em; left:2em; width: 20px; height:15px; background-color: #4CAF50;"></div><span style="position:absolute; bottom:2em;  left:3.5em; color:gray;"><small><i style="font-size:.9em;" >Fait à temps</i>( أداء )</small></span>
+		<div onclick="kadhoi();" id="kadhoi" class="kadhoi" style="position:absolute; bottom:.7em; left:2em; width: 20px; height:15px; background:#f44336;"></div><span style="position:absolute; bottom:.7em; left:3.5em; color:gray;"><small><i style="font-size:.9em;">Retardé</i>( قضاء )</small></span>
 
 		 
 	<script src="js/todo_prieres.js"></script>
@@ -217,35 +200,22 @@
 		var adaa = document.getElementsByClassName("tester");
 		var i = adaa.length ; // test: document.write(i); affiche le nbr total
 		
-		var vr = document.getElementsByClassName("tester")[i-1]; // la dernière prière ajoutée
-		vr.style.background = '#4CAF50';
+		var dernierepriereأداء = document.getElementsByClassName("tester")[i-1]; // la dernière prière ajoutée
+		dernierepriereأداء.style.background = '#4CAF50';
 					
-        //return false;
+        return false;
     }
-	function kadhoi() {	
-
+	function kadhoi() {		
 		var kadhoi = document.getElementsByClassName("tester");
 		var j = kadhoi.length ; 
 		
-		// var dernierepriereقضاء = document.getElementsByClassName("tester")[j-1]; // la dernière prière ajoutée
-		// dernierepriereقضاء.style.background = '#f44336';
-		
-		var rg = document.getElementsByClassName("tester")[j-1]; // la dernière prière ajoutée
-     
-		localStorage.setItem("lastcolor", "#f44336"); 
-		
-		rg.style.background = localStorage.getItem("lastcolor");
-							
+		var dernierepriereقضاء = document.getElementsByClassName("tester")[j-1]; // la dernière prière ajoutée
+		dernierepriereقضاء.style.background = '#f44336';
+					
         return false;
-		
-		// le script est bon : le blem c'est l'affichage voir la mthd show() dans le fichier js
     }
 
   </script>
-  
-
-  
-
 </body>
 
 </html>
