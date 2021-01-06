@@ -1,7 +1,9 @@
 function get_todos() {
     var todos = new Array;
+	// localStorage.getItem(): Accéder à des données enregistrées dans l’espace local courant
     var todos_str = localStorage.getItem('todo'); /* todo est la  variable à modifier pour distinguer le script todo_divers.js et le script todo_prieres.js  */
     if (todos_str !== null) {
+		// JSON.parse() : construit la valeur JavaScript d'une chaîne de caractères JSON 
         todos = JSON.parse(todos_str); 
     }
     return todos;
@@ -18,8 +20,11 @@ function add() {
 		show();
 	}    
     document.getElementById("task").value = ""; // Rafraichissement du champs de saisie( sinon la dernière valeur entrée reste là et oblige l'utilisateur à l'effacer à la main)
-    return false;
+     
+   return false;
 }
+
+
  
 function remove() {
     var id = this.getAttribute('id');
@@ -31,23 +36,31 @@ function remove() {
  
    // return false;
 }
+
+
  
 function show() {
     var todos = get_todos();
  
     var html = '<ul>';
     for(var i=0; i<todos.length; i++) {
-        html += '<li class="fait">' + todos[i] + '<button class="remove tester" id="' + i  + '">x</button></li>';
+        html += '<li class="fait">' + todos[i] + '<button class="remove tester " id="' + i  + '">x</button></li>';
     };
     html += '</ul>';
  
     document.getElementById('todos').innerHTML = html;
+	
+
+	
  
     var buttons = document.getElementsByClassName('remove');
     for (var i=0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', remove);
     };
+	
+
 }
  
-document.getElementById('add').addEventListener('click', add);
+document.getElementById('add').addEventListener('click', add); // un écouteur sur le bouton add
+//document.getElementById('ada').addEventListener('click', kadhoi); // un écouteur sur le bouton ada
 show();
