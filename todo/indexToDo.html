@@ -6,9 +6,15 @@
    <link rel="shortcut icon" href="../img/coran.ico"  />
    <link rel="stylesheet" href="css/fullPageTabs.css" media="screen" /> 
    <script type="text/javascript" src="js/fullPageTabs.js"></script>
-   <script type="text/javascript" src="js/fullPageTabs.js"></script>  
+   <script type="text/javascript" src="js/fullPageTabs.js"></script> 
+   <style>
+	body {  
+	   margin: 0;
+	   overflow: hidden !important; /* Hide scrollbars */
+	}
+   </style>	
 </head>
-<body onload="openPage('Sujet', this, '#bbb')"  >
+<body onload="openPage('Sujet', this, '#bbb')" style="overflow: hidden !important;" >
   <!-- MENU FULL PAGE TABS -->
 	<button class="tablink" onclick="openPage('Sujet', this, '#bbb')" id="defaultOpen">Prières</button>
 	<button class="tablink" onclick="openPage('Solution', this, '#bbb')">Cahier bleu</button>	
