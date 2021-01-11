@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="../css/commentaires.css">
 	<link rel="stylesheet" href="../css/top.css"  media="screen">
 	<link rel="stylesheet" href="../css/Hoverable_Sidenav_Buttons.css">
+	<link rel="stylesheet" href="../css/pagination.css">
 	<style>
 		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
 		.planche{ font-weight:bold; font-family: Amiri  !important; height:auto; }
@@ -59,10 +60,10 @@
 	</div>
     <!-- Hoverable Sidenav Buttons -->
     <div id="mySidenav" class="sidenav">
-	  <a href="../#" id="bouton1">Fundi Moussa1</a>
-	  <a href="../#" id="bouton2">Fundi Moussa2</a>
-	  <a href="../#" id="bouton3">Fundi Moussa3</a>
-	  <a href="../#" id="bouton4" style="z-index:99;">Fundi Moussan4</a>
+	  <a href="#" id="bouton1">Fundi Moussa1</a>
+	  <a href="#" id="bouton2">Fundi Moussa2</a>
+	  <a href="#" id="bouton3">Fundi Moussa3</a>
+	  <a href="#" id="bouton4" style="z-index:99;">Fundi Moussan4</a>
 	</div>		
 	<div id="menu">
 		<a href="../index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰ </span>		
@@ -248,7 +249,15 @@
 					<p class="numPageArabe"  style="padding-top:0" >				
 						١
 					</p>
-					<a href="roukia2.html" id="suivant" class="next signal-Interpage" style=" line-height:1.9; height:1.9em;" >&laquo; Next </a>
+					<!-- <a href="roukia2.html" id="suivant" class="next signal-Interpage" style=" line-height:1.9; height:1.9em;" >&laquo; Next </a> -->
+				    <div class="pagination" style="margin-top:1.5em !important;">
+					  <a href="#" class="previous">&raquo;</a>					  
+					  <a href="#" class="active">1</a>
+					  <a href="roukia2.html" class="signal-Interpage">2</a>
+					  <a href="roukia3.html">3</a>
+					  <a href="roukia4.html">4</a>
+					  <a href="#" class="previous">&laquo;</a>					  
+					</div>
 				</div><!-- page1 -->
 			</div>				 									
 		</div><!-- #colone-contenu -->
@@ -287,7 +296,7 @@
 	</div><!-- #footer -->
 		<div id="contenu">
 
-    <script type="text/javascript" src="js/sticky.js"></script>
+    <script type="text/javascript" src="../js/sticky.js"></script>
 	<script>
 		var acc = document.getElementsByClassName("accordion");
 		var j;
