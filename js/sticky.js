@@ -202,10 +202,11 @@
  **********************************************************************/
 
 
-var mybutton = document.getElementById("myBtn"); //Get the button
+var mybutton = document.getElementById("myBtn"); //Get the button mySidepane
+
 function scrollFunction() { //window.onscroll = function() {scrollFunction()};
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-    mybutton.style.display = "block";
+    mybutton.style.display = "block";	
   } else {
     mybutton.style.display = "none";
   }

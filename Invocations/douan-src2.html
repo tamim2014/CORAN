@@ -41,15 +41,23 @@
 	   /*************Collapsed Sidepanel****************/
 	  /************************************************/
 	  .sidepanel  {
-		  height: auto;
-          width: 99%;
-		  z-index: 1;		  
-		  margin-left:.5%;
+
+		  position: absolute; 
+		  height: 0%;
+          width: 39.25%;
+
+		  z-index: 1;
+		  top: 63.1%; 
+		  
+		  left: 5.3%;
 		  background-color: #555;
 		  overflow-x: hidden;
 		  overflow-y: hidden;
 		  transition-delay: 1s, 250ms;
-          transition-property: height, color;		
+          transition-property: height, color;
+
+	
+		
 		}
 
 		.sidepanel a {
@@ -95,11 +103,12 @@
 			padding-top:1.2em; 
 			line-height:1.95;
 		}
-		.pageGauche{ overflow-y : hidden;	}
 
 		@media screen and (max-width: 850px) {
             .sidepanel  {
-				
+		         top: 79.5% !important;
+		         left: 10.7%; !important;
+				 width:78.2% !important;				
 				 height: inherit;
                  overflow-y: auto;				 
 			}
@@ -282,20 +291,19 @@
 				 <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" >4 Versets</small></span>
 			</h2>
 			<div class="planche plancheFrance" >
-
+			    <!-- Collapsed Sidepanel -->
+				<div id="mySidepanel" class="sidepanel">
+				  <a href="javascript:void(0)" class="closepanel" onclick="closePanel()">×</a>
+				  <a href="#">Douan1(<i><small>2 Pages</small></i>)</a>
+				  <a href="#">Douan2(<i><small>2 Pages</small></i>)</a>
+				  <a href="#">Douan3(<i><small>3 Pages</small></i>)</a>
+				  <a href="#">Douan4(<i><small>4 Pages</small></i>)</a>
+				</div>	
  			
 				<div class="pageGauche" style="height:93.6em; line-height:1.52; box-shadow:0px 8px 6px -2px gray; ">
 				    <div class="numJuzHizb" style="text-align:left; color:#2a5927; padding:1.7em 1em 1.1em 1em;" >				
 						 <button class="openpanel" onclick="openPanel()" title="Ouvrir les du'ãns">☰</button>
 				    </div>
-					<!-- collapsed panel -->
-					<div id="mySidepanel" class="sidepanel">
-					  <a href="javascript:void(0)" class="closepanel" onclick="closePanel()">×</a>
-					  <a href="#">Douan1(<i><small>2 Pages</small></i>)</a>
-					  <a href="#">Douan2(<i><small>2 Pages</small></i>)</a>
-					  <a href="#">Douan3(<i><small>3 Pages</small></i>)</a>
-					  <a href="#">Douan4(<i><small>4 Pages</small></i>)</a>
-					</div>	
 					<p class="traductionDouan1">
 					                         
                     </p>
@@ -334,7 +342,9 @@
 					   <span class="separateurArabe" style="">&#10020; &#10020; &#10020;</span><br>
 					   وَهُوَ ٱلَّذِى جَعَلَڪُمۡ خَلَـٰٓٮِٕفَ ٱلۡأَرۡضِ وَرَفَعَ بَعۡضَكُمۡ فَوۡقَ بَعۡضٍ۬ دَرَجَـٰتٍ۬ لِّيَبۡلُوَكُمۡ فِى مَآ ءَاتَٮٰكُمۡ‌ۗ إِنَّ رَبَّكَ سَرِيعُ ٱلۡعِقَابِ وَإِنَّهُ ۥ لَغَفُورٌ۬ رَّحِيمُۢ (﻿١٦٥﻿) 
 					</p>
-															
+					
+
+										
 					<p class="numPageArabe"  style="padding-top:0; padding-bottom:0;" >				
 						١
 					</p>
@@ -388,11 +398,23 @@
 	<!-- Collapsed Sidepanel  -->
 	<script>
 		function openPanel() {
-		  document.getElementById("mySidepanel").style.display = "block";          	  
+		
+		 /* document.getElementById("mySidepanel").style.width = "43.25%"; */
+		  document.getElementById("mySidepanel").style.height = "auto";
+		/*  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) { */
+
+		  
+		  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100){
+              document.getElementById("mySidepanel").style.top = "63.1% "; /* 63.1% */
+          }else{
+		     document.getElementById("mySidepanel").style.top = "70.3%";
+		  }
+		  
 		}
 
 		function closePanel() {
-		 document.getElementById("mySidepanel").style.display = "none";
+		 /* document.getElementById("mySidepanel").style.width = "0"; */
+		 document.getElementById("mySidepanel").style.height = "0%";
 		}
 	</script>
 	<!-- ATELIER -->

@@ -235,6 +235,10 @@
 	.hikma-normal { color:#660099;}	
 	.douan-nomal { color:#00b36b;}
 	.paragraph { color:#9d3d5f; }
+	/* 3 étoiles qui séparent les douans */
+	.separateurArabe , .separateurFrançais{ word-spacing: 1rem; }
+	.separateurArabe { padding-right:40%; padding-top:0 !important; padding-bottom:0 !important; font-size:.9em;  line-height:0 !important;  }
+	.separateurFrançais{ padding-left:40%; font-size:1.1em; }
 	
 
 	
