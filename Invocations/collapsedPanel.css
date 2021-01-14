@@ -26,7 +26,8 @@
 		}
 
 		.openpanel {
-          margin-left:1em ; cursor: pointer;		  
+		  margin-left:.5em ;
+          cursor: pointer;		  
 		  background-color: transparent;  color: #444;			 	
 		  border: none !important; /* la bordure du bouton */
 		  outline: none !important; /* la bordure après l'activation du bouton */
@@ -43,6 +44,7 @@
 		@media screen and (max-width: 850px) {
             .sidepanel  { height: inherit;  overflow-y: auto;	}
             .sidepanel .closepanel { margin-left:87% !important; }
+		
             .sidepanel a { font-size: 1em; padding: 0 4px 6px 16px !important; }
 					
 			/* Ajuster le conteneur du panel( la page gauche - texte français ) */

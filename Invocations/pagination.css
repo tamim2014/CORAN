@@ -1,0 +1,31 @@
+	 /*********************************/
+	/**** Pagination with Margins*****/
+	/********************************/
+    .pagination {
+	/*
+	  position:absolute; bottom:0;  left:22%;
+	*/
+	  display: inline-block;
+	  line-height:1 !important;
+	  font-family: Georgia, serif !important;
+	  font-weight: lighter !important;
+	  font-size:.6em;	  
+	}
+
+	.pagination a {
+	  color: black;
+	  float: left;
+	  padding: 1px 8px 6px 8px;
+	  text-decoration: none;
+	  transition: background-color .3s;
+	  border: 1px solid #ddd;
+	  margin: 0 2px;
+	}
+
+	.pagination a.active {
+	  background-color: #4CAF50;
+	  color: white;
+	  border: 1px solid #4CAF50;
+	}
+
+	.pagination a:hover:not(.active) {background-color: #ddd;}
