@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- responsive -->
 	<meta http-equiv="Content-Type" content="text/html; charset= UTF8 ">
-	<title>Roukia(suite2)</title>
+	<title>Roukia</title>
 	<link rel="shortcut icon" href="../img/coran.ico"  />
 	<link rel="stylesheet" href="../css/test3-zoning.css" >
 	<link rel="stylesheet" href="../css/test3-dropdown.css" >
@@ -14,9 +14,12 @@
 	<link rel="stylesheet" href="../css/numerotation.css">
 	<link rel="stylesheet" href="../css/commentaires.css">
 	<link rel="stylesheet" href="../css/top.css"  media="screen">
-	<link rel="stylesheet" href="../css/Hoverable_Sidenav_Buttons.css">
-	<link rel="stylesheet" href="../css/pagination.css">
+	<!-- style spécifique aux douans ( rep. /Invocations ) -->
+	<link rel="stylesheet" href="Hoverable_Sidenav_Buttons.css">
+	<link rel="stylesheet" href="collapsedPanel.css">
+	<link rel="stylesheet" href="pagination.css">
 	<style>
+	    body {  margin: 0; overflow-x: hidden !important; /* Hide scrollbars */ }	     
 		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
 		.planche{ font-weight:bold; font-family: Amiri  !important; height:auto; }
 		.plancheFrance{ padding:1.2em;    line-height:1.8;}
@@ -29,21 +32,18 @@
             .planche  .pageDroite{ font-size:.86em !important;	height:auto !important; }
 			.basmala{font-size:.48em !important;}
             /* Responsive top nav */
-            			#menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
-                       #menu a.accueil-lien{ float:left !important;}
-			#menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;  padding: 14px 2px !important;   }
-			 
-                     .dropdown-content{z-index:99;}
+            #menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
+            #menu a.accueil-lien{ float:left !important;}
+			#menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;  padding: 14px 2px !important;   }			 
+            .dropdown-content{z-index:99;}
 		    /*   ###  */			
-	    } 
-		
-
-			
+	    }			
 	</style>
-
 </head>
-<body style="background:#bbb;">
-	<div id="entete">	   
+<body style="background:#bbb;" onload="closePanel();">
+
+	<div id="entete">
+	
 	    <img src="../img/test.png" class="header-image" >
         <span class="logo" >الله ممّا نفعنا بما علّمتنا</span>			
 	   	<div class="hero-image">
@@ -51,7 +51,7 @@
 			<h1 class="basmala-green" >بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</h1>
 			<h3 ><br><br></h3>			
 			<div class="container-btn">
-				<a href="index-comorien.html" > 
+				<a href="../index-comorien.html" > 
 					<button  class="btn">
 					   <span>Autre langue</span>
 					</button>
@@ -66,9 +66,9 @@
 	  <a href="cahierbleu" id="bouton2">Cahier bleu</a>
 	  <a href="cahierrouge.html" id="bouton3">Cahier rouge</a>
 	  <a href="cahiergris.html" id="bouton4" style="z-index:99;">Cahier gris</a>
-	</div>	
+	</div>		
 	<div id="menu">
-		<a href="index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰ </span>		
+		<a href="../index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰ </span>		
 		<div class="dropdown">
 			<button class="dropdown-btn" id="dropdown-btn1">Les sourates</button>
 			<div class="dropdown-content" >
@@ -144,13 +144,13 @@
 				<a href="../s109.html#s111">111. Les fibres -  المَسَد</a>
 				<a href="../s112.html">112. Le monothéisme pur - الإخلاص</a>
 				<a href="../s112.html#s113">113. L'aube naissante - الفَلَق</a>
-                <a href="../s112.html#s114">114. Les êtres humains - النَّاس</a><a href="../s112.html#s114">114. Les êtres humains - النَّاس</a><a href="douan_stop.html">&#x2764; Prière finale - دعاء ختم القرأن</a>
+                <a href="../s112.html#s114">114. Les êtres humains - النَّاس</a><a href="../s112.html#s114">114. Les êtres humains - النَّاس</a><a href="../douan_stop.html">&#x2764; Prière finale - دعاء ختم القرأن</a>
 			</div>					
 		</div>
 		<div class="dropdown">
 			<button class="dropdown-btn" id="dropdown-btn2"  style="padding: 14px 87px;">Les juz</button>
 			<div class="dropdown-content">
-			    <a href="index.html#juz1">Juz 01 - [<i> S01 | Page001 </i>]</a><a href="../s7.html#juz9">Juz 09 - [<i> S07 | Page162 </i>]</a><a href="../s8.html#juz10">Juz 10 - [<i> S08 | Page182 </i>]</a><a href="../s9.html#juz11">Juz 11 - [<i> S09 | Page201 </i>]</a><a href="../s11.html">Juz 12 - [<i> S11 | Page222 </i>]</a><a href="../s17.html">Juz 15 - [<i> S17 | Page282 </i>]</a><a href="../s18suite.html#juz16">Juz 16 - [<i> S18 | Page302 </i>]</a><a href="../s27.html#juz20">Juz 20 - [<i> S27 | Page382 </i>]</a><a href="../s39.html#juz24">Juz 24 - [<i> S39 | Page462 </i>]</a><a href="../s41.html#juz25">Juz 25 - [<i> S41 | Page482 </i>]</a><a href="../s45.html#AHQAF">Juz 26 - [<i> S46 | Page502 </i>]</a><a href="../s51.html#juz27">Juz 27 - [<i> S51 | Page522 </i>]</a><a href="../s67.html">Juz 29 - [<i> S67 | Page562 </i>]</a><a href="../s78.html">Juz 30 - [<i> S78 | Page582 </i>]</a>
+			    <a href="../index.html#juz1">Juz 01 - [<i> S01 | Page001 </i>]</a><a href="../s7.html#juz9">Juz 09 - [<i> S07 | Page162 </i>]</a><a href="../s8.html#juz10">Juz 10 - [<i> S08 | Page182 </i>]</a><a href="../s9.html#juz11">Juz 11 - [<i> S09 | Page201 </i>]</a><a href="../s11.html">Juz 12 - [<i> S11 | Page222 </i>]</a><a href="../s17.html">Juz 15 - [<i> S17 | Page282 </i>]</a><a href="../s18suite.html#juz16">Juz 16 - [<i> S18 | Page302 </i>]</a><a href="../s27.html#juz20">Juz 20 - [<i> S27 | Page382 </i>]</a><a href="../s39.html#juz24">Juz 24 - [<i> S39 | Page462 </i>]</a><a href="../s41.html#juz25">Juz 25 - [<i> S41 | Page482 </i>]</a><a href="../s45.html#AHQAF">Juz 26 - [<i> S46 | Page502 </i>]</a><a href="../s51.html#juz27">Juz 27 - [<i> S51 | Page522 </i>]</a><a href="../s67.html">Juz 29 - [<i> S67 | Page562 </i>]</a><a href="../s78.html">Juz 30 - [<i> S78 | Page582 </i>]</a>
 			</div>
 		</div>
 		<div class="dropdown">
@@ -189,30 +189,46 @@
 			</div><!-- .dropdown-content -->
 		</div><!-- .dropdown -->		        
 	</div><!-- #menu -->
-	<div id="contenu">
 		<div class="colone-laterale" id="sidbarG">
+		
 		    <h2 class="grosTitre" style="padding:1.2em 0em !important;" >
 			     <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" >S. 112</small></span>
-			     <span class="box-shadow-titre" style="color:#8c8c8c;" >Roukia(<small> <i>Page2</i> </small>)</span>
+			     <span class="box-shadow-titre" style="color:#8c8c8c;" >Roukia</span>
 				 <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" >4 Versets</small></span>
 			</h2>
 			<div class="planche plancheFrance" >			
-				<div class="pageGauche" style="height:98.09em; line-height:1.52; box-shadow:0px 8px 6px -2px gray; ">					
+				<div class="pageGauche" style="height:73.88em; line-height:1.52; box-shadow:0px 8px 6px -2px gray; ">
+				    <div class="numJuzHizb" style=" color:#2a5927; padding:1.7em 1em 1.1em 1em;" >				
+						 <button  class="openpanel" onclick="openPanel()" title="Ouvrir les du'ãns">☰</button> <span style="padding-left:23%;">Contre les Djins</span>
+				    </div>
+					<!-- collapsed panel -->
+					<div id="mySidepanel" class="sidepanel">
+					  <a href="javascript:void(0)" class="closepanel" onclick="closePanel()">×</a>
+					  <a href="roukia.html">Exotérique - الرُّقية الشرعية(<i><small>2 Pages</small></i>)</a>
+					  <a href="roukia_contre_sihr.html">Contre les sihr(<i><small>4 Pages: <span style="font-size:.7em">Foundi Moussa</span></small></i>)</a>
+					  <a href="#">Contre ...(<i><small>2 Pages</small></i>)</a>
+					  <a href="#">Contre ...(<i><small>3 Pages</small></i>)</a>	  
+					</div>	
+					<p style="padding-top:4em; padding-bottom:3.75em;  line-height:1.95;">
+					    <i> Selon le Prophète &#65018; </i><br>
+                         « Quiconque appréhende un magicien ou un diable qu'il récite le Verset 3 de la sourate Younouss ».<sup class="paragraph"><small ><a href="../s10.html#s10v3" style="color:#9d3d5f;">Sourate10</a></small></sup> 
+						 	 
+                    </p>
+					
 					<div class="numJuzHizb" style="text-align:center; color:#2a5927; padding:1.7em 1em 1.1em 1em;" >				
-						 Contre les sihrs( suite2 )
+						 Contre les sihrs
 				    </div>
 					<p style="padding-top:3em; padding-bottom:1.2em;  line-height:1.95;">
 					     <i>Selon Foundi Moussa</i> <br>
-                         « Coraniser de l'eau à boire <i>et/ou</i> à baigner avec les versets ci-contre &#9755; &#9758; ».<sup class="paragraph"><small ><a href="#" style="color:#9d3d5f;">Vidéo Fundi Moussa</a></small></sup> 
+                         « Coraniser de l'eau à boire <i>et/ou</i> à baigner avec les versets ci-contre &#9755; &#9758; ».<sup class="paragraph"><small ><a href="../#" style="color:#9d3d5f;">Vidéo Fundi Moussa</a></small></sup> 
 						 	 
                     </p>
 											
 					
 				    <p class="numPage" style="padding-bottom:.7em; padding-top:0; line-height:0 !important;" >
-					  2
-				    </p>
-					
-				</div><!-- page2 -->				
+					  1
+				    </p>										
+				</div><!-- page1 -->				
 			</div>
 		</div>
 		
@@ -223,29 +239,36 @@
 			   <span class="box-shadow-titre" style="padding:0.3em; margin:0.3em;"><small class="numSourate" >آياتها ٦</small></span>
 			</h2>	
 			<div class="planche plancheArabe" lang="ar" dir="rtl">              			
-				<div class="pageDroite" style="height:81.77em; line-height:3; box-shadow:0px 8px 6px -2px gray;" >
+				<div class="pageDroite" style="height:61.61em; line-height:3; box-shadow:0px 8px 6px -2px gray;" >
+				    <div class="numJuzHizb" style="text-align:center; color:#2a5927; " >				
+						 ضد الجن
+				    </div>
+
+					<p>
+						 إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٲتِ وَٱلۡأَرۡضَ فِى سِتَّةِ أَيَّامٍ۬ ثُمَّ ٱسۡتَوَىٰ عَلَى ٱلۡعَرۡشِ‌ۖ يُدَبِّرُ ٱلۡأَمۡرَ‌ۖ مَا مِن شَفِيعٍ إِلَّا مِنۢ بَعۡدِ إِذۡنِهِۦ‌ۚ ذَٲلِڪُمُ ٱللَّهُ رَبُّڪُمۡ فَٱعۡبُدُوهُ‌ۚ أَفَلَا تَذَكَّرُونَ (﻿٣﻿) - <i style="font-size:.6em ;">  سُوۡرَةُ یُونس </i> 				  
+					</p>
 					<div class="numJuzHizb" style="text-align:center; color:#2a5927; " >				
 						 ضد السحر
 				    </div>
+
 					<p >
-					     وَقَالَ مُوسَىٰ يَـٰفِرۡعَوۡنُ إِنِّى رَسُولٌ۬ مِّن رَّبِّ ٱلۡعَـٰلَمِينَ (﻿١٠٤﻿) حَقِيقٌ عَلَىٰٓ أَن لَّآ أَقُولَ عَلَى ٱللَّهِ إِلَّا ٱلۡحَقَّ‌ۚ قَدۡ جِئۡتُڪُم بِبَيِّنَةٍ۬ مِّن رَّبِّكُمۡ فَأَرۡسِلۡ مَعِىَ بَنِىٓ إِسۡرَٲٓءِيلَ (﻿١٠٥﻿) قَالَ إِن كُنتَ جِئۡتَ بِـَٔايَةٍ۬ فَأۡتِ بِہَآ إِن كُنتَ مِنَ ٱلصَّـٰدِقِينَ (﻿١٠٦﻿) فَأَلۡقَىٰ عَصَاهُ فَإِذَا هِىَ ثُعۡبَانٌ۬ مُّبِينٌ۬ (﻿١٠٧﻿) وَنَزَعَ يَدَهُ ۥ فَإِذَا هِىَ بَيۡضَآءُ لِلنَّـٰظِرِينَ (﻿١٠٨﻿) قَالَ ٱلۡمَلَأُ مِن قَوۡمِ فِرۡعَوۡنَ إِنَّ هَـٰذَا لَسَـٰحِرٌ عَلِيمٌ۬ (﻿١٠٩﻿) يُرِيدُ أَن يُخۡرِجَكُم مِّنۡ أَرۡضِكُمۡ‌ۖ فَمَاذَا تَأۡمُرُونَ (﻿١١٠﻿) قَالُوٓاْ أَرۡجِهۡ وَأَخَاهُ وَأَرۡسِلۡ فِى ٱلۡمَدَآٮِٕنِ حَـٰشِرِينَ (﻿١١١﻿) يَأۡتُوكَ بِكُلِّ سَـٰحِرٍ عَلِيمٍ۬ (﻿١١٢﻿) وَجَآءَ ٱلسَّحَرَةُ فِرۡعَوۡنَ قَالُوٓاْ إِنَّ لَنَا لَأَجۡرًا إِن ڪُنَّا نَحۡنُ ٱلۡغَـٰلِبِينَ (﻿١١٣﻿) قَالَ نَعَمۡ وَإِنَّكُمۡ لَمِنَ ٱلۡمُقَرَّبِينَ (﻿١١٤﻿) قَالُواْ يَـٰمُوسَىٰٓ إِمَّآ أَن تُلۡقِىَ وَإِمَّآ أَن نَّكُونَ نَحۡنُ ٱلۡمُلۡقِينَ (﻿١١٥﻿) قَالَ أَلۡقُواْ‌ۖ فَلَمَّآ أَلۡقَوۡاْ سَحَرُوٓاْ أَعۡيُنَ ٱلنَّاسِ وَٱسۡتَرۡهَبُوهُمۡ وَجَآءُو بِسِحۡرٍ عَظِيمٍ۬ (﻿١١٦﻿) ۞ وَأَوۡحَيۡنَآ إِلَىٰ مُوسَىٰٓ أَنۡ أَلۡقِ عَصَاكَ‌ۖ فَإِذَا هِىَ تَلۡقَفُ مَا يَأۡفِكُونَ (﻿١١٧﻿) فَوَقَعَ ٱلۡحَقُّ وَبَطَلَ مَا كَانُواْ يَعۡمَلُونَ (﻿١١٨﻿) فَغُلِبُواْ هُنَالِكَ وَٱنقَلَبُواْ صَـٰغِرِينَ (﻿١١٩﻿) وَأُلۡقِىَ ٱلسَّحَرَةُ سَـٰجِدِينَ (﻿١٢٠﻿) قَالُوٓاْ ءَامَنَّا بِرَبِّ ٱلۡعَـٰلَمِينَ (﻿١٢١﻿) رَبِّ مُوسَىٰ وَهَـٰرُونَ (﻿١٢٢﻿)- <i style="font-size:.6em ;">  سُوۡرَةُ الاٴعرَاف</i> 
+						 وَٱتَّبَعُواْ مَا تَتۡلُواْ ٱلشَّيَـٰطِينُ عَلَىٰ مُلۡكِ سُلَيۡمَـٰنَ‌ۖ وَمَا ڪَفَرَ سُلَيۡمَـٰنُ وَلَـٰكِنَّ ٱلشَّيَـٰطِينَ كَفَرُواْ يُعَلِّمُونَ ٱلنَّاسَ ٱلسِّحۡرَ وَمَآ أُنزِلَ عَلَى ٱلۡمَلَڪَيۡنِ بِبَابِلَ هَـٰرُوتَ وَمَـٰرُوتَ‌ۚ وَمَا يُعَلِّمَانِ مِنۡ أَحَدٍ حَتَّىٰ يَقُولَآ إِنَّمَا نَحۡنُ فِتۡنَةٌ۬ فَلَا تَكۡفُرۡ‌ۖ فَيَتَعَلَّمُونَ مِنۡهُمَا مَا يُفَرِّقُونَ بِهِۦ بَيۡنَ ٱلۡمَرۡءِ وَزَوۡجِهِۦ‌ۚ وَمَا هُم بِضَآرِّينَ بِهِۦ مِنۡ أَحَدٍ إِلَّا بِإِذۡنِ ٱللَّهِ‌ۚ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمۡ وَلَا يَنفَعُهُمۡ‌ۚ وَلَقَدۡ عَلِمُواْ لَمَنِ ٱشۡتَرَٮٰهُ مَا لَهُ ۥ فِى ٱلۡأَخِرَةِ مِنۡ خَلَـٰقٍ۬‌ۚ وَلَبِئۡسَ مَا شَرَوۡاْ بِهِۦۤ أَنفُسَهُمۡ‌ۚ لَوۡ ڪَانُواْ يَعۡلَمُونَ (﻿١٠٢﻿) - <i style="font-size:.6em ;"> سُوۡرَةُ البَقَرَة </i> <br>					  
 					</p>
 
 										
 					<p class="numPageArabe"  style="padding-top:0" >				
-						٢
+						١
 					</p>
-					<!-- <a href="roukia3.html" id="suivant" class="next signal-Interpage" style=" line-height:1.9; height:1.9em;" >&laquo; Next </a> -->
-					<!-- <a href="roukia.html" id="precedent" class="previous" style=" line-height:1.9; height:1.9em;"  >Previous &raquo; </a> -->
-					<div class="pagination" style="margin-top:1.5em !important;">
+					<!-- <a href="roukia2.html" id="suivant" class="next signal-Interpage" style=" line-height:1.9; height:1.9em;" >&laquo; Next </a> -->
+				    <div class="pagination" style="margin-top:1.5em !important;">
 					  <a href="#" class="previous">&raquo;</a>					  
-					  <a href="roukia_Coran_FoundiMoussa.html">1</a>
-					  <a href="#" class="active">2</a>
-					  <a href="roukia3.html" class="signal-Interpage">3</a>
+					  <a href="#" class="active">1</a>
+					  <a href="roukia2.html" class="signal-Interpage">2</a>
+					  <a href="roukia3.html">3</a>
 					  <a href="roukia4.html">4</a>
 					  <a href="#" class="previous">&laquo;</a>					  
 					</div>
-				</div><!-- page2 -->
+				</div><!-- page1 -->
 			</div>				 									
 		</div><!-- #colone-contenu -->
 		
@@ -281,7 +304,20 @@
 		  </tr>
 		</table>
 	</div><!-- #footer -->
+		<div id="contenu">
+
     <script type="text/javascript" src="../js/sticky.js"></script>
+	<!-- Collapsed Sidepanel  -->
+	<script>
+		function openPanel() {
+		  document.getElementById("mySidepanel").style.display = "block";          	  
+		}
+
+		function closePanel() {
+		 document.getElementById("mySidepanel").style.display = "none";
+		}
+	</script>
+	<!-- ATELIER -->
 	<script>
 		var acc = document.getElementsByClassName("accordion");
 		var j;
