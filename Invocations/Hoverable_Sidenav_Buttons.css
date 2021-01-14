@@ -1,0 +1,51 @@
+/* Hoverable Sidenav Buttons
+ * Style spécfique aux pages annex
+ * Il s'agit d'un menu de navigation placé à droite de l'entête
+ * Pour gére:
+ - Les roukia
+ - Les douan
+ - et Les Dhikr(Tasbih)
+ */
+    body {
+		/* Attention!!!!!!!!!!!!!!
+		 * Si on met les boutons à gauche ce oveflow n'est pas nécessaire
+		 * Si on met les boutons à droite ce overflow est indispensable
+		 * pour éviter le débordement de la page
+		 */
+		overflow-x: hidden !important;
+	}
+	#mySidenav a {
+	  position: absolute;
+	  right: -188px; /* sort les boutons */
+	  transition: 0.3s; /* vitesse de sortie */
+	  padding: 15px;  /* padding: 15px => opérer ici pour modifier la taille des bouton */
+	  width: 200px;
+	  text-decoration: none;
+	  font-size: 20px;
+	  color: white;
+	  border-radius: 5px 0 0 5px;	  
+	}
+
+	#mySidenav a:hover {
+	  right: 0; /* cache(retrait) les boutons */
+	}
+    /* Manipuler les top pour modifier la séparation des bouton(  + ou - la même valeur sur tous les bouton ) */
+	#bouton1 {
+	  top: 15px;
+	  background-color: #4CAF50;
+	}
+
+	#bouton2 {
+	  top: 75px;
+	  background-color: #2196F3;
+	}
+
+	#bouton3 {
+	  top: 135px;
+	  background-color: #f44336;
+	}
+
+	#bouton4 {
+	  top: 195px;
+	  background-color: #555
+	}

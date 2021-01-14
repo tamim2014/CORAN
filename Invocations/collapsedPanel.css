@@ -1,0 +1,51 @@
+/************************************************
+ *************Collapsed Sidepanel****************
+ *********************************************
+ */
+	  .sidepanel  {
+		  height: auto;  width: 99%;         		  	  
+		  margin-left:.5%; padding:0 !important;
+		  background-color: #555; /*  #3d3d5c;  */
+		  overflow-x: hidden; overflow-y: hidden;		  
+		  transition-delay: 1s, 250ms; transition-property: height, color;	
+		  z-index: 1;	         	
+		}
+
+		.sidepanel a {
+		  padding: 0 8px 8px 32px ;
+		  text-decoration: none; font-size: 25px; color: #818181;		  
+		  display: block;
+		  transition: 0.6s !important;		  
+		}
+		.sidepanel a:hover { color: #f1f1f1; }
+		
+		.sidepanel .closepanel {
+			position:relative; margin-left:82%;						
+            line-height:.3 !important;	padding-top:.3em !important; padding-bottom:0 !important;	
+			font-size: 3em; font-weight:bold !important;		  
+		}
+
+		.openpanel {
+          margin-left:1em ; cursor: pointer;		  
+		  background-color: transparent;  color: #444;			 	
+		  border: none !important; /* la bordure du bouton */
+		  outline: none !important; /* la bordure après l'activation du bouton */
+		}
+		.openpanel:hover { background-color:#ddd;  border-radius:1.5px;	}
+		  	
+		/* Ajuster le conteneur du panel( la page gauche - texte français ) */
+		
+		.traductionDouan1  { line-height:1.95; padding-top:1.2em; padding-bottom:44.15em !important; }					
+		.pageGauche{ overflow-y : hidden;	}
+		
+		
+
+		@media screen and (max-width: 850px) {
+            .sidepanel  { height: inherit;  overflow-y: auto;	}
+            .sidepanel .closepanel { margin-left:87% !important; }
+            .sidepanel a { font-size: 1em; padding: 0 4px 6px 16px !important; }
+					
+			/* Ajuster le conteneur du panel( la page gauche - texte français ) */
+			
+            .traductionDouan1{ padding-bottom:0 !important; }			  
+		}
