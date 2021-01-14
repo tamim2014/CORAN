@@ -13,6 +13,12 @@
 	   margin: 0;
 	   overflow: hidden !important; /* Hide scrollbars */
 	}
+	@media screen and (max-width: 470px) {
+	   button.tablink { font-size:1em !important; }
+	}
+	@media screen and (max-width: 300px) {
+	   button.tablink { font-size:.7em !important;  padding: 14px 4px ; }
+	}
    </style>	
 </head>
 <body onload="openPage('Sujet', this, '#bbb')" style="overflow: hidden !important;" >
@@ -43,6 +49,17 @@
 	<div id="Cours" class="tabcontent" style="background:black">
 	  <object class="onglet1-1-resume" style="width:90%;"  data="todoList_divers.html" ></object>
 	</div>
-	<div class="conteneur-reponses"> </div> <!-- c'est juste un separateur sujet/solution -->  
+	<div class="conteneur-reponses"> </div> <!-- c'est juste un separateur sujet/solution --> 
+    	<script>
+		// Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
+		if (document.body){ 	
+			 var larg = (document.body.clientWidth);
+			 var haut = (document.body.clientHeight);
+		}else{
+			 var larg = (window.innerWidth);
+			 var haut = (window.innerHeight);
+		}
+		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
+    </script>	
 </body>
 </html>
