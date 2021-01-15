@@ -19,7 +19,53 @@
 	@media screen and (max-width: 300px) {
 	   button.tablink { font-size:.7em !important;  padding: 14px 4px ; }
 	}
-   </style>	
+	 /*********************************/
+	/**** Pagination with Margins*****/
+	/********************************/
+    .pagination {
+	  display: inline-block;
+	  position:absolute; bottom:2%;  left:33%;
+	  
+	}
+	.pagination a {
+	  color: black;
+	  float: left;
+	  padding: 8px 16px;
+	  text-decoration: none;
+	  transition: background-color .3s;
+	  border: 1px solid #ddd;
+	  margin: 0 4px;
+	}
+	.pagination a.active {
+	  background-color: #4CAF50;
+	  color: white;
+	  border: 1px solid #4CAF50;
+	}
+	.pagination a:hover:not(.active) {background-color: #ddd;}
+	
+	@media screen and (max-width: 850px) {
+	   .pagination { left:23% !important; }
+	}
+	@media screen and (max-width: 650px) {
+	   .pagination a { padding: 4px 8px; }
+	   body{font-size:1.1em;}
+	}
+   </style>
+   <!-- handiAJAX(perso script) -->
+   <script type="text/javascript" src="js/jquery3.4.1.min.js"></script> <!-- pour la pagination -->	
+   <script>
+     $(document).ready(function(){
+	      $("#activeUn").click(function(){
+			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>');
+          });
+		  $("#activeDeux").click(function(){
+			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="frequence2.html" ></object>');
+          });
+		  $("#activeTrois").click(function(){
+			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="frequence3.html" ></object>');
+          });
+	 });
+   </script>   
 </head>
 <body onload="openPage('Sujet', this, '#bbb')" style="overflow: hidden !important;" >
   <!-- MENU FULL PAGE TABS -->
@@ -31,7 +77,7 @@
 	<!-- ONGLET 1 -->
 	<div id="Sujet" class="tabcontent" style="background:#bbb;">
 	  <object class="onglet1-1-resume" style="width:90%; padding:0 !important; border-radius: 4px  4px 0 0 !important; "  data="todoList_prieres.html" ></object>
-	  	 <!-- Gerer les prières: Marque s' elles sont faites  fait à temps(أداء) ou nom(قضاء)   
+	  	 <!-- Gerer les prières: Marque si elles sont faites  fait à temps(أداء) ou nom(قضاء)   
 	    <div id="ada" class="ada" style="position:absolute; bottom:2em; left:2em; width: 20px; height:15px; background-color: #4CAF50;"></div><span style="position:absolute; bottom:2em;  left:3.5em; color:gray;"><small><i style="font-size:.9em;">Fait à temps</i>( أداء )</small></span>
 		<div id="kadhoi" class="kadhoi" style="position:absolute; bottom:.7em; left:2em; width: 20px; height:15px; background:#f44336;"></div><span style="position:absolute; bottom:.7em; left:3.5em; color:gray;"><small><i style="font-size:.9em;">Retardé</i>( قضاء )</small></span>
 		 -->
@@ -42,15 +88,22 @@
        <object class="onglet1-1-resume" style="width:90%;"  data="cahierBleu.html" ></object>
 	</div>	
 	<!-- ONGLET 3 -->
-	<div id="Fiche" class="tabcontent" style="background:#bbb">
-	  <object class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>
+	<div id="Fiche" class="tabcontent" style="background:#bbb; ">
+	  <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>
+	  <div class="pagination" >
+		  <a href="#">&laquo;</a>
+		  <a href="#" onclick="activeUn()" id="activeUn">1</a>
+		  <a href="#" onclick="activeDeux()" id="activeDeux">2</a>
+		  <a href="#" onclick="activeTrois()" id="activeTrois">3</a>
+		  <a href="http://www.dateaujourdhui.com">&raquo;</a>
+	  </div>
 	</div>
 	<!-- ONGLET 4 -->	
 	<div id="Cours" class="tabcontent" style="background:black">
 	  <object class="onglet1-1-resume" style="width:90%;"  data="todoList_divers.html" ></object>
 	</div>
 	<div class="conteneur-reponses"> </div> <!-- c'est juste un separateur sujet/solution --> 
-    	<script>
+    <script>
 		// Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
 		if (document.body){ 	
 			 var larg = (document.body.clientWidth);
@@ -60,6 +113,36 @@
 			 var haut = (window.innerHeight);
 		}
 		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
-    </script>	
+    </script>
+    <!-- add active class de façon dynamique(perso script) -->
+    <script>
+	    var boutonUn = document.getElementById("activeUn");
+		var boutonDeux = document.getElementById("activeDeux");
+		var boutonTrois = document.getElementById("activeTrois");
+		var boutonQuatre = document.getElementById("activeQuatre");
+		var boutonCinq = document.getElementById("activeCinq");
+
+		function activeUn() {
+		   boutonUn .classList.add("active");
+		   boutonDeux.classList.remove("active");
+		   boutonTrois.classList.remove("active");
+		   boutonQuatre.classList.remove("active");
+		   boutonCinq.classList.remove("active");
+		}
+		function activeDeux() {
+		   boutonUn .classList.remove("active");
+		   boutonDeux.classList.add("active");
+		   boutonTrois.classList.remove("active");
+		   boutonQuatre.classList.remove("active");
+		   boutonCinq.classList.remove("active");
+		}
+		function activeTrois() {
+		   boutonUn .classList.remove("active");
+		   boutonDeux.classList.remove("active");
+		   boutonTrois.classList.add("active");
+		   boutonQuatre.classList.remove("active");
+		   boutonCinq.classList.remove("active");
+		}
+	</script>	
 </body>
 </html>
