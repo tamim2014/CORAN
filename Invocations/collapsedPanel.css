@@ -49,5 +49,6 @@
 					
 			/* Ajuster le conteneur du panel( la page gauche - texte français ) */
 			
-            .traductionDouan1{ padding-bottom:0 !important; }			  
+            .traductionDouan1{ padding-bottom:0 !important; }
+            .numPage{ padding-top:0 !important;}			
 		}
