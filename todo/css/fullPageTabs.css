@@ -23,7 +23,7 @@ body, html {
 
 
 .tablink:hover {
-  background-color: #bbb; /* les items du menu du popup */
+  background-color: #bbb; /* les items du top menu */
 }
 
 
@@ -163,16 +163,51 @@ p.numCours{
     0px 2px 2px 0px rgba(255, 255, 255, 0.5);
     border:1px solid #8c8b8b;
   }
-
-  /* fenetre reduit : pop */ 
-
-  @media all and (max-width: 900px) {   
-    .captionHaut{ margin-left:11%; margin-right:21%; }                      
-  }
-
+  
   /* coloration des type -  pour les variable en JAVA et PHP */
   .ct { color: #00cc00;}
   .ct2 { color: #00cc00; font-size: 1.4em;}
+  
+  #openTablinks{
+	  position:absolute;
+	  top:.6em;
+	  left:1.2em;
+	  color:#f2f2f2;
+	  cursor: pointer;
+      display:none ;	
+      	  
+  }
+  #tablinks{ dispaly: block; }
+  #openTablinks:hover{background:#ccc; padding:.1em .2em; border-radius:.15em; }
+
+  /* fenetre reduit : pop */ 
+  @media all and (max-width: 900px) {   
+    .captionHaut{ margin-left:11%; margin-right:21%; }                      
+  }
+  /* Responsive top menu de l'application todo:16.01.2021 */
+
+  @media all and (max-width: 650px) {
+    .tabcontent {
+		height:35% ; 
+	}	  
+    .tablink {
+		 width:100%;		 
+		 padding : 12px ; /* padding : 14px 16px: */
+		 border-top:.1px solid #555;/* Le black est moins agressif */	
+		 color: gray;
+         font-size:.8em !important;
+         		 
+	}
+	#openTablinks{ display:block ; }
+		 
+	
+	#defaultOpen{ background : #4CAF50; color:#ccc; }
+	#defaultOpen:hover {background-color: #bbb;}
+	
+    body{  overflow-y:visible !important; min-height:100em !important; }	
+  }
+
+
  
 
 
