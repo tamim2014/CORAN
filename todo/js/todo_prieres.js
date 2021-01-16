@@ -62,5 +62,6 @@ function show() {
 }
  
 document.getElementById('add').addEventListener('click', add); // un écouteur sur le bouton add
-//document.getElementById('ada').addEventListener('click', kadhoi); // un écouteur sur le bouton ada
+
 show();
+
