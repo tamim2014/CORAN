@@ -155,7 +155,7 @@
 
 
 </head>
-<body>
+<body >
     <div id="myDIV" class="header">
 	    <h2 style="margin:5px; "> <i>Prières du jour</i> (<small><i class="aujourdhui">		    
 		    <script>
@@ -235,8 +235,7 @@
 		var kadhoi = document.getElementsByClassName("tester");
 		var j = kadhoi.length ; 
 		
-		// var dernierepriereقضاء = document.getElementsByClassName("tester")[j-1]; // la dernière prière ajoutée
-		// dernierepriereقضاء.style.background = '#f44336';
+
 		
 		var rg = document.getElementsByClassName("tester")[j-1]; // la dernière prière ajoutée
      
@@ -246,8 +245,10 @@
 							
         return false;
 		
-		// le script est bon : le blem c'est l'affichage voir la mthd show() dans le fichier js
-    }
+		// le script est bon : 
+		//le blem c'est d'ENREGISTRER LE STATE LOCAL dans le local storage du navigateur
+		// Exemple en REACT js: https://www.masterreact.io/articles/2018-10-28-enregistrer-state-local-dans-local-storage/
+    }   // CONCLUSION: ce problème constitue une bonne introduction à REACT js
 
   </script>
   

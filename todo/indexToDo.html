@@ -6,72 +6,27 @@
    <!-- <link rel="shortcut icon" href="../img/coran.ico"  /> -->
    <link rel="shortcut icon" href="../img/coran2.ico" style="border-radius:5px !important;" />
    <link rel="stylesheet" href="css/fullPageTabs.css" media="screen" /> 
-   <script type="text/javascript" src="js/fullPageTabs.js"></script>
-   <script type="text/javascript" src="js/fullPageTabs.js"></script> 
+   <link rel="stylesheet" href="css/pagination2.css" media="screen" /> 
+   <script type="text/javascript" src="js/fullPageTabs.js"></script>  
    <style>
-	body {  
-	   margin: 0;
-	   overflow: hidden !important; /* Hide scrollbars */
-	}
-	@media screen and (max-width: 470px) {
-	   button.tablink { font-size:1em !important; }
-	}
-	@media screen and (max-width: 300px) {
-	   button.tablink { font-size:.7em !important;  padding: 14px 4px ; }
-	}
-	 /*********************************/
-	/**** Pagination with Margins*****/
-	/********************************/
-    .pagination {
-	  display: inline-block;
-	  position:absolute; bottom:2%;  left:33%;
-	  
-	}
-	.pagination a {
-	  color: black;
-	  float: left;
-	  padding: 8px 16px;
-	  text-decoration: none;
-	  transition: background-color .3s;
-	  border: 1px solid #ddd;
-	  margin: 0 4px;
-	}
-	.pagination a.active {
-	  background-color: #4CAF50;
-	  color: white;
-	  border: 1px solid #4CAF50;
-	}
-	.pagination a:hover:not(.active) {background-color: #ddd;}
-	
-	@media screen and (max-width: 850px) {
-	   .pagination { left:23% !important; }
-	}
-	@media screen and (max-width: 650px) {
-	   .pagination a { padding: 4px 8px; }
-	   body{font-size:1.1em;}
-	}
-   </style>
-   <!-- handiAJAX(perso script) -->
-   <script type="text/javascript" src="js/jquery3.4.1.min.js"></script> <!-- pour la pagination -->	
-   <script>
-     $(document).ready(function(){
-	      $("#activeUn").click(function(){
-			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>');
-          });
-		  $("#activeDeux").click(function(){
-			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="frequence2.html" ></object>');
-          });
-		  $("#activeTrois").click(function(){
-			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="frequence3.html" ></object>');
-          });
-	 });
-   </script>   
+		body {  
+		   margin: 0;
+		   overflow: hidden !important; /* Hide scrollbars */
+		}
+		@media screen and (max-width: 470px) {
+		   button.tablink { font-size:1em !important; }
+		}
+		@media screen and (max-width: 300px) {
+		   button.tablink { font-size:.7em !important;  padding: 14px 4px ; }
+		}
+
+   </style>	  
 </head>
 <body onload="openPage('Sujet', this, '#bbb')" style="overflow: hidden !important;" >
   <!-- MENU FULL PAGE TABS -->
 	<button class="tablink" onclick="openPage('Sujet', this, '#bbb')" id="defaultOpen">Prières</button>
+	<button class="tablink" onclick="openPage('Fiche', this, '#bbb')">Post-Prières</button>
 	<button class="tablink" onclick="openPage('Solution', this, '#bbb')">Cahier bleu</button>	
-	<button class="tablink" onclick="openPage('Fiche', this, '#bbb')">Douans</button>
 	<button class="tablink" onclick="openPage('Cours', this, 'black')">Divers</button>
 	
 	<!-- ONGLET 1 -->
@@ -82,26 +37,27 @@
 		<div id="kadhoi" class="kadhoi" style="position:absolute; bottom:.7em; left:2em; width: 20px; height:15px; background:#f44336;"></div><span style="position:absolute; bottom:.7em; left:3.5em; color:gray;"><small><i style="font-size:.9em;">Retardé</i>( قضاء )</small></span>
 		 -->
 	</div>
-	
 	<!-- ONGLET 2 -->
-	<div id="Solution" class="tabcontent" style="background:#bbb;">	 
-       <object class="onglet1-1-resume" style="width:90%;"  data="cahierBleu.html" ></object>
-	</div>	
-	<!-- ONGLET 3 -->
 	<div id="Fiche" class="tabcontent" style="background:#bbb; ">
 	  <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>
 	  <div class="pagination" >
 		  <a href="#">&laquo;</a>
-		  <a href="#" onclick="activeUn()" id="activeUn">1</a>
+		  <a href="#" onclick="activeUn()" id="activeUn" class="active">1</a>
 		  <a href="#" onclick="activeDeux()" id="activeDeux">2</a>
 		  <a href="#" onclick="activeTrois()" id="activeTrois">3</a>
 		  <a href="http://www.dateaujourdhui.com">&raquo;</a>
 	  </div>
 	</div>
+	
+	<!-- ONGLET 3 -->
+	<div id="Solution" class="tabcontent" style="background:#bbb;">	 
+       <object class="onglet1-1-resume" style="width:90%;"  data="cahierBleu.html" ></object>
+	</div>	
 	<!-- ONGLET 4 -->	
 	<div id="Cours" class="tabcontent" style="background:black">
 	  <object class="onglet1-1-resume" style="width:90%;"  data="todoList_divers.html" ></object>
 	</div>
+
 	<div class="conteneur-reponses"> </div> <!-- c'est juste un separateur sujet/solution --> 
     <script>
 		// Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
@@ -113,36 +69,8 @@
 			 var haut = (window.innerHeight);
 		}
 		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
-    </script>
-    <!-- add active class de façon dynamique(perso script) -->
-    <script>
-	    var boutonUn = document.getElementById("activeUn");
-		var boutonDeux = document.getElementById("activeDeux");
-		var boutonTrois = document.getElementById("activeTrois");
-		var boutonQuatre = document.getElementById("activeQuatre");
-		var boutonCinq = document.getElementById("activeCinq");
-
-		function activeUn() {
-		   boutonUn .classList.add("active");
-		   boutonDeux.classList.remove("active");
-		   boutonTrois.classList.remove("active");
-		   boutonQuatre.classList.remove("active");
-		   boutonCinq.classList.remove("active");
-		}
-		function activeDeux() {
-		   boutonUn .classList.remove("active");
-		   boutonDeux.classList.add("active");
-		   boutonTrois.classList.remove("active");
-		   boutonQuatre.classList.remove("active");
-		   boutonCinq.classList.remove("active");
-		}
-		function activeTrois() {
-		   boutonUn .classList.remove("active");
-		   boutonDeux.classList.remove("active");
-		   boutonTrois.classList.add("active");
-		   boutonQuatre.classList.remove("active");
-		   boutonCinq.classList.remove("active");
-		}
-	</script>	
+	</script>
+	<script type="text/javascript" src="js/jquery3.4.1.min.js"></script> <!-- pour le jQuery de la pagination -->
+    <script type="text/javascript" src="js/pagination2.js"></script>	
 </body>
 </html>
