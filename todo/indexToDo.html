@@ -20,15 +20,19 @@
 		   button.tablink { font-size:.7em !important;  padding: 14px 4px ; }
 		}
 
-   </style>	  
+   </style>
+   
+  
 </head>
 <body onload="openPage('Sujet', this, '#bbb')" style="overflow: hidden !important;" >
+  <span id="openTablinks" onclick="openTablinks()">☰ </span>
   <!-- MENU FULL PAGE TABS -->
-	<button class="tablink" onclick="openPage('Sujet', this, '#bbb')" id="defaultOpen">Prières</button>
-	<button class="tablink" onclick="openPage('Fiche', this, '#bbb')">Post-Prières</button>
-	<button class="tablink" onclick="openPage('Solution', this, '#bbb')">Cahier bleu</button>	
-	<button class="tablink" onclick="openPage('Cours', this, 'black')">Divers</button>
-	
+    <div id="tablinks">
+		<button class="tablink" onclick="openPage('Sujet', this, '#bbb')" id="defaultOpen">Prières</button>
+		<button class="tablink" onclick="openPage('Fiche', this, '#bbb')">Post-Prières</button>
+		<button class="tablink" onclick="openPage('Solution', this, '#bbb')">Cahier bleu</button>	
+		<button class="tablink" onclick="openPage('Cours', this, 'black')">Divers</button>
+	</div>
 	<!-- ONGLET 1 -->
 	<div id="Sujet" class="tabcontent" style="background:#bbb;">
 	  <object class="onglet1-1-resume" style="width:90%; padding:0 !important; border-radius: 4px  4px 0 0 !important; "  data="todoList_prieres.html" ></object>
@@ -59,18 +63,36 @@
 	</div>
 
 	<div class="conteneur-reponses"> </div> <!-- c'est juste un separateur sujet/solution --> 
-    <script>
-		// Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
-		if (document.body){ 	
-			 var larg = (document.body.clientWidth);
-			 var haut = (document.body.clientHeight);
-		}else{
-			 var larg = (window.innerWidth);
-			 var haut = (window.innerHeight);
-		}
-		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
-	</script>
+
 	<script type="text/javascript" src="js/jquery3.4.1.min.js"></script> <!-- pour le jQuery de la pagination -->
-    <script type="text/javascript" src="js/pagination2.js"></script>	
+    <script type="text/javascript" src="js/pagination2.js"></script>
+	<!-- accordeon menu -->
+		<script>
+		function openTablinks() {			 			  
+			  
+			  /*
+			  var premierItem = document.getElementById("defaultOpen");
+			  var btnOpenTablinks = document.getElementById("openTablinks");
+			  */
+			  var x = document.getElementById("tablinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+				
+			  } else {
+
+			    x.style.display = "block";
+				
+				/*
+				btnOpenTablinks.style.top = "0";
+				btnOpenTablinks.style.left = "0";
+				btnOpenTablinks.style.padding = "14px 16px";
+				btnOpenTablinks.style.border-radius = "none";
+				premierItem.style.background = "#4CAF50";
+				*/					
+		  }
+		}
+	</script> 
+
+	
 </body>
 </html>
