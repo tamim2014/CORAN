@@ -193,7 +193,7 @@ p.numCours{
 		 width:100%;		 
 		 padding : 12px ; /* padding : 14px 16px: */
 		 border-top:.1px solid #555;/* Le black est moins agressif */	
-		 color: gray;
+		 color: gray; 
          font-size:.8em !important;
          		 
 	}
@@ -201,14 +201,15 @@ p.numCours{
 
 		 
 	
-	#defaultOpen{ background : #4CAF50; color:#ccc; }
-	#defaultOpen:hover {background-color: #bbb;}
+	#defaultOpen{ background : #4CAF50; color:#ddd; }
+	#defaultOpen:hover {background-color: #bbb; color: #eee;}
 	
     body{  overflow-y:visible !important; min-height:100em !important; }	
 
   }
   @media all and (max-width: 850px) {
 	  .gris{ background:#bbb; color:transparent;}
+	  .gris:hover{ background:#3d3d5c;}
   }
 
 
