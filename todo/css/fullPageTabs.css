@@ -23,7 +23,8 @@ body, html {
 
 
 .tablink:hover {
-  background-color: #bbb; /* les items du top menu */
+  background-color: inherit; /* #bbb les items du top menu */
+  color: #eee;
 }
 
 
@@ -187,9 +188,7 @@ p.numCours{
   /* Responsive top menu de l'application todo:16.01.2021 */
 
   @media all and (max-width: 650px) {
-    .tabcontent {
-		height:35% ; 
-	}	  
+    .tabcontent { height:35% ; }	  
     .tablink {
 		 width:100%;		 
 		 padding : 12px ; /* padding : 14px 16px: */
@@ -199,12 +198,17 @@ p.numCours{
          		 
 	}
 	#openTablinks{ display:block ; }
+
 		 
 	
 	#defaultOpen{ background : #4CAF50; color:#ccc; }
 	#defaultOpen:hover {background-color: #bbb;}
 	
     body{  overflow-y:visible !important; min-height:100em !important; }	
+
+  }
+  @media all and (max-width: 850px) {
+	  .gris{ background:#bbb; color:transparent;}
   }
 
 
