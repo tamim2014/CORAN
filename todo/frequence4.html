@@ -129,6 +129,11 @@
 	  background:#eee;
 	  border-radius:.2em;
 	}
+	/* 3 étoiles qui séparent les douans */
+	.separateurArabe , .separateurFrançais{ word-spacing: 1rem; }
+	.separateurArabe { padding-right:40%; padding-top:0 !important; padding-bottom:0 !important; font-size:.9em;  line-height:0 !important;  }
+	.separateurFrançais{ padding-left:40%; font-size:1.1em; }
+	
 	@media screen and (max-width: 650px) {
 	   body{font-size:1em;}
 	   .noteDeBasDePage{ font-size:.5em;}
@@ -136,30 +141,14 @@
   </style>
 </head>
 <body >
-    <h5>أذكار بعد السلام من الصلاة المفروضة</h5>
+    <h5> Les 2 douans qui sont dans la mosquée</h5>
     <p style="margin-top:.3em; margin-bottom:0; padding-top:0; padding-bottom:0;">
-	    أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ<br>		
-		&emsp;
-          <span class="popup grandCommentaire" onclick="commentaire1()">
-		     <small style="font-size:.7em; color:#aaa;"><i>cliquer &#9755; &emsp; ici ...</i></small>
-			 <span class="popuptext grandCommentaire" id="myPopup1">ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلۡحَىُّ ٱلۡقَيُّومُ‌ۚ لَا تَأۡخُذُهُ ۥ سِنَةٌ۬ وَلَا نَوۡمٌ۬‌ۚ لَّهُ ۥ مَا فِى ٱلسَّمَـٰوَٲتِ وَمَا فِى ٱلۡأَرۡضِ‌ۗ مَن ذَا ٱلَّذِى يَشۡفَعُ عِندَهُ ۥۤ إِلَّا بِإِذۡنِهِۦ‌ۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡ‌ۖ وَلَا يُحِيطُونَ بِشَىۡءٍ۬ مِّنۡ عِلۡمِهِۦۤ إِلَّا بِمَا شَآءَ‌ۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَـٰوَٲتِ وَٱلۡأَرۡضَ‌ۖ وَلَا يَـُٔودُهُ ۥ حِفۡظُهُمَا‌ۚ وَهُوَ ٱلۡعَلِىُّ ٱلۡعَظِيمُ (﻿٢٥٥﻿)</span> 
-		  </span>
-		&emsp;
-		<span class="noteDeBasDePage">[آية الكرسى - البقرة 255]</span><br>
-	    لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ لهُ، لهُ المُلكُ ولهُ الحَمْد، يُحيـي وَيُمـيتُ وهُوَ على كُلّ شيءٍ قدير<br>
-		<span class="noteDeBasDePage">(عَشْر مَرّات بَعْدَ المَغْرِب وَالصّـبْح)</span><br>
-		اللّهُـمَّ إِنِّـي أَسْأَلُـكَ عِلْمـاً نافِعـاً وَرِزْقـاً طَيِّـباً ، وَعَمَـلاً مُتَقَـبَّلاً<br>
-		<span class="noteDeBasDePage">(بَعْد السّلامِ من صَلاةِ الفَجْر)</span><br>
-		اللَّهُمَّ أَجِرْنِي مِنْ النَّار<br>
-		<span class="noteDeBasDePage">(بعد صلاة الصبح والمغرب)</span><br>
-		اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ
+        ...
+		<br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br>
+		...<br>
+		N.B<br>
+		pour chaque douan chercher son commentaire et l'ajouter en commentaire
 	</p>
-	<script>
-		// When the user clicks on div, open the popup
-		function commentaire1() {
-		  var popup1 = document.getElementById("myPopup1");
-		  popup1.classList.toggle("show");
-		}
-	</script>
+
 </body>
 </html>

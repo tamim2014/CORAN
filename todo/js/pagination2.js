@@ -38,6 +38,9 @@
 		  $("#activeTrois").click(function(){
 			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="frequence3.html" ></object>');
           });
+		  $("#activeQuatre").click(function(){
+			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="frequence4.html" ></object>');
+          });
 	 });
 	 
 // 1. PAGINATION ( add active class de façon dynamique(perso script) ): s'appelle en fin de page
@@ -67,6 +70,13 @@
 		   boutonDeux.classList.remove("active");
 		   boutonTrois.classList.add("active");
 		   boutonQuatre.classList.remove("active");
+		   boutonCinq.classList.remove("active");
+		}
+		function activeQuatre() {
+		   boutonUn .classList.remove("active");
+		   boutonDeux.classList.remove("active");
+		   boutonTrois.classList.remove("active");
+		   boutonQuatre.classList.add("active");
 		   boutonCinq.classList.remove("active");
 		}
  
