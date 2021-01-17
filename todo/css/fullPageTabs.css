@@ -97,8 +97,7 @@ body, html {
 
 .onglet1-1-resume {
   width:44%;
-  margin-left:4%;
-  margin-right:4%;
+  margin-left:4.73%;  /*!!!! Reglage du CENTRAGE HORIZONTAL de l'apli todo !!!!!! */
   padding:20px;
   margin-top:2.5%;
 }
