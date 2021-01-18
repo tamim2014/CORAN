@@ -128,6 +128,21 @@
 	  background:#eee;
 	  border-radius:.2em;
 	}
+	/* Compteur de click */
+	  #ici {
+	  padding: .1em .5em; /* .5em 1em;  */
+	  text-decoration: none;
+	  transition: background-color .3s;
+	  border: 1px solid #ddd;
+	  margin: 0 .5em;
+	  background-color:#eee;
+	  border-radius:.14em;
+	}
+	
+
+	#ici:hover {border: 1px solid #ccc; background-color: #ddd;}
+	
+	
 	@media screen and (max-width: 650px) {
 	   body{font-size:1em;  }
 	  .tabcontent { }
@@ -144,9 +159,25 @@
        اللّهُـمَّ أَنْـتَ السَّلامُ ، وَمِـنْكَ السَّلام ، تَبارَكْتَ يا ذا الجَـلالِ وَالإِكْـرام<br>
 	   لا إلهَ إلاّ اللّهُ وحدَهُ لا شريكَ لهُ، لهُ المُـلْكُ ولهُ الحَمْد، وهوَ على كلّ شَيءٍ قَدير، اللّهُـمَّ لا مانِعَ لِما أَعْطَـيْت، وَلا مُعْطِـيَ لِما مَنَـعْت، وَلا يَنْفَـعُ ذا الجَـدِّ مِنْـكَ الجَـد<br>
 	   لا إلهَ إلاّ اللّه, وحدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمد، وهوَ على كلّ شيءٍ قدير، لا حَـوْلَ وَلا قـوَّةَ إِلاّ بِاللهِ، لا إلهَ إلاّ اللّـه، وَلا نَعْـبُـدُ إِلاّ إيّـاه, لَهُ النِّعْـمَةُ وَلَهُ الفَضْل وَلَهُ الثَّـناءُ الحَـسَن، لا إلهَ إلاّ اللّهُ مخْلِصـينَ لَـهُ الدِّينَ وَلَوْ كَـرِهَ الكـافِرون<br>
-	   <small style="color:#9d3d5f; "><i>(33 fois)</i></small>سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر<br>
+	   <small style="font-size:.7em; color:#aaa; cursor: pointer;"><i >cliquer &#9755;  <i id="ici">ici</i>&nbsp;&nbsp;</i></small>
+	   <small style="color:#9d3d5f; "><i>(<i id="counter">33</i> fois)</i></small>سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر<br>
 	   لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير
 	</p>
+	<script>
+	    // Compte le nombre de Tasbih
+		var count=33;
+		var action = document.getElementById("ici");
+		var resultat = document.getElementById("counter");
+		
+		action.onclick=function(){
+			count--;
+			if( count >= 1 ){
+			resultat.innerHTML=count; 
+			}else{
+			 resultat.innerHTML=" OK! &emsp; 33";
+			}			
+		}
+	</script>
 	
 </body>
 </html>
