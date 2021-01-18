@@ -1,15 +1,9 @@
 
 	/* Popup container - can be anything you want */
-	
 	.popup {
 	  position: relative;
 	  display: inline-block;
-	  
-	  color: #9d3d5f; /*  #9d3d5f; #ccf; ou red; ou  #3d3d5c;  couleur numero des commentaires */ 
-	  font-family:calibri light;
 	  cursor: pointer;
-	  z-index:0 !important;	
-	  
 	  -webkit-user-select: none;
 	  -moz-user-select: none;
 	  -ms-user-select: none;
@@ -17,8 +11,7 @@
 	 
 	}
 
-	/***************** COMMENTAIRE ORIENTÉ VERS LE BAS**************** */
-	
+	/* The actual popup */
 	.popup .popuptext {
 	  visibility: hidden;
 
@@ -30,14 +23,28 @@
 	  position: absolute;
 	  z-index: 1; 
 	  
-	  /* ci-dessous les 3 paramètres à regler pour l'apli Todo */
-	  	  
-	  width: 400%;	/*  Taille commentaire( en largeur ) */  	  	  
-	  bottom: 95%;	/* Commentaire en haut  */  	    
-	  right: -183%; /* à droite */
+	  /* #########" ci-dessous les 3 paramètres à regler pour l'apli Todo #############*/
+	  
+	  /*  width: 160px; */
+	  width: 400%;	  
+	  /* bottom: 125%; */	  
+	  bottom: 95%;	  
+	  /* left: 50%; margin-left: -80px; qcq g fait ici? c pas normal ! */  
+	  right: -183%;
 	}
-	
-	/* Pointe vers le bas */
+	.popup .popuptextLarge { 
+	    width: 808%; 
+
+	}
+	.popup .popuptextLarge::after {left: 75.2% !important; }
+
+	.popup{ 
+		 color: #9d3d5f; /*  #9d3d5f; #ccf; ou red; ou  #3d3d5c;  couleur numero des commentaires */ 
+		 font-family:calibri light;
+		 z-index:0 !important;	 
+	 }
+
+	/* Popup arrow */
 	.popup .popuptext::after {
 	  content: "";
 	  position: absolute;
@@ -48,43 +55,6 @@
 	  border-style: solid;
 	  border-color: #555 transparent transparent transparent;
 	}
-	
-	/***************** COMMENTAIRE ORIENTÉ VERS LE HAUT ****************/
-	
-	.popup .popuptextLarge { 
-	    width: 590% !important; 
-       	/* Commentaire en bas */
-		bottom:auto; 
-		top:100% !important; 		
-	}
-	.popup .popuptextLarge::after {
-		left: 65.8% !important; 
-		top: -4.3% !important; 		
-		transform: rotate(180deg); /* la pointe(margin-left: -5px; border-width: 5px;) vers le haut */	
-	}
-	
-	/***************** COMMENTAIRE ORIENTÉ À DROITE *******************/
-	
-	.popup .popuptextDroite { 
- 
-       	/* ... */		
-	}
-	.popup .popuptextDroite::after {
-		/* ... */	
-	}
-	
-	/***************** COMMENTAIRE ORIENTÉ À GAUCHE *******************/
-	
-	.popup .popuptextGauche { 
- 
-       	/* ... */		
-	}
-	.popup .popuptextGauche::after {
-		/* ... */	
-	}
-
-
-
 	
 
 
@@ -113,13 +83,15 @@
 	@media screen and (max-width: 650px) {
 		.popup .popuptext {right: -150%; }
 		.popup .popuptext::after {left: 57.85% !important; }
-		
 		.popup .popuptextLarge {
 			width: 500% !important; 
-			font-size:1.2em; 
+			font-size:1.2em; bottom:auto; 
+			top:100% !important; 
 		}
 		.popup .popuptextLarge::after {
 			left: 66.5% !important;  
 			top: -3.7% !important;
+			/* la pointe(margin-left: -5px; border-width: 5px;) vers le haut */			
+			transform: rotate(180deg);
 		}
 	}
