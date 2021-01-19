@@ -129,6 +129,22 @@
 	  background:#eee;
 	  border-radius:.2em;
 	}
+	/* Compteur de click */
+	#ici {
+	  font-size:.7em;
+	  padding: .1em .5em; /* .5em 1em;  */
+	  margin: 0 .5em;
+	  
+	  border: 1px solid #ddd;
+	  text-decoration: none;	  
+	  color:#aaa;
+	  background-color:#eee;
+	  border-radius:.14em;
+	  transition: background-color .3s;	  
+	  cursor: pointer;
+	}
+	#ici:hover {border: 1px solid #ccc; background-color: #ddd;}
+	
 	.hikma { font-weight:bold; color:#660099;}
 	.douan { font-weight:bold; color:#00b36b;}
 	
@@ -161,7 +177,7 @@
 		
 		
 	    <span class="douan">لا إلهَ إلاّ اللّهُ وحْـدَهُ لا شريكَ لهُ، لهُ المُلكُ ولهُ الحَمْد، يُحيـي وَيُمـيتُ وهُوَ على كُلّ شيءٍ قدير</span><br>
-		<span class="noteDeBasDePage">(عَشْر مَرّات بَعْدَ المَغْرِب وَالصّـبْح)</span><br>
+		<small><i id="ici" style="width:15.5em;">Count</i></small>&nbsp;&nbsp;<span class="noteDeBasDePage">(عَشْر مَرّات بَعْدَ المَغْرِب وَالصّـبْح)</span><br>
 		اللّهُـمَّ إِنِّـي أَسْأَلُـكَ عِلْمـاً نافِعـاً وَرِزْقـاً طَيِّـباً ، وَعَمَـلاً مُتَقَـبَّلاً<br>
 		<span class="noteDeBasDePage">(بَعْد السّلامِ من صَلاةِ الفَجْر)</span><br>
 		اللَّهُمَّ أَجِرْنِي مِنْ النَّار<br>
@@ -178,6 +194,14 @@
 		  var popup2 = document.getElementById("myPopup2");
 		  popup2.classList.toggle("show");
 		}
+		
+	    // Compte le nombre de Tasbih et l'affiche dans le même bouton
+		var count=0;
+		var action = document.getElementById("ici");		
+		action.onclick=function(){
+			count++;
+			if( count <11  ){ action.innerHTML=count; }		
+		};
 	</script>
 </body>
 </html>
