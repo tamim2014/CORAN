@@ -1,16 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <style>
-	body {  
-	  margin: 0; padding:0 1em; line-height:2;
-	  font-size:1.5em;
+  
+    /*
+     *	c'est le line-height du body 
+	 *  et le le font-size des paragraphe (class="fcbk")
+	 *  qui gerent le contenu
+     *	 
+	 */
+	body { 
+      line-height:1.5;	
+	  margin: 0; padding:0 1em; 
 	  text-align:right; 
-	  background:white;  
+	  background:#ECECEA; /* background:white;  */
 	}	
 	* { box-sizing: border-box; }
+	.fcbk{
+	   font-size:1.5em;
+	   padding:.5em 1em ; 
+	   margin:0 0 1em 0;
+
+       border-radius:.3em; 
+       background:white; 	   
+	   box-shadow:0 .4px 1px #ccc; 	/* box-shadow:0 1px 4px ; */	  
+	}
 	ul { margin: 0; padding: 0; }
 	ul li {
 	  cursor: pointer;
@@ -68,8 +78,7 @@
 	  color: white;
 	 
 	}
-	   
-       	   	
+	         	   	
 	/* ############################################################ */
 	
 	/* Style the header */
@@ -120,7 +129,7 @@
 	  background-color: #bbb;
 	}
 	.basmala_todo{font-weight:bold; color:green;}
-	.noteDeBasDePage{ font-size:.8em; color:#9d3d5f; padding:0; margin:0; line-height:0 !important;}
+	.noteDeBasDePage{ font-size:.8em; color:#9d3d5f; padding:0; margin:0; line-height:0 !important; }
 	h5{
 	  text-align:center; 
 	  padding:0 ;
@@ -128,26 +137,32 @@
 	  color:gray; 
 	  background:#eee;
 	  border-radius:.2em;
-	}	
+	}
+	/* 3 étoiles qui séparent les douans */
+	.separateurArabe , .separateurFrançais{ word-spacing: 1rem; }
+	.separateurArabe { padding-right:40%; padding-top:0 !important; padding-bottom:0 !important; font-size:.9em;  line-height:0 !important;  }
+	.separateurFrançais{ padding-left:40%; font-size:1.1em; }
+	/* Compteur de click */
+	#ici {
+	  font-size:.7em;
+	  padding: .1em .5em; /* .5em 1em;  */
+	  margin: 0 .5em;
+	  
+	  border: 1px solid #ddd;
+	  text-decoration: none;	  
+	  color:#aaa;
+	  background-color:#eee;
+	  border-radius:.14em;
+	  transition: background-color .3s;	  
+	  cursor: pointer;
+	}
+	#ici:hover {border: 1px solid #ccc; background-color: #ddd;}
+
+	
 	@media screen and (max-width: 650px) {
 	   body{font-size:1em;}
 	   .noteDeBasDePage{ font-size:.5em;}
+	   .fcbk{ font-size:1em; }
+	   
 	}
-  </style>
-</head>
-<body style="text-align:center" >
-    <h5>أذكار بعد السلام من الصلاة المفروضة</h5>
-    <p style="margin-top:.3em; margin-bottom:0; padding-top:0; padding-bottom:0;">
-        <span class="basmala_todo">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span><br>
-         .قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ<br>
-		<span class="basmala_todo">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span><br>
-         قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ<br>
-		<span class="basmala_todo ">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span><br>
-		قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ.<br>
-		
-
-	   <small class="noteDeBasDePage"><i>( <span>ومرة بعد الصلوات الأخرى</span><span>ثلاث مرات بعد صلاتي الفجر والمغرب</span> )</i></small>	   
-	</p>
-
-</body>
-</html>
+  

@@ -29,6 +29,7 @@
  
  // 2. CHARGEMENT DES PAGES
     $(document).ready(function(){
+		// Onglet Post-Prières
 	      $("#activeUn").click(function(){
 			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>');
           });
@@ -41,6 +42,19 @@
 		  $("#activeQuatre").click(function(){
 			$('#cible').replaceWith(' <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="frequence4.html" ></object>');
           });
+		// Onglet Post-Prières
+		  $("#activeUnCahierBleu").click(function(){
+			$('#cibleCahierBleu').replaceWith(' <object id="cibleCahierBleu" class="onglet1-1-resume" style="width:90%;"  data="cahierBleu.html" ></object>');
+          });
+		  $("#activeDeuxCahierBleu").click(function(){
+			$('#cibleCahierBleu').replaceWith(' <object id="cibleCahierBleu" class="onglet1-1-resume" style="width:90%;"  data="cahierBleu2.html" ></object>');
+          });
+		  $("#activeTroisCahierBleu").click(function(){
+			$('#cibleCahierBleu').replaceWith(' <object id="cibleCahierBleu" class="onglet1-1-resume" style="width:90%;"  data="cahierBleu3.html" ></object>');
+          });
+		  $("#activeQuatreCahierBleu").click(function(){
+			$('#cibleCahierBleu').replaceWith(' <object id="cibleCahierBleu" class="onglet1-1-resume" style="width:90%;"  data="cahierBleu4.html" ></object>');
+          });
 	 });
 	 
 // 1. PAGINATION ( add active class de façon dynamique(perso script) ): s'appelle en fin de page
@@ -50,7 +64,14 @@
 		var boutonTrois = document.getElementById("activeTrois");
 		var boutonQuatre = document.getElementById("activeQuatre");
 		var boutonCinq = document.getElementById("activeCinq");
-
+		
+		var boutonUnCB = document.getElementById("activeUnCahierBleu");
+		var boutonDeuxCB = document.getElementById("activeDeuxCahierBleu");
+		var boutonTroisCB = document.getElementById("activeTroisCahierBleu");
+		var boutonQuatreCB = document.getElementById("activeQuatreCahierBleu");
+		var boutonCinqCB = document.getElementById("activeCinqCahierBleu");
+		
+        // Onglet Post-Prières
 		function activeUn() {
 		   boutonUn .classList.add("active");
 		   boutonDeux.classList.remove("active");
@@ -78,6 +99,35 @@
 		   boutonTrois.classList.remove("active");
 		   boutonQuatre.classList.add("active");
 		   boutonCinq.classList.remove("active");
+		}
+		// Onglet Cahier Bleu
+		function activeUnCahierBleu() {
+		   boutonUnCB .classList.add("active");
+		   boutonDeuxCB.classList.remove("active");
+		   boutonTroisCB.classList.remove("active");
+		   boutonQuatreCB.classList.remove("active");
+		   boutonCinqCB.classList.remove("active");
+		}
+		function activeDeuxCahierBleu() {
+		   boutonUnCB .classList.remove("active");
+		   boutonDeuxCB.classList.add("active");
+		   boutonTroisCB.classList.remove("active");
+		   boutonQuatreCB.classList.remove("active");
+		   boutonCinqCB.classList.remove("active");
+		}
+		function activeTroisCahierBleu() {
+		   boutonUnCB .classList.remove("active");
+		   boutonDeuxCB.classList.remove("active");
+		   boutonTroisCB.classList.add("active");
+		   boutonQuatreCB.classList.remove("active");
+		   boutonCinqCB.classList.remove("active");
+		}
+		function activeQuatreCahierBleu() {
+		   boutonUnCB .classList.remove("active");
+		   boutonDeuxCB.classList.remove("active");
+		   boutonTroisCB.classList.remove("active");
+		   boutonQuatreCB.classList.add("active");
+		   boutonCinqCB.classList.remove("active");
 		}
  
  
