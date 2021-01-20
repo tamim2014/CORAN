@@ -5,28 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="stylesheet" href="css/commentaires.css">
   <style>
-    /*
-     *	c'est le line-height du body 
-	 *  et le le font-size des paragraphe (class="fcbk")
-	 *  qui gerent le contenu
-     *	 
-	 */
-	body { 
-      line-height:1.5;	
-	  margin: 0; padding:0 1em; 
+	body {  
+	  margin: 0; padding:0 1em; line-height:2;
+	  font-size:1.5em;
 	  text-align:right; 
-	  background:#ECECEA; /* background:white;  */
+	  background:white;  
 	}	
 	* { box-sizing: border-box; }
-	.fcbk{
-	   font-size:1.5em;
-	   padding:.5em 1em ; 
-	   margin:0 0 1em 0;
-
-       border-radius:.3em; 
-       background:white; 	   
-	   box-shadow:0 .4px 1px #ccc; 	/* box-shadow:0 1px 4px ; */	  
-	}
 	ul { margin: 0; padding: 0; }
 	ul li {
 	  cursor: pointer;
@@ -148,62 +133,29 @@
 	.separateurArabe , .separateurFrançais{ word-spacing: 1rem; }
 	.separateurArabe { padding-right:40%; padding-top:0 !important; padding-bottom:0 !important; font-size:.9em;  line-height:0 !important;  }
 	.separateurFrançais{ padding-left:40%; font-size:1.1em; }
-	/* Compteur de click */
-	#ici {
-	  font-size:.7em;
-	  padding: .1em .5em; /* .5em 1em;  */
-	  margin: 0 .5em;
-	  
-	  border: 1px solid #ddd;
-	  text-decoration: none;	  
-	  color:#aaa;
-	  background-color:#eee;
-	  border-radius:.14em;
-	  transition: background-color .3s;	  
-	  cursor: pointer;
-	}
-	#ici:hover {border: 1px solid #ccc; background-color: #ddd;}
-
 	
 	@media screen and (max-width: 650px) {
 	   body{font-size:1em;}
 	   .noteDeBasDePage{ font-size:.5em;}
-	   .fcbk{ font-size:1em; }
-	   
 	}
   </style>
 </head>
 <body >
-    <h5 style=" background:transparent; margin:.8em; font-size:1.1em; ">ثلاث مكافآت</h5>
-    <p style="margin:0; padding:.3em 0 0 0; ">
-	    <p class="fcbk">
-            أشْهَدُأنْلا إلهَ إلاّ لله وَحْدَهُ لَا شََرِيكَ لَهُ، إلٰهاًوَاحِدً٬ أحَدًصَمَدً.لَمْ يَتَّخِذْصاَحِبَتاًوَلاَوَلَدْ، وَلَمْ يَكُنْ لَّهُۥ كُفُوًا أَحَدٌۢ 
-		 </p>
-		<!-- <br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br> -->
-		<p class="fcbk">
-		     <small><i id="ici" style="width:15.5em;">Count</i></small>&nbsp;&nbsp;
-		     سُبْحَانَ الْلهِ، وَالْحَمْدُ لِلهِ، وَلَا إِلَهَ إِلَّا الْلهُ، وَالْلهُ أَكْبَرُ وَ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ 
-		</p>
-		<!-- <br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br> -->
-        <p class="fcbk" style="margin-bottom:0">
-			أَللَّهُمَّ إِنِّي أَسْئَلُكَ ثَّبٰةَعلى لْأَمْرِ٬  وَلْعَزِيمَةَعلى الرُّشْدِ 
-			.أَللَّهُمَّ إِنِّي أَسْئَلُكَ حُسْن عِباَدَتِكَ،  وَشُكْرنِعْمَتِكَ<br>
-			.أَللَّهُمَّ إِنِّي أَسْئَلُكَ قَلْبً سَلِيمً، وَلِسٰنً صَدِيقً  <br>
-			.أَللَّهُمَّ إِنِّي أَسْئَلُكَ خَيْرَمَاتَعْلَمْ<br>
-			.وَأَعُوذبِكَ مِنْ شَرِّ  مَاتَعْلَمْ<br>
-			.وَأَسْـتَغْفِرُكَ مِنْ  مَاتَعْلَمْ<br>
-			.إنَّكَ أَنْتَ  علَّامُ  لْغُيُوبْ
-	    </p>
+    <h5>ثلاث مكافآت</h5>
+    <p style="margin-top:.3em; margin-bottom:0; padding-top:.8em; padding-bottom:0; line-height:1.7 !important;">
+         .أشْهَدُأنْلا إلهَ إلاّ لله وَحْدَهُ لَا شََرِيكَ لَهُ، إلٰهاًوَاحِدً٬ أحَدًصَمَدً.لَمْ يَتَّخِذْصاَحِبَتاًوَلاَوَلَدْ، وَلَمْ يَكُنْ لَّهُۥ كُفُوًا أَحَدٌۢ 
+		<br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br>
+		<span style="padding-right:17%;">سُبْحَانَ الْلهِ، وَالْحَمْدُ لِلهِ، وَلَا إِلَهَ إِلَّا الْلهُ، وَالْلهُ أَكْبَرُ وَ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ </span>		
+		<br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br>
+
+		&emsp;.أَللَّهُمَّ إِنِّي أَسْئَلُكَ ثَّبٰةَعلى لْأَمْرِ٬  وَلْعَزِيمَةَعلى الرُّشْدِ 
+		.أَللَّهُمَّ إِنِّي أَسْئَلُكَ حُسْن عِباَدَتِكَ،  وَشُكْرنِعْمَتِكَ<br>
+		.أَللَّهُمَّ إِنِّي أَسْئَلُكَ قَلْبً سَلِيمً، وَلِسٰنً صَدِيقً  <br>
+		.أَللَّهُمَّ إِنِّي أَسْئَلُكَ خَيْرَمَاتَعْلَمْ<br>
+		.وَأَعُوذبِكَ مِنْ شَرِّ  مَاتَعْلَمْ<br>
+		.وَأَسْـتَغْفِرُكَ مِنْ  مَاتَعْلَمْ<br>
+		.إنَّكَ أَنْتَ  علَّامُ  لْغُيُوبْ
 	</p>
-	<script>		
-	    // Compte le nombre de Tasbih et l'affiche dans le même bouton
-		var count=0;
-		var action = document.getElementById("ici");		
-		action.onclick=function(){
-			count++;
-			if( count <11  ){ action.innerHTML=count; }		
-		};
-	</script>
 
 </body>
 </html>
