@@ -18,7 +18,8 @@ function addTask(){
 		show();
 	}    
     document.getElementById("taskdivers").value = ""; // Rafraichissement du champs de saisie( sinon la dernière valeur entrée reste là et oblige l'utilisateur à l'effacer à la main)
-    return false;
+
+	return false;
 }
  
 function removeTask(){
@@ -48,6 +49,7 @@ function show() {
         buttons[i].addEventListener('click', removeTask);
     };
 }
- 
+
 document.getElementById('add').addEventListener('click', addTask);
+
 show();

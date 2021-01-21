@@ -10,15 +10,22 @@ function get_todos() {
 }
  
 function add() {
+	var code=event.which || event.keyCode; //Selon le navigateur c'est which ou keyCode
     var task = document.getElementById('task').value;
     var todos = get_todos();
 	if (task === '') { 
 	    alert("Vous n'avez rien écrit!"); 
-	}else{  
+	}else{ 
 		todos.push(task);
 		localStorage.setItem('todo', JSON.stringify(todos)); 
 		show();
-	}    
+	} 
+	if(code===13){ //le code de la touche Enter 
+		todos.push(task);
+		localStorage.setItem('todo', JSON.stringify(todos)); 
+		show();
+	} 
+    
     document.getElementById("task").value = ""; // Rafraichissement du champs de saisie( sinon la dernière valeur entrée reste là et oblige l'utilisateur à l'effacer à la main)
    
    return false;

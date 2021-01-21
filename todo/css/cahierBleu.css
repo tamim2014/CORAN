@@ -157,12 +157,16 @@
 	  cursor: pointer;
 	}
 	#ici:hover {border: 1px solid #ccc; background-color: #ddd;}
+	
+	.hikma { font-weight:bold; color:#660099;}
+	.douan { font-weight:bold; color:#00b36b;}
 
 	
 	@media screen and (max-width: 650px) {
-	   body{font-size:1em;}
+	   body{font-size:1em; line-height:auto;}
 	   .noteDeBasDePage{ font-size:.5em;}
 	   .fcbk{ font-size:1em; }
+	   #ici{/*  ???? */}
 	   
 	}
   
