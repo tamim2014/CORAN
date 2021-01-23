@@ -10,12 +10,17 @@ function get_todos() {
 }
  
 function add() {
+	var lera = new Date().getHours();
+	var dakika =  new Date().getMinutes();
+	
     var task = document.getElementById('task').value;
+	var taskEtDate = task + '<small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';
+	
     var todos = get_todos();
 	if (task === '') { 
 	    alert("Vous n'avez rien écrit!"); 
 	}else{  
-		todos.push(task);
+		todos.push(taskEtDate);
 		localStorage.setItem('todo', JSON.stringify(todos)); 
 		show();
 	}    
@@ -23,6 +28,8 @@ function add() {
    
    return false;
 }
+
+
 
 
  
@@ -40,6 +47,7 @@ function remove() {
 
  
 function show() {
+
     var todos = get_todos();
  
     var html = '<ul>';
