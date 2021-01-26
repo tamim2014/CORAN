@@ -44,20 +44,39 @@ function remove() {
    // return false;
 }
 
+// Gestion kadhoi ( ce serait mieux d'utiliser un switch case ) 
 
+function kadwoi(){
+	/**
+	 * RAPPEL
+	 * || si un des deux est vrai
+	 * && si les deux sont  vrais
+	 */
+	
+	var H = new Date().getHours(); //var M =  new Date().getMinutes();
+	
+	// Subh:( 7h à 8h30)
+    if(  (H < 7) || (H >= 8) ) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#f44336"; } // test en temps réél: ?
+	// Dhuhr:( 13h à 15h14)
+	if(( H < 13) || ( H >= 15) ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#f44336"; } // test en temps réél: ?
+	// Asr:( 15h14 à 17h30)
+	if( ( H < 15) || ( H >= 17)) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#f44336"; } // test en temps réél: ?
+	// Mahrib:( 17h30 à 19h)
+	if( ( H < 17) || ( H >= 19)) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#f44336"; }// test en temps réél: ?
+	// Icha:( 19h à 7h)
+	if( (H > 7) && (H < 19) ) { document.getElementsByClassName("tester")[4].style.backgroundColor = "#f44336"; } // test en temps réél: OK
+	//document.write(H);
+}
  
 function show() {
 
-    var todos = get_todos();
-	
-	
+    var todos = get_todos();	
     // Bouton remove
     var html = '<ul>';
     for(var i=0; i<todos.length; i++) {
         html += '<li class="fait">' + todos[i] + '<button class="remove tester " id="' + i  + '">x</button></li>';
     };
     html += '</ul>';
- 
     document.getElementById('todos').innerHTML = html;
 		
     //Action  remove: Un Listener sur le bouton remove
@@ -66,22 +85,8 @@ function show() {
         buttons[i].addEventListener('click', remove);
     };
 	
-	
-   // Gestion kadhoi ( ce serait mieux d'utiliser un switch case ) 
-	var H = new Date().getHours(); //var M =  new Date().getMinutes();
-	
-	// Subh:( 7h à 8h30)
-    if(  H < 7 ) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#f44336"; }
-	// Dhuhr:( 13h à 15h14)
-	if( H > 14) { document.getElementsByClassName("tester")[1].style.backgroundColor = "#f44336"; }
-	// Asr:( 15h14 à 17h30)
-	if( H > 16) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#f44336"; }
-	// Mahrib:( 17h30 à 19h)
-	if( H > 18) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#f44336"; }
-	// Icha:( 19h à 7h)
-	if( (H > 7) && (H < 19) ) { document.getElementsByClassName("tester")[4].style.backgroundColor = "#f44336"; }
-	
-
+	// kadwoi
+	kadwoi();
 }
 
 
