@@ -44,30 +44,64 @@ function remove() {
    // return false;
 }
 
+/** Gestion kadhoi
+ *  Problème: Le résultat de La fonction n'est pas fichée
+ *  La fonction continue de s'executer en temps réel:La resultat change en fonction de l'heure 
+ *  Piste de solution: un return false(dit au moteur javascript de s'arrêter de bosser )
+ */
 
+function kadwoi(){
+	/**
+	 * RAPPEL
+	 * || si un des deux est vrai
+	 * && si les deux sont  vrais
+	 *
+	 * REMARQUE :  ce serait mieux d'utiliser un switch case 
+	 *
+	 */
+	
+	var Heure = new Date().getHours(); //var M =  new Date().getMinutes();
+	var H = parseInt(Heure, 10);
+	
+		
+	// Subh:( 7h à 8h30)
+    if(H > 6 && H <= 8) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
+	// Dhuhr:( 13h à 15h14)
+	if( H > 12 && H < 15 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50"; return false; } // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
+	// Asr:( 15h14 à 17h30)
+	if( H>14 && H<18) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
+	// Mahrib:( 17h40 à 19h)
+	if(H > 16 && H < 20) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#4CAF50"; }// test en temps réél: ?
+	// Icha:( 19h à 7h)
+	if( (H > 19 && H < 23) ||  H < 7 ) { document.getElementsByClassName("tester")[4].style.backgroundColor = "#4CAF50"; } // test en temps réél: OK!
+	
+	//document.write(H);
+
+	return false;
+}
  
 function show() {
 
-    var todos = get_todos();
- 
+    var todos = get_todos();	
+    // Bouton remove
     var html = '<ul>';
     for(var i=0; i<todos.length; i++) {
         html += '<li class="fait">' + todos[i] + '<button class="remove tester " id="' + i  + '">x</button></li>';
     };
     html += '</ul>';
- 
     document.getElementById('todos').innerHTML = html;
-	
-
-	
- 
+		
+    //Action  remove: Un Listener sur le bouton remove
     var buttons = document.getElementsByClassName('remove');
     for (var i=0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', remove);
     };
 	
-
+	// kadwoi
+	kadwoi();	
 }
+
+
 
 document.getElementById('add').addEventListener('click', add); // un écouteur sur le bouton add
 
