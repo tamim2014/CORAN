@@ -14,19 +14,25 @@ function add() {
 	var dakika =  new Date().getMinutes();
 	
     var task = document.getElementById('task').value;
-	var taskEtDate = task + '<small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';
-	
+	var taskEtDate = task + '<small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';	
     var todos = get_todos();
-	if (task === '') { 
-	    alert("Vous n'avez rien écrit!"); 
-	}else{  
-		todos.push(taskEtDate);
-		localStorage.setItem('todo', JSON.stringify(todos)); 
-		show();
-	}    
+	// On fait afficher automatiquement( sans rien saisir)
+	var P = document.getElementsByClassName("tester");// ensemble des  prières du jour
+	var n = P.length ; //  nombre de prières accomplies
+	
+	if (task === '' && n === 0 ) { taskEtDate = 'Subh&emsp; <small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 1 ) { taskEtDate = 'Dhuhr&nbsp;&nbsp;&nbsp;<small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 2 ) { taskEtDate = 'Asr&emsp; &nbsp; <small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 3 ) { taskEtDate = 'Mahrib <small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 4 ) { taskEtDate = 'Icha &emsp; <small><i>&emsp;( à '+lera+'h '+dakika+'mn ) </i></small>';}
+		 
+	todos.push(taskEtDate);
+	localStorage.setItem('todo', JSON.stringify(todos)); 
+	show();
+	   
     document.getElementById("task").value = ""; // Rafraichissement du champs de saisie( sinon la dernière valeur entrée reste là et oblige l'utilisateur à l'effacer à la main)
    
-   return false;
+    return false;
 }
 
 
