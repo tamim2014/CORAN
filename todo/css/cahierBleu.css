@@ -137,6 +137,7 @@
 	  color:gray; 
 	  background:#eee;
 	  border-radius:.2em;
+	  opacity: .5;
 	}
 	/* 3 étoiles qui séparent les douans */
 	.separateurArabe , .separateurFrançais{ word-spacing: 1rem; }
