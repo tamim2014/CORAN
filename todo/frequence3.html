@@ -183,18 +183,35 @@
 		<span class="noteDeBasDePage">(بَعْد السّلامِ من صَلاةِ الفَجْر)</span><br>
 		اللَّهُمَّ أَجِرْنِي مِنْ النَّار<br>
 		<span class="noteDeBasDePage" >(بعد صلاة الصبح والمغرب)</span><br>
+		&emsp;
+			<span class="popup grandCommentaire" onclick="commentaire3()">
+				<small style="font-size:.7em; color:#aaa;"><i>Comment &#9755; &emsp; ici ...</i></small>
+				<span class="popuptext grandCommentaire" id="myPopup3"><i>Le Prophète &#65018; a recommandé à &nbsp; </i> سَعَدْ بن مُعٰظ <i> &nbsp; de ne jamais terminer une prière sans cette invocation</i></span> 
+			</span>
+		&emsp;
+		<!-- <i>Le Prophète &#62018; a recommandé à</i> .... <i>de ne jamais terminer une prière sans cette invocation</i> -->
 		اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ
 	</p>
 	<script>
 		// When the user clicks on div, open the popup
-		function commentaire1() {
-		  var popup1 = document.getElementById("myPopup1");
-		  popup1.classList.toggle("show");
-		}
-		function commentaire2() {
-		  var popup2 = document.getElementById("myPopup2");
-		  popup2.classList.toggle("show");
-		}
+		// cf. possibilité d(y mettre une boucle: var i; for (i = 1; i < 4; i++) {...}
+		
+        
+			function commentaire1() {
+			  var popup1 = document.getElementById("myPopup1");
+			  popup1.classList.toggle("show");
+			}
+			
+			function commentaire2() {
+			  var popup2 = document.getElementById("myPopup2");
+			  popup2.classList.toggle("show");
+			}
+			function commentaire3() {
+			  var popup3 = document.getElementById("myPopup3");
+			  popup3.classList.toggle("show");
+			}
+           			
+		
 		
 	    // Compte le nombre de Tasbih et l'affiche dans le même bouton
 		var count=0;

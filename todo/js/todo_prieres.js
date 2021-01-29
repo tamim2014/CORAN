@@ -8,6 +8,26 @@ function get_todos() {
     }
     return todos;
 }
+
+//Au de-là de 6 entrées: cacher les 2 icones du bas gauche et mettre une couleur neutre sur les tasks
+function autreTask(){
+	
+	var ada = document.getElementById('ada'); ada.style.display = "none";
+	var kadhoi = document.getElementById('kadhoi'); kadhoi.style.display = "none";
+	var txtAda = document.getElementById('txtAda'); txtAda.style.display = "none";
+	var txtKadhoi = document.getElementById('txtKadhoi'); txtKadhoi.style.display = "none";
+	// 	i fo faire une boucle for( limite sup: n=P.length) au lieu de repeter cess lignes
+	var P = document.getElementsByClassName("tester");// ensemble des  prières du jour
+	var n = P.length ; 
+	var i; for (i = 5; i < n; i++) {
+		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555";
+		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555";
+		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555"; 
+		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555"; 
+		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555";
+		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555"; 
+	}
+}
  
 function add() {
 	var lera = new Date().getHours();
@@ -66,17 +86,10 @@ function add() {
 	  localStorage.setItem('todo', JSON.stringify(todos)); 
 	  show();
 	}
-	/**
-	*
-	* Au de-là de 6 entrées: cacher les 2 icones du bas gauche
-	*
-	*/
-	if ( n > 5 ) {
-		var ada = document.getElementById('ada'); ada.style.display = "none";
-		var kadhoi = document.getElementById('kadhoi'); kadhoi.style.display = "none";
-		var txtAda = document.getElementById('txtAda'); txtAda.style.display = "none";
-		var txtKadhoi = document.getElementById('txtKadhoi'); txtKadhoi.style.display = "none";		
-	}
+
+	// Au de-là de 6 entrées: cacher les 2 icones du bas gauche et mettre une couleur neutre sur les tasks
+
+	if ( n > 5 ) {	autreTask();  }
 	   
     document.getElementById("task").value = ""; // Rafraichissement du champs de saisie( sinon la dernière valeur entrée reste là et oblige l'utilisateur à l'effacer à la main)
    
