@@ -66,6 +66,17 @@ function add() {
 	  localStorage.setItem('todo', JSON.stringify(todos)); 
 	  show();
 	}
+	/**
+	*
+	* Au de-là de 6 entrées: cacher les 2 icones du bas gauche
+	*
+	*/
+	if ( n > 5 ) {
+		var ada = document.getElementById('ada'); ada.style.display = "none";
+		var kadhoi = document.getElementById('kadhoi'); kadhoi.style.display = "none";
+		var txtAda = document.getElementById('txtAda'); txtAda.style.display = "none";
+		var txtKadhoi = document.getElementById('txtKadhoi'); txtKadhoi.style.display = "none";		
+	}
 	   
     document.getElementById("task").value = ""; // Rafraichissement du champs de saisie( sinon la dernière valeur entrée reste là et oblige l'utilisateur à l'effacer à la main)
    
