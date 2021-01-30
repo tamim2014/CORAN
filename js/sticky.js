@@ -168,6 +168,14 @@
 	  var popup1001 = document.getElementById("myPopup1001");
 	  popup1001.classList.toggle("show");
 	}
+	function commentaire1002() {
+	  var popup1002 = document.getElementById("myPopup1002");
+	  popup1002.classList.toggle("show");
+	}
+    function commentaire1003() {
+	  var popup1003 = document.getElementById("myPopup1003");
+	  popup1003.classList.toggle("show");
+	}
 	// button mobil menu
     function openNav() {
 	 var x = document.getElementById("dropdown-btn1");
