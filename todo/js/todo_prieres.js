@@ -11,21 +11,29 @@ function get_todos() {
 
 //Au de-là de 6 entrées: cacher les 2 icones du bas gauche et mettre une couleur neutre sur les tasks
 function autreTask(){
-	
-	var ada = document.getElementById('ada'); ada.style.display = "none";
-	var kadhoi = document.getElementById('kadhoi'); kadhoi.style.display = "none";
-	var txtAda = document.getElementById('txtAda'); txtAda.style.display = "none";
-	var txtKadhoi = document.getElementById('txtKadhoi'); txtKadhoi.style.display = "none";
-	// 	i fo faire une boucle for( limite sup: n=P.length) au lieu de repeter cess lignes
+		
 	var P = document.getElementsByClassName("tester");// ensemble des  prières du jour
-	var n = P.length ; 
-	var i; for (i = 5; i < n; i++) {
+	var n = P.length ;
+	
+    // effacer les 2 icones ( en bas à gauche ) au-delà de 6items
+    var ada = document.getElementById('ada');
+    var kadhoi = document.getElementById('kadhoi');	
+	var txtAda = document.getElementById('txtAda');
+	var txtKadhoi = document.getElementById('txtKadhoi');
+	if ( n > 5){
+	    ada.style.display = "none";
+	    kadhoi.style.display = "none";
+	    txtAda.style.display = "none";
+	    txtKadhoi.style.display = "none";
+    }else{
+		// sinon les réafficher
+	    ada.style.display = "block";
+	    kadhoi.style.display = "block";
+	    txtAda.style.display = "block";
+	    txtKadhoi.style.display = "block";
+	}
+	var i; for (i = 5; i <= n; i++) {
 		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555";
-		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555";
-		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555"; 
-		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555"; 
-		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555";
-		document.getElementsByClassName("tester")[i].style.backgroundColor = "#555"; 
 	}
 }
  
@@ -89,7 +97,7 @@ function add() {
 
 	// Au de-là de 6 entrées: cacher les 2 icones du bas gauche et mettre une couleur neutre sur les tasks
 
-	if ( n > 5 ) {	autreTask();  }
+	if ( n >= 5 ) {	autreTask();  }
 	   
     document.getElementById("task").value = ""; // Rafraichissement du champs de saisie( sinon la dernière valeur entrée reste là et oblige l'utilisateur à l'effacer à la main)
    
@@ -107,7 +115,14 @@ function remove() {
     localStorage.setItem('todo', JSON.stringify(todos));
  
     show();
- 
+	/**
+	 * Lors de la suppression; même les item > 5 deviennent rouge
+	 * Pour qu'il reste gris voici la solution
+	 * ça permet aussi de réafficher les icones (du bas à gauche) si on revient à la liste des 5 prières
+	 * l'implementation de cette fonction se trouve en supra(ligne 12)
+	 */
+	autreTask();
+	
    // return false;
 }
 
