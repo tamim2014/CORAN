@@ -48,11 +48,16 @@ function add() {
 	var P = document.getElementsByClassName("tester");// ensemble des  prières du jour
 	var n = P.length ; //  nombre de prières accomplies
 	
-	if (task === '' && n === 0 ) { taskEtDate = 'Subh&emsp; <small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 0 ) { 
+	   taskEtDate = 'Subh&emsp; <small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';
+	   //if( taskEtDate.includes("Fait")){document.getElementsByClassName("tester")[0].style.backgroundColor = "black";}
+	}
 	if (task === '' && n === 1 ) { taskEtDate = 'Dhuhr&nbsp;&nbsp;&nbsp;<small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';}
 	if (task === '' && n === 2 ) { taskEtDate = 'Asr&emsp; &nbsp; <small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';}
 	if (task === '' && n === 3 ) { taskEtDate = 'Mahrib <small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';}
 	if (task === '' && n === 4 ) { taskEtDate = 'Icha &emsp; <small><i>&emsp;( Fait &agrave; :  '+lera+'h '+dakika+'mn ) </i></small>';}
+	
+	
 	/**	 
 	 * Gestion des 5 première saisie
 	 * Normalement c'est pour les 5 prière obligatoire 
@@ -163,6 +168,11 @@ function kadwoi(){
 	
 	//document.write(H);
 
+	
+	
+  
+	
+	
 	return false;
 }
  
@@ -184,7 +194,8 @@ function show() {
     };
 	
 	// kadwoi
-	kadwoi();	
+	kadwoi();
+    
 }
 
 
