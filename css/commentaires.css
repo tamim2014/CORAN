@@ -46,6 +46,9 @@
 	.popup .thawabs::after { border-color: #666 transparent transparent transparent !important; }
 	.popup .recommandation1::after { border-color: #777 transparent transparent transparent !important; }
 	.popup .recommandation2::after { border-color: #888 transparent transparent transparent !important; }
+	/* Grand commentaire video couvrant toute la page de gauche: Voir S51 Verset4 Page523 */
+	.maamourComment {padding:1em 5em !important; width:1909% !important;}
+    .popup .maamourComment::after { left: 20% !important; }	
 
 	/* Toggle this class - hide and show the popup */
 	.popup .show {
