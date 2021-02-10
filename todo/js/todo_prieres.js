@@ -146,32 +146,33 @@ function kadwoi(){
 	 * REMARQUE :  ce serait mieux d'utiliser un switch case 
 	 *
 	 */
-	 
-
 	var PlayButton = document.getElementById('add');
-    
-	
+    	
 	var Heure = new Date().getHours(); //var M =  new Date().getMinutes();
 	var H = parseInt(Heure, 10);
 	
-		
+	/** HORAIRE DE PRIERE ( à mettre à jour au fil du temps INCHA ALLAH )
+	 *
+     * Les horaires n'étant pas fixes;
+     * changer les valeurs de ce script à la fin de chaque mois
+     * si ce n'est à la fin de chaque semaine.
+	 *
+	 * Ce, en attendant de concevoir ou de recevoir un script qui calcules les heures de prières à Gonesse
+	 * Penser à utiliser le site aooficiel du GPS pour ce faire.
+	 *
+     */	 
 	// Subh:( 7h à 8h30)
     if(H > 6 && H <= 8) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
 	// Dhuhr:( 13h à 15h14)
 	if(  H > 12 && H < 15 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50";} // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
-	// Asr:( 15h14 à 17h30)
-	if( H>14 && H<17) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
-	// Mahrib:( 17h40 à 19h)
-	if( (H > 16 && H < 19) && PlayButton) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#4CAF50"; }// test en temps réél: ?
+	// Asr:( 15h14 à 18H)
+	if( H>14 && H<18) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
+	// Mahrib:( 18h à 19h)
+	if( (H > 17 && H < 19) && PlayButton) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#4CAF50"; }// test en temps réél: ?
 	// Icha:( 19h à 7h)
 	if( (H >= 19 && H <= 23) ||  H < 7 ) { document.getElementsByClassName("tester")[4].style.backgroundColor = "#4CAF50"; } // test en temps réél: OK!
 	
 	//document.write(H);
-
-	
-	
-  
-	
 	
 	return false;
 }
