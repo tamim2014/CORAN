@@ -18,6 +18,7 @@
 		 </p>
 		<!-- <br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br> -->
 		<p class="fcbk">
+		     <small><i id="loop" style="width:15.5em;">Loop <span class="douan" style="font-weight:normal;">&#10227;</span> </i></small><!-- &#8620; -->
 		     <small><i id="ici" style="width:15.5em;">Count</i></small>&nbsp;&nbsp;
 		     سُبْحَانَ الْلهِ، وَالْحَمْدُ لِلهِ، وَلَا إِلَهَ إِلَّا الْلهُ، وَالْلهُ أَكْبَرُ وَ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ 
 		</p>
@@ -36,12 +37,27 @@
 	</p>
 	<script>		
 	    // Compte le nombre de Tasbih et l'affiche dans le même bouton
-		var count=0;
-		var action = document.getElementById("ici");		
+		
+		var count=0;		
+		var action = document.getElementById("ici");       
+		// Compter jusqu'à 10
 		action.onclick=function(){
 			count++;
 			if( count <11  ){ action.innerHTML=count; }		
 		};
+		
+		var loop=0;
+		var actionLp = document.getElementById("loop");			
+		// Boucler  jusqu'à 100 si on peut
+		actionLp.onclick=function(){
+		    // Réinitialiser le 1er compteur
+			count=0;
+			action.innerHTML="Count";
+		    // Incrémenter le 2ème compteur
+			loop = loop+10;
+			if( loop <101  ){ actionLp.innerHTML=loop; }		
+		};
+
 	</script>
 
 </body>
