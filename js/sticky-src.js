@@ -4,19 +4,22 @@
      * Date: Samedi 07 Mars 2020
      */	 
 
-	window.onscroll = function(){ myFunction();  };
+
+
+	window.onscroll = function(){ scrollFunction(); myFunction(); }; /* Attention! i fo pas inverser l'ordre de ces fonction sinon sa marche pas */
+	   
+       
+	
 	
 	var menu = document.getElementById("menu"); 
 			
 	var sidbarG = document.getElementById("sidbarG"); 
 	var sidbarD = document.getElementById("sidbarD");
-	var contenu_ = document.getElementById("contenu_"); 		
-	
-	//var positionInitialeSG = sidbarG.offsetTop;
+	var contenu_ = document.getElementById("contenu_"); 
 	var positionInitiale = menu.offsetTop;
 
 	function myFunction() {
-	  //if (window.pageYOffset > positionInitialeSG){
+
 	  if (window.pageYOffset > positionInitiale){
 		
 		menu.classList.add("stickyNavbar");
@@ -32,6 +35,7 @@
 		sidbarD.classList.remove("stickySidbarD");
 		contenu_.classList.remove("stickyContenu");			
 	  }
+
 	}
 	
 	     		
@@ -156,6 +160,52 @@
 	  var popup30 = document.getElementById("myPopup21");
 	  popup30.classList.toggle("show");
 	}
+	function commentaire31() {
+	  var popup31 = document.getElementById("myPopup31");
+	  popup31.classList.toggle("show");
+	}
+	function commentaire1001() {
+	  var popup1001 = document.getElementById("myPopup1001");
+	  popup1001.classList.toggle("show");
+	}
+	function commentaire1002() {
+	  var popup1002 = document.getElementById("myPopup1002");
+	  popup1002.classList.toggle("show");
+	}
+    function commentaire1003() {
+	  var popup1003 = document.getElementById("myPopup1003");
+	  popup1003.classList.toggle("show");
+	}
+	// button mobil menu
+    function openNav() {
+	 var x = document.getElementById("dropdown-btn1");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	  
+	  var y = document.getElementById("dropdown-btn2");
+	  if (y.style.display === "block") {
+		y.style.display = "none";
+	  } else {
+		y.style.display = "block";
+	  }
+	  
+	  var z = document.getElementById("dropdown-btn3");
+	  if (z.style.display === "block") {
+		z.style.display = "none";
+	  } else {
+		z.style.display = "block";
+	  }
+	  
+	  var t = document.getElementById("dropdown-btn4");
+	  if (t.style.display === "block") {
+		t.style.display = "none";
+	  } else {
+		t.style.display = "block";
+	  }			
+    }
 
 /********************************************************************* 
  * 
@@ -163,26 +213,22 @@
  *
  **********************************************************************/
 
-//Get the button
-var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-// Mais 20px il s'affiche trop tot. je mets 2000
-//window.onscroll = function() {scrollFunction()};
+var mybutton = document.getElementById("myBtn"); //Get the button mySidepane
 
-function scrollFunction() {
+function scrollFunction() { //window.onscroll = function() {scrollFunction()};
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-    mybutton.style.display = "block";
+    mybutton.style.display = "block";	
   } else {
     mybutton.style.display = "none";
   }
 }
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function topFunction() { // When the user clicks on the button, scroll to the top of the document
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
 
 
 	

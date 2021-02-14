@@ -24,4 +24,10 @@
 	*/
 	
 	.stickyContenu{margin-left:25%;}
+	
+	.stickyCahiergrisTo { 
+	    position: fixed;
+		top: 41%;
+		width:43%; 
+    }
 

@@ -16,7 +16,9 @@
 	var sidbarG = document.getElementById("sidbarG"); 
 	var sidbarD = document.getElementById("sidbarD");
 	var contenu_ = document.getElementById("contenu_"); 
+	var SCGto = document.getElementById("SCGto"); /* stickyCahiergris-s2 */
 	var positionInitiale = menu.offsetTop;
+
 
 	function myFunction() {
 
@@ -27,13 +29,17 @@
 		sidbarG.classList.add("stickySidbarG");
 		sidbarD.classList.add("stickySidbarD");
 		contenu_.classList.add("stickyContenu");
+		
+		SCGto.classList.add("stickyCahiergrisTo"); /* ce stycky ne prend pas !!! */
 	  } else {
 	  
 		menu.classList.remove("stickyNavbar");
 	  
 		sidbarG.classList.remove("stickySidbarG");
 		sidbarD.classList.remove("stickySidbarD");
-		contenu_.classList.remove("stickyContenu");			
+		contenu_.classList.remove("stickyContenu");
+		
+        SCGto.classList.remove("stickyCahiergrisTo");		
 	  }
 
 	}
