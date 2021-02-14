@@ -148,6 +148,24 @@
 	.hikma { font-weight:bold; color:#660099;}
 	.douan { font-weight:bold; color:#00b36b;}
 	
+	
+	.AHAD,.STAGHFIR-ALLAH { display:block; float:right; width:5em; height:2em; padding:0; cursor:pointer; overflow: hidden;  }
+    .STAGHFIR-ALLAH{width:5.9em;}
+	.points{  color:gray ; font-weight:normal; word-spacing: -.4ch; }
+	.AHAD:hover .points{display:none;} /* !!!!!!!!!!!!!!!!! */
+	.AHAD:hover{ width:auto;}
+	
+	.bonus{			  
+        background: radial-gradient(ellipse at top, #e66465, transparent),
+        radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+        border-radius:.2em ;
+        padding:.2em .3em;		
+	}
+	
+	.hikma{ 
+	   color:black !important; /* #3d3d5c; chic et sobre (mais pas pour les textes important)*/
+	}
+
 	@media screen and (max-width: 650px) {
 	   body{font-size:1em;  }
 	  .tabcontent { }
@@ -159,16 +177,21 @@
 </head>
 <body >
     <h5>أذكار بعد السلام من الصلاة المفروضة</h5>
-    <p>
-	   أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله.
-      <span class="hikma"> اللّهُـمَّ أَنْـتَ السَّلامُ ، وَمِـنْكَ السَّلام ، تَبارَكْتَ يا ذا الجَـلالِ وَالإِكْـرام</span><br>
-	   <span class="douan">لا إلهَ إلاّ اللّهُ وحدَهُ لا شريكَ لهُ، لهُ المُـلْكُ ولهُ الحَمْد، وهوَ على كلّ شَيءٍ قَدير</span>،<span class="hikma"> اللّهُـمَّ لا مانِعَ لِما أَعْطَـيْت، وَلا مُعْطِـيَ لِما مَنَـعْت، وَلا يَنْفَـعُ ذا الجَـدِّ مِنْـكَ الجَـد</span><br>
-	   <span class="douan">لا إلهَ إلاّ اللّه, وحدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمد، وهوَ على كلّ شيءٍ قدير</span>، لا حَـوْلَ وَلا قـوَّةَ إِلاّ بِاللهِ، لا إلهَ إلاّ اللّـه، وَلا نَعْـبُـدُ إِلاّ إيّـاه, لَهُ النِّعْـمَةُ وَلَهُ الفَضْل وَلَهُ الثَّـناءُ الحَـسَن، لا إلهَ إلاّ اللّهُ مخْلِصـينَ لَـهُ الدِّينَ وَلَوْ كَـرِهَ الكـافِرون<br>
-	   <!-- <small style=" "><i  style="font-size:.7em; color:#aaa;">Compter &#9755;  <i id="ici">ici</i>&nbsp;&nbsp;</i></small> -->
-	   <!-- <small style="color:#9d3d5f; "><i>(<i id="counter">33</i> fois)</i></small>سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر<br> -->
+    <p style="height:auto;">
+	   <span class="douan AHAD STAGHFIR-ALLAH" ><span class="points">&#133; &emsp;</span>أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله، أَسْـتَغْفِرُ الله</span>
+       <span class="hikma"> اللّهُـمَّ أَنْـتَ السَّلامُ ، وَمِـنْكَ السَّلام ، تَبارَكْتَ يا ذا الجَـلالِ وَالإِكْـرام &nbsp;</span><br>
+	   <span class="douan AHAD">لا إلهَ إلاّ اللّهُ <span class="points">&#133; &#133;</span>وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير</span>،
+	   <span class="hikma" style=""> اللّهُـمَّ لا مانِعَ لِما أَعْطَـيْت، وَلا مُعْطِـيَ لِما مَنَـعْت، وَلا يَنْفَـعُ ذا الجَـدِّ مِنْـكَ الجَـد</span><br>
+	   <span class="douan AHAD">لا إلهَ إلاّ اللّهُ <span class="points">&#133; &#133;</span>
+	     وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير
+	   </span>
+	   <span class="hikma" style="   padding-left:5em;  ">
+	     لا إلهَ إلاّ اللّه, وحدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمد، وهوَ على كلّ شيءٍ قدير، لا حَـوْلَ وَلا قـوَّةَ إِلاّ بِاللهِ، لا إلهَ إلاّ اللّـه، وَلا نَعْـبُـدُ إِلاّ إيّـاه, لَهُ النِّعْـمَةُ وَلَهُ الفَضْل وَلَهُ الثَّـناءُ الحَـسَن، لا إلهَ إلاّ اللّهُ مخْلِصـينَ لَـهُ الدِّينَ وَلَوْ كَـرِهَ الكـافِرون
+	   </span><br><br>
+
 	   <small style=" "><i  style="font-size:.7em; color:#aaa;"><small style="color:#9d3d5f;  font-size:1.5em; "><i>(</i></small> Compter &#9755;  <i id="ici">ici</i></i></small>
-	   <small style="color:#9d3d5f;"><i><i id="counter">33</i> fois)</i></small>سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر<br>
-	   <span class="douan">لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير</span>
+	   <small style="color:#9d3d5f;"><i><i id="counter">33</i> fois)</i></small><span class="bonus">سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر</span><br>
+	   <span class="douan AHAD">لا إلهَ إلاّ اللّهُ <span class="points">&#133; &#133;</span>وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير</span>
 	</p>
 	<script>
 	    // Compte le nombre de Tasbih
