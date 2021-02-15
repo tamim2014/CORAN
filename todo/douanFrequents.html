@@ -130,11 +130,9 @@
 	  opacity: .5;
 	}
 	/* Compteur de click */
-	  #ici {
-	
+	#ici {	
 	  padding: .1em .5em; /* .5em 1em;  */
-	  margin: 0 .5em;
-	  
+	  margin: 0 .5em;	  
 	  border: 1px solid #ddd;
 	  text-decoration: none;	  
 	  color:#aaa;
@@ -143,7 +141,10 @@
 	  transition: background-color .3s;	  
 	  cursor: pointer;
 	}
-	#ici:hover {border: 1px solid #ccc; background-color: #ddd;}
+	#ici:hover {
+	  border: 1px solid #ccc; 
+	  background-color: #ddd;
+	}
 	
 	.hikma { font-weight:bold; color:#660099;}
 	.douan { font-weight:bold; color:#00b36b;}
@@ -215,9 +216,10 @@
 			if( count >= 1 ){
 				resultat.innerHTML=count;
 				action.innerHTML="encore";
-                /* inutile( à supprimer) */				
-                action.style.background="#4CAF50";
-                action.style.color="white";				
+                			
+                /* action.style.background="#4CAF50"; */
+				action.style.background="radial-gradient(ellipse at top, #e66465, transparent), radial-gradient(ellipse at bottom, #4d9f0c, transparent)";
+                action.style.color="#3d3d5c";	/* white */			
 			}else{
 				 resultat.innerHTML=" OK! &emsp; 33";
 				 action.innerHTML="ici";
