@@ -46,6 +46,7 @@
 		  $("#activeUnCahierBleu").click(function(){
 			$('#cibleCahierBleu').replaceWith(' <object id="cibleCahierBleu" class="onglet1-1-resume" style="width:90%;"  data="cahierBleu.html" ></object>');
           });
+
 		  $("#activeDeuxCahierBleu").click(function(){
 			$('#cibleCahierBleu').replaceWith(' <object id="cibleCahierBleu" class="onglet1-1-resume" style="width:90%;"  data="cahierBleu2.html" ></object>');
           });

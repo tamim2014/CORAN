@@ -10,9 +10,10 @@ function openPage(pageName,elmnt,color) {
     tablinks[i].style.backgroundColor = "";
   }
   document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
+  elmnt.style.backgroundColor = color ;
   
 }
+
 // pour gerer 5 onglets
 function openPageCinq(pageName,elmnt,color) {
   var i, tabcontent, tablinks;

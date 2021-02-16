@@ -30,7 +30,7 @@
 			
 		    <small style="float:right; margin-right:-.4em ; line-height:0;">		   		      
 			  <span class="popup grandCommentaire" onclick="commentaire1()">
-				<i id="btnComment" style="width:15.5em;  border:none; background:transparent; margin-right:19.98em; font-size:.7em;">&#128233; Comment</i>
+				<i id="btnComment" style="width:8em;  border:none; background:transparent; margin-right:19.98em; font-size:.7em;">&#128233; Comment</i>
 				<span class="popuptext grandCommentaire" id="myPopup1" style="width:100%; right: 43.3%;">Aaaaaaaaaaaaaa<br> Bbbbbbbbbbbbbbbb</span> 
 			  </span>			  
 		      <i id="ici" style="width:15.5em; border:none; background:transparent; margin-right:.15em;">Count</i>              
@@ -43,7 +43,14 @@
 		var action = document.getElementById("ici");		
 		action.onclick=function(){
 			count++;
-			if( count <4  ){ action.innerHTML=count; }		
+			
+			if( count <4  ){
+              			
+			  //action.innerHTML="&emsp; &nbsp; &nbsp;"+count;
+              if( count == 1  ){action.innerHTML="&#9757; &emsp; "+count; }
+              if( count == 2  ){action.innerHTML="&#9996; &emsp; "+count; }
+              if( count == 3  ){action.innerHTML="&#128587;&emsp;"+count; }			  
+			}		
 		};
 		
 		function commentaire1() {
