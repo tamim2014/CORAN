@@ -69,11 +69,11 @@
 		#menu  div.dropdown:nth-child(4) .dropdown-content a { font-size:.95em;}
 		#menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 86px !important;   }
 		/* Item Sadjada */
-		#menu  div.dropdown:nth-child(5) .dropdown-content  { overflow-y: hidden; min-width:100px ;  }
-		#menu  div.dropdown:nth-child(5) .dropdown-content a { font-size:.95em; min-width:60px !important; }
+		#menu  div.dropdown:nth-child(5) .dropdown-content  { overflow-y: hidden; min-width:255px !important;  }
+		#menu  div.dropdown:nth-child(5) .dropdown-content a { font-size:.97em; min-width:160px !important; }
 		#menu  div.dropdown:nth-child(5) .dropdown-btn { padding: 14px 92px !important;  } 
 		/* Item comment */
-		#menu  div.dropdown:nth-child(6) .dropdown-content  { overflow-y: hidden !important; min-width:153px ;   }
+		#menu  div.dropdown:nth-child(6) .dropdown-content  { overflow-y: hidden !important; min-width:143.5px ;   }
 		#menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 40px !important;   } 
 		
 		/* MEGA MENU ( juste pour la page index ) */
