@@ -160,7 +160,8 @@ function kadwoi(){
      */	 
 	// Subh(7h à 8h30): if(H > 6 && H <= 8)
 	// Subh(6h à 8h30): if(H > 5 && H <= 8)
-    if(H > 5 && H <= 8) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
+	// Subh(6h à 8h00): if(H > 5 && H < 8)   .... 17 Fév
+    if(H > 5 && H < 8) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
 	// Dhuhr:( 13h à 15h14)
 	if(  H > 12 && H < 15 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50";} // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
 	// Asr:(15h14 à 18H)
