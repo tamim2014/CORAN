@@ -18,6 +18,10 @@
 		ol{
 			line-height: 2em;
 		}
+		/* DJALLAJDJALALUHU */
+		.j{ color:#3d3d5c; font-weight:bold;}
+		
+		/* Onglets */
 		.onglet1-sujet { 		
 			  float: left; 
 			  width:100%;
@@ -69,12 +73,6 @@
 	  transform: translate(-50%, -50%);
 	  color: white;
 	}
-	
-  
-	
-	
-	
-	/* Animation du top nav avec :hover:after*/
 	
 	#menu a, #menu .dropdown .dropdown-btn{
 		position:relative;
