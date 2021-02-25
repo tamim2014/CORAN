@@ -27,9 +27,29 @@
 		
 		.box-shadow-titre{ color:#555; /* juste pour effacer */ }
 		
-		.pageGauche p  img {
+		/* .pageGauche p  img { pour selectionner seulement les images du contenu */
+		/* img { pour selectionner toutes les images (ce qui assombrit l'image d'entête) */
+		img {
 		  filter: grayscale(100%);/* échelle grise(Convert the image to grayscale) */
 		}
+		/* Select des douan : sans submit( donc la mécanique se fait en javascript)  */
+		div.selectWithoutSubmit{ float:left; margin-left:0; margin-top:0; margin-bottom:0; padding-top:0; padding-bottom:0; padding-left:1.8em; line-height:0 !important;}
+		select {
+		  padding: 1.7em; 
+		  margin-top:.5em; margin-left:0;
+		  height:1.21em; line-height:1.5; 
+		  border: 1px solid #ddd;
+		  text-decoration: none;	  
+		  color:#aaa;
+		  background-color:#eee;
+		  border-radius:.14em;
+		  transition: background-color .3s;	  
+		  cursor: pointer;
+		  float:left; 		  
+		}
+		#select:hover {border: 1px solid #ccc; background-color: #ddd;}
+		
+		
 		
 		@media screen and (max-width: 560px) {
 			.planche .pageGauche{ font-size:.86em !important; height:auto !important;}
@@ -41,7 +61,7 @@
 			#menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;  padding: 14px 2px !important;   }			 
             .dropdown-content{z-index:99;}
 		    /*   ###  */
-            			
+            .numPageArabe{margin-top:0 !important;}			
 	    }			
 	</style>
 </head>
@@ -235,11 +255,12 @@
 						 <i style="color:gray;  padding-bottom:0; margin-bottom:2em;">Directives d'exécution :</i><br>
 						 
 						 <ol style="margin-top:.5em !important; margin-right:1em !important;" >
-						   <li> ... </li>
-						   <li> ... </li>
+						   <li> Utiliser la liste déroulante ci-contre &#9755;</li>
+						   <li> Et lire uniquement la prière vous correspondant </li>
 						 </ol>			  						 	 
-                    </p>					
-				    <p class="numPage" style="padding-top:0; text-align:center!important; " >
+                    </p>
+                    <!-- baisser la valeur du line-height pour remonter la position du numero de page -->					
+				    <p class="numPage" style="padding-top:0; text-align:center!important; line-height:.1 !important; " >
 					  1
 				    </p>										
 				</div><!-- page1 -->				
@@ -272,9 +293,33 @@
 						 
 						 <img src="img/hawf1.png" style=" filter: grayscale(0); background:whitesmoke; padding:0; margin:2.3em .9em .9em .9em; "><br>	
 						 <img src="img/hawf2.png" style=" filter: grayscale(0); background:whitesmoke; padding:0; margin:.9em; "><br>	
-						 <img src="img/hawf3.png" style=" filter: grayscale(0); background:whitesmoke; padding:0; margin:.9em .9em 7.6em .9em "><br>	
+						 <!-- <img src="img/hawf3.png" style=" filter: grayscale(0); background:whitesmoke; padding:0; margin:.9em .9em 7.6em .9em "><br> -->
+						 <img src="img/hawf3.png" style=" filter: grayscale(0); background:whitesmoke; padding:0; margin:2.2em .9em 0 .9em "><br>
+                         <i style="float:left; color:gray;  padding-bottom:0; margin-top:.4em; margin-bottom:0; font-size:.75em;">:Choisir votre Prière <i><small>(Liste déroulante)</i></small></i>
+                         <div style="clear:both"></div>
+						 <div class="selectWithoutSubmit" >
+							 <!-- <select name="fliper" id="fliper" style="padding-top:1.4em; padding-bottom:auto; padding-left:0" > -->
+							 <select name="fliper" id="mySelect" onchange="mySelect()" >
+								<!-- Page2 -->
+								<option value="1">Peur et anxiété</option>
+								<option value="2">Contre quelqu'un</option>
+								<option value="3">Contre quelque chose</option>
+								<!-- Page3 -->
+								<option value="4">Extrême peur et tension</option>
+								<option value="5">Anxiété et (waswas)</option>
+								<option value="6">Virer la flippe</option>
+								<option value="7">Peur et panique(Stresse)</option>
+								<option value="8">Peur et tristesse</option>
+								<option value="9">Anxiété et insomnie</option>
+								<option value="10">Peur de la mort</option>
+							 </select>
+							 <br>
+							 <!-- <small><i id="valider" >Valider</i></small> -->
+						 </div>
+						 <div style="clear:both"></div>
+						 
 					</p>										
-					<p class="numPageArabe"  style="padding-top:0; text-align:center !important; " >				
+					<p class="numPageArabe"  style="padding-top:1.5em; text-align:center !important; " >				
 						١<span style="color:white">888</span>
 					</p>
 					<!-- <a href="roukia2.html" id="suivant" class="next signal-Interpage" style=" line-height:1.9; height:1.9em;" >&laquo; Next </a> -->
@@ -324,7 +369,7 @@
 		<div id="contenu">
 
     <script type="text/javascript" src="../js/sticky.js"></script>
-	<!-- Collapsed Sidepanel  -->
+	<!-- ATELIER1: Collapsed Sidepanel  -->
 	<script>
 		function openPanel() {
 		  document.getElementById("mySidepanel").style.display = "block";          	  
@@ -334,7 +379,7 @@
 		 document.getElementById("mySidepanel").style.display = "none";
 		}
 	</script>
-	<!-- ATELIER -->
+	<!-- ATELIER2: un p'tit accordeon -->
 	<script>
 		var acc = document.getElementsByClassName("accordion");
 		var j;
@@ -351,6 +396,24 @@
 		  });
 		}
 	</script>
+	<!-- ATELIER3: Select sans submit -->
+	<script>
+	function mySelect() {
+	  var x = document.getElementById("mySelect").value;
+	  /* document.getElementById("demo").innerHTML = "You selected: " + x; */
+	  if ( x == "1"){ location.href="roukia_FoundiNizar_hawf(page2).html" ;}
+	  if ( x == "2"){ location.href="roukia_FoundiNizar_hawf(page2).html#deux" ;}
+	  if ( x == "3"){ location.href="roukia_FoundiNizar_hawf(page2).html#trois" ;}
+	  if ( x == "4"){ location.href="roukia_FoundiNizar_hawf(page3).html" ;}
+	  if ( x == "5"){ location.href="roukia_FoundiNizar_hawf(page3).html#cinq" ;}
+	  if ( x == "6"){ location.href="roukia_FoundiNizar_hawf(page3).html#six" ;}
+	  if ( x == "7"){ location.href="roukia_FoundiNizar_hawf(page3).html#sept" ;}
+	  if ( x == "8"){ location.href="roukia_FoundiNizar_hawf(page3).html#huit" ;}
+	  if ( x == "9"){ location.href="roukia_FoundiNizar_hawf(page3).html#neuf" ;}
+	  if ( x == "10"){ location.href="roukia_FoundiNizar_hawf(page3).html#dix" ;}
+	}
+	</script>
+	
 
 
 		
