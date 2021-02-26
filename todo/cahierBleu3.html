@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="css/commentaires.css">
   <style>
     .douan{ font-weight:normal !important;}
+	@media screen and (max-width: 650px) {
+       .popup .popuptext {width:55% !important; left:100%:0 !important; float:right; font-size:.7em;}
+	   .s51{}
+	}
   </style>
 
 </head>
@@ -64,8 +68,29 @@
 			 
 			  
 			  
-			 إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلۡقُوَّةِ ٱلۡمَتِينُ (﻿٥٨﻿)<small style="font-size:.5em;"> -  سُوۡرَةُ الذّاریَات</small> <br>
-             <span class="douan"> ... رَّبِّ </span><br>
+			 <!-- إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلۡقُوَّةِ ٱلۡمَتِينُ (﻿٥٨﻿)<small style="font-size:.5em;"> -  سُوۡرَةُ الذّاریَات</small> <br> -->
+			 إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلۡقُوَّةِ ٱلۡمَتِينُ (﻿٥٨﻿)
+             <span class="popup grandCommentaire" onclick="commentaire1()">
+				<i id="btnComment" style="width:8em;  border:none; background:transparent; margin-left:19.98em; font-size:.7em; ">&#128233; Comment</i>
+				<small class="s51" style="font-size:.5em;"> -  سُوۡرَةُ الذّاریَات</small>
+                <span class="popuptext grandCommentaire" id="myPopup1" style="width:100%; left: 19.1%;">
+				    <!-- #############################   -->
+					 					<small  class="footer-image img" style="padding:0; margin-left:.65em !important; background:white; display:block; color:black; height:auto; font-size:.64em;">
+                                         Il est recommandé de &nbsp;&nbsp; lire chaque jour(<small><i> ou chaque nuit</i></small>) avec les Sourates<br>
+										 al-Dharia(S51)*<br>
+										 al-Talâq(S56)*<br>
+										 al-Charh(S94)*<br>
+										 et al-Muzzammil(S73) pour obtenir d' Allãh &#65019; l'amélioration de notre existence<br><br>
+										 
+										 <span style="color:gray"><i>D'autre part, il est recommandé de lire</i></span> <br>
+										 ce Verset58<i>(27 fois pendant 40 jours)</i> après chaque prière du matin<br>
+										    afin  d'espérer qu'Allãh &#65019; nous assure des  moyens de subsistance aisés<br><br>									 
+									 </small>
+					
+					<!-- #############################   -->
+				</span> <br> 
+			 </span>	
+			 <span class="douan"> ... رَّبِّ </span><br>
 			 <s>إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلۡقُوَّةِ ٱلۡمَتِينُ (﻿٥٨﻿)<small style="font-size:.5em;"> -  سُوۡرَةُ الذّاریَات</small></s> <br>
              <span class="douan">رَّبِّ جْعَلْنِي مِنَ صَّابِرِينْ</span><br>
 			 <span class="douan">رَّبِّ جْعَلْنِي مِنَ شَّاكِرِينْ</span><br>
@@ -79,6 +104,11 @@
 			count++;
 			if( count <11  ){ action.innerHTML=count; }		
 		};
+		// commentaire
+		function commentaire1() {
+		  var popup1 = document.getElementById("myPopup1");
+		  popup1.classList.toggle("show");
+		}
 	</script>
 
 </body>
