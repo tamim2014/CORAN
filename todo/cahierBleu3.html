@@ -73,7 +73,7 @@
 			  
 			 <!-- إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلۡقُوَّةِ ٱلۡمَتِينُ (﻿٥٨﻿)<small style="font-size:.5em;"> -  سُوۡرَةُ الذّاریَات</small> <br> -->
 			 إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلۡقُوَّةِ ٱلۡمَتِينُ (﻿٥٨﻿)
-             <span class="popup grandCommentaire" onclick="commentaire1()">
+             <span class="popup grandCommentaire"  onmouseenter="commentaire1()" >
 				<i id="btnComment" style="width:8em;  border:none; background:transparent; margin-left:19.98em; font-size:.7em; "> &emsp; &emsp; &#128241; &emsp; </i>
 				<small class="s51" style="font-size:.5em;"> -  سُوۡرَةُ الذّاریَات</small>
                 <span class="popuptext grandCommentaire phoneComment" id="myPopup1" > 
@@ -81,7 +81,7 @@
 					
 				    <!-- #############################   -->
 					 					<small  class="footer-image img" style="padding:.7em 0 0 0; margin-left:2em !important; background:white; display:block; color:black; height:auto; font-size:.64em;">
-                                         Il est recommandé de &nbsp;&nbsp; lire chaque jour(<small><i> ou chaque nuit</i></small>) avec les Sourates<br>
+                                         Il est recommandé  &nbsp;&nbsp;de lire chaque jour(<small><i> ou chaque nuit</i></small>) &emsp; les Sourates<br>
 										 al-Dharia(S51)*<br>
 										 al-Talâq(S56)*<br>
 										 al-Charh(S94)*<br>
@@ -102,13 +102,18 @@
 	    </p>
 	</p>
 	<script>		
-	    // Compte le nombre de Tasbih et l'affiche dans le même bouton
+	    // Compter s51v58
 		var count=0;
-		var action = document.getElementById("ici");		
+		var action = document.getElementById("btnComment");		
 		action.onclick=function(){
 			count++;
-			if( count <11  ){ action.innerHTML=count; }		
+			if( count <28  ){
+			  action.innerHTML=count+"&nbsp;&nbsp;&nbsp;"; 
+			  if( count == 27  ){action.innerHTML="&#128587;&emsp;"+count; }	
+			}		
 		};
+	
+
 		// commentaire
 		function commentaire1() {
 		  var popup1 = document.getElementById("myPopup1");
