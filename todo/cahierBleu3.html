@@ -115,12 +115,11 @@
 		action.onclick=function(){
 			count++;
 			if( count <28  ){
-			  action.innerHTML=count+"&nbsp;&nbsp;&nbsp;"; 
-			  if( count == 27  ){action.innerHTML="&#128587;&emsp;"+count; }	
+			  action.innerHTML="&emsp;&emsp;&emsp;"+count+"&emsp;&nbsp;&nbsp;&nbsp;"; 
+			  if( count == 27  ){action.innerHTML="&emsp;&emsp;&nbsp;&#128587;&emsp;"+count+"&emsp;"; }	
 			}		
 		};
 	
-
 		// commentaire
 		function commentaire1() {
 		  var popup1 = document.getElementById("myPopup1");
