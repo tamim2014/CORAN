@@ -161,16 +161,18 @@ function kadwoi(){
 	// Subh(7h à 8h30): if(H > 6 && H <= 8)
 	// Subh(6h à 8h30): if(H > 5 && H <= 8)
 	// Subh(6h à 8h00): if(H > 5 && H < 8)   .... 17 Fév
+    // Mahrib:(18h à 19h): if( H > 17 && H < 19) 
     if(H > 5 && H < 8) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
 	// Dhuhr:( 13h à 15h14)
 	if(  H > 12 && H < 15 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50";} // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
 	// Asr:(15h14 à 18H)
 	if( H>14 && H<18) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
-	// Mahrib:(18h à 19h)
-	if( (H > 17 && H < 19) && PlayButton) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#4CAF50"; }// test en temps réél: ?
+	// Mahrib:(18h à 20h)
+	if( H > 17 && H < 20) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#4CAF50"; }// test en temps réél: ?
 	// Icha(19h à 7h): if( (H >= 19 && H <= 23) ||  H < 7 )
-    // Icha(19h à 6h): if( (H >= 19 && H <= 23) ||  H < 6 ) 		
-	if( (H >= 19 && H <= 23) ||  H < 6 ) { document.getElementsByClassName("tester")[4].style.backgroundColor = "#4CAF50"; } // test en temps réél: OK!
+    // Icha(19h à 6h): if( (H >= 19 && H <= 23) ||  H < 6 )
+    // Icha(20h à 6h): if( (H >= 20 && H <= 23) ||  H < 6 )  		
+	if( (H >= 20 && H <= 23) ||  H < 6 ) { document.getElementsByClassName("tester")[4].style.backgroundColor = "#4CAF50"; } // test en temps réél: OK!
 	
 	//document.write(H);	
 	return false;
