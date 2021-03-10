@@ -168,7 +168,7 @@ function kadwoi(){
 	//Subh
     if(H > 5 && H < 8) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
 	// Dhuhr:( 13h à 15h14)
-	if(  H > 13 && H < 16 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50";} // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
+	if(  H > 12 && H < 16 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50";} // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
 	// Asr:(15h14 à 18H)
 	if( H>=16 && H<19) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
 	// Mahrib:(18h à 20h)

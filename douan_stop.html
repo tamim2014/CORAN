@@ -44,26 +44,27 @@
 	}
 	.planche{
 	    padding:1em .9em !important;
-		/*
-			background-image: linear-gradient(rgba(0, 255, 255, 0.5), rgba(255, 255, 0, 0.5)),
-					  url("img/s8/background8.png") ;
-			
-			
-			background-image: linear-gradient(rgba(0, 0, 55, 0.5), rgba(10, 0.5, 0, 0.5)),
-				   url("img/s8/background8.png") ;
-				   
-			background-image: linear-gradient(rgba(100, 255, 155, 0.5), rgba(200, 10.5, 255, 0.5)),
-		   url("img/s8/background8.png") ;
-		   EMERAUDE:
-		   background-image: linear-gradient(rgba(100, 255, 155, 0.5), rgba(0, 10.5, 0, 0)),
-		   url("img/s8/background8.png") ;
-	    */
+
 
 		background-image: linear-gradient( #aaa , #ccc );
 	   url("img/s8/background8.png") ;
-		
-			   
+	   
+	   /** mm hauteur pour les 2 colones: 
+	    * en fixant la hauteur ainsi le blème est resolu mais un autre problème se posera sur les p'tit écrans
+		* en effet une marge bas trop grand apparait sur la dernière page 
+		* Solution: auto en mode responsive
+		*/
+	   
+	   min-height:127.6em !important;			   
 	}
+	@media screen and (max-width: 846px) and (min-width: 777px) {
+	
+	   .planche{ min-height:auto !important;}
+	   
+	   
+	  
+	}
+
 	.planche p{
 	   background-image: url("img/s8/background8.png") ;
 	   padding:1em;/* 2em 1em */
@@ -209,9 +210,6 @@
 		<div class="colone-laterale" id="sidbarG" style="padding-top:0; padding-bottom:0;">
 		    <h2 class="grosTitre" style="margin-top:0 !important;"><span class="box-shadow-titre" >Prière du Saint Coran</span></h2>
 			<div class="planche" style="padding-top:0;" >
-	
-
-
 				<p style="margin-top:0; background:white !important; ">
 				  <span class="basmala" style="font-size:0.7em; background:white !important;">Au nom d’Allah, le Tout Miséricordieux, le Très Miséricordieux</span>
 				</p>	
@@ -249,7 +247,7 @@
 				</p>
 				
 			</div>
-		</div><!-- #colone-laterale -->
+		</div><!-- #colone-laterale gauche -->
 		
 		<div class="colone-contenu" id="contenu_" style="padding-top:0; padding-bottom:0;">
 		    <h2 class="grosTitre" style="margin-top:0;"><span class="box-shadow-titre" > دُعَاءُ خَتْمِ القُرْآنِ الكَريمِ</span></h2>
