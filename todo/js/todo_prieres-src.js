@@ -40,8 +40,6 @@ function autreTask(){
 function add() {
 	var lera = new Date().getHours();
 	var dakika =  new Date().getMinutes();
-	var tab_mois=new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
-	var jour = new Date().getDate()+' '+ tab_mois[new Date().getMonth()];
 	
     var task = document.getElementById('task').value;
 	//var taskEtDate = task + '<small><i> <b>Quoi ?</b> ... &nbsp;&nbsp; Rien de saisie ! </i></small>';	
@@ -51,13 +49,13 @@ function add() {
 	var n = P.length ; //  nombre de prières accomplies
 	
 	if (task === '' && n === 0 ) { 
-	   taskEtDate = 'Subh&emsp; <small><i>&emsp;( '+jour+' &agrave;&emsp;&emsp; '+lera+'h '+dakika+'mn ) </i></small>';
+	   taskEtDate = 'Subh&emsp; <small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';
 	   //if( taskEtDate.includes("Fait")){document.getElementsByClassName("tester")[0].style.backgroundColor = "black";}
 	}
-	if (task === '' && n === 1 ) { taskEtDate = 'Dhuhr&nbsp;&nbsp;&nbsp;<small><i>&emsp;( '+jour+' &agrave;&emsp;&emsp; '+lera+'h '+dakika+'mn ) </i></small>';}
-	if (task === '' && n === 2 ) { taskEtDate = 'Asr&emsp; &nbsp; <small><i>&emsp;( '+jour+' &agrave;&emsp;&emsp; '+lera+'h '+dakika+'mn ) </i></small>';}
-	if (task === '' && n === 3 ) { taskEtDate = 'Mahrib <small><i>&emsp;( '+jour+' &agrave;&emsp;&emsp; '+lera+'h '+dakika+'mn ) </i></small>';}
-	if (task === '' && n === 4 ) { taskEtDate = 'Icha &emsp; <small><i>&emsp;( '+jour+' &agrave;&emsp;&emsp;  '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 1 ) { taskEtDate = 'Dhuhr&nbsp;&nbsp;&nbsp;<small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 2 ) { taskEtDate = 'Asr&emsp; &nbsp; <small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 3 ) { taskEtDate = 'Mahrib <small><i>&emsp;( Fait &agrave; : '+lera+'h '+dakika+'mn ) </i></small>';}
+	if (task === '' && n === 4 ) { taskEtDate = 'Icha &emsp; <small><i>&emsp;( Fait &agrave; :  '+lera+'h '+dakika+'mn ) </i></small>';}
 	
 	
 	/**	 
