@@ -9,6 +9,17 @@
      	body { line-height:1.4;	}
 		/* position horizontale de la pointe du 1er commentaire */
 		.popup .comment1::after { left:8.3%; }
+	  @media screen and (max-width: 650px) {
+	    /*
+	      body{font-size:1em;}
+	     .noteDeBasDePage{ font-size:.5em;}
+		 */
+		 .fcbk .popup  .comment1{  
+		    width:1350% !important;
+            font-size:.7em;			
+		 }
+		 .popup .comment1::after { left:12.3% !important; }
+	   }
       
   </style>
 </head>
@@ -17,10 +28,11 @@
     <p style="margin:0; padding:.3em 0 0 0; ">
 	    <p class="fcbk">
 			<span class="popup grandCommentaire " onclick="commentaire1()">
-				<i id="btnComment" style="border:none; background:transparent;  font-size:.7em; padding-left:0; padding-top:0;"><small>&#128233;</small></i>
-				<span class="popuptext grandCommentaire comment1" id="myPopup1" style=" width:2000%; left:-120% !important; "> <!-- style=" width:100%; right: 43.3%;" -->
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-					bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+				<i id="btnComment" style="border:none; background:transparent;  font-size:.7em; padding-left:0; "><small>&#128233;</small></i>
+				<span class="popuptext grandCommentaire comment1" id="myPopup1" style=" width:2000%; left:-120% !important; padding:auto;"> <!-- style=" width:100%; right: 43.3%;" -->
+                    
+					bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+					bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 					
 				</span> 
 			</span>
