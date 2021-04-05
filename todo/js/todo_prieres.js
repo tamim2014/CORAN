@@ -168,7 +168,7 @@ function kadwoi(){
     // Mahrib:(18h à 19h): if( H > 17 && H < 19) 
 	/** Heure d'été:28 Mars **/
     // Dhuhr:( 13h à 17h30): if(  H > 12 && H < 18 )
-	// Asr:(17h30 à 20H20): ( H>=18 && H<=20)
+	// Asr:(17h30 à 20H20): ( H>=18 && H<20)
     // Mahrib:(20h21h à 21h:52): if( H > 19 && H < 22)
     // Icha(21h52 à 6h): if( (H >= 22 && H <= 23) ||  H < 6 ) 		
 	/** #################### **/	
@@ -177,7 +177,7 @@ function kadwoi(){
 	// Dhuhr:( 13h à 17h30)
 	if(  H > 12 && H < 18 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50";} // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
 	// Asr:(17h30 à 20H20)
-	if( H>=18 && H<=20) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
+	if( H>=18 && H<20) { document.getElementsByClassName("tester")[2].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
 	// Mahrib:(20h21 à 21h52)
 	if( H > 19 && H < 22) { document.getElementsByClassName("tester")[3].style.backgroundColor = "#4CAF50"; }// test en temps réél: ?
 	// Icha(19h à 7h): if( (H >= 19 && H <= 23) ||  H < 7 )
