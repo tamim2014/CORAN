@@ -167,12 +167,13 @@ function kadwoi(){
     // Asr:(15h14 à 18H) : if( H>14 && H<18)	...jusqu'à Mars
     // Mahrib:(18h à 19h): if( H > 17 && H < 19) 
 	/** Heure d'été:28 Mars **/
+    // Subh(...):
     // Dhuhr:( 13h à 17h30): if(  H > 12 && H < 18 )
 	// Asr:(17h30 à 20H20): ( H>=18 && H<20)
     // Mahrib:(20h21h à 21h:52): if( H > 19 && H < 22)
     // Icha(21h52 à 6h): if( (H >= 22 && H <= 23) ||  H < 6 ) 		
 	/** #################### **/	
-	//Subh
+	//Subh: ....
     if(H > 5 && H < 8) { document.getElementsByClassName("tester")[0].style.backgroundColor = "#4CAF50"; } // test en temps réél: ?
 	// Dhuhr:( 13h à 17h30)
 	if(  H > 12 && H < 18 ){ document.getElementsByClassName("tester")[1].style.backgroundColor = "#4CAF50";} // test en temps réél: ? O.K! sur chrome, O.K! sur Brave, K.O!! sur Mozilla
