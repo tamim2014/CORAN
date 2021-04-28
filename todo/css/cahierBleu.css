@@ -21,6 +21,7 @@
        background:white; 	   
 	   box-shadow:0 .4px 1px #ccc; 	/* box-shadow:0 1px 4px ; */	  
 	}
+	.paragraph { color:#9d3d5f; }
 	ul { margin: 0; padding: 0; }
 	ul li {
 	  cursor: pointer;
