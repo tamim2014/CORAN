@@ -23,6 +23,11 @@
 		/* bleu officiel de chez youtub */
 		.bleuYoutub{color:#000080;}
 		
+		a.visiteLien:visited {
+		  color: #3333cc; /* #4b2f89 !important; */
+		  font-weight:bold;
+		}
+		
 		/* Onglets */
 		.onglet1-sujet { 		
 			  float: left; 
