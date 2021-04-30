@@ -16,6 +16,11 @@
 	   
 	   .popup .phoneComment::after { border-color: transparent transparent transparent transparent; }
 	}
+	.anas { 
+		 margin:.7em 1em; 
+		 filter: grayscale(50%);
+		 box-shadow:10px 10px 20px black; 	
+	}
 	@media screen and (max-width: 350px) { .invoqueS51V58{display:block;} }
   </style>
 
@@ -126,7 +131,14 @@
 			 <span class="douan">وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ‌ۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرْنَا عَلَى الْمَاكِرُون</span><br>
 	    </p>
 		<p class="fcbk" style="margin-bottom:5em">
-			  
+		     <!-- Commentaire2 -->
+			 <span class="popup grandCommentaire" onmouseenter="commentaire2()">
+				<small><i id="ici" style="width:15.5em;">Comment</i></small>&nbsp;&nbsp; 
+				<span class="popuptext grandCommentaire" id="myPopup2" style="width:200%;  right:-25%; ">				 
+					 <img src="img/Attention.png" width="300%" height="300%" class="anas" >						
+				</span>
+			 </span>
+			 <!-- Fin commentaire2 -->
 			 <span class="douan bleuYoutub" >اللَّهُمَّ أجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الآخِرَةِ</span>(<small style="font-size:.5em;"> - دعاءٌ في جوْف اللّيل</small>)<br><br>
 			 <span class="douan bleuYoutub" >اللَّهُمَّ إِنِّي أَسْأَلُكَ مُوجِبَاتِ رَحْمَتِكَ وَعَزَائِمِ مَغْفِرَتِكَ<br> وَالسَّلاَمَةَ مِنْ كُلِّ إِثْمٍ وَالغَنِيمَةَ مِنْ كُلِّ بِرٍّ وَالفَوْزَ بِالجَنَّةِ وَالنَّجَاةَ مِنَ النَّارِ </span>(<small style="font-size:.5em;"> - دعاء ليلة رمضان</small>)<br>
 			 
@@ -134,10 +146,14 @@
 	</p>
 	<script>		
 	
-		// commentaire
+		// fonctions commentaires
 		function commentaire1() {
 		  var popup1 = document.getElementById("myPopup1");
 		  popup1.classList.toggle("show");
+		}
+		function commentaire2() {
+		  var popup2 = document.getElementById("myPopup2");
+		  popup2.classList.toggle("show");
 		}
 	</script>
 
