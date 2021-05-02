@@ -258,7 +258,17 @@
 	  var popup53 = document.getElementById("myPopup53");
 	  popup53.classList.toggle("show");
 	}
-	
+	/** f°54 et f°55 pour s4 **/
+	function commentaire54() {
+	  var popup54 = document.getElementById("myPopup54");
+	  popup54.classList.toggle("show");
+	}
+	function commentaire55() {
+	  var popup55 = document.getElementById("myPopup55");
+	  popup55.classList.toggle("show");
+	}
+
+    /** f°1001 , f°1002, et f°1003 pour les titres des sourates **/
 	
 	function commentaire1001() {
 	  var popup1001 = document.getElementById("myPopup1001");
