@@ -66,6 +66,7 @@
             padding:.04em .4em;			
 		}
 		
+		
 	/* MESSAGE HEADER */
 	.hero-image {
 	  height: 200px;
@@ -244,6 +245,10 @@
 	.separateurArabe , .separateurFrançais{ word-spacing: 1rem; }
 	.separateurArabe { padding-right:40%; padding-top:0 !important; padding-bottom:0 !important; font-size:.9em;  line-height:0 !important;  }
 	.separateurFrançais{ padding-left:40%; font-size:1.1em; }
+	
+	/* verset sans arrêt: kif de liaison */
+	    .lamNonStop{ vertical-align:top; font-weight:bold; }
+        .pointContinu{padding:0 0 0 .15em; border-radius:50%; margin-left:0; margin-right:0; background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(5, 55, 0, 0.5)), url("img/footer-image.png");}	
 	
 
 	
