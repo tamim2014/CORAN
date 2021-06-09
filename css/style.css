@@ -367,6 +367,39 @@
 		@media screen and (max-width: 900px) {
 			.text {font-size: .9em; }
 		}
+		
+	/**************************************Blem de chez mozilla(mise à jour 89.0)*******************************************
+	 *	05.06.21
+	 *	Problème: 
+	 *	Début juin 2021 Mozilla a mis jours son browser(Firefox) avec augmentation de sa
+	 *	police standard. Conséquence environ 30 % de l' appli Coran est impacté( dépassement de contenu)
+
+	 *	! Par contre tout va bien dans les autres navigateurs( notament chrome)
+
+	 *	Solution:
+	 *	 g commencé à colmaté quelque page(s18) par action sur le line-height.
+	 *	 mais ce n'est pas la solution. La vraie solution est de poser un verticale .
+	 *	 Ce n'est pas l'ideal mais pour l'instant ç reste la meilleurs solution en attendant 
+	 *	 les nouvelles de ce qui s'est réellement passé chez mozilla.
+
+		Pour le texte français: .pageGauche  p:first-child{ overflow-y: hidden ;}
+		Pour le texte arabe: .pageDroite  p:first-child{ overflow-y: hidden ;}
+		
+	 *  Fait mais le blem n'est pas résolu
+	 *  !!!!!!! Les ingenieurs de chez mozilla ont vraimment merdé dans leur mise à jour 20121 (mise à jour 89)!!!!
+	 */
+	 
+	 /**********************************************************************
+	 * 09 JUIN 2021
+	 * Solution OK: appliquer l'overflow directement sur les conteneurs( .pageGauche et .pageDroite)
+	 */
 	
+	.pageGauche  { overflow-y: hidden ; overflow-x:hidden;}
+	.pageDroite  { overflow-y: hidden ; overflow-x:hidden;}
+	
+	/* certaine page sont mordues mais la structure est gardée
+	 * Correction au fur et à mesure des lectures 
+	 * INCHA ALLAH
+	 */
 
 	
