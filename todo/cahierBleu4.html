@@ -9,7 +9,25 @@
      .phoneComment{   right: -163.31% !important; background:black; /* black chic :background:#3d3d5c; */}
 	 .popup .phoneComment::after { border-color: #1E90FF transparent transparent transparent; }
 
-    .douan{ font-weight:normal !important;}
+     .douan{ font-weight:normal !important;}
+	 /* image dans commentaire */
+	 .anas { 
+		margin:.7em 1em; 
+	    filter: grayscale(50%);
+		box-shadow:10px 10px 20px black;			
+	 }
+	 
+	 .img2{	   
+	   	  float: right; 
+		  width:45%;
+		  height: 7em !important;
+	
+		  box-shadow:0 .4px 1px #ccc; 
+		  
+		  border-radius: .3em; 
+          display:inline !important;		  
+	 }
+	 
 	@media screen and (max-width: 650px) {
        .popup .popuptext {width:100% !important; left:5% !important; float:right; font-size:.9em;}
 	   #btnComment{margin-left:18em !important; }
@@ -75,7 +93,7 @@
 				    <!-- #############################   -->
 					 					<small  class="footer-image img" style="padding:.7em 0 0 0; margin-left:2em !important; background:white; display:block; color:black; height:auto; font-size:.64em;">
                                          Il est recommandé  &nbsp;&nbsp;de lire chaque jour(<small><i> ou chaque nuit</i></small>) &emsp; les Sourates<br>
-										 al-Dharia(S51)*<br>
+										 al-Dharia(<a href="../s50.html#s51" target="_blank" style="color: #3333cc;">S51</a>)*<br>
 										 al-Talâq(S65)*<br>
 										 al-Charh(S94&nbsp; - <i style="font-size:.8em; color:green;">14fois</i>)*<br>
 										 et al-Muzzammil(S73) pour obtenir d' Allãh &#65019; l'amélioration de notre existence<br><br>
@@ -101,8 +119,33 @@
 		
 	    <p class="fcbk">          
 		  حَسْبِىَ ٱللهُ‌ۖ عَلَيْهِ يَتَوَڪَّلُ ٱلْمُتَوَكِّلُونَ (﻿٣٨﻿)<small style="font-size:.5em;"> - سُوۡرَةُ الزُّمَر</small><br>
-		  حسبنا الله ونعم الوكيل نعم المولى ونعم النصير<!-- <small style="font-size:.5em;"> - سُوۡرَةُ التّوبَة</small> -->
+		  حسبنا الله ونعم الوكيل نعم المولى ونعم النصير
 		</p>
+        
+		<p class="fcbk" >
+		     <small><i id="loop" style="width:15.5em;">Loop <span class="douan" style="font-weight:normal;">&#10227;</span> </i></small>
+			 
+			 <span class="popup grandCommentaire" onmouseenter="commentaire2()">
+				<small><i id="ici_" style="width:15.5em;">Count</i></small>&nbsp;&nbsp;
+				<span class="popuptext grandCommentaire" id="myPopup2" style="width:200%; right: 50%; ">				 
+					 <img src="img/anas_.png" width="300%" height="300%" class="anas" id="sws" >						
+				</span>
+                   			
+			 </span>
+
+		    <span id="tasbih"> سبحان الله وبحمده ، سبحان الله العظيم </span>
+		</p>
+	           
+        <video  class="img2 fcbk"    controls="controls"  >
+				    <source src="../videos/sws.mp4" type="video/mp4" />			       
+		</video>
+		<span style="  padding-top:5em !important;">
+		  <br><br><br>Que veut dire "prier sur le Prophète &#65018;" ? &emsp;&emsp;&emsp;&emsp; 
+		  <br>Chaykh Raslan &nbsp; &emsp;&emsp;&emsp;&emsp;
+		</span>
+		
+
+	
 	</p>
 	<script>		
 	    // Compte le nombre de Tasbih et l'affiche dans le même bouton
@@ -127,10 +170,57 @@
 			}		
 		};
 	
-		// commentaire
 		function commentaire1() {
 		  var popup1 = document.getElementById("myPopup1");
 		  popup1.classList.toggle("show");
+		}
+		
+		
+		
+		// 2em compteur ( 100 fois)
+		var count_=0;		
+		var action_ = document.getElementById("ici_");       		
+		action_.onclick=function(){
+			count_++;
+			if( count_ <101  ){ action_.innerHTML=count_; }		
+		};
+		
+		var loop=0;
+		var actionLp = document.getElementById("loop");							
+		// Boucler  jusqu'à 100 si on peut
+		actionLp.onclick=function(){
+		    // Réinitialiser le 1er compteur
+			count_=0;
+			action_.innerHTML="Count";
+		    // Incrémenter le 2ème compteur
+			loop = loop+100;
+			if( loop <1001  ){ actionLp.innerHTML=loop; }		
+		};
+		// Remplace le Tasbih par Le SWS
+		var actionSWS = document.getElementById("sws");	
+		var actionTASBIH = document.getElementById("tasbih");	
+		
+		function changeImage(element){
+		 // var x = element.getElementsByTagName("img").item(0);
+		  var x = document.getElementById("sws");
+		  var v = x.getAttribute("src");
+		  if(v == "img/anas_.png")
+			v = "img/swsV.jpg";
+		  else
+			v = "img/anas_.png";
+		    x.setAttribute("src", v);
+            //actionTASBIH.innerHTML="سبحان الله وبحمده ، سبحان الله العظيم"; 			
+		}
+
+		actionSWS.onclick=function(){
+              actionTASBIH.innerHTML=" ............. اللهم صل على محمد"; 		            		
+              changeImage(this); /* blem ici: l'image ne change pas ! Pourquoi ? */            		
+              		            		
+		};
+		
+	    function commentaire2() {
+		  var popup2 = document.getElementById("myPopup2");
+		  popup2.classList.toggle("show");
 		}
 	</script>
 

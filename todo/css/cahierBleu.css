@@ -145,7 +145,7 @@
 	.separateurArabe { padding-right:40%; padding-top:0 !important; padding-bottom:0 !important; font-size:.9em;  line-height:0 !important;  }
 	.separateurFrançais{ padding-left:40%; font-size:1.1em; }
 	/* Compteur de click */
-	#ici, #loop, #btnComment, #compter {
+	#ici, #ici_, #loop, #btnComment, #compter {
 	  font-size:.7em;
 	  padding: .1em .5em; /* .5em 1em;  */
 	  margin: 0 .5em;
@@ -158,7 +158,7 @@
 	  transition: background-color .3s;	  
 	  cursor: pointer;
 	}
-	#ici:hover, #loop:hover, #btnComment:hover, #compter:hover  {border: 1px solid #ccc; background-color: #ddd;}
+	#ici:hover, #ici_:hover, #loop:hover, #btnComment:hover, #compter:hover  {border: 1px solid #ccc; background-color: #ddd;}
     #btnComment:hover{ color: gray;}
 	
 	.hikma { font-weight:bold; color:#660099;}

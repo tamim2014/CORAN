@@ -368,7 +368,7 @@
 			.text {font-size: .9em; }
 		}
 		
-	/**************************************Blem de chez mozilla(mise à jour 89.0)*******************************************
+	/****************Blem de chez mozilla dans la mise à jour du 1er juin 2021(mise à jour 89.0)*********************
 	 *	05.06.21
 	 *	Problème: 
 	 *	Début juin 2021 Mozilla a mis jours son browser(Firefox) avec augmentation de sa
@@ -391,15 +391,27 @@
 	 
 	 /**********************************************************************
 	 * 09 JUIN 2021
-	 * Solution OK: appliquer l'overflow directement sur les conteneurs( .pageGauche et .pageDroite)
+	 * Solution OK: virer le first-child
+	 * Nouveau blem: disparition des lien inter-page
+	 * Solution:     not(:last-child)
+	 * .pageDroite:not(:last-child)  { overflow-y: hidden ; overflow-x:hidden; }
+	 *  en cas de blem: la dernière page ne sera pas mordue. non au contraire elle va dépasser.
+	 *  !!!!! correction manuelle  au fur et à mesure ( des lectures ) !!!!!
 	 */
 	
-	.pageGauche  { overflow-y: hidden ; overflow-x:hidden;}
-	.pageDroite  { overflow-y: hidden ; overflow-x:hidden;}
+	
+	 /* .pageGauche  { overflow-y: hidden; } virer celui-ci car il abime les commentaire et corriger manuellement le texte français */
+	 
+	 .pageDroite:not(:last-child)  { overflow-y: hidden ; overflow-x:hidden; }
+	 
+	 
+	 
 	
 	/* certaine page sont mordues mais la structure est gardée
-	 * Correction au fur et à mesure des lectures 
-	 * INCHA ALLAH
+	 * !!!!! Correction manuelle au fur et à mesure des lectures !!!!
+	 *
+	 *
+  	 * INCHA ALLAH
 	 */
 
 	
