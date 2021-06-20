@@ -249,7 +249,13 @@
 	/* verset sans arrêt: kif de liaison */
 	    .lamNonStop{ vertical-align:top; font-weight:bold; }
         .pointContinu{padding:0 0 0 .15em; border-radius:50%; margin-left:0; margin-right:0; background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(5, 55, 0, 0.5)), url("img/footer-image.png");}	
-    /** Image Overlay Slide: Pour cacher les regles de grammaires derrière la Kaanba **/
+    /** Image Overlay Slide: Pour cacher les regles de grammaires derrière la Kaanba 
+	 *Pour certaines images du milieu  footer: ct 
+	 * index.html,s27.html, s28.html, ...ect
+	 * à redefinir selon besoin . exemples:
+	 * index.html : il y une image
+	 * s27.html: texte transparente
+	 */
         .overlay {
 		  position: absolute;
 		  bottom: 100%;
@@ -413,5 +419,12 @@
 	 *
   	 * INCHA ALLAH
 	 */
-
+	 
+	 /** si les lien interpage pose prolème( variation de position selon le browser),
+	  *  alors les mettre dans un div#liaisonDesPages
+	  *  virer le div#liaisonDesPages a { height:1.9em; }
+	  *  jouer avec div#liaisonDesPages a { line-height: ??? } Pour ajuster la taille de la .pageDroite à la .pageGauche
+	  */
+     #liaisonDesPages { margin-top:0; margin-bottom:0; padding-top:0 !important; padding-bottom:0; line-height:0 !important; }
+ 
 	
