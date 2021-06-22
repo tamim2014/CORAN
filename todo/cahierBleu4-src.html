@@ -151,7 +151,7 @@
 		    </video>
 			
 			<span class="popuptext grandCommentaire lastComment" id="myPopup3" style="width:101%; right: 65.5%; ">				 
-				<img src="img/efface_tous.png" width="auto" height="auto" class="anas" id="effaceTous" > 	
+				<img src="img/efface_tous.png" width="auto" height="auto" class="anas"  > 	
 			</span>
                    			
 		</div>
@@ -167,8 +167,18 @@
 
 	
 	</p>
-	
 	<script>		
+	    // Compte le nombre de Tasbih et l'affiche dans le même bouton
+		/**
+		var count=0;
+		var action = document.getElementById("ici");		
+		action.onclick=function(){
+			count++;
+			if( count <11  ){ action.innerHTML=count; }		
+		};
+		*/
+		
+		
 	   // phoneComment:Compter s51v58
 		var count=0;
 		var action = document.getElementById("btnComment");		
@@ -179,6 +189,14 @@
 			  if( count == 27  ){action.innerHTML="&emsp;&emsp;&nbsp;&#128587;&emsp;"+count+"&emsp;"; }	
 			}		
 		};
+	
+		function commentaire1() {
+		  var popup1 = document.getElementById("myPopup1");
+		  popup1.classList.toggle("show");
+		}
+		
+		
+		
 		// 2em compteur ( 100 fois)
 		var count_=0;		
 		var action_ = document.getElementById("ici_");       		
@@ -186,55 +204,39 @@
 			count_++;
 			if( count_ <101  ){ action_.innerHTML=count_; }		
 		};
+		
 		var loop=0;
 		var actionLp = document.getElementById("loop");							
+		// Boucler  jusqu'à 100 si on peut
 		actionLp.onclick=function(){
+		    // Réinitialiser le 1er compteur
 			count_=0;
 			action_.innerHTML="Count";
+		    // Incrémenter le 2ème compteur
 			loop = loop+100;
 			if( loop <1001  ){ actionLp.innerHTML=loop; }		
 		};
-		
-		/** Remplacement de contenu par clic de souris
-		 * Remplace le Tasbih par Le SWS 
-		 * Remplace aussi l'image anas_.png par swsV.jpg ( et vis versa )
-		 */
+		// Remplace le Tasbih par Le SWS
 		var actionSWS = document.getElementById("sws");	
-		var actionEffaceTout = document.getElementById("effaceTous");	
 		var actionTASBIH = document.getElementById("tasbih");	
 		
 		function changeImage(element){
-			  var x = document.getElementById("sws");
-			  var v = x.getAttribute("src");
-			  if(v == "img/anas_.png")
-				 v = "img/swsV.jpg";
-			  else
-				 v = "img/anas_.png";
-				 x.setAttribute("src", v);
+		 // var x = element.getElementsByTagName("img").item(0);
+		  var x = document.getElementById("sws");
+		  var v = x.getAttribute("src");
+		  if(v == "img/anas_.png")
+			v = "img/swsV.jpg";
+		  else
+			v = "img/anas_.png";
+		    x.setAttribute("src", v);
+            //actionTASBIH.innerHTML="سبحان الله وبحمده ، سبحان الله العظيم"; 			
 		}
-		actionSWS.onclick=function(){
-            actionTASBIH.innerHTML=" ............. اللهم صل على محمد"; 		            		
-            changeImage(this);            		
-		};
-		// Changement du dernier image: efface_tous.png
-		function changeImageBis(element){
-			  var y = document.getElementById("effaceTous");
-			  var w = y.getAttribute("src");
-			  if(w == "img/efface_tous.png")
-				 w = "img/efface_tous_.png";
-			  else
-				w = "img/efface_tous.png";
-				y.setAttribute("src", w);		 
-		}
-		actionEffaceTout.onclick=function(){ changeImageBis(this); };
-		
-		
-		// Les fonctions d'affichage commentaires
 
-        function commentaire1() {
-		  var popup1 = document.getElementById("myPopup1");
-		  popup1.classList.toggle("show");
-		}
+		actionSWS.onclick=function(){
+              actionTASBIH.innerHTML=" ............. اللهم صل على محمد"; 		            		
+              changeImage(this); /* blem ici: l'image ne change pas ! Pourquoi ? */            		
+              		            		
+		};
 		
 	    function commentaire2() {
 		  var popup2 = document.getElementById("myPopup2");
