@@ -1,0 +1,14 @@
+25.06.21
+
+Template audioComment:
+						 
+<sup class="popup" onclick="commentaire50()">&#x1F3A7;						       
+        <span class="popuptext" id="myPopup50">							        
+                  <audio  class="img audioComment"  controls="controls" poster="img/s49s50.png"     >				                      
+                           <source src="videos/s49s50.mp3" type="audio/mp3"   />			        				                   
+                  </audio>
+									
+                <i>Traduction S49v13(sababu nuzul)  :<br></i> 								    
+                <i style="color:gray">1:01:19/2:50:59</i>
+       </span>    						 
+</sup>
