@@ -1,0 +1,13 @@
+Task1.découper le fichier video s49s50.mp3 en deux:
+   - s49c
+   - s50c
+  les implementer respectivement dans s49suite.html et s50.html
+  avec les poster qui vont avec
+
+Task2. s49suite.html: Page517v13
+           Extraire seulement le verset13(sourate49 en comorien)
+            et l'implementer dans l'audioComment: 1:01:19/2:50:59
+
+
+
+            * Le nommer: s49v13.mp3

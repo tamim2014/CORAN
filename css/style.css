@@ -423,8 +423,11 @@
 	 
 	 /** si les lien interpage pose prolème( variation de position selon le browser),
 	  *  alors les mettre dans un div#liaisonDesPages
-	  *  virer le div#liaisonDesPages a { height:1.9em; }
-	  *  jouer avec div#liaisonDesPages a { line-height: ??? } Pour ajuster la taille de la .pageDroite à la .pageGauche
+	  *
+	  *  Ajouter un  margin-bottom:0; dans la div.pageDroite présedente
+	  *  Ajouter un  margin-bottom:2.8em;  dans la div.pageGauche correspondante( la traduction)
+	  *
+	  *  Exemple: s9.html(Page207)
 	  */
      #liaisonDesPages { margin-top:0; margin-bottom:0; padding-top:0 !important; padding-bottom:0; line-height:0 !important; }
  

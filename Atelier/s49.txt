@@ -1,4 +1,0 @@
-1. decouper la video en 2 ( s49 et s50)  avec les poster qui vont avec
-2. Page s49suite.html(  Page517 verset13 )
-      * Extraire juste la traduction du s49v13( 1:01:19/2:50:59 ) 
-     * Le nommer: s49v13.mp3
