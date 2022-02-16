@@ -1,0 +1,34 @@
+	/******
+     * Scroll contenu
+     * Author: Andjib
+     * Date: Samedi 07 Mars 2020
+	 * Problème: Conflit de style
+	 * Solution: placer ce style dans la page( en attrndant de resoudre le conflit
+	 * Non ! fausse alerte . ça marche b1 
+     */	
+
+     /* SMARTPHONE: Le sticky( top menu vert) gene un un peu en lisant. si on veut l'enlever  ; i suffit de virer les 2 mots "!important" cis-dessous */ 
+	.stickyNavbar {
+	  position: fixed !important;
+	  top: 0 !important;
+	  width: 100%;
+	}
+
+    /*
+	.stickySidbarG , .stickySidbarD  {
+	  position: fixed;
+	  top: 5%;
+	  width: 25%;	 
+	}
+	.stickySidbarG{left:0;}
+	.stickySidbarD{right:0;}
+	*/
+	
+	.stickyContenu{margin-left:25%;}
+	
+	.stickyCahiergrisTo { 
+	    position: fixed;
+		top: 41%;
+		width:43%; 
+    }
+

@@ -1,0 +1,217 @@
+/********************** Contenu des   popup *************************/
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #3d3d5c; /* #555  */
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+
+.tablink:hover {
+  background-color: inherit; /* #bbb les items du top menu */
+  color: #eee;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px 0px 0px 0px;
+  height: 100%;
+}
+
+#Sujet {background-color: black;}
+#Solution {background-color: black;}
+#Cours {background-color: purple;}
+#Fiche {background-color: whitesmoke;}
+
+.chargerObjet {height:100%; width:100%; z-index:99;}
+
+.conteneur-reponses { 
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  padding-top:2%;
+}
+
+.onglet1-sujet, .onglet2-solution { 
+  float: left; 
+  width:87%;
+  height: 90% ;  
+  padding:20px;
+  margin:2.5% 6.5%;
+  background-color:#555;   
+  box-shadow:
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+  border:1px solid #8c8b8b;
+  border-radius: 0px;  
+}
+
+.onglet2-solution {background: white;}
+
+.onglet2-1-solution, .onglet2-2-solution, .onglet2-3-solution, .onglet1-1-resume, .onglet1-2-resume{
+  float: left;
+  background: #ECECEA; /* white */ 
+  box-shadow:
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+  border:1px solid #8c8b8b;
+  border-radius: 0px; 
+  height: 86% ; 
+}
+
+.onglet2-1-solution {  
+  width:30%;   
+  padding:20px;
+  margin-top:2.5%;
+  margin-right: 0;
+  margin-left: 5%; 
+}
+
+.onglet2-2-solution {   
+  width:25%;
+  padding:0; 
+  margin:2.5% 2.222%;  
+}
+
+.onglet2-3-solution {  
+  width:30%;  
+  padding:20px;
+  margin:2.5% 0%;  
+}
+
+.onglet1-1-resume {
+  width:44%;
+  margin-left:4.73%;  /*!!!! Reglage du CENTRAGE HORIZONTAL de l'apli todo !!!!!! */
+  padding:20px;
+  margin-top:2.5%;
+}
+.onglet1-2-resume {  
+  width:44%;  
+  padding:20px;
+  margin:2.5% 0%;  
+}
+
+ 
+
+    
+p.numCours{
+  text-align:left;
+  font-weight:bold;
+  margin:0;
+  padding:20px;  
+  background-color:#f44336;
+  color:white;
+  border:60px solid #ddd;
+  border-radius: 0px 0px 2px 2px;
+}
+.dateCours { 
+  /* Rappel: font-weight = bold ou normal ou lighter */
+  font: italic lighter 0.7em cursive ;
+  
+}
+
+/**************** DECO AMOVIBLE ( implemete au 8em cours de java) ***************/
+  .alert {
+    padding: 20px 20px 40px 20px;
+    margin-bottom: -40px; 
+    background-color:  #f44336;  /* #cc0000; */
+    color: white;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+  /* fenetre normal */
+
+  .captionHaut{ margin-left:16%; margin-right:32%; }
+  .captionBas{ margin-left:2.2%; }
+  .B{color:blue; }
+  .G{color:gold; font-size: 1.4em; }
+  .G2{color:#ff1; font-size: 1.4em; }
+  .N{color:#111;}
+  .conclusion {
+  	box-shadow:
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+    0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+    border:1px solid #8c8b8b;
+  }
+  
+  /* coloration des type -  pour les variable en JAVA et PHP */
+  .ct { color: #00cc00;}
+  .ct2 { color: #00cc00; font-size: 1.4em;}
+  
+  #openTablinks{
+	  position:absolute;
+	  top:.6em;
+	  left:1.2em;
+	  color:#f2f2f2;
+	  cursor: pointer;
+      display:none ;	
+      	  
+  }
+  #tablinks{ dispaly: block; }
+  #openTablinks:hover{background:#ccc; padding:.1em .2em; border-radius:.15em; }
+
+  /* fenetre reduit : pop */ 
+  @media all and (max-width: 900px) {   
+    .captionHaut{ margin-left:11%; margin-right:21%; }                      
+  }
+  /* Responsive top menu de l'application todo:16.01.2021 */
+
+  @media all and (max-width: 650px) {
+	 body{  overflow-y:visible !important; min-height:100em !important; }
+	#openTablinks{ display:block ; }     
+    .tablink {
+		 width:100%;		 
+		 padding : 12px ; /* padding : 14px 16px: */
+		 border-top:.1px solid #555;/* Le black est moins agressif */	
+		 color: gray; 
+         font-size:.8em !important;        		 
+	}
+	.gris{ background:#bbb; color:transparent;}
+	.gris:hover{ background:#3d3d5c;}
+	#defaultOpen{ background : #4CAF50; color:#ddd; }
+	#defaultOpen:hover {background-color: #bbb; color: #eee;}
+	
+    .tabcontent { height:35% ; }	
+  }
+  /*
+  @media all and (max-width: 850px) {
+	  .gris{ background:#bbb; color:transparent;}
+	  .gris:hover{ background:#3d3d5c;}
+  }
+  */
+
+
+ 
+
+
+

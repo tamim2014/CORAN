@@ -1,0 +1,34 @@
+	
+		a#precedent, a#suivant {
+		  text-decoration: none;
+		  display: inline-block;
+		  font-family:calibri light !important;
+		  font-weight:normal;
+		  padding: 2px 16px ;
+		  
+		  margin-top:.7em;	
+		}
+
+		a#precedent:hover, a#suivant:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.previous {
+		  background-color: #f1f1f1;
+		  color: black;
+		}
+
+		.next {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+
+		.round {
+             border-radius: 0;
+             display: inline;
+             text-decoration:none ;
+             padding: 0em .3em !important;
+             
+         
+        }

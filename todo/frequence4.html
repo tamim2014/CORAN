@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="css/cahierBleu.css">
+  <link rel="stylesheet" href="css/commentaires.css">
+  <style>
+     	body { line-height:1.4;	}
+		/* position horizontale de la pointe du 1er commentaire */
+		.popup .comment1::after { left:8.3%; }
+		/* image dans commentaire */
+		.anas { 
+		     margin:.7em 1em; 
+			 filter: grayscale(50%);
+			 box-shadow:10px 10px 20px black;			
+		}
+		
+		/* bouclage frequence4 */
+		h5  a { text-decoration:none; opacity: .5;  }
+		#nbReload{ color:green; font-size:.5em !important; padding:1em 0; }
+		
+		
+	  @media screen and (max-width: 650px) {
+	    /*
+	      body{font-size:1em;}
+	     .noteDeBasDePage{ font-size:.5em;}
+		 */
+		 .fcbk .popup  .comment1{  
+		    width:1350% !important;
+            font-size:.7em;			
+		 }
+		 .popup .comment1::after { left:12.3% !important; }
+	   }
+      
+  </style>
+</head>
+<body >
+    <h5 id="troisFois"   style=" background:transparent; margin:.8em; font-size:1.1em; opacity: .5; "> ثلاث مكافآت <span id="nbReload"><span style="color:green; font-size:1.25em;">&#10227;</span></span></h5>
+    <p style="margin:0; padding:.3em 0 0 0; ">
+	    <p class="fcbk">
+			<span class="popup grandCommentaire " onclick="commentaire1()">
+				<i id="btnComment" style="border:none; background:transparent;  font-size:.7em; padding-left:0; "><small>&#128233;</small></i>
+				<span class="popuptext grandCommentaire comment1" id="myPopup1" style=" width:2000%; left:-120% !important; padding:auto;"> <!-- style=" width:100%; right: 43.3%;" -->
+					<i style="font-family:Amiri">Selon le Prophète &#65018; :  </i>  celui qui récite cela <small>(10 fois par jour)</small><br>
+					aura une réconpense de <b style="color:#00b36b;">4 millions de bonnes actions</b> 
+					<small style="color:gray">........... الترمذي : (3474)</small>
+				</span> 
+			</span>
+            أشْهَدُأنْلا إلهَ إلاّ لله وَحْدَهُ لَا شََرِيكَ لَهُ، إلٰهاًوَاحِدً٬ أحَدًصَمَدً.لَمْ يَتَّخِذْصاَحِبَتاًوَلاَوَلَدْ، وَلَمْ يَكُنْ لَّهُۥ كُفُوًا أَحَدٌۢ 
+		</p>
+		<!-- <br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br> -->
+        <p class="fcbk" >
+			.أَللَّهُمَّ إِنِّي أَسْئَلُكَ ثَّبٰةَعلى لْأَمْرِ٬  وَلْعَزِيمَةَعلى الرُّشْدِ<br> 
+			.أَللَّهُمَّ إِنِّي أَسْئَلُكَ حُسْن عِباَدَتِكَ،  وَشُكْرنِعْمَتِكَ<br>
+			.أَللَّهُمَّ إِنِّي أَسْئَلُكَ قَلْبً سَلِيمً، وَلِسٰنً صَدِيقً  <br>
+			<span class="douan" style="font-weight:normal;">
+			، أَللَّهُمَّ إِنِّي أَسْئَلُكَ خَيْرَمَاتَعْلَمْ<br>
+			، وَأَعُوذبِكَ مِنْ شَرِّ مَاتَعْلَمْ<br>
+			، وَأَسْـتَغْفِرُكَ مِنْ  مَاتَعْلَمْ<br>
+			. إنَّكَ أَنْتَ  علَّامُ  لْغُيُوبْ
+			</span>
+	    </p>
+		<!-- <br><span class="separateurArabe" style="font-size:1em;">&#10020; &#10020; &#10020;</span><br> -->
+		<p class="fcbk" style="margin-bottom:0">
+		     <small><i id="loop" style="width:15.5em;">Loop <span class="douan" style="font-weight:normal;">&#10227;</span> </i></small><!-- &#8620; -->
+			 <!-- Commentaire2  -->
+			 <span class="popup grandCommentaire" onmouseenter="commentaire2()">
+				<!-- <i id="btnComment" style="width:8em;  border:none; background:transparent; margin-right:19.98em; font-size:.7em;">&#128233; Comment</i> -->
+				<small><i id="ici" style="width:15.5em;">Count</i></small>&nbsp;&nbsp;
+				<span class="popuptext grandCommentaire" id="myPopup2" style="width:200%; right: 50%; ">				 
+					 <img src="img/anas.png" width="300%" height="300%" class="anas" >						
+				</span>
+                   			
+			 </span>
+			 <!-- Fin Commentaire2  -->
+		     <!-- <small><i id="ici" style="width:15.5em;">Count</i></small>&nbsp;&nbsp; -->
+		     سُبْحَانَ الْلهِ، وَالْحَمْدُ لِلهِ، وَلَا إِلَهَ إِلَّا الْلهُ، وَالْلهُ أَكْبَرُ وَ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ 
+		</p>
+	</p>
+	<script>		
+	    		
+		var count=0;		
+		var count3474=0;
+        var countReload =1;		
+		var action = document.getElementById("ici");       
+		var action3474 = document.getElementById("btnComment"); 
+        var nbReload = document.getElementById("nbReload"); // bouclage de toute la page frequence4       
+        var troisFois = document.getElementById("troisFois"); // bouclage de toute la page frequence4       
+		
+		var loop=0;
+		var actionLp = document.getElementById("loop");	
+		
+		
+		
+		
+		
+
+        /**  Premier compteur: Bouclage frequence4 */
+		
+	    troisFois.onclick=function(){
+		    // on remet tous les compteurs à zero
+			   count3474=0; count=0; 
+			// on réinitise les valeurs d'affichage
+			 action3474.innerHTML="&#128233;";
+			 actionLp.innerHTML= "Loop &#10227;";
+			 action.innerHTML="count";
+			  
+			// on incremente le bouclage de page
+			countReload++;
+			if( countReload<4 ){ nbReload.innerHTML=countReload; }
+            		
+		};		
+	
+
+
+
+	
+
+		/** Deuxième compteur ( icone envelope ) */
+		
+		action3474.onclick=function(){
+			count3474++;
+			if( count3474 <11  ){ action3474.innerHTML=count3474; }		
+		};
+
+
+
+	
+
+	
+		/** 3ème et 4em compteur: Looping couplet */
+		
+		action.onclick=function(){
+			count++;
+			action.innerHTML="count";
+			actionLp.innerHTML= count;
+			
+	
+            if( count == 11  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=11;  }
+            if( count == 12  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=12;  }
+            if( count == 13  ){ actionLp.innerHTML= "2ème &#10227;"; action.innerHTML=13;  }
+			
+            if( count == 22  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=22;  }
+			if( count == 23  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=23;  }
+            if( count == 24  ){ actionLp.innerHTML= "3ème &#10227;"; action.innerHTML=24;  }
+			
+            if( count == 33  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=33;  }
+			if( count == 34  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=34;  }
+            if( count == 35  ){ actionLp.innerHTML= "4ème &#10227;"; action.innerHTML=35;  }
+			
+            if( count == 44  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=44;  }
+			if( count == 45  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=45;  }
+            if( count == 46  ){ actionLp.innerHTML= "5ème &#10227;"; action.innerHTML=46;  }
+			
+            if( count == 55  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=55; }	
+		    if( count == 56  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=56;  }
+            if( count == 57  ){ actionLp.innerHTML= "6ème &#10227;"; action.innerHTML=57;  }
+			
+            if( count == 66  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=66; }	
+            if( count == 67  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=67;  }
+            if( count == 68  ){ actionLp.innerHTML= "7ème &#10227;"; action.innerHTML=68;  }
+			
+            if( count == 77  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=77; }
+            if( count == 78  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=78;  }
+            if( count == 79  ){ actionLp.innerHTML= "8ème &#10227;"; action.innerHTML=79;  }
+			
+            if( count == 88  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=88; }	
+            if( count == 87  ){ actionLp.innerHTML= "Loop &#10227;"; action.innerHTML=87;  }
+            if( count == 88  ){ actionLp.innerHTML= "9ème &#10227;"; action.innerHTML=88;  }
+			
+            if( count == 99  ){ actionLp.innerHTML= "&#128587;"; action.innerHTML=99; }
+				
+		};
+		
+
+
+
+		
+        /** Comments functions */
+		
+		function commentaire1() {
+		  var popup1 = document.getElementById("myPopup1");
+		  popup1.classList.toggle("show");
+		}
+		function commentaire2() {
+		  var popup2 = document.getElementById("myPopup2");
+		  popup2.classList.toggle("show");
+		}
+	</script>
+
+</body>
+</html>

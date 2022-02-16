@@ -1,0 +1,78 @@
+
+	/* Popup container - can be anything you want */
+	.popup {
+	  position: relative;
+	  display: inline-block;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+
+	/* The actual popup */
+	.popup .popuptext {
+	  visibility: hidden;
+	  width: 160px; 
+	  background-color: #555;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 6px;
+	  padding: 4px; /*  padding: 8px 0; */
+	  position: absolute;
+	  z-index: 1; /* Problème: superposition du "dropdown-content" malgé un z-index supérieur */
+	  bottom: 125%;
+	  left: 50%;
+	  margin-left: -80px;
+	}
+	.popup{ 
+		 color: #9d3d5f; /*  #9d3d5f; #ccf; ou red; ou  #3d3d5c;  couleur numero des commentaires */ 
+		 font-family:calibri light;
+		 z-index:0 !important;	 
+	 }
+
+	/* Popup arrow */
+	.popup .popuptext::after {
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #555 transparent transparent transparent;
+	}
+	/* Nuance sur les commentaire des titres de certaines sourates */
+	.popup .thawabs::after { border-color: #666 transparent transparent transparent !important; }
+	.popup .recommandation1::after { border-color: #777 transparent transparent transparent !important; }
+	.popup .recommandation2::after { border-color: #888 transparent transparent transparent !important; }
+	/* Grand commentaire video couvrant toute la page de gauche: Voir S51 Verset4 Page523 */
+	.maamourComment {padding:1em 5em !important; width:1909% !important;}
+    .popup .maamourComment::after { left: 20% !important; }	
+
+	/* Toggle this class - hide and show the popup */
+	.popup .show {
+	  visibility: visible;
+	  -webkit-animation: fadeIn 1s;
+	  animation: fadeIn 1s;
+	}
+
+	/* Add animation (fade in the popup) */
+	@-webkit-keyframes fadeIn {
+	  from {opacity: 0;} 
+	  to {opacity: 1;}
+	}
+
+	@keyframes fadeIn {
+	  from {opacity: 0;}
+	  to {opacity:1 ;}
+	}	
+
+ 
+	.grandCommentaire{line-height:1.4; font-size:.9em;}
+	.titleComment{font-size:.5em; font-weight:normal;}
+	
+	.pageGauche .popup .popuptext  i { color:#c4c4c4; font-weight:bold; }
+	
+	.remarqueTitre{ padding-right:45%; color:#33ccff; }
+	.remarqueContenu{ padding-left:0; color:#c4c4c4; font-weight:normal !important; font-family:system ui; font-size:.9em;}

@@ -1,0 +1,11 @@
+    <script>
+		// Test resposive: AFFICHER LA TAILLE DE LA FENETRE -  Source: "http://www.java.scripts-fr.com"
+		if (document.body){ 	
+			 var larg = (document.body.clientWidth);
+			 var haut = (document.body.clientHeight);
+		}else{
+			 var larg = (window.innerWidth);
+			 var haut = (window.innerHeight);
+		}
+		document.write("  Cette  fenêtre fait " + larg + " de large et "+haut+" de haut");
+	</script>

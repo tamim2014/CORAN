@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>todo</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="shortcut icon" href="../img/coran.ico"  /> -->
+   <link rel="shortcut icon" href="../img/coran2.ico" style="border-radius:5px !important;" />
+   <link rel="stylesheet" href="css/fullPageTabs.css" media="screen" /> 
+   <link rel="stylesheet" href="css/pagination2.css" media="screen" /> 
+   <script type="text/javascript" src="js/fullPageTabs.js"></script>  
+   <style>
+		body {  
+		   margin: 0;
+		   overflow: hidden !important; /* Hide scrollbars */
+		}
+		.tempsDavance {
+		   color:#115; /* ou gray */ 
+		   font-family: system-ui;
+		}
+		@media screen and (max-width: 700px) {
+		  .tempsDavance { display:none;}
+		}
+		@media screen and (max-width: 470px) {
+		   button.tablink { font-size:1em !important; }
+		   
+		}
+		@media screen and (max-width: 300px) {
+		   button.tablink { font-size:.7em !important;  padding: 14px 4px ; }
+		}
+
+   </style>
+   
+  
+</head>
+<body onload="openPage('Sujet', this, '#bbb')" style="overflow: hidden !important; background:#555;" ><!-- background:#555 ou #ECECEA; ou #3d3d5c; -->
+  <span id="openTablinks" onclick="openTablinks()">☰ </span>
+  <!-- MENU FULL PAGE TABS -->
+    <div id="tablinks">
+		<button class="tablink" onclick="openPage('Sujet', this, '#bbb')" id="defaultOpen">Prières</button>
+		<button class="tablink" onclick="openPage('Fiche', this, '#bbb')">Post-Prières</button>
+		<button class="tablink" onclick="openPage('Solution', this, '#bbb')">Cahier bleu</button>	
+		<button class="tablink gris" onclick="openPage('Cours', this, 'black')">Divers</button>
+	</div>
+	<!-- ONGLET 1 : Gestion des prières -->
+	<div id="Sujet" class="tabcontent" style="background:#bbb;">
+	  <object class="onglet1-1-resume" style="width:90%; padding:0 !important; border-radius: 4px  4px 0 0 !important; "  data="todoList_prieres.html" ></object>
+	  <div class="pagination" >
+		  <!-- <a href="#">&laquo;</a> -->
+		  <!-- <a href="#" onclick="activeUn()" id="activeUn" class="active">1</a> -->
+		  <!-- <a href="#" onclick="activeDeux()" id="activeDeux">2</a> -->
+		  <!-- <a href="#" onclick="activeTrois()" id="activeTrois">3</a> -->
+		  <!-- <a href="#" onclick="activeQuatre()" id="activeQuatre">4</a> -->
+		  <!-- <a href="#" >&raquo;</a> -->
+		  <!-- <i style="color:gray; font-family: system-ui;">&laquo; Un temps d'avance, ça change tout ! &raquo; </i> -->
+		  <i class="tempsDavance" >&laquo; Un temps d'avance, ça change tout ! &raquo; </i>
+	  </div>
+	
+	</div>
+	<!-- ONGLET 2: Douan les plus fréquents -->
+	<div id="Fiche" class="tabcontent" style="background:#bbb; ">
+	  <object id="cible" class="onglet1-1-resume" style="width:90%;"  data="douanFrequents.html" ></object>
+	  <div class="pagination" >
+		  <a href="#">&laquo;</a>
+		  <a href="#" onclick="activeUn()" id="activeUn" class="active">1</a>
+		  <a href="#" onclick="activeDeux()" id="activeDeux">2</a>
+		  <a href="#" onclick="activeTrois()" id="activeTrois">3</a>
+		  <a href="#" onclick="activeQuatre()" id="activeQuatre">4</a>
+		  <a href="#" >&raquo;</a>
+	  </div>
+	</div>
+	
+	<!-- ONGLET 3 : Cahier bleu -->
+	<div id="Solution" class="tabcontent" style="background:#bbb;">	 
+       <object id="cibleCahierBleu" class="onglet1-1-resume" style="width:90%;"  data="cahierBleu.html" ></object>
+	   <div class="pagination" >
+		  <a href="#">&laquo;</a>
+		  <a href="#" onclick="activeUnCahierBleu()" id="activeUnCahierBleu" class="active">1</a>
+		  <a href="#" onclick="activeDeuxCahierBleu()" id="activeDeuxCahierBleu">2</a>
+		  <a href="#" onclick="activeTroisCahierBleu()" id="activeTroisCahierBleu">3</a>
+		  <a href="#" onclick="activeQuatreCahierBleu()" id="activeQuatreCahierBleu">4</a>
+		  <a href="http://www.dateaujourdhui.com" target="_blank">&raquo;</a>
+	  </div>
+	</div>	
+	<!-- ONGLET 4 : Divers todo -->	
+	<div id="Cours" class="tabcontent" style="background:black">
+	  <object class="onglet1-1-resume" style="width:90%;"  data="todoList_divers.html" ></object>
+	</div>
+        
+	<div class="conteneur-reponses"> </div> <!-- c'est juste un separateur sujet/solution --> 
+         
+	<script type="text/javascript" src="js/jquery3.4.1.min.js"></script> <!-- pour le jQuery de la pagination -->
+    <script type="text/javascript" src="js/pagination2.js"></script>
+	<!-- accordeon menu -->
+		<script>
+		function openTablinks() {			 			  
+			  
+			  /*
+			  var premierItem = document.getElementById("defaultOpen");
+			  var btnOpenTablinks = document.getElementById("openTablinks");
+			  */
+			  var x = document.getElementById("tablinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+				
+			  } else {
+
+			    x.style.display = "block";
+				
+				/*
+				btnOpenTablinks.style.top = "0";
+				btnOpenTablinks.style.left = "0";
+				btnOpenTablinks.style.padding = "14px 16px";
+				btnOpenTablinks.style.border-radius = "none";
+				premierItem.style.background = "#4CAF50";
+				*/					
+		  }
+		}
+	</script> 
+
+	
+</body>
+</html>

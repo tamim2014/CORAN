@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- responsive -->
+	<meta http-equiv="Content-Type" content="text/html; charset= UTF8 ">
+	<title>Cahier Bleu</title>
+	<link rel="shortcut icon" href="../img/coran.ico"  />
+	<link rel="stylesheet" href="../css/test3-zoning.css" >
+	<link rel="stylesheet" href="../css/test3-dropdown.css" >
+	<link rel="stylesheet" href="../css/sticky.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bouton-bash.css">
+	<link rel="stylesheet" href="../css/boutonSuivantPrecedent.css">
+	<link rel="stylesheet" href="../css/numerotation.css">
+	<link rel="stylesheet" href="../css/commentaires.css">
+	<link rel="stylesheet" href="../css/top.css"  media="screen">
+	<link rel="stylesheet" href="../css/Hoverable_Sidenav_Buttons.css">
+	<link rel="stylesheet" href="../css/pagination.css">
+	<style>
+		.colone-laterale, .colone-contenu { padding-top:0; padding-bottom:0; }
+		.planche{ font-weight:bold; font-family: Amiri  !important; height:auto; }
+		.plancheFrance{ padding:1.2em;    line-height:1.8;}
+		.plancheArabe{ padding:1em 1em .7em 1em;  font-size:1.2em; line-height:3.19;}
+		
+		.box-shadow-titre{ color:#555; /* juste pour effacer */ }
+		
+		@media screen and (max-width: 560px) {
+			.planche .pageGauche{ font-size:.86em !important; height:auto !important;}
+            .planche  .pageDroite{ font-size:.86em !important;	height:auto !important; }
+			.basmala{font-size:.48em !important;}
+            /* Responsive top nav */
+            			#menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{  padding: 14px 20px   !important; width:29em !important; float:none !important; }		 
+                       #menu a.accueil-lien{ float:left !important;}
+			#menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;  padding: 14px 2px !important;   }
+			 
+                     .dropdown-content{z-index:99;}
+		    /*   ###  */			
+	    } 			
+	</style>
+
+</head>
+<body style="background:#bbb;">
+	<div id="entete">	   
+	    <img src="../img/test.png" class="header-image" >
+        <span class="logo" >الله ممّا نفعنا بما علّمتنا</span>			
+	   	<div class="hero-image">
+		  <div class="hero-text">
+			<h1 class="basmala-green" >بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</h1>
+			<h3 ><br><br></h3>			
+			<div class="container-btn">
+				<a href="../index-comorien.html" > 
+					<button  class="btn">
+					   <span>Autre langue</span>
+					</button>
+				</a>
+			</div>			
+		  </div>
+		</div>
+	</div>
+    <!-- Hoverable Sidenav Buttons -->
+    <div id="mySidenav" class="sidenav">
+	  <a href="douan.html" id="bouton1"><b>&#8962;</b> أسألك باسمك الأعظم</a>
+	  <a href="#" id="bouton2">Les 40 Rabbana</a>
+	  <a href="cahierrouge.html" id="bouton3">Cahier rouge</a>
+	  <a href="cahiergris.html" id="bouton4" style="z-index:99;">Cahier gris</a>
+	</div>		
+	<div id="menu">
+		<a href="../index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰ </span>		
+		<div class="dropdown">
+			<button class="dropdown-btn" id="dropdown-btn1">Les sourates</button>
+			<div class="dropdown-content" >
+                ...
+			</div>					
+		</div>
+		<div class="dropdown">
+			<button class="dropdown-btn" id="dropdown-btn2"  style="padding: 14px 87px;">Les juz</button>
+			<div class="dropdown-content">
+			    <a href="../index.html#juz1">Juz 01 - [<i> S01 | Page001 </i>]</a><a href="../s2juz2.html">Juz 02 - [<i> S02 | Page022 </i>]</a><a href="../s2juz3.html">Juz 03 - [<i> S02 | Page042 </i>]</a><a href="../s3juz4.html">Juz 04 - [<i> S03 | Page062 </i>]</a><a href="../s4juz5.html">Juz 05 - [<i> S04 | Page082 </i>]</a><a href="../s4juz6.html">Juz 06 - [<i> S04 | Page102 </i>]</a><a href="../s5suite2(juz7).html#juz7">Juz 07 - [<i> S05 | Page121 </i>]</a><a href="../s6juz8.html">Juz 08 - [<i> S06 | Page142 </i>]</a><a href="../s7.html#juz9">Juz 09 - [<i> S07 | Page162 </i>]</a><a href="../s8.html#juz10">Juz 10 - [<i> S08 | Page182 </i>]</a><a href="../s9.html#juz11">Juz 11 - [<i> S09 | Page201 </i>]</a><a href="../s11.html">Juz 12 - [<i> S11 | Page222 </i>]</a><a href="../s12.html#juz13">Juz 13 - [<i> S12 | Page242 </i>]</a><a href="../s15.html">Juz 14 - [<i> S15 | Page262 </i>]</a><a href="../s17.html">Juz 15 - [<i> S17 | Page282 </i>]</a><a href="../s18suite.html#juz16">Juz 16 - [<i> S18 | Page302 </i>]</a><a href="../s21.html">Juz 17 - [<i> S21 | Page322 </i>]</a><a href="../s23.html">Juz 18 - [<i> S23 | Page342 </i>]</a><a href="../s25suite.html#juz19">Juz 19 - [<i> S25 | Page362 </i>]</a><a href="../s27.html#juz20">Juz 20 - [<i> S27 | Page382 </i>]</a><a href="../s29juz21.html">Juz 21 - [<i> S29 | Page402 </i>]</a><a href="../s33.html#juz22">Juz 22 - [<i> S33 | Page422 </i>]</a><a href="../s36.html#juz23">Juz 23 - [<i> S36 | Page442 </i>]</a><a href="../s39.html#juz24">Juz 24 - [<i> S39 | Page462 </i>]</a><a href="../s41.html#juz25">Juz 25 - [<i> S41 | Page482 </i>]</a><a href="../s45.html#AHQAF">Juz 26 - [<i> S46 | Page502 </i>]</a><a href="../s51.html#juz27">Juz 27 - [<i> S51 | Page522 </i>]</a><a href="../s58.html">Juz 28 - [<i> S58 | Page542 </i>]</a><a href="../s67.html">Juz 29 - [<i> S67 | Page562 </i>]</a><a href="../s78.html">Juz 30 - [<i> S78 | Page582 </i>]</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropdown-btn" id="dropdown-btn3">Sadjadas</button>
+			<div class="dropdown-content " >
+                 ....
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropdown-btn"  id="dropdown-btn4" >Rappels</button>
+			<div class="dropdown-content"  >				
+				<a href="#" class="accordion" >Invocations</a>
+				<div class="panel">
+                      ...				
+				</div>				
+				<a href="#" class="accordion" >Rappel de cours</a>
+				<div class="panel">					    
+                     ...
+				</div>
+				<a href="#" class="accordion" >Liens Externes</a>
+                <div class="panel">						
+                       ...				   
+			    </div>
+			</div><!-- .dropdown-content -->
+		</div><!-- .dropdown -->		        
+	</div><!-- #menu -->
+	<div id="contenu">
+		<div class="colone-laterale" id="sidbarG">
+		    <!-- <h2 class="grosTitre" style="padding:1.2em 0em !important;" > -->
+                <!-- ... -->
+			<!-- </h2> -->
+			<div class="planche plancheFrance" >			
+				<div class="pageGauche" style="height:auto; line-height:1.52; box-shadow:0px 8px 6px -2px gray; margin-bottom:.95em; ">
+				    <div class="numJuzHizb" style="text-align:center; color:#2a5927; padding:1.7em 1em 1.1em 1em; color:transparent;" >				
+						La meilleure formule de pardon
+				    </div>
+					<p style="padding-bottom:1.25em; padding-top:1.2em; line-height:1.95;">
+                       Que ce qu’ils disent ne t’afflige pas. La puissance toute entière appartient à Allah. C’est Lui qui est l’Audient, l’Omniscient. (<span class="remarqueContenu">s10</span>v65)
+                    </p>
+											
+                    <div class="numJuzHizb" style="text-align:center; color:#2a5927; padding:1.7em 1em 1.4em 1em;" >				
+						<span style="color:transparent">Le droit chemin</span>
+				    </div>
+					<!-- <span class="separateurFrançais" style="">&#10020; &#10020; &#10020;</span> -->
+				</div><!-- page1 -->				
+			</div>
+		</div>
+		
+		<div class="colone-contenu" id="contenu_" style="line-height:0;" >
+
+			<div class="planche plancheArabe" lang="ar" dir="rtl"  style="padding-bottom:0!important;  ">              			
+				<div class="pageDroite" style="height:auto; line-height:3; box-shadow:0px 8px 6px -2px gray;" >
+				    <div class="numJuzHizb" style="text-align:center; color:#2a5927; color:transparent; " >				
+					  سيّـدلإ ستغفار
+				    </div>
+					<p>
+                         وَلَا يَحۡزُنكَ قَوۡلُهُمۡ‌ۘ إِنَّ ٱلۡعِزَّةَ لِلَّهِ جَمِيعًا‌ۚ هُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ (﻿٦٥﻿)
+					</p>
+					
+				    <div class="numJuzHizb" style="text-align:center; color:#2a5927; padding-left:.8em !important; color:transparent; " > 				
+						<div class="pagination" style="margin-top:1.5em !important; margin-right:0 !important; margin-left:0 !important;">
+				  
+						</div>
+				    </div>
+                    <!-- <span class="separateurArabe" style="">&#10020; &#10020; &#10020;</span> -->
+				</div><!-- page1 -->
+			</div>				 									
+		</div><!-- #colone-contenu -->
+		
+	</div>
+	
+	<div style="clear:both"></div>
+	<!-- Ce bouton appele tout le processus sticky -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"  >
+		<img  src="../img/top.JPG" id="imageToTop" style="padding:0; margin:0; ">
+	</button>
+	<div id="footer" >
+		<table class="footer-table">
+		  <tr>
+			 <td class="footer-td" style="width:20%; height;auto;" >
+			    <b class="titre-video" >Auteur Inconnu</b>
+                <video  class="img footer-image"    controls="controls" >
+				         <source src="../videos/douan1.mp4" type="video/mp4" />			       
+				</video>		 
+			 </td>
+			     
+			 <td class="footer-td" style="width:20%; "  >
+                 <b class="titre-video" ></b>		     
+	             <img src="../img/kaaba1.png" class="footer-image" style="padding:0;"  >
+			 </td>
+
+			 <td class="footer-td" style="width:20%;" >
+                <b class="titre-video" >Sheikh Jebril</b>
+                <video  class="img footer-image"    controls="controls" >
+				         <source src="../videos/douan2.mp4" type="video/mp4" />			       
+				</video>					
+			 </td>
+		
+		  </tr>
+		</table>
+	</div><!-- #footer -->
+    <script type="text/javascript" src="../js/sticky.js"></script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var j;
+
+		for (j = 0; j < acc.length; j++) {
+		  acc[j].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			  panel.style.display = "none";
+			} else {
+			  panel.style.display = "block";
+			}
+		  });
+		}
+	</script>
+
+
+		
+</body>
+</html>

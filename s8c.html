@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- responsive -->
+	<meta http-equiv="Content-Type" content="text/html; charset= UTF8 ">
+	<title>Sourate8</title>
+	<link rel="shortcut icon" href="img/coran.ico"  />
+	<link rel="stylesheet" href="css/test3-zoning.css" >
+	<link rel="stylesheet" href="css/test3-dropdown.css" >
+	<link rel="stylesheet" href="css/sticky.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bouton-bash.css">
+	<link rel="stylesheet" href="css/boutonSuivantPrecedent.css">
+	<link rel="stylesheet" href="css/numerotation.css">
+	<link rel="stylesheet" href="css/commentaires.css">
+	<link rel="stylesheet" href="css/top.css"  media="screen">
+	<style>
+	.onglet1-sujet{
+	  width:100%;
+	  margin:0 ;
+	  padding:0; /* juste pour s8.html */
+
+	  background:white;
+	  line-height:1.5;
+	  min-height:18em;	  
+	}
+
+	.titre-video{ padding:0 3em; }
+    .no-border{border-top:none; border-bottom:none;}
+
+	/* Séparateur ( ligne verticale du milieu) */
+	.colone-laterale{border-right:1px solid #aaa; }
+	
+	/* Ajuster la hauteur du séparateur */
+	.grosTitre{ margin-top:0;}
+	.planche {margin-bottom:0 ;} 
+    @media screen and (max-width: 450px) {
+	    #suivant , #precedent  { margin-right:auto !important; margin-left:auto !important; }
+		#precedent  { margin-left:-97% !important; }
+    }	
+	@media screen and (max-width: 792px) {
+	   .hero-text {top:4.4em;  left:10%;    transform: translate(-2%, -30%);  }
+	   .container-btn{margin-top:-4em;}
+	}
+	@media screen and (max-width: 846px) and (min-width: 777px) {
+	   .hero-text {top:4.4em;  left:10%;    transform: translate(-2%, -30%);  }
+	   .container-btn{margin-top:-4em;}
+	}
+	.planche{
+	    padding:1em !important;
+		/*
+	    background-image: linear-gradient(rgba(0, 255, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("img/s8/background8.png") ;
+	    */
+		
+	    background-image: linear-gradient(rgba(0, 0, 55, 0.5), rgba(10, 0.5, 0, 0.5)),
+               url("img/s8/background8.png") ;
+			   
+	}
+	.planche p{
+	   background-image: url("img/s8/background8.png") ;
+	   padding:1em;/* 2em 1em */
+	   margin:0; /* 0.5em 0 0 0 */
+	   font-size:1.2em;	   
+	   box-shadow:0 8px 6px -6px ;
+	}
+	/* Separateur */
+	.Ri{
+	    margin-left:40% !important;
+		padding:.5em !important;
+		width:50px;
+		font-size:1.2em;		
+	}
+	
+
+	
+	</style>
+	
+
+</head>
+<body style="background:#bbb;" >
+	<div id="entete">	   
+	    <img src="img/test2.png" class="header-image" >
+		<span class="logo" >الله ممّا نفعنا بما علّمتنا</span>	   
+	   	<div class="hero-image">
+		  <div class="hero-text">
+			<h1 class="basmala-white">بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ </h1>
+			<h3 ><br><br></h3>			
+			<div class="container-btn">
+				<a href="s8.html" > 
+					<button  class="btn">
+					   <span>Autre langue</span>
+					</button>
+				</a>
+			</div>			
+		  </div>
+		</div>
+	</div>	
+	<div id="menu">
+		<a href="index.html" class="accueil-lien">Accueil</a><span id="hambuger" onclick="openNav()">☰ </span>		
+		<div class="dropdown">
+			<button class="dropdown-btn" id="dropdown-btn1">Les sourates</button>
+			<div class="dropdown-content" >
+			    <a href="index.html">01. Al-Fatiha -  الفَاتِحَة</a><a href="s2.html">02. La Vache -  البَقَرَة</a><a href="s3.html">03. La Famille Imrane-آل عِمرَان</a><a href="s4.html" class="visiteLien">04. Les  Femmes -  النِّسَاء</a><a href="s5.html#s5a">05. La Table servie -  المَائدة </a><a href="s6.html">06. Les Bestiaux -   الاٴنعَام </a>
+				<a href="s7debut.html" class="visiteLien" >				
+07. La Genèse -  الاٴعرَاف</a>
+			    <a href="s8.html" >08. Le Butin - الاٴنفَال</a>
+				<a href="s9.html"  style="color:#4d94ff" >09. Le Désaveu<sup>1/3</sup> -  التّوبَة </a>
+			    <a href="s10.html">10. Jonas -  یُونس</a>
+				<a href="s10.html#s11page221">11. Hud - هُود  &emsp; &#9888; <i  style="color:#ccf; letter-spacing: -1px;">  Vendredi</i></a>
+				<a href="s11.html#s12page235">12. Joseph -  یُوسُف</a>
+				<a href="s13.html">13. Le Tonnerre -  الرّعد</a>
+				<a href="s13.html#s14debut">14. Abraham - إبراهیم</a>
+				<a href="s15.html">15. Al-Hijr - الحِجر</a>
+				<a href="s16.html#s16debut" class="visiteLien">16. Les Abeilles -  النّحل</a><a href="s17.html">17. Isrã - بنیٓ اسرآئیل</a>
+				<a href="s18.html#s18">18. La Caverne -  الکهف<i  style="color:#ccf; letter-spacing: -1px;"> Vendredi</i></a><a href="s19.html">19. Marie -  مَریَم</a>
+				<a href="s20.html#s20a" >20. <i>TA-HA</i> -   طٰه &emsp;  &#9888;</a>
+				<a href="s21.html" >21. Les Prophètes -  الاٴنبیَاء</a>	
+				<a href="s22.html" >22. Le Pélerinage -   الحَجّ</a>	
+                <a href="s23.html" >23. Les Croyants -   المؤمنون</a>					
+				<a href="s24.html" >24. La lumière -   النُّور</a>	
+                <a href="s25.html#s25debut" >25. Le Discernement -  الفُرقان</a>					
+				<a href="s26.html" style="color:#4d94ff">26. Les poètes<sup>2/3</sup> -  الشُّعَرَاء    &emsp;  &#9888;</a>
+                <a href="s27.html">27. Les Fourmis - النَّمل</a>                                              
+				<a href="s27.html#s28page385">28. Le Récit -  القَصَص</a><a href="s28.html#s29debut">29. L'Araignée -   العَنکبوت</a>
+				<a href="s29juz21.html#s30a">30. Les romains -   الرُّوم</a><a href="s31.html">31. Luqman - لقمَان</a><a href="s32.html">32. La Prosternation -  السَّجدَة</a><a href="s33.html" class="visiteLien">33. Les Coalisés -  الاٴحزَاب</a><a href="s34.html">34.  Sabâ'  -  سَبَإ</a><a href="s34.html#s35debut">35. LE CR&Eacute;ATEUR -  فَاطِر</a><a href="s36.html#s36debut">36. Yã'Sin -  یسٓ  &emsp; &#9888; <i  style="color:#ccf; letter-spacing: -1px;">  Matin</i></a><a href="s37.html">37. Les rangés - الصَّافات</a><a href="s38.html">38. Çâd -  صٓ</a><a href="s39.html#s39page458" style="color:#00b36b">39. Les groupes -   الزُّمَر</a>
+				<a href="s40.html">40. Le Pardonneur -  غَافر</a><a href="s41.html">41. Les versets détaillés - فُصّلَت  &#9888;</a><a href="s42.html">42. La consultation -  الشّوریٰ</a> <a href="s42.html#s42page489">43. L'ornement  -   الزّخرُف</a>  
+                <a href="s44.html" style="color:#00b36b">44. La Fumée - الدّخان<i  style="color:#ccf; letter-spacing: -1px;">&emsp; Soir</i></a>
+				<a href="s45.html">45. L'Agenouillé - الجَاثیَة</a>
+				<a href="s45.html#AHQAF">46. Les Dunes - الاٴحقاف</a>    
+                <a href="s47.html">47.  Muhammad -  محَمَّد</a><a href="s48.html">48.  La Victoire -   الفَتْح</a><a href="s49.html#s49a">49. Les Appartements -   الحُجرَات</a><a href="s50.html" style="color:#00b36b">50.  Qaf -   قٓ</a> 
+				<a href="s50.html#s51" >51. Qui éparpillent -    الذّاریَات</a><a href="s51.html#s52" >52. Le Mont Sinaï  -     الطُّور</a><a href="s53.html" >53. L'étoile - النّجْم</a><a href="s53.html#s54debut">54. La Lune -  القَمَر</a><a href="s55.html#s55debut">55. Ar'Rahmãn - الرَّحمٰن</a><a href="s56.html#s56debut">56. L`Événement - الواقِعَة<i  style="color:#ccf; letter-spacing: -1px;">  Soir</i></a><a href="s57.html#s57debut">57. Le Fer -  الحَدید</a>
+				<a href="s58.html" class="visiteLien">58. La Discussion -  المجَادلة</a><a href="s59.html#s59debut">59. L'Exode -  الحَشر</a><a href="s60.html">60. L'eprouvée -  المُمتَحنَة</a><a href="s60.html#s61debut">61. Le Rang -  الصَّف</a><a href="s62.html">62. Le Vendredi -   الجُمُعَة</a><a href="s63.html#s63debut">63. Les hypocrites -  المنَافِقون</a><a href="s64.html">64. La grande perte - التّغَابُن</a><a href="s65.html">65. Le Divorce -   الطّلاَق</a> <a href="s66.html">66. L'Interdiction -    التّحْریم</a>  				
+				<a href="s67.html"  style="color:#00b36b">67. La Royauté-  المُلک<i  style="color:#ccf; letter-spacing: -1px;">&emsp;Matin</i></a>
+				<a href="s67.html#s68debut">68. La Plume - القَلَم  &emsp;  &#9888;</a><a href="s68.html#s69debut">69.  Qui montre la vérité - الحَاقَّة</a>
+				<a href="s70.html#s70page568">70. L'Ascension -  المعَارج &emsp;  &#9888;</a><a href="s70suite.html#s71a">71. Noé -  نُوح</a><a href="s72.html">72. Les djinns -   الجنّ</a><a href="s73.html">73. L'enveloppé -    المُزمّل</a><a href="s73.html#s74debut">74.vêtu de menteau-المدَّثِّر</a><a href="s74.html#s75debut">75.La résurrection-القِیَامَة</a><a href="s75.html#s76debut">76. L'Homme -  الإنسَان</a><a href="s76.html#s77debut">77. Les envoyés -  المُرسَلات</a>
+							
+				<!--##########################################-->
+              
+                <a href="s78.html" class="visiteLien">78. La Nouvelle -  النّبَإِ</a>
+				<a href="s79.html#s79debut">79. Les Anges qui arrachent</a>
+				<a href="s79.html#s79debut" style="padding-top:0;"> &nbsp;&emsp; les âmes   -   النَّازعَات</a>			
+				<a href="s80.html">80. Il s'est renfrogné -  عَبَسَ</a>
+				<a href="s81.html">81. L'Obscurcissement -  التّکویر</a>                            
+				<a href="s82.html">82. La Rupture -  الانفِطار</a>         
+				<a href="s82.html#s83debut">83. Les fraudeurs -  المطفّفِین</a>                          
+				<a href="s84.html#s84">84. La Déchirure -   الانشقاق</a>
+				<a href="s85.html">85. Les Constellations -  البُرُوج</a> 
+				<a href="s86.html">86. L'Astre nocturne -    الطّارق</a>
+				<a href="s86.html#s87debut">87. Le Très-Haut - الاٴعلی</a>
+				<a href="s88.html#s88">88. L'Enveloppante -   الغَاشِیَة</a>
+				<a href="s89.html">89. L'Aube -  الفَجر</a>
+                <a href="s90.html#s90debut">90. La Cité -    البَلَد</a>
+				<a href="s91.html">91. Le Soleil -   الشّمس</a>
+			    <a href="s91.html#s92debut">92. La Nuit -   اللیْل</a>				                			                                              
+                <a href="s92.html#s93">93. Le Jour montant -    الِضُّحىٰ</a>
+                <a href="s92.html#s94">94. L'Ouverture -  الشَّرح</a>                 
+                <a href="s95.html">95. Le Figuier -  التِّین</a>                                          
+                <a href="s95.html#s96">96. L'Adhérence -   العَلق</a>
+                <a href="s97.html">97. La destinée -  القَدر  </a>
+                <a href="s97.html#s98debut">98. La preuve - البَیّنَة </a>
+                
+				<a href="s98.html#s99">99. La secousse -   الزّلزَلة</a>
+				<a href="s98.html#s100">100. Le coursiers -  العَادیَات</a>
+				<a href="s100.html#s101">101. Le fracas  -  القَارعَة </a>
+				<a href="s100.html#s102">102. La course aux richesses -  التّکاثُر </a>
+				<a href="s103.html">103. Le temps -  العَصر</a>
+				<a href="s103.html#s104">104. Les calomniateurs - الهُمَزة</a>
+				<a href="s103.html#s105">105. L'Éléphant - الفِیل</a>
+				<a href="s106.html">106. Les couraich -  قُرَیش</a>
+				<a href="s106.html#s107">107. L'ustensile - المَاعون</a>
+				<a href="s106.html#s108">108. L'abondance - الکَوثَر</a>
+				<a href="s109.html">109. Les infidèles - الکافِرون</a>
+				<a href="s109.html#s110">110. Le Secours -  النّصر</a>
+				<a href="s109.html#s111">111. Les fibres -  المَسَد</a>
+				<a href="s112.html">112. Le monothéisme pur - الإخلاص</a>
+				<a href="s112.html#s113">113. L'aube naissante - الفَلَق</a>
+<a href="s112.html#s114">114. Les êtres humains - النَّاس</a><a href="s112.html#s114">114. Les êtres humains - النَّاس</a><a href="douan_stop.html">&#x2764; Prière finale - دعاء ختم القرأن</a></div>					
+		</div>
+		<div class="dropdown">
+			<button class="dropdown-btn" 
+id="dropdown-btn2"  style="padding: 14px 87px;">Les juz</button>
+			<div class="dropdown-content">
+			    <a href="index.html#juz1">Juz 01 - [<i> S01 | Page001 </i>]</a><a href="s2juz2.html">Juz 02 - [<i> S02 | Page022 </i>]</a><a href="s2juz3.html">Juz 03 - [<i> S02 | Page042 </i>]</a><a href="s3juz4.html">Juz 04 - [<i> S03 | Page062 </i>]</a><a href="s4juz5.html">Juz 05 - [<i> S04 | Page082 </i>]</a><a href="s4juz6.html">Juz 06 - [<i> S04 | Page102 </i>]</a><a href="s5suite2(juz7).html#juz7">Juz 07 - [<i> S05 | Page121 </i>]</a><a href="s6juz8.html">Juz 08 - [<i> S06 | Page142 </i>]</a><a href="s7.html#juz9">Juz 09 - [<i> S07 | Page162 </i>]</a><a href="s8.html#juz10">Juz 10 - [<i> S08 | Page182 </i>]</a><a href="s9.html#juz11">Juz 11 - [<i> S09 | Page201 </i>]</a><a href="s11.html">Juz 12 - [<i> S11 | Page222 </i>]</a><a href="s12.html#juz13">Juz 13 - [<i> S12 | Page242 </i>]</a><a href="s15.html">Juz 14 - [<i> S15 | Page262 </i>]</a><a href="s17.html">Juz 15 - [<i> S17 | Page282 </i>]</a><a href="s18suite.html#juz16">Juz 16 - [<i> S18 | Page302 </i>]</a><a href="s21.html">Juz 17 - [<i> S21 | Page322 </i>]</a><a href="s23.html">Juz 18 - [<i> S23 | Page342 </i>]</a><a href="s25suite.html#juz19">Juz 19 - [<i> S25 | Page362 </i>]</a><a href="s27.html#juz20">Juz 20 - [<i> S27 | Page382 </i>]</a><a href="s29juz21.html">Juz 21 - [<i> S29 | Page402 </i>]</a><a href="s33.html#juz22">Juz 22 - [<i> S33 | Page422 </i>]</a><a href="s36.html#juz23">Juz 23 - [<i> S36 | Page442 </i>]</a><a href="s39.html#juz24">Juz 24 - [<i> S39 | Page462 </i>]</a><a href="s41.html#juz25">Juz 25 - [<i> S41 | Page482 </i>]</a><a href="s45.html#AHQAF">Juz 26 - [<i> S46 | Page502 </i>]</a><a href="s51.html#juz27">Juz 27 - [<i> S51 | Page522 </i>]</a><a href="s58.html">Juz 28 - [<i> S58 | Page542 </i>]</a><a href="s67.html">Juz 29 - [<i> S67 | Page562 </i>]</a><a href="s78.html">Juz 30 - [<i> S78 | Page582 </i>]</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropdown-btn" id="dropdown-btn3">Sadjadas</button>
+			<div class="dropdown-content " >
+				<a href="s7.html#sadjada1" >Sadjada01 - [<small><i> S07 | Page176 : Juz09 </i></small>]</a><a href="s13.html#sadjada2" >Sadjada02 - [<small><i> S13 | Page251 : Juz13 </i></small>]</a><a href="s16.html#sadjada3" >Sadjada03 - [<small><i> S16 | Page272 : Juz14 </i></small>]</a>
+				<a href="s18.html#sadjada4" >Sadjada04 - [<small><i> S17 | Page293 : Juz15 </i></small>]</a>	          
+               <a href="s19.html#sadjada5" >Sadjada05 - [<small><i> S19 | Page309 : Juz16 </i></small>]</a> 		       
+				<a href="s22.html#sadjada6" >Sadjada06 - [<small><i> S22 | Page334 : Juz17 </i></small>]</a> 
+		        <a href="s22.html#sadjada7" >Sadjada07 - [<small><i> S22 | Page341 : Juz17 </i></small>]</a><a href="s25suite.html#sadjada8" >Sadjada08 - [<small><i> S25 | Page365 : Juz19 </i></small>]</a><a href="s27.html#sadjada9" >Sadjada09 - [<small><i> S27 | Page379 : Juz19 </i></small>]</a><a href="s32.html#sadjada10" >Sadjada10 - [<small><i> S32 | Page416 : Juz21 </i></small>]</a><a href="s38.html#sadjada11" >Sadjada11 - [<small><i> S38 | Page454 : Juz23 </i></small>]</a>                  
+		        <a href="s41.html#sadjada12" >Sadjada12 - [<small><i> S41 | Page480 : Juz24 </i></small>]</a>                   
+                <a href="s53.html#sadjada13">Sadjada13 - [<small><i> S53 | Page528 : Juz27 </i></small>]</a>
+				<a href="s84.html#sadjada14">Sadjada14 - [<small><i> S84 | Page589 : Juz30 </i></small>]</a><a href="s95.html#sadjada15">Sadjada15 - [<small><i> S96 | Page597 : Juz30 </i></small>]</a>
+			</div>
+		</div>
+	</div>
+	<div id="contenu">
+		<div class="colone-laterale" id="sidbarG" style="padding-top:0; padding-bottom:0;">
+		    <h2 class="grosTitre" style="margin-top:0 !important;"><span class="box-shadow-titre" > Le butin </span></h2>
+			<div class="planche" style="padding-top:0;" >
+				<p style="margin-top:0; ">
+				  <span class="basmala" style="font-size:0.7em;">Heledzina la he MWGNI YEZI, M'Nemesha Douniani, na Ahira&#9312;</span>
+				</p>	
+			    <p style="margin:2em 0 .5em 0; padding:4em .6em 2.8em .6em">
+				   Wa huziso  
+				   mwagniso<sup class="popup" onclick="commentaire1()">
+				            1<span class="popuptext" id="myPopup1">
+							   Discorde entre les juniors(front de combat) et les seniors(arrière-garde) sur le partage du butin de la guerre de Badre. 
+							</span>    
+					    </sup>.
+				   Wambye:« Ze ghanima yizo za MGU na Mtrume». Na mre MGU mwelewane, mtweyi MGU na Mtrume, yeka m'amini &#9313; 
+				</p>
+				<p style="margin:0; padding:4em 1em 3em 1em">
+				  Wowaro MGU wo sisimha ze roho yevumbulwa. Weyshe qur'ani wo zidi ymani. Wanu wohu tawakali MGU &#9314;
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em 3em 1em;">
+				  Wanu nde ma soilihina ma towa zaka&#9315;
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+				  Wanu  wa' amini hakweli:<b> Ho wusonimoi MGU</b><i>[Mbepvoni]</i>,<b> ngoiwo harimoi mnabeya lewa tse</b><i>[hadjuwu]</i>,<b> wa samihiloi na windji wa traka</b>&#9316;
+				</p>
+				<p style="margin-top:.5em; padding-bottom:1.5em;">
+				   YE MFOMIYO kadja hutowa
+				   buré<sup class="popup" onclick="commentaire2()">
+				        2<span class="popuptext" id="myPopup2">
+						 Dépuis Médine, 330 soldats du prophète partent à l'attaque d'abu sufiane qui venait de Syrie avec une caravane de 40 personnes et une centaine de dromadaires à destination de la Mecque.
+						</span>    
+				   </sup>
+				   , beshoi ngapvo ma silamu waka trengwe mbidi<i><small>[waka hutukiwa hwenda nkodoni]</i></small>&#9317;			   
+				</p>
+				<p style="margin-top:.5em; padding:1.5em 1em;">
+				  Wahutra harimoi maneno ya mashindano, ne zakweli zipvenuha. Hama waka hu trusiwa wende wa hafe&#9318;
+				</p>
+				<p style="margin-top:0.5em; padding:3.5em 1em;">
+				  MGU ha mnikani miandi yo hundra dzima harmwe ma sindzo 
+				  mayli<sup class="popup" onclick="commentaire3()">
+				        3<span class="popuptext" id="myPopup3" style="text-align:left">
+						- Soit la caravane, <br>		  
+						- Soit l'armée de 1000 soldats partis de la Mecque au sécours de la caravane. 
+						</span>    
+				   </sup>.
+				  Sha mka hwandzo watsona 				  
+				  swilaha<sup class="popup" onclick="commentaire4()">
+				        4<span class="popuptext" id="myPopup4">Ils préfèraient la caravane venant de Syrie</span>    
+				   </sup>,
+				  na pvala,  MGU haka hu pve'ndza, yi'li, ya pvenuwo wusilamu, ya hunuwe ma djuswiyi  &#9319;
+				</p>
+				<p style="margin-top:0.5em; padding:2em 1em;">
+				  Yili ya thibitisho 
+				  wusilamu<sup class="popup" onclick="commentaire5()">
+				        5<span class="popuptext" id="myPopup5">Victoire des 330 musulmans contre les 1000 mécquois à <b>Badre</b></span>    
+				   </sup>
+				  ya ngamizo wukafiri, beshoi watukiwa ye ma djuswiyi&#9320;
+                </p>
+				<p style="margin-top:0.5em; padding:3em 1em;">
+				  M'tsaha msado ha MGU hadjibu:" Nga mdjo msaïdiani mrondo wa malaïka shihwi".&#9321;
+                </p>
+				<p style="margin-top:0.5em; padding:2.7em 1em;">
+					MGU hazi fagna ha wuzade wo m'trulizani roho. Ko m'sada ka tsi ndo wa MGU. Ye mwendza vuwu<i>[MSHINDZI]</i> na ankili&#9322;
+                </p>
+				
+				<p style="margin-top:1em;" class="Ri">
+				    R.2
+				</p>
+				
+				<p style="margin-top:1em; padding:5.5em 1em">
+					Hampvihizani ruku za wutrulivu. Ha sisi vuwa ya wutoihirifu na hu pvanguwa wo wulaynifu wa shetoini, yili ya rengeze ze roho ya mtreni vuwu&#9323;
+                </p>
+				<p style="margin-top:0.5em; padding:4em 1em">
+				   YE MWIGNI YEZI MGU ha wambiya ye malaïka:"Namu mbise masilamu. Ngamdjo tre makafiri wuhara. Namwareme zitsoi ne ze ntsa za maya."&#9324;
+				</p>
+				<p style="margin-top:0.5em; padding:3em 1em">
+				  Yizo, hapvo wa haraya MGU na Mtrume. Yni ya tsu tweyi MGU ne mtrume wa hahe, yehu m'lipwa ha wudziro&#9325;
+				</p>
+				<p style="margin-top:0.5em; padding:3em 1em;">
+				  Yawo nde mapiho ya hagnu.Na mlé. Kafiri ka tsina ntsheya ka tsindé mayi ya mroni&#9326;
+				</p>
+				<p style="margin-top:0.5em; padding:2em 1em;">
+				 Hé masilamwé! mwe kabili ye djeshi ya ki kafiri mtsi ziro dingoni !&#9327;
+				</p>
+				<p style="margin-top:0.5em; padding:4em 1em;">
+				 Yini ya wa pva dingo ya trawa ngu hundro wusiwu wa MGU. Yemakazi mdroni. Na yilo daho bi!<br>
+				 Badeka m'trawo ha  tartib yahé  nkodo, <br>
+				 Hawu mdru gu rambiyo yengari wupandé mdroidji ya wané.&#9328;
+				 
+				</p>
+				<p style="margin-top:0.5em; padding:2em 1em;">
+				 Ngni tsinde mwa wawuwa, sha MGU nde ya wawuwa. We tsinde wa vurizo mtsanga, sha MGU nde ya 
+				 vuriza<sup class="popup" onclick="commentaire6()">
+				        6<span class="popuptext" id="myPopup6">Mtrume havurize makafiri nkode yamtsanga rahe nkodo yedja ndisa</span>    
+				 </sup>.
+          		 Yili ya pve masilamu mtihani mwema.
+				 MWIGNI YEZI MGU katsina yatso hu yishiya, katsina yatso hu wona&#9329;
+				</p>
+				<p style="margin-top:0.5em; padding:2em 1em;">
+				 Yizo nde za djiri. MGU ngu dju vundza ye mipango yahe makafiri&#9330;
+				</p>
+				
+				<p style="margin-top:0.5em; padding:5em 1em;">
+				  M'wobo wu shindzi wahaki 
+				  wudja<sup class="popup" onclick="commentaire7()">
+				        7<span class="popuptext" id="myPopup7">abu djahali hende pvo Al-Kanba hawombo MGU yangamize ye wutsina haki</span>    
+				   </sup>.
+				  Keri m'rentsi. Mwe rema retso rema. Na mke wendji hata mundre nkdro, MGU ngene ma silamu&#9331;
+                </p>
+				<p style="margin-top:1em;" class="Ri">
+				    R.3
+				</p>
+				<p style="margin-top:1em; padding:2em 1em;">
+				 Hé masilamwé! Na mtweyi MGU ne Mtrume wahahe. Mtsi mbe dingo nagni nga mwishiyawo(21)			
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em;">
+				 Mtsike djo wambo: "Ngari shiyawo", no kwatsu yishiya(22)			
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em;">
+				 Howusoni moi MGU ko wayi djo wendza moyo watso hwishiya, watso hurongowa, watso hwelewa(23)			
+				</p>
+				<p style="margin-top:.5em; padding:1.5em 1em;">
+				 Enge MGU hawawono na ba heri, hadjo wanka mwishyo. Wanu beshoi hawanika mashishyo, watso djo mba dingo(24)			
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+			     He masilamwé! Na mdjibu MGU na Mtrume we mparani harmwe zidjo hu 
+				 mhyshani<sup class="popup" onclick="commentaire8()">
+				        8<span class="popuptext" id="myPopup8">حياة طيّبة<br> Mayesha mema hunu duniani na ahira</span>    
+				   </sup>.<br>
+                 Mdjuwe ka MWIGINI YEZI MGU yehuziya bayna ya mdru nizo muwo wandzawo<i><small>[yzo moinadamu yandzawo tsindizo MGU yandzawo]</small></i>.<br> No wusoni moi MGU ndo mdjo hu redjeyi(25)			
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em;">
+				 Namriye ze mbuda zitso hutsunguwe 
+				 madhoilimu<sup class="popup" onclick="commentaire9()">
+				        9<span class="popuptext" id="myPopup9">baya liko hu rema wowandru piya</span>    
+				   </sup>.
+				 Mdjuwe ka MGU yehu adabisha hawudziro(26)			
+				</p>
+				<p style="margin-top:.5em; padding:5.5em 1em;">
+				 Na mweshelo wakati moitsuka hindru pvo ntsi. Na hofu ya matreka. Ha mhafadwini, ha mtrani vuwu ho msaanda wahahe. Ha mnikani na masterehi mdjoi hu shukuriya(27)			
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+				    He gnimoi amini ! mtsi hini MGU na Mtrume. 				
+				    Ngamhiniwu ha kusudi<sup class="popup" onclick="commentaire10()">
+				        10<span class="popuptext" id="myPopup10">Abu duba'ba a trahi le prophète pendant le siège(<i><small>25jours</small></i>) contre le tribut juif des bani kuraïdhoi</span>    
+				    </sup>,
+				    wowu aminifu moinikiwa(28)			
+				</p>
+				<p style="margin-top:.5em; padding:1.2em 1em;">
+				 Mdjuwe ke mali no wana, wuwo mtihani. She kweli ya mavuna, ndo sonimoi MGU(29)			
+				</p>
+				<p class="Ri" style="margin-top:.5em ;">
+				    R.4
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em;">
+				 Hégni mwa amini! mwera MGU, ngudjo mvukishani[<i><small>ngudo mdjuzani zembi neze ndjema</small></i>] .Ngudjo mzimiyane madhambi ya msamihini. MWI YEZI MGU nde mlipva ndro(30)			
+				</p>
+				<p style="margin-top:.5em; padding:3.3em 1em;">
+				 Yema kafiri wapanga wahufunge, hawu wahuwe,  hawu wahutowe sistani. Wa hudumu, sha MGU pvahe ha hudumu. Ne MWIGNI YEZI MGU nde mdjizi wa mpango(31)			
+				</p>
+				<p style="margin-top:.5em; padding:3.3em 1em;">
+				 Wesomewe kur'ani ngoimbo:" Risa ri yishia. Ridjodjwa hutowa 
+				 djizo<sup class="popup" onclick="commentaire11()">
+				        11<span class="popuptext" id="myPopup11">??? importait des revues de ???. Sur ce, il pretendait pouvoir produire un texte semblable au Coran </span>    
+				    </sup>.
+				 Yizo hala halele"(32)			
+				</p>
+				<p style="margin-top:.5em; padding:3.3em 1em;">
+				 Watoreya:" He MWIGI YEZI MGU ! Rereye mvuwa ya magaya, hawu baya languina, riwone ka Mhamadi ngoibo kweli"(33)			
+				</p>
+				<p style="margin-top:.5em; padding:2.4em 1em;">
+				 Sha MGU kadjadjo warema baya, nawe ngawe yapvo. Kadjadjo rema, nawo ngoi tsaho msamaha(34)			
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+				 Ye lewo mana MGU yatsodjo warema mbuda hindri? wabaye Al-kaanba nawo tsidne magardiye. Yema dhoimana waho msihiri, nde mara MGU, sho wendji koitsu djuwa(35)			
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+				 Ho msirini, ngoi tsingo hu fuzia no rema ma sambi. Hari yiyo swala! "Namrengue lebaya ho wukafiri wa hagnu"(36)			
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+				 Yema kafiri ngoi rumo mali no wamigne dini ya MGU. Ngoidjo hurumiya zemali, sho mwiso hasara na madjitso. Yemakafiri ngoidjo hu tsangagniwa mroni.(37)			
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+				 Yili MGU yadjoi hu tenguwo wayi no wema. Ngudjo wundagno wayi ya wavurize mdroni. Wanu ndo wale hasara(38)			
+				</p>
+				<p class="Ri" style="margin-top:.5em;">
+				    R.5
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+				  Wambiye makafiri yawo. Werantsi ngaridjo samihe zapvira. Wezidi ngaridjo warema djema djadi yapvira(39)			
+				</p>
+				<p style="margin-top:.5em; padding:2.8em 1em;">
+				  Nam'wane nawo hata warentsi hoshiriki. Mpaka yedini ndohu salimu MGU basi.
+				  Werantsi MWIGNI YEZI MGU ngu wono yizo wa rendawo(40)			
+				</p>
+				<p style="margin-top:.5em; padding:2.8em 1em;">
+                     Weharaye amani. kotabu. MGU nge yena gni. Yeka ngome ndaye! Yeka msaanda ndaye!(41)			
+				</p>
+				<p class="Ri" style="margin:.5em 6em !important; width:48% !important;">
+				    Dixième Partie(Juz10)
+				</p>
+				<p style="margin-top:.5em; padding:6.2em 1em;">
+                     Lefunvu latsanu lahe ghanima; yilo la MGU na Mtrume, no wanduzagnu, ne mayatima, ne mafukara, no wadjeni.
+					 Namoignise haliyo, eka m'amini yzo rapvesha Mtrume[<i><small>djeshi la malaïka</small></i>] yentsu moika hurambulana, yentsu moi hondrana ne makafiri.
+					 MWIGNI YEZI MGU yehufagna yni ya ndzao!(42)			
+				</p>
+				<p style="margin-top:.5em; padding:6.2em 1em;">
+                    Yesa moiko mlimani. 
+					Gni mko wupande wasa n'lo bandza[<i><small>shiwandza shahe kondo</small></i>], wo wako dingoni.
+					Ye "caravane" iko ntsini<sup class="popup" onclick="commentaire12()">
+				        12<span class="popuptext" id="myPopup12">Les muslmans sont sur un versant de la montagne de Badr. Les kuraïsh sur  le versant opposé, et la caravane à 25km  plus bas(sur le littoral de la mer rouge) </span>    
+				    </sup>. 
+					Kamdjadjo paro ishilyane lera yahe kondo.
+					Sha MGU haykaza waye,yli yeza wumboi zirendehe.
+					Eyangamiya yangamiye hamana, eyavuka yavuke hamana.
+					MWIGNI YEZI MGU yehu ishya piya, yehu djuwa piya(43)			
+				</p>
+				
+	
+				<p style="margin-top:.5em; padding:5.2em 1em;">
+				   Hotabirini MGU hahonesa washashi. Yengue hahonesa ka ngoiwo wendji mdjo puha ze vuwu. Mdjo vurana. Ndemana MGU ya zangusa. Hoka ngu djuwo ye zilo morohoni (44)			
+				</p>
+				<p style="margin-top:.5em; padding:4.4em 1em;">
+				  Ho nkodoni mka hu wawona washashi.Waka hu monani washashi.Yili yeza wumboi zi rendehe. Mana yende wu katro shawiri(45)			
+				</p>
+				<p class="Ri" style="margin-top:1em ;">
+				    R.6
+				</p>
+				<p style="margin-top:.5em; padding:2.2em 1em;">
+				  Hegni moi'amin! mwekabili nkodo, namke wasindivu, mweshele MGU hawindji, ngamdjo hufuzu(46)			
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+				  Namtweyi MGU ne Ndrume yahahe. Mrentsi lebangano ba lohulemeza, lohutowa nvuwu.
+				  Namkena subira ba MWIGINI YEZI MGU, nge yeno wasubira(47)			
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+                  Mtsike djowaroha no wuvantara.Hwandza 
+				  wadjonese<sup class="popup" onclick="commentaire13()">
+				        13<span class="popuptext" id="myPopup13">Il  s'agit des Mecquois qui se précipitèrent au secours de leurs caravane menacée à Badr.Quoique rassurés par la suite sur sa sécurité.Ils marchèrent jusqu'à  Badr avec toute la fanfare dont parle le verset </span>    
+				  </sup>.
+				  Nahumegne dini. Sha MGU ngu wawono(48)			
+				</p>
+				<p style="margin-top:.5em; padding:5.5em 1em;">
+				 Shetoina wahadaya:"Lewo kowudjo mshindani. Tsi mwimiliyani. Sha yedjeyshi pvo yakabiliana
+				 Haruda dingoni:" Namu n'lawe. Kamtsu wona izo n'wonawo! Mi ngamro MGU ba yekahurema yeka fagna m'zaha"(49)			
+				</p>
+				<p class="Ri" style="margin-top:.5em ;">
+				    R.7
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+                 O wanafiki ne wababayfu ngoibo:"Wahadaloi ne dini yahawo!". Sha yini yatawakali MGU, nadjuwe hoka YEMWIGNI YEZI MGU yende mwendza vuwu na hikma(50)			
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+                 Maskine yenge huwon'ye makafiri wawo, yes'ye malaïka wako warenga zeroho!
+				 Nahuwa fufuwa ze suraya ne malingo:"Namrohore no mwandaya'ho mdro(51)			
+				</p>
+				<p style="margin-top:.5em; padding:1.2em 1em;">
+                  Hizo yemihono yahagnu ya tuma. Hok'e MWIGNI YEZI MGU yeka dhulum'o warumoi'hahe."(52)			
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+                  Yizo ndeza hundr'o wandr'wa firawuna no wa watrendeya.
+              	  Waharaya yeza MGU pvahe hawareme. Hoka yende mwendza vuwu. Tsena yahulipva hamsinadi(53)			
+				</p>
+				<p style="margin-top:.5em; padding:3.3em 1em;">
+                  MWIGNI YEZI MGU yeka pvoho wandru.Mpaka hawono wakawuha zenia.MGU  katsina'tso huyishia, katsina 'tso hudjuwa(54)		
+				</p>
+				<p style="margin-top:.5em; padding:3.5em 1em;">
+                  Hama ndo wandr'wa firawuna no wa watrendeya.
+              	  Waharaya yeza MGU pvahe hawangamiza hizo kufuru zahawo. 
+				  Hawazamisa namdji. Watsoka ma anduyi piya(55)			
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+                    Howusonimoi  MGU ko wendza shonga dje makafiri watso amini hata 
+					lewo<sup class="popup" onclick="commentaire14()">
+				        14<span class="popuptext" id="myPopup14">Hatalewo wayeroi Mtrume wa m'wonawo </span>    
+				  </sup>(56)			
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+                 Wowa mavuhawufu ko ina wakati mwafagna mi'andi wotso yikosa(57)			
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em;">
+                 Weshinda hu warambaza ho nkodoni, wareme namna ko wowabaki, ngoidjo hundja wuhara(58)			
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+                 Yeka ngoro wumavu miandi.Tsindzo mkataba ha wastoi. Ba YE MWIGNI YEZI MGU yeka ndza yema hanithi[<i>traitre</i>](59)			
+				</p>
+				<p class="Ri" style="margin-top:.5em ;">
+				    R.8
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em;">
+                 Nema kafiri watsi fagne ka waripviri. Kwatsina pvo pvira hata(60)			
+				</p>
+				<p style="margin-top:.5em; padding:6em 1em;">
+                 Namwa kaliliye ha nvuwu na farasi. Mshangaze maduyi ya MGU, maduyi ya hagnu, 
+				 na maduyi yasaya mtso huyadjuwa. Sha MWIGNI YEZI MGU ngu yadjuwo!
+				 Yini Mdjo hurumia harumwe dini ya MGU, ngamdjo hulipwa. Tsena kamna hula hasara(61)			
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+                 Wedja ha amani, namtawakali MGU, m'warengue ha amini, ba yeende wu yishiyo, wu djuwo(62)			
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+                 Sha Wedja ha wu tshoiyi, MGU ngudjo hutosha. Yende yahumbisa ho msa'anda wahahe no wa amini(63)			
+				</p>
+				<p style="margin-top:.5em; padding:2.7em 1em;">
+                 Hawa ndzanisa pvadzima. Nawe beshoi hurumiya zemali za duniani piya, kudjadjo shindo wa suluhisha. MWIGNI YEZI MGU hazifagna. Hawuka ye nde mshindzi, ye nde wa haki(64)			
+				</p>
+				<p style="margin-top:.5em; padding:1.7em 1em;">
+                 E we bo Mtrume! MWIGI YEZI MGU hahu tosha. Ha tosha no wa amini wahu dunga(65)			
+				</p>
+				<p class="Ri" style="margin-top:.5em ;">
+				    R.9
+				</p>
+				<p style="margin-top:.5em; padding:3.6em 1em;">
+                 E we bo Mtrume! Trashime wowa amini wende ho nkodoni. Weka madjsur ishirni, ngoidjo hushida makafiri madjana mayli. Weka djana ngoidjo hushnda shihwi.Hoka wala wadjinga(66)			
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+				    Lewo MWIGNI YEZI MGU hapvunguza. Mana ngudjuwo ka mlemewa. Mweka djana ngamdjo pvera madjana mayili. Mweka shihwi, zihwi zili.
+					Ho hwandza ha MGU. Na MWIGNI YEZI MGU nge yeno wa subirifu(67)			
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+                    Mtrume kadji hurenga matreka pvatsina nkodo. Ngamoindzo letruru ladunia. Sha Mgu ngoidzo yela ahira.
+					Ne MWIGNI YEZI MGU nde mshindzi, yende wa haki.(68)			
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+                   Yenge tsindizo MGU yatrende yandziha, mdjo remoi mbuda hizo moirenga.(69)			
+				</p>
+				<p style="margin-top:.5em; padding:2em 1em;">
+                   Namle ze ghanima mre MGU. MWIGNI YEZI MGU nde mwedza samaha na yirumbi(70)			
+				</p>
+				<p class="Ri" style="margin-top:.5em ;">
+				    R.10
+				</p>
+				<p style="margin-top:.5em; padding:3em 1em;">
+                   Wambiye bo Mtrume yemakafiri mwa warenga matreka: "Yeka MGU hawono mrengueza ze nia,
+				   ngudjo mnikani za kayri hanizo mwa pvohwa.Yarudi ya msamihini. Mana ye MWIGNI YEZI MGU, nde mwedza samaha na yirumbi(71)			
+				</p>
+				<p style="margin-top:.5em; padding:2.5em 1em;">
+                   Yeka ngoindzo wahuhadaye, tsitre shuhuli, ba hata MGU wamhadaya. Shapvahe hawa pvoho ze nvuwu[<i><small> washindoi Badr</small></i>].
+				   Hawka MGU, yende MDJIZI, yende WAHAKI(72)			
+				</p>
+				<p style="margin-top:.5em; padding:8.2em 1em;">
+                   Hakika wowa amini wa hadjiri wa djahidi heze mali neze roho,
+				   no wa "waberje" wa wasaïdia, wo sha'na mbere.<br>
+				   Sha wowa amini watsu hadjiri[<i><small> wabaki maka</small></i>], asha! kamtsi ma dhoimana ya hawo.<br>
+				   Wemtsahani msa'anda wa dini ladhima m'saïdiye. Badeka zidja zahuwana  na wandru mlona mkataba.<br>
+				   Ne MWIGNI YEZI MGU,  nguwono haïna mfagnao(73)			
+				</p>
+				<p style="margin-top:.5em; padding:3.5em 1em;">
+                   Yemakafiri wo kognondzima. Yeka kamdjawalawa, namlinde mharbati na msadjadja(74)			
+				</p>
+				<p style="margin-top:.5em; padding:4em 1em;">
+                    Wowa amini wa hadjiri wa waniye dini ya MGU, no wa "waberje" wa wasaïdia, wo ndema silamu yakweli. Ngoidjo husamihiloi, na windji wa traka(75)			
+				</p>
+				<p style="margin-top:.5em; padding:4.7em 1em;">
+                 Wowa amini ba'anda ye hidjr, wa mwengariani madina, mwa djihadi pvadzima; wondo wana gnagni. Sha wowadamu ndzima, MGU hamba wowanagna raha nowasaya. 
+				 Ne MWIGNI YEZI MGU, nde mdjizi wa heni ndrogowo(76)			
+				</p>
+
+
+
+				
+			</div>
+		</div><!-- #colone-laterale -->
+		
+		<div class="colone-contenu" id="contenu_" style="padding-top:0; padding-bottom:0;">
+		    <h2 class="grosTitre" style="margin-top:0;"><span class="box-shadow-titre" > سسُوۡرَةُ الاٴنفَال</span></h2>
+			<div class="planche" >
+
+                 <img src="img/s8/a1.png" class="onglet1-sujet" style="border-bottom:none;"  />
+                 <img src="img/s8/a3.png" class="onglet1-sujet no-border" style="min-height:auto;" />
+                 <img src="img/s8/a4.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a7.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a10.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a12.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a13.png" class="onglet1-sujet no-border"  />
+                 <img src="img/s8/a15.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a17.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a19.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a21.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a24.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a26.png" class="onglet1-sujet no-border" />
+                 <img src="img/s8/a28.png" class="onglet1-sujet no-border" style="min-height:auto;" />				 
+			     <img src="img/s8/a29.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a32.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a34.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a36.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a38.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a39.png" class="onglet1-sujet no-border" style="min-height:auto;"/>
+				 <img src="img/s8/a41.png" class="onglet1-sujet no-border" />
+
+				 <img src="img/s8/a42.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a43.1.png" class="onglet1-sujet no-border"/>
+				 <img src="img/s8/a43.2.png" class="onglet1-sujet no-border" style="min-height:auto;"/>
+				 <img src="img/s8/a44.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a45.png" class="onglet1-sujet no-border" />				 
+				 <img src="img/s8/a46.png" class="onglet1-sujet no-border" style="min-height:auto;" />
+				 <img src="img/s8/a48.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a49.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a51.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a54.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a57.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a59.png" class="onglet1-sujet no-border" />				 <img src="img/s8/a61.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a63.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a65.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a66.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a69.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a71.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a73.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a73.2.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a75.png" class="onglet1-sujet no-border" />
+				 <img src="img/s8/a76.png" class="onglet1-sujet no-border" />
+			</div>
+								
+		</div><!-- #colone-contenu -->
+		
+	</div>
+	
+	<div style="clear:both"></div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"  >
+		<img  src="img/top.JPG" id="imageToTop" style="padding:0; margin:0; ">
+	</button>
+	
+	<div id="footer" >
+		<table class="footer-table" >
+		  <tr>
+			 <td class="footer-td" style="width:20%;">
+			    <b class="titre-video" >C. Yasser Al Dossari</b>
+                <video  class="img footer-image"    controls="controls" >
+				    <source src="videos/s8.mp4" type="video/mp4" />			       
+				</video>		 
+			 </td>
+			     
+			 <td class="footer-td" style="width:20%; "  >
+                 <b class="titre-video" ></b>		     
+	             <img src="img/kaaba1.png" class="footer-image"   >
+			 </td>
+
+			 <td class="footer-td" style="width:20%;" >
+                <b class="titre-video" >Moufti Saabik</b>			
+					<video class="img footer-image"     controls="controls" >
+						<source  src="videos/s8c.mp4"  type="video/mp4" />                     		       					 					
+					</video>                 				
+			 </td>
+		
+		  </tr>
+		</table>
+	</div><!-- #footer -->
+
+    <script type="text/javascript" src="js/sticky.js"></script>	
+   	
+</body>
+</html>

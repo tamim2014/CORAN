@@ -1,0 +1,301 @@
+		.dropdown {
+			overflow: hidden;
+			float:left;
+		}
+        .accueil-lien{
+			background:#4CAF50; /* background:#3d3d5c; */
+			color:#ccc;  /* color:#ECECEA; */
+			box-shadow:
+			0px 46px 2px 0px rgba(0, 0, 0, 0.5) inset,
+			0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+	
+		}
+		.dropdown-btn{
+			/*  padding: 14px 65px;  IMPORTANT: IMPACT POUR LA STRUCTURE GENERALE*/
+			padding: 14px 95.75px; /* IMPORTANT: IMPACT POUR LA STRUCTURE GENERALE*/
+			border:none;
+			outline:none;
+			margin:0;
+			background: inherit;
+			color:#666699; /*666699 ou 660066*/
+			font-size: 17px; 
+			
+		}
+
+		.dropdown-content {
+			position: absolute;
+			min-width:226px;
+			height:auto;  
+			max-height:26.5em;  
+			line-height:0.5;
+
+			background:#ccf;
+			box-shadow: 0px 1px 2px 0px #ccf;
+			
+			 
+			border-top:2px solid #bbb;
+			overflow-y: scroll !important;
+			overflow-x: hidden;
+			
+		}
+
+        /****
+         * Alignement verical du sous-menu: 
+         * Commencer la selection depuis #menu.: SINON K.O !
+         */
+		#menu .dropdown-content a{
+			display: block;
+			float:none;          			
+		}
+		#menu .dropdown-content a:hover{
+	       background:whitesmoke;
+		}
+
+		 /****
+         * Ouverture/Fermeture du sous-menu: 
+         * Pas besoin de javascript avec cet astuce
+         */
+         .dropdown-content{ display:none; }
+         .dropdown:hover .dropdown-content{ display:block; }
+		 
+		/************ Reduire la police des items top menu*****************/
+        /* Item Sourate( 2ème item) */
+		#menu  div.dropdown:nth-child(2) .dropdown-content a { font-size:.95em;  }
+		#menu  div.dropdown:nth-child(2) .dropdown-btn { padding: 14px 85.4px;   }
+		/* Item Les sourate */
+		#menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 85.97px !important;   }
+		#menu  div.dropdown:nth-child(3) .dropdown-content a { font-size:.95em;  }
+		/* Item Les Juz */
+		#menu  div.dropdown:nth-child(4) .dropdown-content a { font-size:.95em;}
+		#menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 86px !important;   }
+		/* Item Sadjada */
+		#menu  div.dropdown:nth-child(5) .dropdown-content  { overflow-y: hidden; min-width:100px ;  }
+		#menu  div.dropdown:nth-child(5) .dropdown-content a { font-size:.95em; min-width:60px !important; }
+		#menu  div.dropdown:nth-child(5) .dropdown-btn { padding: 14px 92px !important;  } 
+		/* Item comment */
+		#menu  div.dropdown:nth-child(6) .dropdown-content  { overflow-y: hidden !important; min-width:153px ;   }
+		#menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 40px !important;   } 
+		
+		/* MEGA MENU ( juste pour la page index ) */
+		
+		.dropdown-content-big {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  width: 100%;
+		  left: 0;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		
+		/* Titre du mega menu */
+		.dropdown-content .header {
+		  background: #ccf;
+		  padding: 16px;
+		  color: #ECECEA; 
+		}
+		/* Three equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 33.33%;
+		  padding: 10px;
+		  background-color: #ECECEA;/* #bba; #bbc; #bbb; #ccc;  #e5eecc; #8c8b81;*/
+		  height: auto;
+		}
+		
+		.row{
+		   background-color: #ECECEA; /* #bba; #bbc; #bbb; #ccc  #e5eecc; #8c8b81; */
+		}
+		
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+			
+  /* ############################################################################ */
+ /* ######## Application RESPONSIVE au top menu(le garder ici; sinon K.O) ######*/
+/* ############################################################################ */
+
+		
+		#hambuger{
+		    display: none !important; 		 
+			font-size: 17px; color:#ccc;
+		}
+		@media screen and (max-width: 846px) {
+			.header{display:none;}
+			/* Centrer le bouton horizontalement  */
+		    #menu { position:relative;}
+			#hambuger{position:absolute; right:4%; top:25%;}
+			/* Aligner le bouton à droite */	
+			#hambuger{display: block !important; float:right; }
+			/* remonter le commentaire de la sourate au dessus du top menu */
+			.popuptext { z-index:1 !important;}
+			#menu { z-index:0 !important;}
+			/* Megamenu de la page index */
+			.column{ padding: 2px; line-height:1.5; font-size:.7em;}
+			/* ### */
+			 #dropdown-btn1, #dropdown-btn2, #dropdown-btn3, #dropdown-btn4 { display:none;}
+			 
+			/* dropdown-btn */
+
+			#menu a.accueil-lien, #menu div.dropdown button.dropdown-btn{ width:60em !important; text-align:left !important; }
+			
+            #menu div.dropdown button.dropdown-btn { background:#3d3d5c !important; border-bottom:1px solid #555;   }	
+			  /* #menu  div.dropdown:nth-child(3) .dropdown-btn { padding: 14px 18px !important;  } */
+			  /* #menu  div.dropdown:nth-child(4) .dropdown-btn { padding: 14px 18px !important;  } */
+			  /* #menu  div.dropdown:nth-child(5) .dropdown-btn { padding: 14px 18px !important;  }  */
+              /* #menu  div.dropdown:nth-child(6) .dropdown-btn { padding: 14px 18px !important;  } */
+            #menu  div.dropdown:nth-child(n) .dropdown-btn { padding: 14px 18px !important;  } 	 			  
+            /* dropdown-content */	
+            .dropdown-content{z-index:99;}
+			  
+			/* decaler à droite le menu de l'item : Les sourate */
+			#menu  div.dropdown:nth-child(3) .dropdown-content{ left:17% !important; top:19.5% !important; right:.5% !important; width:auto !important; }
+
+			/* Centrer les sous-titre dans le sommaire */
+			 .titreTiersDeSommaire{ padding-left:.9em !important; margin-bottom:0 !important;}
+			  
+            /* Ajuster la largeur de la page:  */
+             #menu { overflow-x:hidden !important; height:auto !important; }			
+		}
+				
+		/* Pour les petit écran */
+	
+		@media screen and (max-width: 846px) and (min-width: 618px) {
+			/* decaler à droite le menu de l'item : Les juz */
+			#menu  div.dropdown:nth-child(4) .dropdown-content{ left:18% !important; top:39.5% !important; }
+			/* decaler à droite le menu de l'item : Sadjada */
+			#menu  div.dropdown:nth-child(5) .dropdown-content{ left:18% !important; top:59.5% !important;}
+			/* decaler à droite le menu de dernier item : Comment */
+			#menu  div.dropdown:nth-child(6) .dropdown-content{ left:18% !important; top:79.5% !important; }
+			
+			/* Ajouter un pointeur(jeton pointeur) entre l'item verical et son dropdown-content */
+			
+			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:22% !important; margin-left:9% !important; }
+			
+			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:24% !important; margin-left:9% !important;}
+			
+			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:15% !important; margin-left:9% !important; }
+			
+		} 
+		@media screen and (max-width: 617px) and (min-width: 501px) { 
+			/* decaler à droite le menu de l'item : Les juz */
+			#menu  div.dropdown:nth-child(4) .dropdown-content{ left:23% !important; top:39.5% !important; }
+			/* decaler à droite le menu de l'item : Sadjada */
+			#menu  div.dropdown:nth-child(5) .dropdown-content{ left:23% !important; top:59.5% !important;}
+			/* decaler à droite le menu de dernier item : Comment */
+			#menu  div.dropdown:nth-child(6) .dropdown-content{ left:23% !important; top:79.5% !important; }
+			
+			/* Ajouter un pointeur(jeton pointeur) entre l'item verical et son dropdown-content */
+			
+			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:24% !important; margin-left:10% !important; }
+			
+			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:24% !important; margin-left:10% !important;}
+			
+			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:16% !important; margin-left:10% !important; }
+		 }
+		/* ###### ATTENTION: Désintingration du topMenu dans la plage[498px-560px]  ########
+         *   entre 498px et 560px le bouton ☰ décroche du topMenu 
+         *   Dans le code i fo ajouter	l'ecart(17px) sur chaque borne
+		 *   PROBLEME NON ENCORE RESOLU
+		 */
+		@media screen and (max-width: 560px) and (min-width: 515px) {
+			#menu a.accueil-lien{ background:red !important;  }
+			#menu { width:auto !important; padding-left:0 !important;}			
+			#hambuger{position:absolute; right:4%; top:25%;  }
+			
+			/* Ajouter un pointeur( sous forme de jeton) entre l'item vertical et son dropdown-content pour les smarthphone */
+			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:40% !important; margin-left:20% !important; }
+			
+			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:40% !important; margin-left:20% !important;}
+			
+			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:31% !important; margin-left:20% !important; }
+		}
+		 /* largeur de fenêtre minimum: 
+		  * Ecran HYUNDAI: 500 px !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		  * Mais mon script de mesure indique 483 ( soit un écart de 17 px)
+		  */
+        @media screen and (max-width: 500px) and (min-width: 401px) { 
+			/* decaler à droite le menu de l'item : Les juz */
+			#menu  div.dropdown:nth-child(4) .dropdown-content{ left:25% !important; top:39.5% !important; }
+			/* decaler à droite le menu de l'item : Sadjada */
+			#menu  div.dropdown:nth-child(5) .dropdown-content{ left:25% !important; top:59.5% !important;}
+			/* decaler à droite le menu de dernier item : Comment */
+			#menu  div.dropdown:nth-child(6) .dropdown-content{ left:25% !important; top:79.5% !important; }
+			
+			/* Ajouter un pointeur(jeton pointeur) entre l'item verical et son dropdown-content */
+			
+			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:30% !important; }
+			
+			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:30% !important; }
+			
+			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:30% !important; }
+		}
+		
+		/* Pour les smarthphone:Titres des sourates , titre des videos, footer et  largeur de la page */
+	    @media screen and (max-width: 400px) and (min-width: 100px) { 
+		 	/* decaler à droite le menu de l'item : Les sourate */
+			#menu  div.dropdown:nth-child(3) .dropdown-content{ left:17% !important; top:19.5% !important; right:.5% !important; width:auto !important; }
+			/* decaler à droite le menu de l'item : Les juz */
+			#menu  div.dropdown:nth-child(4) .dropdown-content{ left:30% !important; top:39.5% !important; }
+			/* decaler à droite le menu de l'item : Sadjada */
+			#menu  div.dropdown:nth-child(5) .dropdown-content{ left:30% !important; top:59.5% !important;}
+			/* decaler à droite le menu de dernier item : Comment */
+			#menu  div.dropdown:nth-child(6) .dropdown-content{ left:30% !important; top:79.5% !important; }
+			
+			/* Ajouter un pointeur( sous forme de jeton) entre l'item vertical et son dropdown-content pour les smarthphone */
+			#menu a:nth-child(4):after, #menu .dropdown:nth-child(4) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(4):hover:after, #menu .dropdown:nth-child(4) .dropdown-btn:hover:after{width:40% !important; }
+			
+			#menu a:nth-child(5):after, #menu .dropdown:nth-child(5) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(5):hover:after, #menu .dropdown:nth-child(5) .dropdown-btn:hover:after{width:40% !important; }
+			
+			#menu a:nth-child(6):after, #menu .dropdown:nth-child(6) .dropdown-btn:after  { height:90% !important; border-radius:60% !important; background:#ccf !important; }
+			#menu a:nth-child(6):hover:after, #menu .dropdown:nth-child(6) .dropdown-btn:hover:after{width:31% !important; }
+			
+			/* Réduire la tailles des sous-titre dans le sommaire */
+			.titreTiersDeSommaire{ font-size:.9em !important; padding-left:.9em !important; margin-bottom:0 !important;}
+		}
+					
+	    /* RAPPEL:
+		 * Dans la page d'accueil(5 items topmenu) les responsive dropdown-content sont en place
+		 * Dans les autres pages(4 items topmenu) ces dropdown-content décale vers le haut pour l'instant
+		 * ils reviendront en place dès que le 5ème item sera ajoués.
+		 * Donc garder le code CSS tel qu'il est .
+		 *
+		 * background:#3d3d5c; : une couleur noir très chic
+         */	
+		 
+
+        		 
+	
+		
+		
+		
+
+		
+
+		
+
+			
+		
+				
+
+		 
+	 

@@ -1,0 +1,467 @@
+	     body {overflow-x: hidden; }
+		 
+		.R{color:#990033; font-weight:bold; }
+		.V{color:#009933; font-weight:bold; } 
+		.VF{color:#739900; font-weight:bold; }
+		.idR{
+			color:#115; 
+			border:1px solid #8c8b8b; 
+			padding:1px 4px; 
+			border-radius:3px;
+			box-shadow:2px 2px 0.5px 0.5px #8c8b8b; 
+		}
+		.idS{
+			border:1px solid #8c8b8b; 
+			padding:1px 4px; 
+			border-radius:3px;
+			box-shadow:2px 2px 0.5px 0.5px #8c8b8b; 
+		}
+		ol{
+			line-height: 2em;
+		}
+		/* DJALLAJDJALALUHU */
+		.j{ color:#3d3d5c; font-weight:bold;}
+		/* bleu officiel de chez youtub */
+		.bleuYoutub{color:#000080;}
+		
+		a.visiteLien:visited {
+		  color: #3333cc; /* #4b2f89 !important; */
+		  font-weight:bold;
+		}
+		
+		/* Onglets */
+		.onglet1-sujet { 		
+			  float: left; 
+			  width:100%;
+			  min-height:18em;	 
+			  padding:60px 20px 0 20px;
+			  margin:0;
+			  background:white;  
+			  box-shadow:
+				0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+				0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+			  border:1px solid #8c8b8b;
+			  border-radius: 0px; 
+			  line-height:1.5;
+              min-height:18em;			  
+		}
+		.header-image{
+		   height:200px;
+		   width:100%;
+		   padding:0;
+		    margin:0; 
+		   border-radius:0;	
+           border:1px solid #110;
+           box-sizing: border-bx;		   
+		}
+		.footer-image, .videoCommentaire, .audioComment{
+			margin:1.2em;			
+			background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("img/footer-image.png");	
+		}
+		.videoCommentaire{ width:269%; }
+		.videoDecaler{ padding: 0 0 0 2em; background:#555;} /* Une marge gauche de 2em entre la vide et son cadre: voir  s33/Page427 */
+		.audioComment{ padding:0; height:3em; width:77%; }
+		.sign-videoCommentaire{ 
+		    /* background:#ff1; pour un simple jaune*/ 
+			background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(5, 55, 0, 0.5)), url("img/footer-image.png");
+			border-radius:2px; 
+			/* padding:2px; si on met &#9888; à la place des numéro */
+            padding:.04em .4em;			
+		}
+		
+		
+	/* MESSAGE HEADER */
+	.hero-image {
+	  height: 200px;
+	  position: relative;
+	}
+
+	.hero-text {
+	  text-align: center;
+	  position: absolute;
+	  top: 4.4em;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  color: white;
+	}
+	
+	#menu a, #menu .dropdown .dropdown-btn{
+		position:relative;
+	}
+	#menu a:after, #menu .dropdown .dropdown-btn:after {
+		  position:relative;
+		  content:'';
+		  width:0%;
+		  margin-left:50%;
+		  height:2px;
+		  bottom:0;
+		  left:0;
+		  -webkit-border-radius: 40%;
+		  -moz-border-radius: 40%;
+		  border-radius:40%;
+		  -webkit-transition: all 0.5s;
+		  -o-transition: all 0.5s;
+		  transition:all 0.5s;
+		  position:absolute;
+		  -webkit-transition: all 0.5s;
+		  -o-transition: all 0.5s;
+		  transition:all 0.5s;
+	}
+	#menu a:hover:after, #menu .dropdown .dropdown-btn:hover:after{
+		
+		  background-color: purple;/* #15F3CF; */
+		  width:60%;
+		  margin-left:20%;
+		  -moz-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  -webkit-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  -o-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  box-shadow:0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  z-index:99;
+	}
+	
+    /* menu accordeon sur l'itemm "Comment" */
+		.accordion {		  		  		  
+		  transition: 0.4s;
+		}
+		.active, .accordion:hover {
+		  background-color: #ccc; 
+		}
+		.panel {
+		  padding: 0 18px;
+		  display: none;
+		  background-color: #ddd;
+		  overflow: hidden;
+		  color: #444;
+		}
+	
+	/* Animation  menu accordeon de l'item "Comment" ( avec :hover:after) */		
+	#menu a.panel:hover:after{		
+		  background-color: #f2f2f2;/* #15F3CF; */
+		  width:78%;
+		  height:11%;
+		  margin-left:15%;
+		  -moz-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  -webkit-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  -o-box-shadow: 0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  box-shadow:0px 0px 10px #3d3d5c; /* #22A9E8; */
+		  z-index:99;
+	}
+	
+	/*################################################################# */	
+    /*
+	 summary{
+	   margin-left:1.6em;
+	   padding:0.5em;
+	   background:#ccf;
+	   width:87%;
+	   box-shadow:
+	     0px 2px 20px 0px #660066 inset,
+		 0px 2px 10px 0px ;	   
+	 }
+	 */
+
+	summary{
+	   margin-left:1.6em;
+	   margin-bottom: 0.2em;
+	   padding:0.5em;
+	   background:white;
+	   width:96%;
+	   box-shadow:
+	     0px 2px 20px 0px white inset,
+		 0px 2px 10px 0px ;	   
+	 }
+	 
+	hr{
+		display: block;
+		clear: both;
+		height: .9em;
+		margin: 0 .5em .5em .5em;
+		padding: 0;
+		border: 0;
+		font-family: arial;
+		text-align: center;
+		font-size: 18px;
+		line-height: 1;
+		background:#fff url(../img/hr1.png)  scroll left;
+	
+	}
+	hr:after {
+		
+		content: " \273D"; /* étoile */	    
+		height: 0;			
+		letter-spacing:-.2em; /* 1em; centrer l'étoile */
+		color: #aaa; 
+	}
+	
+	/* HR spécifique à S8/Juz 10 */
+	
+     hr.hrS8 { background:#fff url(../img/hr_s8.png)  scroll left ; }
+	    
+		
+	 hr.hrS8:after {
+	   letter-spacing:0em !important; /* taille du cercle */
+	   margin-right:0em !important;
+	  }
+
+
+    /* Les video du bas de page */
+    	
+	td.footer-td {
+	     height:12em !important;
+	}
+	td.footer-td:hover {
+	    
+		 width:25% !important;
+		 position:relative;	
+		 transition: all .5s ease-out;
+	}
+	
+	.titre-video{
+	     position:relative;
+		 margin:0;
+		 padding:0 4em !important;
+		 color:#ECECEA;
+	}
+
+	
+
+	
+	.pageGauche{  box-shadow:-3px 8px 6px -6px gray ; background:white; margin-bottom:2em; padding-bottom:0 !important; line-height:2; height:auto;  font-weight: lighter !important; }
+	.pageDroite{  box-shadow: 3px 8px 6px -6px gray; background:white; margin-bottom:2em; padding-bottom:0 important;  line-height:2;  height:auto; font-weight: lighter !important;}
+
+	
+	
+	.A-retenir{color: #2bad5d; }
+	.alignerTexte{
+		padding-left:.8em; 
+		padding-top:0; 
+		margin-top:-1.2em; 
+		line-height:1.7 !important; 
+		font-size:1.17em; 	
+	}
+	.hikma { font-weight:bold; color:#660099;}
+	.douan { font-weight:bold; color:#00b36b;}
+	.hikma-normal { color:#660099;}	
+	.douan-nomal { color:#00b36b;}
+	.paragraph { color:#9d3d5f; }
+	/* 3 étoiles qui séparent les douans */
+	.separateurArabe , .separateurFrançais{ word-spacing: 1rem; }
+	.separateurArabe { padding-right:40%; padding-top:0 !important; padding-bottom:0 !important; font-size:.9em;  line-height:0 !important;  }
+	.separateurFrançais{ padding-left:40%; font-size:1.1em; }
+	
+	/* verset sans arrêt: kif de liaison */
+	    .lamNonStop{ vertical-align:top; font-weight:bold; }
+        .pointContinu{padding:0 0 0 .15em; border-radius:50%; margin-left:0; margin-right:0; background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(5, 55, 0, 0.5)), url("img/footer-image.png");}	
+    /** Image Overlay Slide: Pour cacher les regles de grammaires derrière la Kaanba 
+	 *Pour certaines images du milieu  footer: ct 
+	 * index.html,s27.html, s28.html, ...ect
+	 * à redefinir selon besoin . exemples:
+	 * index.html : il y une image
+	 * s27.html: texte transparente
+	 */
+        .overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  
+		  overflow: hidden;
+		  width: 100%;
+		  height:0;
+		  transition: .5s ease;
+		  
+		  /* Si l'information est importante: utiliser seulement le 1er background( le kaki) ou combiner les 2 dans le <header> de la page HTML</header> */
+		  
+		  /*background-color:#99993F; /* #99993F(kaki)   */
+		  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("img/footer-image.png");	
+		}
+
+
+		.containerOverlay:hover .overlay {
+		  bottom: 0;
+		  height: 100%;
+		}
+
+		.text {
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+
+	
+	
+  /* ########################################################################## */
+ /* #############               RESPONSIVE  FOOTER ######## ################## */
+/* ########################################################################## */
+	
+	@media screen and (max-width: 792px) {
+	   .onglet1-sujet{padding-bottom:40px;}
+	   .titre-video{  
+	       padding:0 0 0 6em  !important;
+		   font-size:.5em;
+	    }
+
+	   .footer-td{margin:0;   }
+	   .footer-td video, .footer-td audio, .footer-td img{padding:0; margin:0; height:41%; width:100%;}
+       .footer-td video source, .footer-td audio source{padding:0; margin:0; width:100% !important;}
+	   .img, .footer-image, .videoCommentaire, .audioComment{ margin:0 ; padding:0 ; }			
+	}
+	/********************************************************************************* 
+	 *PROBLEME:
+	 * Les media query définis ci-haut, ne s'applique pas dans la plage 777px - 846px 
+	 * SOLUTION:
+	 *Rédefinition dans l'interval 777px - 846px 
+	 *********************************************************************************/
+	@media screen and (max-width: 846px) and (min-width: 777px) {
+	   .onglet1-sujet{padding-bottom:48px;}
+	   .titre-video{  
+	       padding:0 0 0 3em  !important;
+		   font-size:.5em;
+	   }
+	   .footer-td{margin:0;  }
+	   .footer-td video, .footer-td audio, .footer-td img{padding:0; margin:0; height:44%; width:100%;}
+	   .footer-td video source, .footer-td audio source{padding:0; margin:0; width:100% !important;}
+       .img, .footer-image, .videoCommentaire, .audioComment{ margin:0 ; padding:0 ; }	
+	}
+	
+	@media screen and (max-width: 560px) {
+			   .titre-video{ padding:0 0 0 3em  !important;}	       
+	}
+	
+	@media screen and (max-width: 963px) and (min-width: 830px) {
+			   .titre-video{ padding:0 0 0 2.5em  !important;}	       
+	}
+	
+		
+  /* ########################################################################## */
+ /* #############                SMARTPHONE         ######## ################## */
+/* ########################################################################## */
+	
+	/* Pour les smarthphone:Titres des sourates , titre des videos, footer et  largeur de la page */
+	@media screen and (max-width: 400px) and (min-width: 100px) {
+		       .grosTitre{height: auto !important; padding:.5em !important;  }
+		       .box-shadow-titre {padding:0.3em !important; font-size:.6em !important; }			   
+			   .numSourate{padding:0 .1em !important;}
+			   
+			   .titre-video{ padding:0 0 0 .3em !important; font-size:.3em !important;}
+          	   
+			   /* bouton go to top */
+			   #myBtn{ right: .6% !important; bottom:27% !important; } /* right: 6.5%    */     
+			   
+			   /* Ajuster la largeur du footer */
+			   
+			   .footer-table { padding:.5em !important;}
+			   #footer  table.footer-table tr td.footer-td{ width:10% !important; min-height:50px !important;  }
+			   
+			   /* Ajuster la hauteur du footer */
+			   #footer{ margin-top:1em !important; }
+
+			   
+			   /* Ajuster la largeur de la page avec  body, #menu : 
+			    * PROBLEME: le selecteur #menu désactive le bouton ☰, pourtant <body> ne suffit pas à centrer pour les smarthphone 
+				* SOLUTION: ajouter un height ..... task fait
+				* Effet SECONDAIRE INDESIRABLE: le bouton ☰ disparaît au déploiemt du menu 
+				* SOLUTION: repositionner le bouton en utilisant javascript ... task à faire( mais on peut laisser en l'etat car une fois arrivé sur la page cible le bouton ☰ se remet en place ) 
+				*/
+
+			   body, #menu  { overflow-x:hidden !important; height:auto !important;  }		  		   
+	}
+	/** Image Overlay Slide: Pour cacher les regles de grammaires derrière la Kaanba **/
+		@media screen and (max-width: 900px) {
+			.text {font-size: .9em; }
+		}
+		
+	/****************Blem de chez mozilla dans la mise à jour du 1er juin 2021(mise à jour 89.0)*********************
+	 *	05.Juin.21
+	 *	Problème: 
+	 *	Début juin 2021 Mozilla a mis jours son browser(Firefox) avec augmentation de sa
+	 *	police standard. Conséquence environ 30 % de l' appli Coran est impacté( dépassement de contenu)
+
+	 *	! Par contre tout va bien dans les autres navigateurs( notament chrome)
+	 */
+	 
+
+	 
+	 
+	
+	 
+	 /** si les lien interpage pose prolème( variation de position selon le browser),
+	  *  alors les mettre dans un div#liaisonDesPages
+	  *
+	  *  Ajouter un  margin-bottom:0; dans la div.pageDroite présedente
+	  *  Ajouter un  margin-bottom:2.8em;  dans la div.pageGauche correspondante( la traduction)
+	  *
+	  *  Exemple: s9.html(Page207)
+	  */
+	  
+     #liaisonDesPages { margin-top:0; margin-bottom:0; padding-top:0 !important; padding-bottom:0; line-height:0 !important; }
+   
+
+   /*#################################### smarthphone : 5 Août 2021 ########################################### */
+	
+	
+	@media screen and (max-width: 450px) {
+	   .basmala { text-align: center !important; padding-left:10% !important; }
+	   .basmala-contenu { text-align:center !important; padding-right:19% !important; }
+	   
+	   body{line-height:1; font-size:1.1em; width:auto;  overflow-x:hidden !important; }
+	   
+	   #contenu{ 
+	       width:100%; 
+		   overflow-x: hidden ; /* primordial : à défaut de cette proprieté, plus rien ne reste à sa place */
+		}
+	   
+	   #myBtn { bottom: 1px !important;}
+	   
+
+	  /* Désactiver l'entete et le footer */
+	  #entete, #footer { display:none; }
+      
+	  /* Désactiver les commentaires */	  
+	 .popup { display:none !important; } 
+	 
+	 /* douan final */
+	   p { overflow-y: auto;}
+	   .conteneur_basmala{padding:3% 10.10% !important;}
+	   .basmalaDuDouan { text-align:center !important;  padding:auto !important; font-size:.61em !important;}
+	 
+	 /* Big menu (index.html) */
+	 .titreTiersDeSommaire, #myAudio21, #myAudio22, #myAudio23, #myAudio24, #myAudio25, #s21, #s22, #s23, #s24, #s25 { display:none !important;}
+	 .column {  width:auto !important;  line-height:0 !important;}
+	  
+	  /* page gauche et droite */
+	   .pageGauche , .pageDroite { box-shadow: 0 8px 6px -6px gray !important;}
+       .planche .pageGauche{ font-size:.86em !important; height:auto !important; }
+       .planche  .pageDroite{ font-size:.86em !important;	height:auto !important; }	   
+	    
+	  
+	  /* titre de milieu de page( sourate) */
+      hr{ display:none; }
+	  .grosTitreMediane{ padding-top:.9em !important; }
+	  .grosTitreMedianeArabe{padding: 0 .1em !important; }
+      .box-shadow-titre-mediane-arabe{ font-size: .7em !important;   }	
+	  
+	  /* lien de redirection: */
+	  #suivant , #precedent { font-size:.7em ;}
+	  #suivant  { margin-right:21% !important;}
+	  
+      /* Invocation/Roukia : titre page française */
+	  .buttonTitleFrench { padding-left:auto ; text-align:center !important;}	
+      .closepanel {right:.3em !important; font-size:2em !important; font-weight:bold !important;}
+	  
+	  /* Invocation/Roukia : Hoverable_Sidenav_Button */
+	  #mySidenav , .sidenav { overflow-x:hidden !important; }
+	  
+	  #bouton1 {top:4em !important; }
+	  #bouton2 {top:6.61em !important; }
+	  #bouton3 {top:9.22em !important; }
+	  #bouton4 {top:11.83em !important; }
+	  
+      	  
+	}
